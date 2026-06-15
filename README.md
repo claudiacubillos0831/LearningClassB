@@ -6,6 +6,13 @@ interactiva. Tú respondes y la app te enseña **por qué la respuesta es correc
 
 ## ✨ Características
 
+- 📝 **Modo Examen Real** (simulacro de la Dirección de Tránsito):
+  - 35 preguntas al azar con **cronómetro de 60 minutos**.
+  - 5 preguntas (al azar) valen **doble puntaje (×2)**.
+  - Apruebas con un **máximo de 2 puntos de error** (una pregunta ×2 mal resta 2).
+  - **Sin explicaciones durante la prueba**; al final ves APROBADO/REPROBADO,
+    puntaje, tiempo usado y la **revisión completa** de cada pregunta.
+- 📖 **Modo Estudio** con explicación inmediata pregunta a pregunta.
 - **280 preguntas** del cuestionario oficial (banco completo), con su **clave de
   respuestas oficial**.
 - **Incluye las imágenes y señales del PDF** (señales de tránsito, semáforos,
