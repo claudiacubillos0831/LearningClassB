@@ -117,8 +117,7 @@ export const questions = [
     "id": 6,
     "question": "En un automóvil, ¿cuál de los siguientes elementos reduce el riesgo de lesiones de cuello en una colisión?",
     "options": [
-      "Un asiento dotado de air-bag (bolsa de air",
-      ".",
+      "Un asiento dotado de air-bag (bolsa de aire).",
       "Los frenos ABS.",
       "Una columna de dirección colapsable.",
       "Un asiento con apoya-cabeza ajustado en forma apropiada."
@@ -128,12 +127,11 @@ export const questions = [
     ],
     "multi": false,
     "images": [],
-    "explanation": "El apoya-cabeza, ajustado correctamente a la altura de la cabeza, limita el desplazamiento brusco del cuello hacia atrás en una colisión, previniendo el latigazo cervical. Por eso es el elemento que reduce el riesgo de lesiones de cuello.",
+    "explanation": "El apoya-cabeza (reposacabezas) ajustado a la altura de la nuca evita el latigazo cervical ('efecto whiplash') en una colisión, sobre todo en los choques por detrás. Por eso es el elemento que reduce el riesgo de lesiones de cuello.",
     "wrongExplanations": [
-      "El air-bag protege principalmente cabeza y tórax frente al impacto frontal, pero no está diseñado para evitar la lesión de cuello por latigazo.",
-      "",
-      "Los frenos ABS ayudan a mantener el control al frenar, pero no protegen el cuello en una colisión.",
-      "",
+      "El air-bag protege principalmente cabeza y tórax en un impacto frontal; no es lo que evita la lesión de cuello en un alcance por detrás.",
+      "Los frenos ABS ayudan a no bloquear las ruedas y mantener el control, pero no protegen el cuello una vez producido el choque.",
+      "La columna de dirección colapsable absorbe el impacto protegiendo el tórax del conductor, no el cuello.",
       ""
     ]
   },
@@ -730,8 +728,7 @@ export const questions = [
     "question": "¿Cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
     "options": [
       "El cinturón de seguridad disminuye las posibilidades de sufrir lesiones en un accidente.",
-      "Los air-bags (o bolsas de air",
-      "reemplazan ventajosamente al cinturón de seguridad.",
+      "Los air-bags (o bolsas de aire) reemplazan ventajosamente al cinturón de seguridad.",
       "Para quienes viajan en el asiento trasero de un automóvil el cinturón de seguridad no les presta utilidad.",
       "Usar cinturón de seguridad es más necesario cuando se conduce en carreteras."
     ],
@@ -740,13 +737,12 @@ export const questions = [
     ],
     "multi": false,
     "images": [],
-    "explanation": "La afirmación verdadera es que el cinturón de seguridad disminuye las posibilidades de sufrir lesiones en un accidente, ya que retiene al ocupante y evita que sea proyectado contra el interior del vehículo o expulsado. Su uso es obligatorio en Chile para todos los ocupantes según la Ley de Tránsito.",
+    "explanation": "El cinturón de seguridad disminuye claramente las posibilidades de sufrir lesiones en un accidente, porque retiene al ocupante y evita que salga despedido o golpee el interior del vehículo. Por eso su uso es obligatorio en todos los asientos.",
     "wrongExplanations": [
       "",
-      "Es falsa: los air-bags complementan al cinturón, no lo reemplazan; de hecho funcionan correctamente solo junto con el cinturón.",
-      "Esta opción quedó cortada de la anterior y forma parte de la afirmación falsa sobre los air-bags, que no reemplazan al cinturón.",
-      "Es falsa: el cinturón también protege a quienes viajan atrás, donde su uso es igualmente obligatorio y útil.",
-      "Es falsa: el cinturón es necesario siempre, tanto en ciudad como en carretera, no solo en una de ellas."
+      "Falso: el air-bag es un complemento del cinturón, no un reemplazo; sin cinturón puesto incluso puede causar lesiones.",
+      "Falso: en el asiento trasero el cinturón también protege; evita salir despedido y golpear a los ocupantes de adelante.",
+      "El cinturón es igual de necesario en ciudad que en carretera; muchos accidentes graves ocurren a velocidades urbanas, así que no es 'más necesario' solo en carretera."
     ]
   },
   {
