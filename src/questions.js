@@ -1,5 +1,5 @@
 // Banco de 280 preguntas del Examen Teorico Clase B (Chile).
-// Generado desde el PDF oficial (preguntas, alternativas y clave de respuestas).
+// Generado desde el PDF oficial (preguntas, alternativas, clave de respuestas y pagina).
 // Las explicaciones (por que es correcta / por que no las otras) son material de estudio.
 
 export const questions = [
@@ -23,7 +23,8 @@ export const questions = [
       "Bombear el pedal sirve en frenos sin ABS para evitar el bloqueo, pero no soluciona la desviación al frenar.",
       "El freno de mano actúa sólo sobre el eje trasero y no sirve para frenadas normales; puede provocar un derrape.",
       ""
-    ]
+    ],
+    "page": 1
   },
   {
     "id": 2,
@@ -45,7 +46,8 @@ export const questions = [
       "Si el freno de mano quedara puesto el vehículo frenaría o se calentaría atrás, pero no es la causa típica de desviarse al pisar el pedal.",
       "",
       "Una presión inadecuada afecta el agarre y el desgaste, pero la causa más probable de desviarse al frenar es el desajuste de los frenos."
-    ]
+    ],
+    "page": 1
   },
   {
     "id": 3,
@@ -67,7 +69,8 @@ export const questions = [
       "Continuar, aunque sea despacio, mantiene el riesgo de incendio si hay una fuga de combustible.",
       "Seguir conduciendo con olor a gasolina expone a un incendio; no es algo que se resuelva avanzando unos kilómetros.",
       ""
-    ]
+    ],
+    "page": 1
   },
   {
     "id": 4,
@@ -89,7 +92,8 @@ export const questions = [
       "Conducir con el estanque lleno no aumenta el riesgo de incendio; es una práctica normal y segura.",
       "El tipo de gasolina (con o sin plomo) no es lo que previene un incendio del vehículo.",
       ""
-    ]
+    ],
+    "page": 1
   },
   {
     "id": 5,
@@ -111,7 +115,8 @@ export const questions = [
       "El desgaste de las gomas de los pedales no es la razón de seguridad por la que se exige calzado adecuado.",
       "Los cambios de marcha dependen de la técnica y del embrague, no de la rapidez que den los zapatos.",
       "Poder caminar después es secundario; lo esencial es controlar bien los pedales mientras conduce."
-    ]
+    ],
+    "page": 1
   },
   {
     "id": 6,
@@ -133,7 +138,8 @@ export const questions = [
       "Los frenos ABS ayudan a no bloquear las ruedas y mantener el control, pero no protegen el cuello una vez producido el choque.",
       "La columna de dirección colapsable absorbe el impacto protegiendo el tórax del conductor, no el cuello.",
       ""
-    ]
+    ],
+    "page": 1
   },
   {
     "id": 7,
@@ -157,7 +163,8 @@ export const questions = [
       "",
       "Las luces altas se indican con un testigo azul de haz recto hacia adelante, no con este símbolo.",
       "El freno de mano puesto se señala con un símbolo de círculo con signo de exclamación o la letra del freno, distinto a éste."
-    ]
+    ],
+    "page": 1
   },
   {
     "id": 8,
@@ -179,7 +186,8 @@ export const questions = [
       "Tras conducir a alta velocidad el neumático está caliente, lo que falsea la medición.",
       "",
       "Con los neumáticos calientes el aire se ha dilatado y la lectura es mayor que la presión real en frío."
-    ]
+    ],
+    "page": 2
   },
   {
     "id": 9,
@@ -199,7 +207,8 @@ export const questions = [
       "",
       "Con los neumáticos calientes el aire se dilata y la presión medida resulta mayor que la real.",
       "No da igual: la temperatura cambia la presión, por eso la medición debe hacerse siempre en frío."
-    ]
+    ],
+    "page": 2
   },
   {
     "id": 10,
@@ -221,7 +230,8 @@ export const questions = [
       "Un nivel bajo de anticongelante puede causar sobrecalentamiento del motor, pero no provoca de forma directa un accidente.",
       "Un nivel bajo de agua de la batería afecta su funcionamiento y carga, no la capacidad de frenar o controlar el vehículo.",
       "Un nivel bajo de líquido refrigerante lleva a sobrecalentamiento, pero no a una pérdida directa de control que cause un choque."
-    ]
+    ],
+    "page": 2
   },
   {
     "id": 11,
@@ -243,7 +253,8 @@ export const questions = [
       "Presionar el embrague antes de tiempo y usar el freno de mano para detenerse quita control y puede causar derrapes.",
       "Frenar fuerte con la palanca en neutro reduce el control del vehículo y no es la técnica más segura.",
       ""
-    ]
+    ],
+    "page": 2
   },
   {
     "id": 12,
@@ -265,7 +276,8 @@ export const questions = [
       "Estacionarse en doble fila es una maniobra indebida; las balizas no autorizan ni justifican esa detención.",
       "Detenerse donde hay línea amarilla está prohibido, y encender las balizas no lo hace permitido.",
       "Si los señalizadores de viraje fallan no se reemplazan con las balizas para indicar el viraje; éstas advierten peligro, no intención de doblar."
-    ]
+    ],
+    "page": 2
   },
   {
     "id": 13,
@@ -287,7 +299,8 @@ export const questions = [
       "",
       "Para indicar que va a virar se usan los señalizadores de viraje, no las luces de peligro.",
       "Las balizas no sirven para avisar que tiene prisa; su uso indebido confunde a los demás conductores."
-    ]
+    ],
+    "page": 2
   },
   {
     "id": 14,
@@ -309,7 +322,8 @@ export const questions = [
       "Cuando es remolcado se usa la señalización propia del remolque, no las balizas del vehículo.",
       "Para retroceder se usan las luces de retroceso y la debida precaución, no las luces de peligro.",
       ""
-    ]
+    ],
+    "page": 2
   },
   {
     "id": 15,
@@ -331,7 +345,8 @@ export const questions = [
       "Los neumáticos poco inflados influyen en la dirección y el desgaste, no en el rebote propio de la suspensión.",
       "Un volante descentrado se relaciona con la alineación de la dirección, no con el rebote de la suspensión.",
       ""
-    ]
+    ],
+    "page": 2
   },
   {
     "id": 16,
@@ -353,7 +368,8 @@ export const questions = [
       "La presión de los neumáticos no tiene relación con el desgaste del motor.",
       "",
       "La inclinación del vehículo depende de la carga y la suspensión; el objetivo de la presión correcta es la adherencia, no la nivelación."
-    ]
+    ],
+    "page": 2
   },
   {
     "id": 17,
@@ -375,7 +391,8 @@ export const questions = [
       "Acelerar en curvas es peligroso para la estabilidad, pero no es la causa principal del mayor consumo.",
       "",
       "Conducir en marchas altas a régimen adecuado en realidad reduce el consumo, no lo aumenta."
-    ]
+    ],
+    "page": 4
   },
   {
     "id": 18,
@@ -397,7 +414,8 @@ export const questions = [
       "4,0 mm tampoco corresponde al mínimo exigido; el límite establecido es menor.",
       "",
       "1,0 mm está por debajo del mínimo legal de 1,6 mm, por lo que sería un neumático ya inseguro."
-    ]
+    ],
+    "page": 4
   },
   {
     "id": 19,
@@ -422,7 +440,8 @@ export const questions = [
       "",
       "Frenar lo más fuerte posible tras un reventón puede provocar derrape o pérdida total del control.",
       ""
-    ]
+    ],
+    "page": 4
   },
   {
     "id": 20,
@@ -447,7 +466,8 @@ export const questions = [
       "Frenar rápida y firmemente puede desestabilizar el vehículo y hacerle perder el control tras el reventón.",
       "",
       "Soltar el volante para hacer señales con una mano le quita el control de la dirección en un momento crítico."
-    ]
+    ],
+    "page": 4
   },
   {
     "id": 21,
@@ -469,7 +489,8 @@ export const questions = [
       "",
       "Comer no genera fuentes de ignición; lo prohibido y peligroso es fumar por el riesgo de incendio.",
       "Lavar los parabrisas es una actividad común y segura que muchas estaciones de servicio incluso facilitan."
-    ]
+    ],
+    "page": 4
   },
   {
     "id": 22,
@@ -491,7 +512,8 @@ export const questions = [
       "No facilita las maniobras; al perder el frenado del motor el vehículo se vuelve menos manejable.",
       "El consumo de combustible no es el problema central; lo determinante es la pérdida de control del vehículo.",
       ""
-    ]
+    ],
+    "page": 4
   },
   {
     "id": 23,
@@ -513,7 +535,8 @@ export const questions = [
       "El motor no se detiene necesariamente al desenganchar; el problema real es la pérdida del frenado del motor.",
       "",
       "El motor no funciona más rápido por estar desenganchado; el riesgo está en la falta de retención del motor."
-    ]
+    ],
+    "page": 4
   },
   {
     "id": 24,
@@ -538,7 +561,8 @@ export const questions = [
       "El mayor consumo de combustible no es la razón principal de seguridad; lo crítico es la pérdida de control y el aumento de velocidad.",
       "El desgaste de neumáticos no es el motivo central; el peligro real es perder control y ganar velocidad cuesta abajo.",
       "El motor no se daña por esta maniobra; el problema es la pérdida de frenado del motor y el aumento de velocidad."
-    ]
+    ],
+    "page": 4
   },
   {
     "id": 25,
@@ -560,7 +584,8 @@ export const questions = [
       "El desgaste de la caja de cambios no es la razón principal; lo importante es la pérdida de control del vehículo.",
       "El mayor consumo de combustible no es el motivo central de seguridad de esta pregunta.",
       "El agarre de los neumáticos no se ve afectado por pisar el embrague; lo que se reduce es el control del vehículo."
-    ]
+    ],
+    "page": 4
   },
   {
     "id": 26,
@@ -582,7 +607,8 @@ export const questions = [
       "",
       "El seguro de niños actúa sobre la apertura de las puertas, no sobre el bloqueo de las ventanas.",
       "Estos seguros no tienen función sobre la reclinación de los asientos."
-    ]
+    ],
+    "page": 6
   },
   {
     "id": 27,
@@ -604,7 +630,8 @@ export const questions = [
       "La baja presión empeora el rendimiento del combustible por la mayor resistencia, no lo mejora.",
       "Es al revés: con baja presión la dirección se siente más pesada, no más liviana.",
       ""
-    ]
+    ],
+    "page": 6
   },
   {
     "id": 28,
@@ -626,7 +653,8 @@ export const questions = [
       "La distancia de frenado no es siempre la misma; varía según múltiples factores, incluido el estado de los neumáticos.",
       "Es al revés: a mayor desgaste de los neumáticos, mayor es la distancia de frenado, no menor.",
       ""
-    ]
+    ],
+    "page": 6
   },
   {
     "id": 29,
@@ -651,7 +679,8 @@ export const questions = [
       "",
       "",
       ""
-    ]
+    ],
+    "page": 6
   },
   {
     "id": 30,
@@ -674,7 +703,8 @@ export const questions = [
       "",
       "",
       "Es falsa: los vapores de la gasolina no son inocuos; son tóxicos y altamente inflamables."
-    ]
+    ],
+    "page": 6
   },
   {
     "id": 31,
@@ -699,7 +729,8 @@ export const questions = [
       "Es falsa: el líquido de frenos no se consume por la cantidad o intensidad de frenadas; circula en un circuito cerrado.",
       "",
       "Es falsa: un pedal de freno elástico o esponjoso indica un defecto, como aire en el sistema; lo deseable es un pedal firme."
-    ]
+    ],
+    "page": 6
   },
   {
     "id": 32,
@@ -721,7 +752,8 @@ export const questions = [
       "Es falsa: el desgaste en la zona central indica exceso de presión (mucho aire), no poco aire; con poco aire se desgastan los bordes.",
       "",
       "Es falsa: como regla general los mejores neumáticos deben ir atrás para evitar la pérdida de control del eje trasero, no necesariamente adelante."
-    ]
+    ],
+    "page": 6
   },
   {
     "id": 33,
@@ -743,7 +775,8 @@ export const questions = [
       "Falso: el air-bag es un complemento del cinturón, no un reemplazo; sin cinturón puesto incluso puede causar lesiones.",
       "Falso: en el asiento trasero el cinturón también protege; evita salir despedido y golpear a los ocupantes de adelante.",
       "El cinturón es igual de necesario en ciudad que en carretera; muchos accidentes graves ocurren a velocidades urbanas, así que no es 'más necesario' solo en carretera."
-    ]
+    ],
+    "page": 6
   },
   {
     "id": 34,
@@ -767,7 +800,8 @@ export const questions = [
       "",
       "Es falsa: el cinturón también brinda seguridad a quienes viajan en el asiento trasero, donde su uso es obligatorio.",
       ""
-    ]
+    ],
+    "page": 7
   },
   {
     "id": 35,
@@ -791,7 +825,8 @@ export const questions = [
       "",
       "Aunque los neumáticos deben revisarse y estar en buen estado, mantenerlos limpios no es relevante para la visión ni la seguridad como sí lo es en luces, espejos y vidrios.",
       ""
-    ]
+    ],
+    "page": 8
   },
   {
     "id": 36,
@@ -813,7 +848,8 @@ export const questions = [
       "",
       "Es incorrecto: este resultado supondría cuadruplicar también la distancia de reacción, pero esta solo se duplica.",
       "Es incorrecto: este valor sobreestima ambas distancias; el cálculo correcto da 52 metros."
-    ]
+    ],
+    "page": 8
   },
   {
     "id": 37,
@@ -835,7 +871,8 @@ export const questions = [
       "Es verdadera: la energía cinética efectivamente se cuadruplica al duplicar la velocidad, por lo que no es la respuesta buscada (la falsa).",
       "Es verdadera: la distancia de reacción se duplica al duplicar la velocidad, por lo que no es la afirmación falsa.",
       "Es verdadera: la distancia de frenado se cuadruplica al duplicar la velocidad, por lo que no es la afirmación falsa."
-    ]
+    ],
+    "page": 8
   },
   {
     "id": 38,
@@ -860,7 +897,8 @@ export const questions = [
       "Es incorrecto: el conductor del auto rojo no estima el punto 2; según el análisis del problema estima el punto 3.",
       "Es incorrecto: el conductor del auto azul no estima el punto 1; estima el punto 3.",
       ""
-    ]
+    ],
+    "page": 8
   },
   {
     "id": 39,
@@ -882,7 +920,8 @@ export const questions = [
       "Es insuficiente: 200 metros está muy por debajo de la distancia real de detención de un tren a esa velocidad.",
       "",
       "Es una sobreestimación: más de 2000 metros excede la distancia de detención típica de un tren a 100 km/h."
-    ]
+    ],
+    "page": 8
   },
   {
     "id": 40,
@@ -904,7 +943,8 @@ export const questions = [
       "Conducir a velocidad constante no garantiza evitar el choque si no se mantiene la distancia con el vehículo de adelante.",
       "",
       "Los neumáticos en buen estado son importantes, pero lo determinante para no chocar al de adelante es mantener la distancia de separación."
-    ]
+    ],
+    "page": 8
   },
   {
     "id": 41,
@@ -926,7 +966,8 @@ export const questions = [
       "15 metros es muy poco; subestima la distancia de reacción más la de frenado a 50 km/h.",
       "10 metros es una distancia irreal incluso a baja velocidad; ignora el tiempo de reacción.",
       ""
-    ]
+    ],
+    "page": 10
   },
   {
     "id": 42,
@@ -948,7 +989,8 @@ export const questions = [
       "",
       "30 metros es la detención total aproximada a solo 50 km/h, no a 90 km/h.",
       "120 metros sobrestima la distancia; correspondería a velocidades mucho mayores o a calzada mojada."
-    ]
+    ],
+    "page": 10
   },
   {
     "id": 43,
@@ -970,7 +1012,8 @@ export const questions = [
       "80 metros sobrestima la distancia; ese valor se acerca a velocidades de 100 km/h o más.",
       "",
       "25 metros subestima la detención total a 70 km/h; ese valor corresponde a unos 50 km/h."
-    ]
+    ],
+    "page": 10
   },
   {
     "id": 44,
@@ -993,7 +1036,8 @@ export const questions = [
       "Subir dos ruedas a la acera invade el espacio peatonal y constituye una infracción, no una medida correcta.",
       "",
       ""
-    ]
+    ],
+    "page": 10
   },
   {
     "id": 45,
@@ -1015,7 +1059,8 @@ export const questions = [
       "",
       "En neutro pierdes el freno motor y el vehículo se acelera por la pendiente sin control.",
       "Pisar el embrague desconecta el motor de las ruedas, eliminando el freno motor y aumentando la velocidad."
-    ]
+    ],
+    "page": 10
   },
   {
     "id": 46,
@@ -1037,7 +1082,8 @@ export const questions = [
       "",
       "Usar el embrague y frenar firme combina dos errores: pierdes tracción y bloqueas las ruedas, agravando el resbalón.",
       "Girar hacia la derecha es hacia el lado contrario al desplazamiento de la cola y acentúa el coletazo."
-    ]
+    ],
+    "page": 10
   },
   {
     "id": 47,
@@ -1059,7 +1105,8 @@ export const questions = [
       "Un cambio alto no entrega freno motor suficiente, dejando casi todo el esfuerzo a los frenos.",
       "Un cambio alto sin freno motor y frenar firme recalienta los frenos y puede hacerles perder eficacia.",
       "Con un cambio bajo bien, pero evitar del todo los frenos no permite regular la velocidad en una bajada pronunciada."
-    ]
+    ],
+    "page": 10
   },
   {
     "id": 48,
@@ -1081,7 +1128,8 @@ export const questions = [
       "70 metros corresponde a la distancia de detención total (reacción más frenado), no solo a la de frenado.",
       "20 metros subestima la distancia de frenado a 90 km/h; corresponde a velocidades menores.",
       "15 metros es muy poco para 90 km/h; ese valor se da a baja velocidad."
-    ]
+    ],
+    "page": 10
   },
   {
     "id": 49,
@@ -1103,7 +1151,8 @@ export const questions = [
       "Girar hacia el lado opuesto al coletazo agrava el derrape en lugar de corregirlo.",
       "",
       "El freno de mano bloquea las ruedas traseras y empeora el coletazo, pudiendo provocar un trompo."
-    ]
+    ],
+    "page": 12
   },
   {
     "id": 50,
@@ -1129,7 +1178,8 @@ export const questions = [
       "",
       "",
       "La hora del día no altera la distancia de frenado en sí; afecta la visibilidad, no la adherencia ni la mecánica."
-    ]
+    ],
+    "page": 12
   },
   {
     "id": 51,
@@ -1151,7 +1201,8 @@ export const questions = [
       "8 metros también subestima lo que avanzas en el tiempo de reacción a esa velocidad.",
       "",
       "30 metros sobrestima la distancia de reacción a 70 km/h; ese valor correspondería a una velocidad mayor."
-    ]
+    ],
+    "page": 12
   },
   {
     "id": 52,
@@ -1173,7 +1224,8 @@ export const questions = [
       "0,1 minuto equivale a 6 segundos, un tiempo demasiado largo para ser un tiempo de reacción.",
       "0,1 segundo es irrealmente corto; ningún conductor reacciona tan rápido ante un imprevisto.",
       "2 segundos es más del doble del promedio; sobreestima el tiempo de reacción normal."
-    ]
+    ],
+    "page": 12
   },
   {
     "id": 53,
@@ -1198,7 +1250,8 @@ export const questions = [
       "",
       "",
       ""
-    ]
+    ],
+    "page": 12
   },
   {
     "id": 54,
@@ -1222,7 +1275,8 @@ export const questions = [
       "",
       "Es falsa: la moral no es innata ni inmutable, sino que se desarrolla y cambia con la experiencia y el aprendizaje.",
       ""
-    ]
+    ],
+    "page": 12
   },
   {
     "id": 55,
@@ -1245,7 +1299,8 @@ export const questions = [
       "Mantener el vehículo en buen estado es importante, pero es una conducta mecánica, no un rasgo de madurez personal.",
       "Conocer las normas del tránsito es necesario, pero es conocimiento técnico, no una muestra de madurez personal.",
       ""
-    ]
+    ],
+    "page": 12
   },
   {
     "id": 56,
@@ -1267,7 +1322,8 @@ export const questions = [
       "Es falsa: los jóvenes no reaccionan siempre más rápido; la experiencia es decisiva en situaciones complejas.",
       "Es falsa: sí existe diferencia, ya que la experiencia mejora la reacción ante situaciones complejas.",
       ""
-    ]
+    ],
+    "page": 12
   },
   {
     "id": 57,
@@ -1292,7 +1348,8 @@ export const questions = [
       "",
       "",
       ""
-    ]
+    ],
+    "page": 14
   },
   {
     "id": 58,
@@ -1317,7 +1374,8 @@ export const questions = [
       "Tener mayor autonomía y voluntad para defender las propias opiniones es un rasgo de quien resiste la presión, no de quien cede.",
       "Ser capaz de soportar bromas o que lo tilden de cobarde es propio de quien no cede a la presión del grupo.",
       "Ser muy seguro de sí mismo caracteriza a quien resiste la presión, lo contrario de quien cede fácilmente."
-    ]
+    ],
+    "page": 14
   },
   {
     "id": 59,
@@ -1340,7 +1398,8 @@ export const questions = [
       "",
       "Los medicamentos pueden influir, pero no figuran entre los dos factores más frecuentes en este tipo de accidentes.",
       ""
-    ]
+    ],
+    "page": 14
   },
   {
     "id": 60,
@@ -1362,7 +1421,8 @@ export const questions = [
       "Las condiciones climáticas pueden contribuir, pero no son la causa más frecuente de los accidentes.",
       "El estado de calles y caminos influye en algunos casos, pero no es el factor predominante.",
       "Las fallas mecánicas son una causa minoritaria comparada con los errores humanos."
-    ]
+    ],
+    "page": 14
   },
   {
     "id": 61,
@@ -1384,7 +1444,8 @@ export const questions = [
       "Es verdadera: un nivel moderado de estrés mantiene alerta y puede mejorar el rendimiento.",
       "Es verdadera: un estrés muy alto puede llevar a reacciones de pánico al volante.",
       ""
-    ]
+    ],
+    "page": 14
   },
   {
     "id": 62,
@@ -1407,7 +1468,8 @@ export const questions = [
       "",
       "La conducción con excesiva precaución corresponde a un perfil tímido o inseguro, no al impulsivo.",
       ""
-    ]
+    ],
+    "page": 14
   },
   {
     "id": 63,
@@ -1429,7 +1491,8 @@ export const questions = [
       "Respetar los límites de velocidad es necesario, pero es solo una parte y se logra mejor cuando se cuenta con tiempo suficiente.",
       "Evitar conducir de noche no es el mejor consejo general; con precaución se puede conducir de noche con seguridad.",
       ""
-    ]
+    ],
+    "page": 14
   },
   {
     "id": 64,
@@ -1452,7 +1515,8 @@ export const questions = [
       "Mantener el vehículo en condiciones óptimas ayuda, pero el énfasis de esta pregunta está en la conducta del conductor.",
       "Evitar conducir de noche no es una de las formas más eficaces de contribuir a la seguridad de tránsito.",
       ""
-    ]
+    ],
+    "page": 14
   },
   {
     "id": 65,
@@ -1475,7 +1539,8 @@ export const questions = [
       "Es falsa: el café no acelera la eliminación del alcohol; solo el tiempo permite que el organismo lo metabolice.",
       "",
       "Es falsa: la experiencia no protege; incluso pocos tragos afectan la interpretación y la toma de decisiones de cualquier conductor."
-    ]
+    ],
+    "page": 15
   },
   {
     "id": 66,
@@ -1497,7 +1562,8 @@ export const questions = [
       "Es verdadera: comer antes o durante la ingesta influye en cómo se absorbe el alcohol.",
       "Es verdadera: el tiempo en que se bebe afecta la concentración alcanzada en la sangre.",
       ""
-    ]
+    ],
+    "page": 15
   },
   {
     "id": 67,
@@ -1520,7 +1586,8 @@ export const questions = [
       "",
       "",
       "Es falsa: la visión no se adapta a la velocidad; al contrario, el campo visual se estrecha y se percibe menos del entorno."
-    ]
+    ],
+    "page": 15
   },
   {
     "id": 68,
@@ -1542,7 +1609,8 @@ export const questions = [
       "",
       "La dificultad para mantener la dirección es un síntoma de fatiga avanzada, no de los primeros.",
       "Que se cierren los párpados es un síntoma tardío y muy grave de cansancio, no el inicial."
-    ]
+    ],
+    "page": 15
   },
   {
     "id": 69,
@@ -1564,7 +1632,8 @@ export const questions = [
       "Es verdadera: los conductores tienden a ver lo que les interesa y lo que esperan ver.",
       "",
       "Es verdadera: incluso conductores experimentados pueden pasar por alto información importante."
-    ]
+    ],
+    "page": 15
   },
   {
     "id": 70,
@@ -1589,7 +1658,8 @@ export const questions = [
       "",
       "",
       ""
-    ]
+    ],
+    "page": 15
   },
   {
     "id": 71,
@@ -1611,7 +1681,8 @@ export const questions = [
       "Es falsa: son los conductores experimentados quienes aprovechan mejor la visión periférica.",
       "Es falsa: los conductores experimentados, no los inexpertos, observan el entorno de forma más sistemática.",
       "Es falsa: sí existen diferencias claras en la forma de observar entre conductores inexpertos y experimentados."
-    ]
+    ],
+    "page": 15
   },
   {
     "id": 72,
@@ -1635,7 +1706,8 @@ export const questions = [
       "",
       "",
       "Es falsa: son las personas mayores quienes suelen ser más sensibles al deslumbramiento, no las jóvenes."
-    ]
+    ],
+    "page": 16
   },
   {
     "id": 73,
@@ -1659,7 +1731,8 @@ export const questions = [
       "",
       "",
       "Con buena visibilidad y buenas demarcaciones el riesgo de interpretar mal la realidad es bajo, no alto."
-    ]
+    ],
+    "page": 17
   },
   {
     "id": 74,
@@ -1681,7 +1754,8 @@ export const questions = [
       "Sentirse bien no asegura que el remedio no esté afectando sus capacidades de conducción.",
       "",
       "Un amigo o pariente no tiene el conocimiento médico para saber si el remedio afecta la conducción."
-    ]
+    ],
+    "page": 17
   },
   {
     "id": 75,
@@ -1703,7 +1777,8 @@ export const questions = [
       "Ir acompañado por otro licenciado no compensa la disminución de sus capacidades como conductor.",
       "Conducir distancias cortas no reduce el peligro de tener las reacciones afectadas por el medicamento.",
       ""
-    ]
+    ],
+    "page": 17
   },
   {
     "id": 76,
@@ -1725,7 +1800,8 @@ export const questions = [
       "Es falsa: las medicinas que afectan la conducción tienden a enlentecer las reacciones, no a acelerarlas.",
       "El motivo principal no es la cobertura del seguro, sino el efecto del medicamento sobre sus capacidades.",
       "Aunque algunas medicinas afectan la visión, la razón que plantea esta pregunta es el enlentecimiento de las reacciones."
-    ]
+    ],
+    "page": 17
   },
   {
     "id": 77,
@@ -1753,7 +1829,8 @@ export const questions = [
       "Es falsa: el alcohol enlentece las reacciones, no las hace más rápidas.",
       "",
       "Es falsa: el alcohol disminuye la capacidad de concentración, no la aumenta."
-    ]
+    ],
+    "page": 17
   },
   {
     "id": 78,
@@ -1775,7 +1852,8 @@ export const questions = [
       "Es falsa: el alcohol disminuye la lucidez en lugar de aumentarla.",
       "Es falsa: el alcohol empeora la coordinación, no la mejora.",
       ""
-    ]
+    ],
+    "page": 17
   },
   {
     "id": 79,
@@ -1797,7 +1875,8 @@ export const questions = [
       "Golpear el manubrio no combate el cansancio y además lo distrae de la conducción.",
       "",
       "Modificar permanentemente la velocidad es errático y peligroso; no es una forma adecuada de mantener la concentración."
-    ]
+    ],
+    "page": 17
   },
   {
     "id": 80,
@@ -1819,7 +1898,8 @@ export const questions = [
       "El café no elimina el alcohol del organismo; seguiría conduciendo disminuido y en infracción.",
       "Conducir lento y con cuidado no compensa la disminución de capacidades provocada por el alcohol.",
       "Esperar un rato no asegura que haya eliminado el alcohol; lo seguro es no conducir y volver en taxi."
-    ]
+    ],
+    "page": 17
   },
   {
     "id": 81,
@@ -1841,7 +1921,8 @@ export const questions = [
       "Usar las luces como reproche es una distracción y una provocación que no aporta a la seguridad.",
       "",
       "Tocar la bocina con rabia es una forma de provocación; la bocina solo debe usarse para advertir un peligro, no para descargar enojo."
-    ]
+    ],
+    "page": 17
   },
   {
     "id": 82,
@@ -1863,7 +1944,8 @@ export const questions = [
       "",
       "Los anteojos de otra persona tienen otra graduación y pueden empeorar su visión en vez de corregirla.",
       "Las luces no reemplazan la corrección visual que usted necesita; de noche la visibilidad es aún peor."
-    ]
+    ],
+    "page": 19
   },
   {
     "id": 83,
@@ -1885,7 +1967,8 @@ export const questions = [
       "Acortar el viaje no elimina el riesgo; aún enfermo no está en condiciones de conducir.",
       "",
       "Prometerse descansar al llegar no cambia que durante todo el trayecto usted estará conduciendo en malas condiciones."
-    ]
+    ],
+    "page": 19
   },
   {
     "id": 84,
@@ -1907,7 +1990,8 @@ export const questions = [
       "Es verdadera: el cansancio prolonga el tiempo de reacción y deteriora los reflejos.",
       "",
       "Es verdadera: la desorientación y la dificultad para recordar el trayecto recorrido son síntomas claros de fatiga."
-    ]
+    ],
+    "page": 19
   },
   {
     "id": 85,
@@ -1929,7 +2013,8 @@ export const questions = [
       "Respirar profundo no revierte la fatiga acumulada; es un alivio momentáneo, no una solución.",
       "Terminar el viaje cansado y dormir después es justamente el error: el peligro está en seguir manejando con sueño.",
       ""
-    ]
+    ],
+    "page": 19
   },
   {
     "id": 86,
@@ -1951,7 +2036,8 @@ export const questions = [
       "Evitar el tráfico no reduce el deterioro que el alcohol produce en su capacidad de conducir.",
       "Beber con el estómago lleno o vacío no anula los efectos del alcohol sobre la conducción.",
       ""
-    ]
+    ],
+    "page": 19
   },
   {
     "id": 87,
@@ -1973,7 +2059,8 @@ export const questions = [
       "",
       "Sí es consecuencia del alcohol: deteriora la coordinación y el manejo del vehículo.",
       "Sí es consecuencia del alcohol: afecta el juicio para calcular distancias y velocidades."
-    ]
+    ],
+    "page": 19
   },
   {
     "id": 88,
@@ -1995,7 +2082,8 @@ export const questions = [
       "El alcohol sí afecta el juicio de la velocidad, dificultando calcular bien las distancias.",
       "El alcohol sí aumenta los tiempos de reacción, retrasando la respuesta ante un peligro.",
       "El alcohol sí deteriora la coordinación de movimientos al conducir."
-    ]
+    ],
+    "page": 19
   },
   {
     "id": 89,
@@ -2017,7 +2105,8 @@ export const questions = [
       "El estado de la calzada influye en la distancia de frenado y la adherencia, no en su tiempo de reacción personal.",
       "La velocidad aumenta la distancia recorrida durante la reacción, pero no cambia el tiempo que usted tarda en reaccionar.",
       "El clima afecta la visibilidad y el frenado, pero no el tiempo de reacción que depende de su organismo."
-    ]
+    ],
+    "page": 19
   },
   {
     "id": 90,
@@ -2043,7 +2132,8 @@ export const questions = [
       "",
       "",
       ""
-    ]
+    ],
+    "page": 19
   },
   {
     "id": 91,
@@ -2067,7 +2157,8 @@ export const questions = [
       "No corresponde indicarle al peatón que retroceda; debe respetarse su circulación y avanzar con cuidado.",
       "",
       "Detenerse no depende de si vienen autos detrás, pero además en este caso lo adecuado es avanzar lentamente con precaución."
-    ]
+    ],
+    "page": 21
   },
   {
     "id": 92,
@@ -2092,7 +2183,8 @@ export const questions = [
       "Aunque la calzada angosta es un riesgo, el peatón normalmente se desvía hacia su izquierda o avanza, y esta no es una de las dos razones principales señaladas.",
       "",
       ""
-    ]
+    ],
+    "page": 21
   },
   {
     "id": 93,
@@ -2115,7 +2207,8 @@ export const questions = [
       "",
       "",
       "Es falsa: está prohibido adelantar en un cruce ferroviario, aunque no se perciba ningún tren, por el alto riesgo que implica."
-    ]
+    ],
+    "page": 21
   },
   {
     "id": 94,
@@ -2140,7 +2233,8 @@ export const questions = [
       "Desplazarse hacia la izquierda a esa velocidad puede invadir el carril contrario o desestabilizar el vehículo.",
       "",
       ""
-    ]
+    ],
+    "page": 22
   },
   {
     "id": 95,
@@ -2162,7 +2256,8 @@ export const questions = [
       "",
       "Mantenerse a la derecha no se hace para facilitar que otros lo adelanten en una curva; adelantar en curva es peligroso.",
       "El motivo central es la mejor visual, no únicamente la posición frente a un eventual deslizamiento."
-    ]
+    ],
+    "page": 22
   },
   {
     "id": 96,
@@ -2184,7 +2279,8 @@ export const questions = [
       "El largo de un auto es claramente insuficiente a alta velocidad para frenar a tiempo.",
       "Tres metros es una distancia mínima que no permite reaccionar ante un frenado del vehículo de adelante.",
       "El largo de tres autos sigue siendo una distancia fija que no se ajusta a la velocidad; la regla correcta se mide en tiempo, no en largos."
-    ]
+    ],
+    "page": 22
   },
   {
     "id": 97,
@@ -2206,7 +2302,8 @@ export const questions = [
       "",
       "Mantenerse a la izquierda lo acerca peligrosamente al carril contrario en una curva a la izquierda.",
       "Cortar la curva por la izquierda invade el carril opuesto y es muy peligroso."
-    ]
+    ],
+    "page": 22
   },
   {
     "id": 98,
@@ -2228,7 +2325,8 @@ export const questions = [
       "Unos 15 metros son totalmente insuficientes a 90 km/h; no alcanzaría a frenar.",
       "Unos 20 metros tampoco bastan para detenerse con seguridad a esa velocidad.",
       "Unos 100 metros exceden lo requerido; la distancia mínima adecuada se aproxima a los 75 metros."
-    ]
+    ],
+    "page": 22
   },
   {
     "id": 99,
@@ -2252,7 +2350,8 @@ export const questions = [
       "El vendedor de helados, detenido para vender, no representa el riesgo más inmediato; el peligro mayor es el niño.",
       "Un auto estacionado puede partir, pero en esta escena el riesgo principal y más probable es el niño cruzando.",
       "Que el vendedor se baje de su vehículo no es el peligro más relevante frente a un niño que puede cruzar corriendo."
-    ]
+    ],
+    "page": 23
   },
   {
     "id": 100,
@@ -2274,7 +2373,8 @@ export const questions = [
       "La bocina no reemplaza la visibilidad; avanzar sin ver sigue siendo riesgoso.",
       "",
       "Tocar la bocina y avanzar rápido sin tener visual es la maniobra más peligrosa de todas."
-    ]
+    ],
+    "page": 23
   },
   {
     "id": 101,
@@ -2298,7 +2398,8 @@ export const questions = [
       "Seguir a la misma velocidad es justamente lo peligroso; encender las luces no reemplaza la necesidad de reducir la marcha y poder frenar.",
       "Hacer señas a los niños para que crucen es un error grave: usted no puede garantizar la seguridad del resto del tránsito ni controlar a otros vehículos, y nunca debe inducir a un peatón a cruzar.",
       ""
-    ]
+    ],
+    "page": 23
   },
   {
     "id": 102,
@@ -2320,7 +2421,8 @@ export const questions = [
       "Cambiar a una marcha más baja sí es recomendable, ya que permite conducir lento y con mayor control al pasar junto a los animales.",
       "Usar los señalizadores de viraje es correcto, pues advierte a los demás conductores de su maniobra de adelantamiento.",
       "Tener las luces encendidas mejora su visibilidad y es una práctica adecuada, no algo que deba evitar."
-    ]
+    ],
+    "page": 23
   },
   {
     "id": 103,
@@ -2346,7 +2448,8 @@ export const questions = [
       "",
       "Tocar la bocina, aunque sea levemente, puede espantar a las ovejas y dispersarlas hacia la calzada de forma descontrolada.",
       ""
-    ]
+    ],
+    "page": 23
   },
   {
     "id": 104,
@@ -2372,7 +2475,8 @@ export const questions = [
       "Activar las alarmas de otros automóviles no es una razón de tránsito ni un riesgo de seguridad; es un argumento sin sentido.",
       "La razón para reducir la velocidad no es ser visto por el tránsito contrario, sino poder reaccionar ante peligros que surjan desde los autos estacionados.",
       ""
-    ]
+    ],
+    "page": 25
   },
   {
     "id": 105,
@@ -2396,7 +2500,8 @@ export const questions = [
       "Ponerse en marcha antes de que el azul llegue al cruce es arriesgado, porque aún no sabe con certeza si realmente virará.",
       "",
       "Avanzar lentamente igual implica ingresar al cruce antes de confirmar la maniobra del otro vehículo, lo que sigue siendo riesgoso."
-    ]
+    ],
+    "page": 25
   },
   {
     "id": 106,
@@ -2418,7 +2523,8 @@ export const questions = [
       "",
       "Seguir intentando reiniciar el motor le hace perder segundos valiosos y arriesga su vida innecesariamente.",
       "Intentar empujar el vehículo toma demasiado tiempo y lo mantiene en la zona de impacto; debe priorizar ponerse a salvo."
-    ]
+    ],
+    "page": 25
   },
   {
     "id": 107,
@@ -2448,7 +2554,8 @@ export const questions = [
       "Buscar lugares para estacionar lo distrae de los riesgos reales y no es a lo que debe prestar atención prioritaria.",
       "",
       "Los autos que vengan detrás no constituyen el peligro principal aquí; el foco está en lo que surge desde los autos estacionados a su costado."
-    ]
+    ],
+    "page": 25
   },
   {
     "id": 108,
@@ -2472,7 +2579,8 @@ export const questions = [
       "Pasar rápidamente por detrás del peatón es imprudente y riesgoso, pues el peatón podría retroceder o cambiar de dirección.",
       "",
       "Recriminar al peatón no aporta nada a la seguridad y no es función del conductor; su deber es simplemente cederle el paso."
-    ]
+    ],
+    "page": 26
   },
   {
     "id": 109,
@@ -2496,7 +2604,8 @@ export const questions = [
       "Esperar detenido en medio del cruce obstruye la intersección y expone su vehículo a ser impactado por el tránsito transversal.",
       "Esperar la luz roja no tiene sentido y solo prolonga su permanencia en una zona peligrosa donde bloquea el paso.",
       ""
-    ]
+    ],
+    "page": 26
   },
   {
     "id": 110,
@@ -2520,7 +2629,8 @@ export const questions = [
       "El auto de adelante no es el riesgo central de esta situación específica de sobrepasar un bus detenido.",
       "Alguien que corre hacia el bus desde el otro lado es un riesgo menor comparado con el pasajero que cruza saliendo por delante del bus.",
       ""
-    ]
+    ],
+    "page": 26
   },
   {
     "id": 111,
@@ -2544,7 +2654,8 @@ export const questions = [
       "El conductor no le está autorizando a adelantar; está comunicando su propia intención de virar.",
       "",
       "No se trata de un olvido: la señal es deliberada y comunica claramente la intención de virar a la derecha."
-    ]
+    ],
+    "page": 27
   },
   {
     "id": 112,
@@ -2570,7 +2681,8 @@ export const questions = [
       "",
       "",
       "Fijarse solo en el vehículo de atrás lo deja ciego ante los peligros y frenadas que vienen desde adelante, que son los más críticos."
-    ]
+    ],
+    "page": 27
   },
   {
     "id": 113,
@@ -2594,7 +2706,8 @@ export const questions = [
       "El punto B no es donde se concentra el riesgo principal de la situación.",
       "",
       "El punto D no corresponde a la zona crítica que requiere su atención prioritaria en este instante."
-    ]
+    ],
+    "page": 27
   },
   {
     "id": 114,
@@ -2624,7 +2737,8 @@ export const questions = [
       "",
       "Los vehículos que vienen detrás no constituyen el riesgo principal aquí; el foco está en los peligros que surgen al costado y al frente.",
       "Las irregularidades de la calzada no son el riesgo central; lo crítico son el ciclista, las puertas y los niños."
-    ]
+    ],
+    "page": 28
   },
   {
     "id": 115,
@@ -2649,7 +2763,8 @@ export const questions = [
       "",
       "Frenar y ceder el paso al bus no es lo que define esta situación; el bus debe esperar a que usted pase si no es seguro que se incorpore. Lo prioritario es estar atento a los riesgos descritos.",
       "Seguir sin estar preparado para nada es una actitud imprudente: el dominio del vehículo no evita los imprevistos del entorno y debe anticiparse siempre."
-    ]
+    ],
+    "page": 28
   },
   {
     "id": 116,
@@ -2673,7 +2788,8 @@ export const questions = [
       "Reducir la velocidad y simplemente continuar no resuelve el conflicto con el vehículo que viene en contra en el espacio estrecho.",
       "Hacer señales de luces para que el otro espere genera confusión y no es la forma correcta de coordinar el paso; lo prudente es ceder usted.",
       ""
-    ]
+    ],
+    "page": 28
   },
   {
     "id": 117,
@@ -2695,7 +2811,8 @@ export const questions = [
       "",
       "Conducir con una mano para sostener el teléfono disminuye su control del vehículo y su atención; es una práctica prohibida y riesgosa.",
       "Ser cauteloso en las intersecciones no compensa la distracción de usar el celular conduciendo; igual debe detenerse para contestar."
-    ]
+    ],
+    "page": 30
   },
   {
     "id": 118,
@@ -2717,7 +2834,8 @@ export const questions = [
       "Aunque sea una emergencia, lo seguro es detenerse en un lugar adecuado; manipular el teléfono en movimiento sigue siendo riesgoso.",
       "",
       "Circular por un camino secundario no autoriza el uso del teléfono; la distracción es igual de peligrosa en cualquier vía."
-    ]
+    ],
+    "page": 30
   },
   {
     "id": 119,
@@ -2739,7 +2857,8 @@ export const questions = [
       "No debe esperar que el conductor del camión le indique cuándo adelantar; la decisión y la responsabilidad de la maniobra son suyas, según su propia visibilidad.",
       "Encender y apagar las luces para presionar a los que vienen en contra es peligroso e inapropiado; usted debe adelantar solo cuando haya espacio seguro.",
       "Seguir muy de cerca al camión reduce su visibilidad y, al desplazarse hacia el centro, se expone al tránsito contrario; es una práctica muy riesgosa."
-    ]
+    ],
+    "page": 30
   },
   {
     "id": 120,
@@ -2761,7 +2880,8 @@ export const questions = [
       "Las salidas de colegios son zonas de riesgo puntual, pero no concentran la mayoría de los accidentes de tránsito.",
       "Los caminos rurales presentan riesgos propios, pero no son el lugar donde ocurre la mayor parte de los accidentes.",
       ""
-    ]
+    ],
+    "page": 30
   },
   {
     "id": 121,
@@ -2783,7 +2903,8 @@ export const questions = [
       "Las colisiones entre vehículos son muy frecuentes, pero al estar ambos ocupantes protegidos por la carrocería no producen tantos muertos como los atropellos.",
       "",
       "Los volcamientos pueden ser muy graves, pero ocurren con menor frecuencia y no son la principal causa de muertes en el tránsito chileno."
-    ]
+    ],
+    "page": 30
   },
   {
     "id": 122,
@@ -2805,7 +2926,8 @@ export const questions = [
       "Seleccionar la primera marcha es parte del proceso mecánico de partida, pero no reemplaza la verificación visual del entorno.",
       "",
       "Señalizar es importante para avisar su intención, pero debe hacerse después de comprobar que es seguro moverse; primero se mira el entorno."
-    ]
+    ],
+    "page": 30
   },
   {
     "id": 123,
@@ -2830,7 +2952,8 @@ export const questions = [
       "La mala visibilidad puede agravar una maniobra, pero en esta secuencia el origen del peligro es una conducta indebida, no la falta de visibilidad.",
       "Que el vehículo adelantado no circule lo suficientemente a la derecha no es la causa: el problema es adelantar en zona prohibida.",
       ""
-    ]
+    ],
+    "page": 30
   },
   {
     "id": 124,
@@ -2852,7 +2975,8 @@ export const questions = [
       "",
       "La presencia de otros vehículos detrás no condiciona la obediencia a Carabineros; debe avanzar igualmente cuando él lo indica.",
       "El cambio próximo de la luz es irrelevante: lo que manda es la instrucción del funcionario, no el estado del semáforo."
-    ]
+    ],
+    "page": 32
   },
   {
     "id": 125,
@@ -2874,7 +2998,8 @@ export const questions = [
       "Saludar con la bocina es un uso indebido; la bocina no es un medio para comunicarse socialmente.",
       "",
       "Manifestar disgusto con la bocina está prohibido, ya que no corresponde a una finalidad de seguridad."
-    ]
+    ],
+    "page": 32
   },
   {
     "id": 126,
@@ -2896,7 +3021,8 @@ export const questions = [
       "Usarla para que le cedan el paso no está permitido; eso se resuelve respetando las normas de prioridad.",
       "Apurar a otro conductor con la bocina es una conducta incorrecta y agresiva, no autorizada por la ley.",
       ""
-    ]
+    ],
+    "page": 32
   },
   {
     "id": 127,
@@ -2918,7 +3044,8 @@ export const questions = [
       "",
       "Que usted crea que la luz cambiará pronto no es razón para no avanzar si tiene la salida despejada y la luz está en verde.",
       "Virar a la derecha no le impide ingresar al cruce; puede hacerlo respetando a peatones y demás vehículos."
-    ]
+    ],
+    "page": 32
   },
   {
     "id": 128,
@@ -2938,7 +3065,8 @@ export const questions = [
       "La pista izquierda solo se usa para adelantar o virar a la izquierda, no para circular normalmente.",
       "",
       "No es correcto usar cualquiera de las dos pistas: la regla obliga a mantenerse por la derecha cuando no se adelanta."
-    ]
+    ],
+    "page": 32
   },
   {
     "id": 129,
@@ -2961,7 +3089,8 @@ export const questions = [
       "",
       "Al circular normalmente debe ir por la pista derecha, no por la izquierda.",
       "Conducir a velocidad muy baja obliga aún más a mantenerse por la derecha para no entorpecer el flujo; nunca justifica usar la pista izquierda."
-    ]
+    ],
+    "page": 32
   },
   {
     "id": 130,
@@ -2983,7 +3112,8 @@ export const questions = [
       "Decir que en ningún momento es demasiado absoluto: sí se permite cuando un Carabinero lo indica expresamente.",
       "Haber quedado sobre el paso de peatones no lo habilita por sí solo a retroceder; debe esperar la indicación de la autoridad.",
       ""
-    ]
+    ],
+    "page": 32
   },
   {
     "id": 131,
@@ -3005,7 +3135,8 @@ export const questions = [
       "La velocidad no concede prioridad; al contrario, llegar más rápido no da derecho a pasar primero.",
       "",
       "Si el otro vehículo viene por su izquierda, la prioridad es suya, no de él; la prioridad la tiene quien viene por la derecha."
-    ]
+    ],
+    "page": 32
   },
   {
     "id": 132,
@@ -3027,7 +3158,8 @@ export const questions = [
       "El ancho de las pistas no influye en la prioridad en un cruce sin señalización.",
       "El que se acerca por la derecha tiene la prioridad, por lo que no es él quien cede el paso.",
       ""
-    ]
+    ],
+    "page": 32
   },
   {
     "id": 133,
@@ -3049,7 +3181,8 @@ export const questions = [
       "Poder ver hacia atrás no aporta seguridad al niño; el problema es la falta total de protección en esa zona.",
       "La edad no cambia el riesgo: ningún niño, sin importar si es menor de 10 años, debe ir en ese espacio.",
       "La ocupación de los demás asientos no justifica usar el maletero como lugar de transporte de personas."
-    ]
+    ],
+    "page": 34
   },
   {
     "id": 134,
@@ -3074,7 +3207,8 @@ export const questions = [
       "Una silla mirando hacia adelante no es adecuada para una guagua; a esa edad debe ir mirando hacia atrás para proteger cuello y cabeza.",
       "",
       ""
-    ]
+    ],
+    "page": 34
   },
   {
     "id": 135,
@@ -3096,7 +3230,8 @@ export const questions = [
       "Llevarlo en la falda de un adulto, aunque este tenga su cinturón, deja al niño sin sujeción propia y expuesto a salir despedido.",
       "El cinturón de adulto no se ajusta al cuerpo de un niño pequeño y puede lesionarlo; necesita su silla de seguridad.",
       ""
-    ]
+    ],
+    "page": 34
   },
   {
     "id": 136,
@@ -3118,7 +3253,8 @@ export const questions = [
       "El cinturón de adulto no protege a un menor de 2 años y la zona delantera, con airbag, es riesgosa para él.",
       "Aunque el asiento trasero es más seguro, el cinturón de adulto no sirve para un menor de 2 años: necesita silla mirando hacia atrás.",
       ""
-    ]
+    ],
+    "page": 34
   },
   {
     "id": 137,
@@ -3140,7 +3276,8 @@ export const questions = [
       "El bajo tránsito no elimina el riesgo de una frenada o colisión que despida al niño desde esa zona sin protección.",
       "",
       "No es cierto que siempre sea seguro; esa zona nunca ofrece protección para transportar personas."
-    ]
+    ],
+    "page": 34
   },
   {
     "id": 138,
@@ -3165,7 +3302,8 @@ export const questions = [
       "",
       "No es efectivo que siempre deba tomar la pista derecha al virar; en este caso puede mantenerse a la izquierda para encadenar el próximo viraje.",
       "Siempre es necesario señalizar la intención de virar; omitir la señalización es una falta y un peligro para los demás."
-    ]
+    ],
+    "page": 35
   },
   {
     "id": 139,
@@ -3191,7 +3329,8 @@ export const questions = [
       "",
       "En esta situación usted debe detenerse antes de virar, porque hay tránsito con prioridad o una indicación que obliga a parar para ceder el paso.",
       ""
-    ]
+    ],
+    "page": 35
   },
   {
     "id": 140,
@@ -3216,7 +3355,8 @@ export const questions = [
       "",
       "Esta indicación no exige detenerse siempre; habilita la circulación o el avance con cuidado.",
       ""
-    ]
+    ],
+    "page": 36
   },
   {
     "id": 141,
@@ -3236,7 +3376,8 @@ export const questions = [
       "Ubicarse lo más a la derecha posible corresponde al viraje hacia la derecha, no a la izquierda.",
       "Ubicarse a la izquierda de la línea de centro significa invadir la pista del sentido contrario, lo que es peligroso y está prohibido.",
       ""
-    ]
+    ],
+    "page": 36
   },
   {
     "id": 142,
@@ -3260,7 +3401,8 @@ export const questions = [
       "Tocar la bocina no resuelve el riesgo; el camión igual ocupará el espacio que necesita para doblar.",
       "Sobrepasarlo por la derecha mientras él se abre lo deja justo en la zona hacia donde girará la parte trasera del camión, exponiéndolo a un choque.",
       ""
-    ]
+    ],
+    "page": 36
   },
   {
     "id": 143,
@@ -3282,7 +3424,8 @@ export const questions = [
       "Esa posición del brazo corresponde a otra maniobra (detención o viraje a la izquierda), no al viraje a la derecha.",
       "",
       "Esa posición del brazo no representa la señal reglamentaria de viraje a la derecha."
-    ]
+    ],
+    "page": 36
   },
   {
     "id": 144,
@@ -3304,7 +3447,8 @@ export const questions = [
       "Esa señal no corresponde al viraje a la izquierda; representa otra maniobra como detención o viraje a la derecha.",
       "Esa posición del brazo indica otra maniobra distinta al viraje a la izquierda.",
       ""
-    ]
+    ],
+    "page": 38
   },
   {
     "id": 145,
@@ -3330,7 +3474,8 @@ export const questions = [
       "",
       "",
       ""
-    ]
+    ],
+    "page": 38
   },
   {
     "id": 146,
@@ -3355,7 +3500,8 @@ export const questions = [
       "Desplazarse a la berma y circular por ella está prohibido y es peligroso; la berma no es una pista de circulación.",
       "Encender las luces de advertencia de peligro no corresponde en esta situación, ya que se usan para emergencias o detenciones.",
       ""
-    ]
+    ],
+    "page": 38
   },
   {
     "id": 147,
@@ -3380,7 +3526,8 @@ export const questions = [
       "",
       "Encender el intermitente izquierdo no es señal válida para advertir tráfico en contra y puede confundir al otro conductor.",
       "Acercarse a la línea de centro para impedir el adelantamiento es maniobra peligrosa y prohibida que obstaculiza al otro vehículo."
-    ]
+    ],
+    "page": 38
   },
   {
     "id": 148,
@@ -3404,7 +3551,8 @@ export const questions = [
       "El vehículo que viene en sentido contrario no tiene obligación de correrse a la berma; usted no puede contar con esa maniobra.",
       "El camión no está obligado a reducir la velocidad para que usted lo adelante; la responsabilidad de la maniobra es suya.",
       ""
-    ]
+    ],
+    "page": 39
   },
   {
     "id": 149,
@@ -3428,7 +3576,8 @@ export const questions = [
       "El auto que usted adelanta no está obligado a reducir su velocidad, por lo que no puede basar su maniobra en esa suposición.",
       "Acelerar lo más rápido posible solo para no estorbar al de atrás es imprudente y puede provocar un accidente.",
       "Contar con que la calzada alcanza para tres vehículos si el de enfrente se corre es una suposición temeraria y prohibida."
-    ]
+    ],
+    "page": 39
   },
   {
     "id": 150,
@@ -3450,7 +3599,8 @@ export const questions = [
       "Nunca se debe adelantar en curvas, por lo que esa no es la razón para mantener distancia.",
       "Mantener distancia no se debe a que el vehículo retroceda, sino a la necesidad de tener buena visibilidad.",
       "El motivo principal es la visibilidad de la vía, no ver las señales del conductor del camión."
-    ]
+    ],
+    "page": 39
   },
   {
     "id": 151,
@@ -3472,7 +3622,8 @@ export const questions = [
       "",
       "El riesgo no se debe a los frenos del camión, sino al mayor tramo que se debe recorrer por su largo.",
       "La lentitud en las pendientes no es la razón del mayor riesgo al adelantar; lo es su longitud."
-    ]
+    ],
+    "page": 39
   },
   {
     "id": 152,
@@ -3494,7 +3645,8 @@ export const questions = [
       "",
       "Conducir pegado al vehículo le quita visibilidad hacia adelante y es muy peligroso.",
       "No debe esperar que el conductor del camión le avise; la decisión y responsabilidad de adelantar son suyas."
-    ]
+    ],
+    "page": 39
   },
   {
     "id": 153,
@@ -3516,7 +3668,8 @@ export const questions = [
       "90 km/h no corresponde al límite de carretera bidireccional en buen estado en esas condiciones.",
       "",
       "120 km/h es propio de autopistas, no de una carretera rural bidireccional."
-    ]
+    ],
+    "page": 41
   },
   {
     "id": 154,
@@ -3538,7 +3691,8 @@ export const questions = [
       "",
       "60 km/h no es el límite urbano general establecido por la ley.",
       "80 km/h excede ampliamente el límite urbano general de 50 km/h."
-    ]
+    ],
+    "page": 41
   },
   {
     "id": 155,
@@ -3560,7 +3714,8 @@ export const questions = [
       "Acelerar para luego frenar dentro de la curva desestabiliza el vehículo y es peligroso.",
       "Se debe reducir la velocidad siempre antes de una curva cerrada, no solo con la calzada mojada.",
       ""
-    ]
+    ],
+    "page": 41
   },
   {
     "id": 156,
@@ -3585,7 +3740,8 @@ export const questions = [
       "",
       "En esta situación el vehículo está correctamente estacionado, en un lugar permitido y sin obstruir.",
       "En esta situación el vehículo está correctamente estacionado, respetando las normas."
-    ]
+    ],
+    "page": 41
   },
   {
     "id": 157,
@@ -3610,7 +3766,8 @@ export const questions = [
       "",
       "En esta situación la detención no se realiza correctamente, ya sea por ubicarse en zona prohibida o entorpecer la circulación.",
       ""
-    ]
+    ],
+    "page": 41
   },
   {
     "id": 158,
@@ -3633,7 +3790,8 @@ export const questions = [
       "",
       "",
       "Sí está permitido estacionar en la berma en caso de emergencia, dejando todo el vehículo sobre ella."
-    ]
+    ],
+    "page": 43
   },
   {
     "id": 159,
@@ -3657,7 +3815,8 @@ export const questions = [
       "",
       "",
       "Un espacio delimitado para estacionar es precisamente el lugar habilitado para ello, por lo que no causa obstrucción."
-    ]
+    ],
+    "page": 43
   },
   {
     "id": 160,
@@ -3679,7 +3838,8 @@ export const questions = [
       "La ausencia de peatones esperando no autoriza a detenerse sobre el cruce cebra.",
       "La noche no es una circunstancia que permita detenerse sobre un paso de peatones.",
       ""
-    ]
+    ],
+    "page": 43
   },
   {
     "id": 161,
@@ -3708,7 +3868,8 @@ export const questions = [
       "",
       "Una vía levemente inclinada no es por sí sola un lugar prohibido; basta con tomar precauciones como dejar las ruedas viradas y aplicar el freno de mano.",
       ""
-    ]
+    ],
+    "page": 43
   },
   {
     "id": 162,
@@ -3730,7 +3891,8 @@ export const questions = [
       "No se puede detener al costado de un bandejón central porque eso obliga a los pasajeros a subir desde la calzada, lo que es peligroso y está prohibido.",
       "",
       "La distancia mínima a la esquina es de 10 metros, no de 5; un cruce semaforizado no reduce esta exigencia."
-    ]
+    ],
+    "page": 43
   },
   {
     "id": 163,
@@ -3752,7 +3914,8 @@ export const questions = [
       "No importa cuán breve sea el tiempo; dejar el motor encendido sin el conductor está prohibido en todo caso.",
       "Tener la batería descargada no justifica dejar el motor funcionando con el vehículo estacionado y sin conductor.",
       "Que quede una persona dentro no autoriza a dejar el vehículo estacionado con el motor en marcha."
-    ]
+    ],
+    "page": 43
   },
   {
     "id": 164,
@@ -3774,7 +3937,8 @@ export const questions = [
       "Sí se puede estacionar aunque no haya señales; la regla general lo permite al costado derecho.",
       "",
       "El lado izquierdo no es el permitido por la regla general, sino el derecho según el sentido del tránsito."
-    ]
+    ],
+    "page": 43
   },
   {
     "id": 165,
@@ -3800,7 +3964,8 @@ export const questions = [
       "",
       "Si en el cruce cebra no hay peatones cruzando ni esperando, no está obligado a detenerse, solo a circular con precaución.",
       ""
-    ]
+    ],
+    "page": 43
   },
   {
     "id": 166,
@@ -3824,7 +3989,8 @@ export const questions = [
       "",
       "12 metros excede el mínimo legal; lo más cerca permitido son 10 metros.",
       "15 metros excede el mínimo legal; lo más cerca permitido son 10 metros."
-    ]
+    ],
+    "page": 45
   },
   {
     "id": 167,
@@ -3851,7 +4017,8 @@ export const questions = [
       "",
       "Estacionar al costado derecho de una vía urbana es lo correcto y permitido como regla general.",
       ""
-    ]
+    ],
+    "page": 45
   },
   {
     "id": 168,
@@ -3873,7 +4040,8 @@ export const questions = [
       "La demarcación del centro de la calzada no condiciona el uso de las luces; estas deben encenderse siempre.",
       "Que el camino sea de tierra no cambia la obligación; las luces deben encenderse siempre.",
       ""
-    ]
+    ],
+    "page": 45
   },
   {
     "id": 169,
@@ -3897,7 +4065,8 @@ export const questions = [
       "Tocar la bocina no resuelve la situación ni respeta la preferencia del peatón; debe detenerse.",
       "Pasar lo más rápido posible es peligroso e ilegal; debe ceder el paso al peatón.",
       ""
-    ]
+    ],
+    "page": 45
   },
   {
     "id": 170,
@@ -3921,7 +4090,8 @@ export const questions = [
       "",
       "Desplazarse a la pista izquierda puede llevarlo directo hacia el camión que vira hacia ese lado, aumentando el riesgo.",
       "Disminuir levemente la velocidad no es suficiente para evitar el choque con un obstáculo tan cercano."
-    ]
+    ],
+    "page": 46
   },
   {
     "id": 171,
@@ -3943,7 +4113,8 @@ export const questions = [
       "Señalizar no otorga preferencia ni exime de responsabilidad; el conductor siempre responde por sus maniobras.",
       "",
       "No existe tal excepción; señalizar nunca otorga un derecho sobre los demás usuarios de la vía."
-    ]
+    ],
+    "page": 46
   },
   {
     "id": 172,
@@ -3965,7 +4136,8 @@ export const questions = [
       "La preferencia del peatón en el cruce cebra es para todos, no solo para ancianos o niños.",
       "Usar las luces para indicar el paso genera confusión; lo correcto es detenerse y ceder el paso con claridad.",
       "Tocar la bocina intimida al peatón y no corresponde; debe disminuir la velocidad y detenerse."
-    ]
+    ],
+    "page": 46
   },
   {
     "id": 173,
@@ -3987,7 +4159,8 @@ export const questions = [
       "",
       "Hacer indicaciones con la mano para que otros adelanten puede inducir maniobras inseguras; cada conductor decide cuándo adelantar.",
       "Indicar con el intermitente que otros pueden adelantar genera confusión y no es la maniobra correcta."
-    ]
+    ],
+    "page": 46
   },
   {
     "id": 174,
@@ -4009,7 +4182,8 @@ export const questions = [
       "La distancia de frenado por sí sola no considera el tiempo de reacción del conductor; la regla práctica es la de los tres segundos.",
       "",
       "Un segundo no entrega margen suficiente para reaccionar y frenar de manera segura."
-    ]
+    ],
+    "page": 46
   },
   {
     "id": 175,
@@ -4031,7 +4205,8 @@ export const questions = [
       "Disminuir la velocidad para que lo adelante puede provocar una maniobra peligrosa; lo prudente es mantener su marcha segura.",
       "",
       "Acercarse al centro de la calzada es peligroso y no soluciona la situación."
-    ]
+    ],
+    "page": 46
   },
   {
     "id": 176,
@@ -4055,7 +4230,8 @@ export const questions = [
       "Tocar la bocina y continuar no respeta la reincorporación del bus al tránsito.",
       "Disminuir la velocidad y tocar la bocina no corresponde; lo apropiado es ceder el paso, no bocinear.",
       ""
-    ]
+    ],
+    "page": 47
   },
   {
     "id": 177,
@@ -4077,7 +4253,8 @@ export const questions = [
       "Hacerle señas para que adelante puede inducir una maniobra insegura; basta con mantener o reducir la velocidad y permitir el paso.",
       "Acelerar para alejarse impide el adelantamiento y crea una situación riesgosa.",
       ""
-    ]
+    ],
+    "page": 47
   },
   {
     "id": 178,
@@ -4099,7 +4276,8 @@ export const questions = [
       "",
       "Encender y apagar las luces y seguir muy de cerca es peligroso e intimidatorio; debe aumentar la distancia.",
       "Acelerar para pasarlo de inmediato es una maniobra imprudente que puede provocar un accidente."
-    ]
+    ],
+    "page": 47
   },
   {
     "id": 179,
@@ -4121,7 +4299,8 @@ export const questions = [
       "Frenar para mostrar las luces de freno es una conducta provocadora y peligrosa.",
       "",
       "Aumentar la velocidad para impedir el adelantamiento es agresivo y aumenta el riesgo de accidente."
-    ]
+    ],
+    "page": 47
   },
   {
     "id": 180,
@@ -4143,7 +4322,8 @@ export const questions = [
       "Con lluvia fuerte el pavimento pierde adherencia, por lo que tres segundos no bastan y debe aumentar la distancia.",
       "Si recién dejó de llover el pavimento sigue mojado y resbaladizo, por lo que necesita más de tres segundos.",
       "Con neblina la visibilidad se reduce, por lo que tres segundos resultan insuficientes y debe aumentar la distancia."
-    ]
+    ],
+    "page": 47
   },
   {
     "id": 181,
@@ -4165,7 +4345,8 @@ export const questions = [
       "El comportamiento del otro conductor no lo autoriza a usted a obstaculizar; tomarse la justicia por su mano genera más riesgo.",
       "Que el otro infrinja la ley no lo faculta a usted para impedir su maniobra; fiscalizar es tarea de Carabineros, no suya.",
       ""
-    ]
+    ],
+    "page": 47
   },
   {
     "id": 182,
@@ -4187,7 +4368,8 @@ export const questions = [
       "El cambio de luces del semáforo es previsible y no es la causa más frecuente; lo determinante es la falta de distancia para reaccionar.",
       "Los peatones que cruzan se asocian a atropellos, no a las colisiones traseras entre vehículos.",
       "Detenerse en los cruces es una conducta correcta y obligatoria; no es la causa de las colisiones por alcance."
-    ]
+    ],
+    "page": 48
   },
   {
     "id": 183,
@@ -4209,7 +4391,8 @@ export const questions = [
       "Que Carabineros use motocicletas no tiene relación con la precaución que se debe tener al incorporarse a la vía.",
       "",
       "La preferencia de paso la define la situación de la vía, no el tipo de vehículo; el motivo del cuidado es que son difíciles de ver."
-    ]
+    ],
+    "page": 49
   },
   {
     "id": 184,
@@ -4231,7 +4414,8 @@ export const questions = [
       "Entre 36 y 45 años los conductores ya tienen experiencia consolidada, por lo que su riesgo es menor que el de los jóvenes.",
       "El grupo de 46 a 55 años suele conducir con prudencia y experiencia, no es el de mayor riesgo.",
       "Aunque los mayores de 55 pueden tener algunas limitaciones, estadísticamente no son el grupo con más accidentes; lo son los menores de 25."
-    ]
+    ],
+    "page": 49
   },
   {
     "id": 185,
@@ -4253,7 +4437,8 @@ export const questions = [
       "Que ellas suban un cerro no es lo que más reduce su visibilidad en un camino angosto.",
       "En una curva a la izquierda la trayectoria tiende a abrir el campo visual hacia adelante, dificultando menos la visión.",
       ""
-    ]
+    ],
+    "page": 49
   },
   {
     "id": 186,
@@ -4277,7 +4462,8 @@ export const questions = [
       "",
       "Denunciar no corresponde, ya que probablemente el conductor está realizando una maniobra normal de giro amplio.",
       "Pasarlo por la derecha es muy peligroso, pues es justo hacia donde el camión podría completar su giro y atraparlo."
-    ]
+    ],
+    "page": 49
   },
   {
     "id": 187,
@@ -4299,7 +4485,8 @@ export const questions = [
       "Señalizar en ese instante confunde al conductor de atrás que ya está adelantando y aumenta el riesgo.",
       "Frenar levemente es una maniobra brusca e innecesaria que puede sorprender al de atrás y provocar un accidente.",
       ""
-    ]
+    ],
+    "page": 49
   },
   {
     "id": 188,
@@ -4321,7 +4508,8 @@ export const questions = [
       "",
       "Tocar la bocina por enojo es un mal uso de ella y aumenta la tensión innecesariamente.",
       "Adelantarlo apurado para dejarlo atrás es una reacción impulsiva y riesgosa, no una conducción segura."
-    ]
+    ],
+    "page": 49
   },
   {
     "id": 189,
@@ -4343,7 +4531,8 @@ export const questions = [
       "",
       "Proseguir la marcha es peligroso, pues los peatones podrían iniciar el cruce y usted ya se comprometió a cederles el paso.",
       "Hacerles señas para apurarlos genera confusión y puede inducirlos a cruzar sin que la situación sea segura."
-    ]
+    ],
+    "page": 50
   },
   {
     "id": 190,
@@ -4365,7 +4554,8 @@ export const questions = [
       "Subir una pendiente no es la situación de mayor riesgo asociada al viento fuerte.",
       "Virar hacia un camino angosto no es lo que el viento vuelve especialmente peligroso.",
       ""
-    ]
+    ],
+    "page": 50
   },
   {
     "id": 191,
@@ -4389,7 +4579,8 @@ export const questions = [
       "Tocar la bocina los asusta innecesariamente; ellos ya tienen la preferencia y usted solo debe esperar.",
       "",
       "Encender las luces de advertencia no resuelve la situación; lo que corresponde es detenerse y esperar que crucen."
-    ]
+    ],
+    "page": 50
   },
   {
     "id": 192,
@@ -4413,7 +4604,8 @@ export const questions = [
       "El peatón que ya está cruzando tiene la preferencia; usted no tiene derecho preferente sobre él.",
       "Hacerles señas para que retrocedan los confunde y los expone; lo correcto es dejarlos completar el cruce.",
       "Tocar la bocina los asusta y presiona innecesariamente, en lugar de cederles el paso con calma."
-    ]
+    ],
+    "page": 50
   },
   {
     "id": 193,
@@ -4435,7 +4627,8 @@ export const questions = [
       "",
       "Las proximidades de un área de servicio no concentran los accidentes con motociclistas como sí lo hacen los cruces.",
       "Al ingresar a un estacionamiento la velocidad es baja; el verdadero punto crítico son los cruces de calles."
-    ]
+    ],
+    "page": 50
   },
   {
     "id": 194,
@@ -4457,7 +4650,8 @@ export const questions = [
       "Aunque el bus puede partir, el riesgo más grave y frecuente es la aparición de peatones ocultos tras él.",
       "",
       "Que el bus permanezca detenido no constituye un peligro; el riesgo es lo que el bus oculta a su vista."
-    ]
+    ],
+    "page": 51
   },
   {
     "id": 195,
@@ -4479,7 +4673,8 @@ export const questions = [
       "Rodear al ciclista en el cruce es una maniobra peligrosa que invade su trayectoria.",
       "",
       "Situarse a su lado y desistir de virar no corresponde a la maniobra correcta y genera confusión; lo seguro es mantenerse detrás."
-    ]
+    ],
+    "page": 52
   },
   {
     "id": 196,
@@ -4501,7 +4696,8 @@ export const questions = [
       "Acelerar alrededor de ellos asusta a los caballos y es muy peligroso.",
       "Señalizar a la izquierda no es lo primero que corresponde; antes debe disminuir la velocidad y evaluar.",
       ""
-    ]
+    ],
+    "page": 52
   },
   {
     "id": 197,
@@ -4523,7 +4719,8 @@ export const questions = [
       "Pasar cerca y rápido es justamente lo contrario de lo correcto: asusta al caballo y pone en peligro al jinete.",
       "La velocidad sí importa: ir lento es tan necesario como dejar espacio, porque un motor acelerado puede espantar al animal.",
       "Tocar la bocina puede asustar al caballo y provocar una reacción peligrosa del animal."
-    ]
+    ],
+    "page": 52
   },
   {
     "id": 198,
@@ -4545,7 +4742,8 @@ export const questions = [
       "",
       "Es falso que sobreviva con seguridad: a 65 km/h el riesgo de muerte es altísimo.",
       "A esa velocidad la probabilidad de sobrevivir es baja, no alta; lo más probable es la muerte."
-    ]
+    ],
+    "page": 52
   },
   {
     "id": 199,
@@ -4567,7 +4765,8 @@ export const questions = [
       "Pasar cerca y rápido puede desestabilizar al motociclista por el aire desplazado y provocar su caída.",
       "",
       "Tocar la bocina puede sobresaltar al motociclista; lo importante es darle espacio, no advertirle con ruido."
-    ]
+    ],
+    "page": 52
   },
   {
     "id": 200,
@@ -4589,7 +4788,8 @@ export const questions = [
       "",
       "Encender y apagar las luces para presionarlo y adelantarlo es una conducta agresiva e insegura.",
       "Mantenerse muy cerca tras él reduce su margen de reacción y aumenta el riesgo de colisión; debe guardar distancia."
-    ]
+    ],
+    "page": 52
   },
   {
     "id": 201,
@@ -4611,7 +4811,8 @@ export const questions = [
       "Detener el motor es correcto y recomendable al estacionar; no es lo que se debe evitar.",
       "",
       "Estacionar al costado derecho de la calzada es justamente lo correcto en una vía de doble sentido."
-    ]
+    ],
+    "page": 52
   },
   {
     "id": 202,
@@ -4633,7 +4834,8 @@ export const questions = [
       "Al doblar usted a la izquierda no cruza la línea por donde avanza el ciclista que va a su derecha, por lo que no es la situación de mayor riesgo.",
       "Recién pasada una intersección, si la vía está despejada, el adelantamiento puede hacerse con la debida distancia; no es la prohibición clave.",
       "El tipo de superficie (tierra) no es lo que define el peligro; el riesgo crítico está en cruzar la trayectoria del ciclista al doblar."
-    ]
+    ],
+    "page": 52
   },
   {
     "id": 203,
@@ -4655,7 +4857,8 @@ export const questions = [
       "Que el ciclista se baje de la bicicleta es poco frecuente y no justifica el amplio margen lateral.",
       "El viraje a la izquierda es una maniobra anunciada con el brazo; lo crítico es el desvío imprevisto e involuntario.",
       ""
-    ]
+    ],
+    "page": 52
   },
   {
     "id": 204,
@@ -4677,7 +4880,8 @@ export const questions = [
       "El riesgo con viento no es una detención repentina, sino la pérdida de estabilidad lateral.",
       "",
       "El viento fuerte tiende a frenar y desestabilizar a la moto, no a hacerla ir más rápido."
-    ]
+    ],
+    "page": 54
   },
   {
     "id": 205,
@@ -4701,7 +4905,8 @@ export const questions = [
       "El cruce de peatones tiene su propia señal (paso peatonal), distinta a la que advierte presencia de escolares.",
       "La presencia de niños jugando corresponde a otra señalización; esta apunta específicamente al entorno escolar.",
       "La proximidad de un parque o plaza no es lo que advierte esta señal."
-    ]
+    ],
+    "page": 54
   },
   {
     "id": 206,
@@ -4726,7 +4931,8 @@ export const questions = [
       "Tocar la bocina dos veces no es el procedimiento para adelantar de noche.",
       "",
       "Cambiar repetidamente de altas a bajas distrae y encandila; no es la forma correcta de iniciar el adelantamiento."
-    ]
+    ],
+    "page": 54
   },
   {
     "id": 207,
@@ -4748,7 +4954,8 @@ export const questions = [
       "Un segundo es insuficiente incluso con pavimento seco; con calzada mojada es claramente peligroso.",
       "Dos segundos es la referencia para condiciones secas; con lluvia ese margen se queda corto.",
       "Tres segundos como máximo es inadecuado; con la calzada mojada la distancia debe ser mayor, no menor."
-    ]
+    ],
+    "page": 54
   },
   {
     "id": 208,
@@ -4770,7 +4977,8 @@ export const questions = [
       "Cerrar los ojos mientras se conduce es extremadamente peligroso; quedaría sin control del vehículo.",
       "Hacer parpadear sus luces no resuelve su encandilamiento y puede encandilar al otro conductor.",
       "La visera protege del sol, no de las luces de otro vehículo de noche; no soluciona el problema."
-    ]
+    ],
+    "page": 54
   },
   {
     "id": 209,
@@ -4794,7 +5002,8 @@ export const questions = [
       "",
       "",
       ""
-    ]
+    ],
+    "page": 54
   },
   {
     "id": 210,
@@ -4817,7 +5026,8 @@ export const questions = [
       "",
       "Es falso: al cruzarse con un ciclista también debe poner luces bajas, pues las altas lo encandilan y lo hacen perder el equilibrio.",
       "El ancho del camino no exime de bajar las luces; siempre que se cruza con otro vehículo deben usarse luces bajas."
-    ]
+    ],
+    "page": 54
   },
   {
     "id": 211,
@@ -4839,7 +5049,8 @@ export const questions = [
       "",
       "Es falso: justo al comenzar a llover el riesgo es mayor, porque el agua se mezcla con el aceite y la suciedad de la calzada haciéndola más resbaladiza.",
       "Es falso: los frenos en buen estado no impiden el patinaje; este depende de la adherencia entre neumático y calzada."
-    ]
+    ],
+    "page": 56
   },
   {
     "id": 212,
@@ -4862,7 +5073,8 @@ export const questions = [
       "",
       "",
       "Las fallas de dirección son poco frecuentes y no constituyen la causa habitual de resbalones por agua en la calzada."
-    ]
+    ],
+    "page": 56
   },
   {
     "id": 213,
@@ -4884,7 +5096,8 @@ export const questions = [
       "Poner luces altas empeora la situación, encandilando al otro conductor y aumentando el riesgo para ambos.",
       "Taparse los ojos con la mano le hace perder el control del vehículo y agrava el peligro.",
       ""
-    ]
+    ],
+    "page": 56
   },
   {
     "id": 214,
@@ -4906,7 +5119,8 @@ export const questions = [
       "Acelerar mientras está encandilado es muy peligroso, pues avanza más rápido sin ver el camino.",
       "Hacer parpadear sus luces no mejora su visión y puede encandilar al otro conductor.",
       ""
-    ]
+    ],
+    "page": 56
   },
   {
     "id": 215,
@@ -4928,7 +5142,8 @@ export const questions = [
       "Tirar del freno de mano bloquea las ruedas traseras y agrava el derrape, pudiendo provocar un trompo.",
       "Apretar más fuerte el freno mantiene las ruedas bloqueadas y prolonga el patinaje sin control.",
       "Pisar el embrague no es lo primero; antes debe liberar el freno para recuperar adherencia y control."
-    ]
+    ],
+    "page": 56
   },
   {
     "id": 216,
@@ -4950,7 +5165,8 @@ export const questions = [
       "Poner el freno de mano si las ruedas patinan bloquea las ruedas traseras y agrava el derrape.",
       "",
       "Conducir en neutro le hace perder el frenado de motor y el control del vehículo, lo que es peligroso sobre hielo."
-    ]
+    ],
+    "page": 56
   },
   {
     "id": 217,
@@ -4972,7 +5188,8 @@ export const questions = [
       "Cinco veces sigue siendo una estimación insuficiente para una superficie helada.",
       "Siete veces queda corto frente al efecto real del hielo sobre la adherencia.",
       ""
-    ]
+    ],
+    "page": 56
   },
   {
     "id": 218,
@@ -4994,7 +5211,8 @@ export const questions = [
       "Las luces de estacionamiento son muy tenues e insuficientes para ser visto con neblina mientras circula.",
       "Las luces altas se reflejan en las gotas de la neblina y crean un encandilamiento que reduce aún más la visibilidad.",
       "Las luces de advertencia de peligro (intermitentes) son para detenciones de emergencia, no para circular con neblina."
-    ]
+    ],
+    "page": 56
   },
   {
     "id": 219,
@@ -5016,7 +5234,8 @@ export const questions = [
       "Es lo contrario: si hubiera más adherencia, la dirección se sentiría más firme, no más liviana.",
       "La sensación liviana no se debe a la presión de los neumáticos, sino a la falta de adherencia sobre el hielo.",
       "El que los neumáticos estén duros no explica la dirección liviana sobre hielo; la causa es la baja adherencia."
-    ]
+    ],
+    "page": 56
   },
   {
     "id": 220,
@@ -5038,7 +5257,8 @@ export const questions = [
       "La noche disminuye la visibilidad, pero el agarre del neumático se mantiene; no es lo que más alarga la distancia de detención.",
       "",
       "El viento fuerte afecta la estabilidad del vehículo, pero no aumenta significativamente la distancia de detención."
-    ]
+    ],
+    "page": 58
   },
   {
     "id": 221,
@@ -5060,7 +5280,8 @@ export const questions = [
       "Los neumáticos no son lo prioritario tras una inundación; el riesgo inmediato es que los frenos mojados no respondan.",
       "Detenerse por completo no es la mejor forma de secar los frenos: estos se secan aplicándolos suavemente mientras el vehículo está en movimiento, no estando detenido.",
       "El limpiaparabrisas mejora la visión del vidrio, pero no resuelve el problema real que es la pérdida momentánea de frenado."
-    ]
+    ],
+    "page": 58
   },
   {
     "id": 222,
@@ -5082,7 +5303,8 @@ export const questions = [
       "",
       "Frenar repetidamente sobre hielo tiende a bloquear las ruedas y a perder adherencia; lo recomendable es frenar lo menos posible y muy suave.",
       "Una marcha baja entrega más fuerza a las ruedas y facilita que patinen sobre hielo; por eso conviene la marcha más alta posible."
-    ]
+    ],
+    "page": 58
   },
   {
     "id": 223,
@@ -5104,7 +5326,8 @@ export const questions = [
       "Frenar durante el aquaplaning, aunque sea levemente, puede bloquear las ruedas y provocar un derrape, ya que no hay adherencia.",
       "Buscar la parte más seca implica girar el volante, maniobra peligrosa mientras las ruedas no tienen agarre y pueden derrapar.",
       ""
-    ]
+    ],
+    "page": 58
   },
   {
     "id": 224,
@@ -5126,7 +5349,8 @@ export const questions = [
       "El motivo no es proteger el motor de revolucionarse, sino mantener la adherencia de las ruedas evitando que patinen.",
       "",
       "El objetivo no es reservar una marcha baja, sino prevenir directamente el patinaje conduciendo en marcha alta."
-    ]
+    ],
+    "page": 58
   },
   {
     "id": 225,
@@ -5148,7 +5372,8 @@ export const questions = [
       "Los frenos mojados pueden perder eficacia momentáneamente, pero no quedan fríos; la causa principal del mayor frenado es la falta de adherencia de los neumáticos.",
       "",
       "El agua en el parabrisas afecta la visibilidad, pero no es la razón física por la que el vehículo tarda más en detenerse."
-    ]
+    ],
+    "page": 58
   },
   {
     "id": 226,
@@ -5170,7 +5395,8 @@ export const questions = [
       "",
       "Mantenerse cerca del vehículo de adelante reduce el tiempo de reacción y aumenta el riesgo de colisión por alcance en condiciones de baja visibilidad.",
       "Las luces de advertencia de peligro se usan en emergencias o detenciones, no mientras circulas normalmente; podrían confundir a otros conductores."
-    ]
+    ],
+    "page": 58
   },
   {
     "id": 227,
@@ -5192,7 +5418,8 @@ export const questions = [
       "Intentar adelantar en pavimento mojado y con tráfico es arriesgado e innecesario; la prioridad es recuperar la distancia de seguridad.",
       "",
       "Mantener la velocidad esperando que se aleje te deja sin la distancia de seguridad necesaria, lo que es peligroso en calzada mojada."
-    ]
+    ],
+    "page": 58
   },
   {
     "id": 228,
@@ -5214,7 +5441,8 @@ export const questions = [
       "Conducir en primera aplica demasiada fuerza a las ruedas y las hace patinar con facilidad en la nieve.",
       "Mantener el motor acelerado con el embrague presionado descontrola la tracción y no entrega un manejo seguro sobre nieve.",
       ""
-    ]
+    ],
+    "page": 58
   },
   {
     "id": 229,
@@ -5236,7 +5464,8 @@ export const questions = [
       "Aunque haya vehículos cerca delante, debes seguir con las luces encendidas (las bajas) para ser visto; nunca apagar los focos.",
       "La velocidad no exime de llevar los focos encendidos de noche; siempre debes mantener iluminación al circular en la oscuridad.",
       "Aunque la carretera esté iluminada, igual debes llevar tus focos encendidos de noche para ser visto por los demás conductores."
-    ]
+    ],
+    "page": 60
   },
   {
     "id": 230,
@@ -5258,7 +5487,8 @@ export const questions = [
       "",
       "Conducir en primera entrega demasiada fuerza a las ruedas y puede hacerlas patinar al tomar la curva con hielo.",
       "Frenar mientras tomas la curva sobre hielo es muy peligroso, porque bloquea las ruedas y provoca pérdida de control."
-    ]
+    ],
+    "page": 60
   },
   {
     "id": 231,
@@ -5280,7 +5510,8 @@ export const questions = [
       "Detenerte de inmediato al costado en plena neblina es peligroso y puede provocar que el de atrás te impacte por la baja visibilidad.",
       "Acelerar para alejarte aumenta tu velocidad en condiciones de poca visibilidad, lo que es muy riesgoso y puede causar un accidente.",
       ""
-    ]
+    ],
+    "page": 60
   },
   {
     "id": 232,
@@ -5302,7 +5533,8 @@ export const questions = [
       "Las luces altas encandilarían por el retrovisor al vehículo que va adelante, por lo que no deben usarse cuando hay otros cerca.",
       "",
       "Las luces de estacionamiento son insuficientes para circular de noche y no iluminan adecuadamente la vía."
-    ]
+    ],
+    "page": 60
   },
   {
     "id": 233,
@@ -5324,7 +5556,8 @@ export const questions = [
       "Aunque las neblineras de otros pueden molestar, la razón principal para reducir velocidad es que tú ves menos hacia adelante.",
       "",
       "La temperatura del motor no tiene relación con la necesidad de bajar la velocidad en neblina."
-    ]
+    ],
+    "page": 60
   },
   {
     "id": 234,
@@ -5346,7 +5579,8 @@ export const questions = [
       "Intentar reparar el vehículo en medio de la autopista es muy riesgoso; lo primero es advertir a los demás de tu presencia.",
       "",
       "El triángulo reflectante es una medida importante, pero se instala después de encender las luces de emergencia, que es lo primero e inmediato."
-    ]
+    ],
+    "page": 60
   },
   {
     "id": 235,
@@ -5370,7 +5604,8 @@ export const questions = [
       "No es necesario encender las luces de emergencia; basta con señalizar y cambiarte de pista cuando sea seguro, sin alarmar a los demás.",
       "Continuar hasta la obstrucción y recién ahí cambiarse obliga a una maniobra de último minuto y a frenar bruscamente, lo que es muy riesgoso.",
       ""
-    ]
+    ],
+    "page": 60
   },
   {
     "id": 236,
@@ -5394,7 +5629,8 @@ export const questions = [
       "No corresponde exigir con señas que te den la pasada; la obligación es tuya de ceder el paso al tránsito contrario.",
       "",
       "Acelerar para pasar primero es peligroso e infringe la norma, ya que debes cederle el paso a quien viene en sentido contrario."
-    ]
+    ],
+    "page": 62
   },
   {
     "id": 237,
@@ -5416,7 +5652,8 @@ export const questions = [
       "Aumentar la velocidad intensifica el zigzagueo y aumenta el riesgo de perder el control del remolque.",
       "Soltar el volante deja el vehículo sin dirección; el problema no se corrige solo y puede terminar en un accidente.",
       ""
-    ]
+    ],
+    "page": 62
   },
   {
     "id": 238,
@@ -5438,7 +5675,8 @@ export const questions = [
       "Que sea liviana es deseable, pero la exigencia para el conductor es asegurar firmemente la carga, sin importar tanto su peso.",
       "Cubrir con plástico puede protegerla del clima, pero no es la obligación principal; lo esencial es que esté bien sujeta para que no se caiga.",
       ""
-    ]
+    ],
+    "page": 62
   },
   {
     "id": 239,
@@ -5460,7 +5698,8 @@ export const questions = [
       "Acelerar aumenta la inestabilidad y hace que el zigzagueo de la casa rodante sea más violento.",
       "",
       "Detenerse lo más rápido posible implica frenar bruscamente, lo que puede provocar que la casa rodante se cruce o derrape."
-    ]
+    ],
+    "page": 62
   },
   {
     "id": 240,
@@ -5482,7 +5721,8 @@ export const questions = [
       "Cargar todo el peso adelante sobrecarga el enganche y desequilibra el conjunto; lo correcto es repartirlo de forma pareja.",
       "",
       "Concentrar el peso a un costado desbalancea lateralmente el remolque y lo vuelve inestable y propenso a derrapar."
-    ]
+    ],
+    "page": 62
   },
   {
     "id": 241,
@@ -5504,7 +5744,8 @@ export const questions = [
       "Las luces de advertencia solo señalan una emergencia o vehículo detenido; no reducen el riesgo de que el de atrás lo alcance ni resuelven la situación.",
       "Frenar es justamente lo más peligroso: el vehículo que lo sigue de cerca no alcanzaría a detenerse y chocaría por detrás.",
       ""
-    ]
+    ],
+    "page": 62
   },
   {
     "id": 242,
@@ -5528,7 +5769,8 @@ export const questions = [
       "Esta asociación de números no coincide con las señales mostradas en la imagen.",
       "Esta asociación de números no coincide con las señales mostradas en la imagen.",
       "Esta asociación de números no coincide con las señales mostradas en la imagen."
-    ]
+    ],
+    "page": 63
   },
   {
     "id": 243,
@@ -5548,7 +5790,8 @@ export const questions = [
       "Si fuera por la pista del medio tendría tachas blancas a ambos lados, no rojas a la izquierda.",
       "",
       "Por la pista de la derecha tendría a su derecha el borde de la calzada (tachas amarillas o la berma), no tachas rojas a la izquierda."
-    ]
+    ],
+    "page": 63
   },
   {
     "id": 244,
@@ -5572,7 +5815,8 @@ export const questions = [
       "La restricción de velocidad máxima rige todos los días, también en días no hábiles o con poco tránsito.",
       "",
       "La señal fija un máximo permitido, no obliga a ir por debajo de él; usted puede circular hasta esa velocidad sin superarla."
-    ]
+    ],
+    "page": 63
   },
   {
     "id": 245,
@@ -5596,7 +5840,8 @@ export const questions = [
       "No se trata de un consejo de seguridad sino de un límite obligatorio que no se puede sobrepasar.",
       "No es una velocidad aconsejada sino la velocidad máxima permitida por norma.",
       "No es una recomendación para tránsito intenso; rige siempre como límite máximo obligatorio."
-    ]
+    ],
+    "page": 63
   },
   {
     "id": 246,
@@ -5620,7 +5865,8 @@ export const questions = [
       "",
       "La señal no se relaciona con virar a la derecha sino con no quedar detenido bloqueando el cruce.",
       "El número de vehículos delante no es el criterio; lo que importa es contar con espacio de salida para no detenerse en el cruce."
-    ]
+    ],
+    "page": 65
   },
   {
     "id": 247,
@@ -5644,7 +5890,8 @@ export const questions = [
       "No existe una señal de 'peligro de pinchazo'; el rombo mostrado advierte pavimento resbaladizo.",
       "",
       "La señal de curvas tiene un trazado de flechas o líneas curvas; esta representa un vehículo deslizándose sobre la calzada."
-    ]
+    ],
+    "page": 65
   },
   {
     "id": 248,
@@ -5668,7 +5915,8 @@ export const questions = [
       "'Mantenga su derecha' es otra señal reglamentaria distinta; esta prohíbe adelantar.",
       "La preferencia al sentido contrario corresponde a una señal diferente, no a la prohibición de adelantar.",
       "'No cambiar de pista' no es lo que indica esta señal; aquí se prohíbe específicamente adelantar."
-    ]
+    ],
+    "page": 65
   },
   {
     "id": 249,
@@ -5692,7 +5940,8 @@ export const questions = [
       "Esta señal no corresponde al tipo prohibitivo que indica no hacer algo.",
       "",
       "Esta señal no corresponde al tipo prohibitivo que indica no hacer algo."
-    ]
+    ],
+    "page": 66
   },
   {
     "id": 250,
@@ -5716,7 +5965,8 @@ export const questions = [
       "La detención es obligatoria en todos los casos, exista o no peatones esperando.",
       "El deber de detenerse rige aunque la leyenda PARE no esté pintada en la calzada; basta la señal vertical.",
       ""
-    ]
+    ],
+    "page": 66
   },
   {
     "id": 251,
@@ -5740,7 +5990,8 @@ export const questions = [
       "",
       "No corresponde a un semáforo activado por peatones, sino a la advertencia de proximidad de un semáforo.",
       "No se refiere a semáforos sincronizados; anuncia la cercanía de un semáforo."
-    ]
+    ],
+    "page": 66
   },
   {
     "id": 252,
@@ -5762,7 +6013,8 @@ export const questions = [
       "Disminuir y prepararse para detenerse corresponde a la luz amarilla, no al rojo, que obliga a la detención total.",
       "",
       "Detenerse sobre el paso de peatones es incorrecto: debe detenerse antes de la línea de detención, sin invadir el cruce peatonal."
-    ]
+    ],
+    "page": 66
   },
   {
     "id": 253,
@@ -5786,7 +6038,8 @@ export const questions = [
       "Dar órdenes corresponde a las señales reglamentarias; los rombos amarillos solo advierten.",
       "Indicar direcciones es propio de las señales informativas u orientativas, no de las de advertencia.",
       ""
-    ]
+    ],
+    "page": 68
   },
   {
     "id": 254,
@@ -5808,7 +6061,8 @@ export const questions = [
       "",
       "El amarillo no autoriza a continuar por el hecho de ir a virar; igualmente debe detenerse si alcanza a hacerlo en forma segura.",
       "La presencia o no de peatones no cambia el significado del amarillo, que obliga a detenerse cuando es seguro."
-    ]
+    ],
+    "page": 68
   },
   {
     "id": 255,
@@ -5832,7 +6086,8 @@ export const questions = [
       "La preferencia al tránsito contrario es una señal reglamentaria diferente, no esta advertencia de doble sentido.",
       "La proximidad de doble calzada indica el inicio de calzadas separadas, lo contrario a lo que advierte esta señal.",
       ""
-    ]
+    ],
+    "page": 68
   },
   {
     "id": 256,
@@ -5856,7 +6111,8 @@ export const questions = [
       "",
       "'Niños jugando' es una señal distinta; esta se refiere específicamente al cruce de peatones.",
       "La señal no indica por qué lado debe transitar el peatón, sino que advierte un cruce de peatones."
-    ]
+    ],
+    "page": 68
   },
   {
     "id": 257,
@@ -5880,7 +6136,8 @@ export const questions = [
       "",
       "Esta señal no representa una sucesión de curvas.",
       "Esta señal no representa una sucesión de curvas."
-    ]
+    ],
+    "page": 69
   },
   {
     "id": 258,
@@ -5904,7 +6161,8 @@ export const questions = [
       "No ordena a los ciclistas circular por una pista determinada; es una advertencia para el conductor.",
       "No indica que los ciclistas vayan en sentido contrario; advierte su probable presencia en la vía.",
       ""
-    ]
+    ],
+    "page": 69
   },
   {
     "id": 259,
@@ -5928,7 +6186,8 @@ export const questions = [
       "No corresponde a la señal que advierte un cruce de peatones según la alternativa oficial.",
       "No corresponde a la señal que advierte un cruce de peatones según la alternativa oficial.",
       "No corresponde a la señal que advierte un cruce de peatones según la alternativa oficial."
-    ]
+    ],
+    "page": 69
   },
   {
     "id": 260,
@@ -5957,7 +6216,8 @@ export const questions = [
       "'Mantenga su derecha' es una señal reglamentaria (orden), no una advertencia en rombo amarillo.",
       "",
       ""
-    ]
+    ],
+    "page": 69
   },
   {
     "id": 261,
@@ -5979,7 +6239,8 @@ export const questions = [
       "",
       "El amarillo nunca da paso al verde directo; primero debe encenderse el rojo.",
       "Después del amarillo no viene el verde; el orden correcto es rojo y luego verde."
-    ]
+    ],
+    "page": 71
   },
   {
     "id": 262,
@@ -6003,7 +6264,8 @@ export const questions = [
       "",
       "No es efectivo que en ningún caso se pueda adelantar; el de la pista A sí puede hacerlo por tener la línea segmentada.",
       "Es al revés: el de la pista B tiene la línea continua y por eso NO puede adelantar; quien sí puede es el de la pista A."
-    ]
+    ],
+    "page": 71
   },
   {
     "id": 263,
@@ -6027,7 +6289,8 @@ export const questions = [
       "La prohibición de detenerse y circular existe siempre, esté o no reforzada con tachas o tachones.",
       "",
       "El motivo no es el volumen de tránsito, sino que las zonas achuradas prohiben por norma detenerse y circular sobre ellas."
-    ]
+    ],
+    "page": 71
   },
   {
     "id": 264,
@@ -6047,7 +6310,8 @@ export const questions = [
     "wrongExplanations": [
       "Las condiciones del cruce que muestra la imagen no permiten continuar derecho.",
       ""
-    ]
+    ],
+    "page": 71
   },
   {
     "id": 265,
@@ -6071,7 +6335,8 @@ export const questions = [
       "No es una señal de advertencia de cruce peligroso, sino una señal reglamentaria que obliga a ceder el paso.",
       "",
       "No es una simple recomendación: CEDA EL PASO es una señal reglamentaria de cumplimiento obligatorio."
-    ]
+    ],
+    "page": 73
   },
   {
     "id": 266,
@@ -6093,7 +6358,8 @@ export const questions = [
       "",
       "El verde ya le da la preferencia de paso; no se trata de mirar a ambos lados como si fuera un cruce sin control, sino de comprobar que la salida del cruce esté libre.",
       "Seguir sin más es incorrecto, porque podría quedar detenido obstruyendo el cruce si su pista no está expedita."
-    ]
+    ],
+    "page": 73
   },
   {
     "id": 267,
@@ -6116,7 +6382,8 @@ export const questions = [
       "Ir demasiado rápido no es una justificación válida para no detenerse; al contrario, refleja un exceso de velocidad que es la causa del problema.",
       "",
       ""
-    ]
+    ],
+    "page": 73
   },
   {
     "id": 268,
@@ -6141,7 +6408,8 @@ export const questions = [
       "",
       "Sentarla y solo esperar no detiene la hemorragia; hay que actuar aplicando presión sobre la herida mientras llega la ayuda.",
       "Mantenerla de pie empeora la pérdida de sangre y el riesgo de shock; debe permanecer tendida con la pierna elevada."
-    ]
+    ],
+    "page": 73
   },
   {
     "id": 269,
@@ -6166,7 +6434,8 @@ export const questions = [
       "No se requiere que el acompañante sea egresado de enseñanza media.",
       "No se exige que el acompañante haya hecho un curso especial en una escuela de conductores.",
       ""
-    ]
+    ],
+    "page": 73
   },
   {
     "id": 270,
@@ -6188,7 +6457,8 @@ export const questions = [
       "La obligación de informar es del conductor por mandato legal; no depende de la voluntad del pasajero lesionado.",
       "Es falso: todo accidente con lesionados, incluso leves, debe informarse a la policía.",
       ""
-    ]
+    ],
+    "page": 73
   },
   {
     "id": 271,
@@ -6214,7 +6484,8 @@ export const questions = [
       "",
       "",
       ""
-    ]
+    ],
+    "page": 74
   },
   {
     "id": 272,
@@ -6238,7 +6509,8 @@ export const questions = [
       "",
       "No debe abandonar el lugar apenas llegue otro conductor: tiene el deber de prestar ayuda y, si hay lesionados, de dar cuenta a la policía.",
       ""
-    ]
+    ],
+    "page": 74
   },
   {
     "id": 273,
@@ -6261,7 +6533,8 @@ export const questions = [
       "",
       "No se debe dar de beber a heridos graves; si tienen lesiones internas o requieren cirugía, los líquidos pueden ser muy peligrosos.",
       "Sacar a los heridos graves de los autos sin personal capacitado puede agravar lesiones de columna o internas; solo se hace si hay riesgo inminente como incendio."
-    ]
+    ],
+    "page": 74
   },
   {
     "id": 274,
@@ -6283,7 +6556,8 @@ export const questions = [
       "Diluir con agua es peligroso, ya que muchas sustancias reaccionan violentamente con el agua o se dispersan más.",
       "",
       "Intentar contener el derrame lo expone directamente a sustancias tóxicas; eso corresponde a personal especializado."
-    ]
+    ],
+    "page": 74
   },
   {
     "id": 275,
@@ -6305,7 +6579,8 @@ export const questions = [
       "",
       "Ayudarlo a ponerse de pie puede agravar lesiones internas o de columna; debe permanecer quieto.",
       "No se debe dar de beber a un accidentado, sobre todo si está en shock o podría requerir cirugía."
-    ]
+    ],
+    "page": 74
   },
   {
     "id": 276,
@@ -6327,7 +6602,8 @@ export const questions = [
       "Detenerse junto a la caja en plena autopista es muy peligroso y puede provocar otro accidente.",
       "Bajarse a recoger la caja lo expone a ser atropellado por el tránsito de la autopista.",
       ""
-    ]
+    ],
+    "page": 74
   },
   {
     "id": 277,
@@ -6349,7 +6625,8 @@ export const questions = [
       "No se limita a los pasajeros; incluye al conductor y a terceros.",
       "Va más allá de pasajeros y conductor: también cubre a cualquier tercero afectado.",
       ""
-    ]
+    ],
+    "page": 74
   },
   {
     "id": 278,
@@ -6373,7 +6650,8 @@ export const questions = [
       "La licencia de conductor sí debe llevarse siempre al conducir.",
       "El certificado de revisión técnica o de homologación sí debe portarse en el vehículo.",
       ""
-    ]
+    ],
+    "page": 74
   },
   {
     "id": 279,
@@ -6399,7 +6677,8 @@ export const questions = [
       "",
       "Es falso que solo sean gravísimas el no respetar la luz roja y el exceso de velocidad; existen muchas otras, como conducir con alcohol o no respetar un PARE.",
       "Es falso: el Juez sí puede cancelar la licencia de conducir en los casos que la ley establece."
-    ]
+    ],
+    "page": 75
   },
   {
     "id": 280,
@@ -6425,7 +6704,8 @@ export const questions = [
       "",
       "No respetar el derecho preferente de paso de un peatón no es una infracción leve, sino de mayor gravedad.",
       ""
-    ]
+    ],
+    "page": 75
   }
 ];
 

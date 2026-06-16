@@ -18,7 +18,7 @@ const SESSION_OPTIONS = [
 ];
 
 const PAGE_BG =
-  "min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50";
+  "min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-violet-50";
 
 function shuffle(arr) {
   return [...arr].sort(() => Math.random() - 0.5);
@@ -71,13 +71,28 @@ function QuestionImages({ images, small = false }) {
           key={src}
           src={IMG_BASE + src}
           alt="Imagen de la pregunta"
-          className={`rounded-lg bg-white object-contain border border-stone-200 ${
+          className={`rounded-lg bg-white object-contain border border-slate-200 ${
             small ? "h-20" : "max-h-72 w-auto"
           }`}
           loading="lazy"
         />
       ))}
     </div>
+  );
+}
+
+// Referencia a la página del PDF (cuestionario oficial Clase B)
+function PdfRef({ page }) {
+  if (!page) return null;
+  return (
+    <p className="text-slate-400 text-xs mt-2 flex items-center gap-1">
+      <span>📄</span>
+      <span>
+        Material de apoyo: revisa esta pregunta en la{" "}
+        <span className="font-semibold text-slate-500">página {page}</span> del
+        cuestionario PDF (Clase B).
+      </span>
+    </p>
   );
 }
 
@@ -95,10 +110,10 @@ function ReviewItem({ r, idAttr }) {
       <div className="flex items-start gap-3">
         <span className="text-lg flex-shrink-0">{r.isCorrect ? "✅" : "❌"}</span>
         <div className="min-w-0">
-          <p className="text-stone-800 text-sm font-medium">
-            <span className="text-amber-700">#{r.q.id}</span> {r.q.question}
+          <p className="text-slate-800 text-sm font-medium">
+            <span className="text-indigo-600">#{r.q.id}</span> {r.q.question}
             {r.double && (
-              <span className="ml-2 inline-block bg-violet-100 text-violet-600 text-[10px] font-bold px-2 py-0.5 rounded-full align-middle">
+              <span className="ml-2 inline-block bg-fuchsia-100 text-fuchsia-600 text-[10px] font-bold px-2 py-0.5 rounded-full align-middle">
                 ×2
               </span>
             )}
@@ -116,7 +131,7 @@ function ReviewItem({ r, idAttr }) {
             </p>
           )}
           {r.q.explanation && (
-            <p className="text-stone-600 text-xs mt-2 leading-relaxed">
+            <p className="text-slate-600 text-xs mt-2 leading-relaxed">
               💡 {r.q.explanation}
             </p>
           )}
@@ -136,6 +151,7 @@ function ReviewItem({ r, idAttr }) {
                 )}
               </div>
             )}
+          <PdfRef page={r.q.page} />
         </div>
       </div>
     </div>
@@ -149,8 +165,8 @@ function ReviewNav({ rows, prefix }) {
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
   return (
-    <div className="bg-white/70 backdrop-blur border border-stone-200 rounded-2xl p-4 mb-4">
-      <p className="text-stone-500 text-xs mb-2 font-medium">
+    <div className="bg-white/70 backdrop-blur border border-slate-200 rounded-2xl p-4 mb-4">
+      <p className="text-slate-500 text-xs mb-2 font-medium">
         Salta a una pregunta:
       </p>
       <div className="grid grid-cols-8 sm:grid-cols-10 gap-1.5">
@@ -169,12 +185,32 @@ function ReviewNav({ rows, prefix }) {
           >
             {i + 1}
             {r.double && (
-              <span className="absolute -top-1 -right-1 text-[8px] bg-violet-500 text-white rounded-full px-1 leading-tight">
+              <span className="absolute -top-1 -right-1 text-[8px] bg-fuchsia-500 text-white rounded-full px-1 leading-tight">
                 ×2
               </span>
             )}
           </button>
         ))}
+      </div>
+    </div>
+  );
+}
+
+// Modal genérico reutilizable
+function Modal({ icon, title, children, onClose, actions }) {
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-sm"
+      onClick={onClose}
+    >
+      <div
+        className="bg-white rounded-2xl shadow-xl border border-slate-200 max-w-sm w-full p-6 text-center"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {icon && <div className="text-4xl mb-3">{icon}</div>}
+        <h3 className="text-xl font-bold text-slate-800 mb-2">{title}</h3>
+        <div className="text-slate-600 text-sm mb-5">{children}</div>
+        <div className="flex gap-3">{actions}</div>
       </div>
     </div>
   );
@@ -206,6 +242,7 @@ export default function ExamenClaseB() {
 
   // ---------- Historial / estadísticas ----------
   const [history, setHistory] = useState(() => loadHistory());
+  const [showClearModal, setShowClearModal] = useState(false);
   const stats = computeStats(history);
 
   // ====================== ESTUDIO ======================
@@ -264,14 +301,14 @@ export default function ExamenClaseB() {
     const isCorrect = currentQ?.correct.includes(idx);
     if (!answered) {
       return isSelected
-        ? "border-2 border-sky-400 bg-sky-50 text-sky-900"
-        : "border border-stone-200 bg-white hover:border-amber-300 hover:bg-amber-50 cursor-pointer text-stone-700";
+        ? "border-2 border-indigo-400 bg-indigo-50 text-indigo-900"
+        : "border border-slate-200 bg-white hover:border-indigo-300 hover:bg-indigo-50 cursor-pointer text-slate-700";
     }
     if (isCorrect)
       return "border-2 border-emerald-400 bg-emerald-50 text-emerald-900";
     if (isSelected && !isCorrect)
       return "border-2 border-rose-300 bg-rose-50 text-rose-900";
-    return "border border-stone-200 bg-stone-50 text-stone-400";
+    return "border border-slate-200 bg-slate-50 text-slate-400";
   };
 
   const progress =
@@ -380,15 +417,10 @@ export default function ExamenClaseB() {
     window.scrollTo({ top: 0 });
   };
 
-  const clearHistory = () => {
-    if (
-      window.confirm(
-        "¿Borrar todo tu historial de exámenes? Esto no se puede deshacer."
-      )
-    ) {
-      setHistory([]);
-      persistHistory([]);
-    }
+  const doClearHistory = () => {
+    setHistory([]);
+    persistHistory([]);
+    setShowClearModal(false);
   };
 
   const fmt = (s) =>
@@ -408,24 +440,24 @@ export default function ExamenClaseB() {
         <div className="max-w-lg w-full text-center">
           <div className="mb-8">
             <div className="text-6xl mb-4">🧊</div>
-            <h1 className="text-4xl font-bold text-stone-800 mb-2">
+            <h1 className="text-4xl font-bold text-slate-800 mb-2">
               Examen Clase B
             </h1>
-            <p className="text-amber-700 text-lg">
+            <p className="text-indigo-500 text-lg">
               Cuestionario General de Conducción · Chile
             </p>
           </div>
 
           {/* Modo Examen Real */}
-          <div className="bg-gradient-to-br from-amber-100 to-rose-100 border border-amber-200 rounded-2xl p-6 mb-6 text-left shadow-sm">
+          <div className="bg-gradient-to-br from-indigo-100 to-violet-100 border border-indigo-200 rounded-2xl p-6 mb-6 text-left shadow-sm">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-2xl">📝</span>
-              <h2 className="text-stone-800 font-bold text-lg">Examen Real</h2>
+              <h2 className="text-slate-800 font-bold text-lg">Examen Real</h2>
             </div>
-            <p className="text-stone-600 text-sm mb-3">
+            <p className="text-slate-600 text-sm mb-3">
               Simulacro como en la Dirección de Tránsito:
             </p>
-            <ul className="space-y-1 text-stone-600 text-sm mb-4">
+            <ul className="space-y-1 text-slate-600 text-sm mb-4">
               <li>🕐 {EXAM_QUESTIONS} preguntas en {EXAM_DURATION_MIN} minutos</li>
               <li>✖️ {EXAM_DOUBLE_COUNT} preguntas valen doble puntaje (×2)</li>
               <li>
@@ -434,19 +466,19 @@ export default function ExamenClaseB() {
             </ul>
             <button
               onClick={startExam}
-              className="w-full bg-amber-400 hover:bg-amber-300 text-stone-800 font-bold py-4 px-8 rounded-xl text-lg transition-all shadow-sm"
+              className="w-full bg-indigo-500 hover:bg-indigo-400 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all shadow-sm"
             >
               Rendir Examen Real
             </button>
           </div>
 
           {/* Modo Estudio */}
-          <div className="bg-white/70 backdrop-blur border border-stone-200 rounded-2xl p-6 text-left shadow-sm">
+          <div className="bg-white/70 backdrop-blur border border-slate-200 rounded-2xl p-6 text-left shadow-sm">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-2xl">📖</span>
-              <h2 className="text-stone-800 font-bold text-lg">Modo Estudio</h2>
+              <h2 className="text-slate-800 font-bold text-lg">Modo Estudio</h2>
             </div>
-            <p className="text-stone-600 text-sm mb-4">
+            <p className="text-slate-600 text-sm mb-4">
               Practica con explicación inmediata de cada respuesta (por qué es
               correcta y por qué no las otras).
             </p>
@@ -455,10 +487,10 @@ export default function ExamenClaseB() {
                 <button
                   key={opt.value}
                   onClick={() => startSession(opt.value)}
-                  className="bg-amber-50 hover:bg-amber-200 border border-stone-200 text-stone-700 rounded-xl py-3 px-4 transition-all duration-200"
+                  className="bg-indigo-50 hover:bg-indigo-100 border border-slate-200 text-slate-700 rounded-xl py-3 px-4 transition-all duration-200"
                 >
                   <div className="text-base font-bold">{opt.label}</div>
-                  <div className="text-stone-500 text-xs">{opt.desc}</div>
+                  <div className="text-slate-500 text-xs">{opt.desc}</div>
                 </button>
               ))}
             </div>
@@ -467,19 +499,19 @@ export default function ExamenClaseB() {
           {/* Mis estadísticas */}
           <button
             onClick={() => setMode("stats")}
-            className="w-full mt-4 bg-white/60 hover:bg-white border border-stone-200 text-stone-700 rounded-2xl p-4 flex items-center justify-between transition-all shadow-sm"
+            className="w-full mt-4 bg-white/60 hover:bg-white border border-slate-200 text-slate-700 rounded-2xl p-4 flex items-center justify-between transition-all shadow-sm"
           >
             <span className="flex items-center gap-2 font-semibold">
               <span className="text-xl">📊</span> Mis estadísticas
             </span>
-            <span className="text-stone-500 text-sm">
+            <span className="text-slate-500 text-sm">
               {stats.n > 0
                 ? `${stats.n} ${stats.n === 1 ? "examen" : "exámenes"} · ${stats.passed} aprob.`
                 : "Aún sin datos →"}
             </span>
           </button>
 
-          <p className="text-stone-400 text-sm mt-6">
+          <p className="text-slate-400 text-sm mt-6">
             {questions.length} preguntas disponibles con explicaciones completas
           </p>
         </div>
@@ -494,15 +526,15 @@ export default function ExamenClaseB() {
         <div className="max-w-2xl mx-auto py-8">
           <div className="text-center mb-6">
             <div className="text-5xl mb-3">📊</div>
-            <h1 className="text-3xl font-bold text-stone-800 mb-1">
+            <h1 className="text-3xl font-bold text-slate-800 mb-1">
               Mis estadísticas
             </h1>
-            <p className="text-amber-700">Tu progreso en el Examen Real</p>
+            <p className="text-indigo-500">Tu progreso en el Examen Real</p>
           </div>
 
           {stats.n === 0 ? (
-            <div className="bg-white/70 border border-stone-200 rounded-2xl p-8 text-center mb-6">
-              <p className="text-stone-600">
+            <div className="bg-white/70 border border-slate-200 rounded-2xl p-8 text-center mb-6">
+              <p className="text-slate-600">
                 Todavía no has rendido ningún Examen Real. ¡Rinde el primero y
                 aquí verás tu progreso!
               </p>
@@ -510,35 +542,35 @@ export default function ExamenClaseB() {
           ) : (
             <>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-                <div className="bg-white/70 border border-stone-200 rounded-xl p-4 text-center">
-                  <div className="text-2xl font-bold text-stone-800">
+                <div className="bg-white/70 border border-slate-200 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-slate-800">
                     {stats.n}
                   </div>
-                  <div className="text-stone-500 text-xs">Exámenes</div>
+                  <div className="text-slate-500 text-xs">Exámenes</div>
                 </div>
                 <div className="bg-emerald-100 border border-emerald-200 rounded-xl p-4 text-center">
                   <div className="text-2xl font-bold text-emerald-600">
                     {stats.passRate}%
                   </div>
-                  <div className="text-stone-500 text-xs">
+                  <div className="text-slate-500 text-xs">
                     Aprobados ({stats.passed})
                   </div>
                 </div>
-                <div className="bg-white/70 border border-stone-200 rounded-xl p-4 text-center">
-                  <div className="text-2xl font-bold text-stone-800">
+                <div className="bg-white/70 border border-slate-200 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-slate-800">
                     {stats.bestCorrect}/{EXAM_QUESTIONS}
                   </div>
-                  <div className="text-stone-500 text-xs">Mejor resultado</div>
+                  <div className="text-slate-500 text-xs">Mejor resultado</div>
                 </div>
-                <div className="bg-white/70 border border-stone-200 rounded-xl p-4 text-center">
-                  <div className="text-2xl font-bold text-stone-800">
+                <div className="bg-white/70 border border-slate-200 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-slate-800">
                     {fmt(stats.avgTimeSec)}
                   </div>
-                  <div className="text-stone-500 text-xs">Tiempo prom.</div>
+                  <div className="text-slate-500 text-xs">Tiempo prom.</div>
                 </div>
               </div>
 
-              <h2 className="text-stone-800 font-semibold mb-3">Historial</h2>
+              <h2 className="text-slate-800 font-semibold mb-3">Historial</h2>
               <div className="space-y-2 mb-6">
                 {history.map((r, i) => (
                   <div
@@ -552,11 +584,11 @@ export default function ExamenClaseB() {
                     <div className="flex items-center gap-3">
                       <span className="text-lg">{r.passed ? "✅" : "❌"}</span>
                       <div>
-                        <div className="text-stone-800 text-sm font-medium">
+                        <div className="text-slate-800 text-sm font-medium">
                           {r.passed ? "Aprobado" : "Reprobado"} · {r.correct}/
                           {r.total} correctas
                         </div>
-                        <div className="text-stone-500 text-xs">
+                        <div className="text-slate-500 text-xs">
                           {new Date(r.ts).toLocaleDateString("es-CL")}{" "}
                           {new Date(r.ts).toLocaleTimeString("es-CL", {
                             hour: "2-digit",
@@ -571,7 +603,7 @@ export default function ExamenClaseB() {
               </div>
 
               <button
-                onClick={clearHistory}
+                onClick={() => setShowClearModal(true)}
                 className="w-full mb-3 bg-rose-50 hover:bg-rose-100 text-rose-500 font-semibold py-3 rounded-xl transition-all border border-rose-200"
               >
                 Borrar historial
@@ -581,11 +613,39 @@ export default function ExamenClaseB() {
 
           <button
             onClick={() => setMode("menu")}
-            className="w-full bg-white/70 hover:bg-white border border-stone-200 text-stone-700 font-semibold py-3 px-8 rounded-xl transition-all"
+            className="w-full bg-white/70 hover:bg-white border border-slate-200 text-slate-700 font-semibold py-3 px-8 rounded-xl transition-all"
           >
             ← Volver al menú
           </button>
         </div>
+
+        {showClearModal && (
+          <Modal
+            icon="🗑️"
+            title="¿Borrar el historial?"
+            onClose={() => setShowClearModal(false)}
+            actions={
+              <>
+                <button
+                  onClick={() => setShowClearModal(false)}
+                  className="flex-1 py-3 rounded-xl font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all"
+                >
+                  Cancelar
+                </button>
+                <button
+                  onClick={doClearHistory}
+                  className="flex-1 py-3 rounded-xl font-bold bg-rose-500 text-white hover:bg-rose-400 transition-all"
+                >
+                  Borrar
+                </button>
+              </>
+            }
+          >
+            Se eliminarán tus {history.length}{" "}
+            {history.length === 1 ? "examen" : "exámenes"} guardados. Esta acción
+            no se puede deshacer.
+          </Modal>
+        )}
       </div>
     );
   }
@@ -599,14 +659,14 @@ export default function ExamenClaseB() {
         <div className="max-w-2xl mx-auto py-6">
           {/* Barra superior: progreso + cronómetro */}
           <div className="flex items-center justify-between mb-4">
-            <span className="text-stone-500 text-sm font-medium">
+            <span className="text-slate-500 text-sm font-medium">
               Pregunta {examIndex + 1} de {examQuestions.length}
             </span>
             <span
               className={`font-mono text-lg font-bold px-3 py-1 rounded-lg border ${
                 lowTime
                   ? "bg-rose-100 text-rose-600 border-rose-200 animate-pulse"
-                  : "bg-white text-stone-700 border-stone-200"
+                  : "bg-white text-slate-700 border-slate-200"
               }`}
             >
               🕐 {fmt(timeLeft)}
@@ -628,16 +688,16 @@ export default function ExamenClaseB() {
                   }}
                   className={`relative h-8 rounded-lg text-xs font-semibold transition-all border ${
                     isCur
-                      ? "bg-amber-400 text-white border-amber-400 ring-2 ring-amber-200"
+                      ? "bg-indigo-500 text-white border-indigo-500 ring-2 ring-indigo-200"
                       : ans
-                      ? "bg-amber-200 text-stone-700 border-amber-200"
-                      : "bg-white text-stone-400 border-stone-200 hover:bg-amber-50"
+                      ? "bg-indigo-200 text-slate-700 border-indigo-200"
+                      : "bg-white text-slate-400 border-slate-200 hover:bg-indigo-50"
                   }`}
                   title={`Pregunta ${i + 1}${dbl ? " (×2)" : ""}`}
                 >
                   {i + 1}
                   {dbl && (
-                    <span className="absolute -top-1 -right-1 text-[9px] bg-violet-500 text-white rounded-full px-1 leading-tight">
+                    <span className="absolute -top-1 -right-1 text-[9px] bg-fuchsia-500 text-white rounded-full px-1 leading-tight">
                       ×2
                     </span>
                   )}
@@ -647,21 +707,21 @@ export default function ExamenClaseB() {
           </div>
 
           {/* Tarjeta pregunta */}
-          <div className="bg-white/70 backdrop-blur border border-stone-200 rounded-2xl p-6 mb-4 shadow-sm">
+          <div className="bg-white/70 backdrop-blur border border-slate-200 rounded-2xl p-6 mb-4 shadow-sm">
             <div className="flex flex-wrap items-center gap-2 mb-3">
               {examIsMulti && (
-                <span className="inline-block bg-amber-100 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full">
+                <span className="inline-block bg-indigo-100 text-indigo-600 text-xs font-semibold px-3 py-1 rounded-full">
                   Selecciona {examQ.correct.length} respuestas
                 </span>
               )}
               {doubleSet.has(examIndex) && (
-                <span className="inline-block bg-violet-100 text-violet-600 text-xs font-bold px-3 py-1 rounded-full">
+                <span className="inline-block bg-fuchsia-100 text-fuchsia-600 text-xs font-bold px-3 py-1 rounded-full">
                   Doble puntaje ×2
                 </span>
               )}
             </div>
-            <p className="text-stone-800 text-lg font-medium leading-relaxed">
-              <span className="text-amber-700">#{examQ.id}.</span> {examQ.question}
+            <p className="text-slate-800 text-lg font-medium leading-relaxed">
+              <span className="text-indigo-600">#{examQ.id}.</span> {examQ.question}
             </p>
             <QuestionImages images={examQ.images} />
           </div>
@@ -676,8 +736,8 @@ export default function ExamenClaseB() {
                   onClick={() => toggleExamAnswer(idx)}
                   className={`w-full text-left p-4 rounded-xl transition-all duration-200 ${
                     sel
-                      ? "border-2 border-sky-400 bg-sky-50 text-sky-900"
-                      : "border border-stone-200 bg-white hover:border-amber-300 hover:bg-amber-50 cursor-pointer text-stone-700"
+                      ? "border-2 border-indigo-400 bg-indigo-50 text-indigo-900"
+                      : "border border-slate-200 bg-white hover:border-indigo-300 hover:bg-indigo-50 cursor-pointer text-slate-700"
                   }`}
                 >
                   <div className="flex items-start gap-3">
@@ -699,7 +759,7 @@ export default function ExamenClaseB() {
                 window.scrollTo({ top: 0 });
               }}
               disabled={examIndex === 0}
-              className="flex-1 py-3 rounded-xl font-semibold bg-white border border-stone-200 text-stone-600 hover:bg-stone-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+              className="flex-1 py-3 rounded-xl font-semibold bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
             >
               ← Anterior
             </button>
@@ -709,7 +769,7 @@ export default function ExamenClaseB() {
                   setExamIndex((i) => i + 1);
                   window.scrollTo({ top: 0 });
                 }}
-                className="flex-1 py-3 rounded-xl font-semibold bg-amber-400 text-stone-800 hover:bg-amber-300 transition-all"
+                className="flex-1 py-3 rounded-xl font-semibold bg-indigo-500 text-white hover:bg-indigo-400 transition-all"
               >
                 Siguiente →
               </button>
@@ -725,7 +785,7 @@ export default function ExamenClaseB() {
 
           <button
             onClick={() => setShowFinishModal(true)}
-            className="w-full py-2 text-stone-400 hover:text-stone-600 text-sm underline"
+            className="w-full py-2 text-slate-400 hover:text-slate-600 text-sm underline"
           >
             Finalizar examen ahora
           </button>
@@ -733,40 +793,15 @@ export default function ExamenClaseB() {
 
         {/* MODAL de entrega */}
         {showFinishModal && (
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/40 backdrop-blur-sm"
-            onClick={() => setShowFinishModal(false)}
-          >
-            <div
-              className="bg-white rounded-2xl shadow-xl border border-stone-200 max-w-sm w-full p-6 text-center"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="text-4xl mb-3">📤</div>
-              <h3 className="text-xl font-bold text-stone-800 mb-2">
-                ¿Entregar el examen?
-              </h3>
-              {unansweredCount > 0 ? (
-                <p className="text-stone-600 text-sm mb-1">
-                  Te faltan{" "}
-                  <span className="font-bold text-rose-500">
-                    {unansweredCount}
-                  </span>{" "}
-                  {unansweredCount === 1 ? "pregunta" : "preguntas"} por
-                  responder.
-                </p>
-              ) : (
-                <p className="text-stone-600 text-sm mb-1">
-                  Respondiste todas las preguntas. 🎉
-                </p>
-              )}
-              <p className="text-stone-400 text-xs mb-5">
-                Las no respondidas cuentan como incorrectas. No podrás cambiar
-                tus respuestas después.
-              </p>
-              <div className="flex gap-3">
+          <Modal
+            icon="📤"
+            title="¿Entregar el examen?"
+            onClose={() => setShowFinishModal(false)}
+            actions={
+              <>
                 <button
                   onClick={() => setShowFinishModal(false)}
-                  className="flex-1 py-3 rounded-xl font-semibold bg-stone-100 text-stone-600 hover:bg-stone-200 transition-all"
+                  className="flex-1 py-3 rounded-xl font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all"
                 >
                   Seguir
                 </button>
@@ -776,9 +811,25 @@ export default function ExamenClaseB() {
                 >
                   Entregar
                 </button>
-              </div>
-            </div>
-          </div>
+              </>
+            }
+          >
+            {unansweredCount > 0 ? (
+              <p className="mb-1">
+                Te faltan{" "}
+                <span className="font-bold text-rose-500">
+                  {unansweredCount}
+                </span>{" "}
+                {unansweredCount === 1 ? "pregunta" : "preguntas"} por responder.
+              </p>
+            ) : (
+              <p className="mb-1">Respondiste todas las preguntas. 🎉</p>
+            )}
+            <p className="text-slate-400 text-xs">
+              Las no respondidas cuentan como incorrectas. No podrás cambiar tus
+              respuestas después.
+            </p>
+          </Modal>
         )}
       </div>
     );
@@ -807,7 +858,7 @@ export default function ExamenClaseB() {
             >
               {passed ? "APROBADO" : "REPROBADO"}
             </h1>
-            <p className="text-stone-600">
+            <p className="text-slate-600">
               {passed
                 ? "¡Felicitaciones! Cumpliste el estándar del examen."
                 : `Necesitas máximo ${EXAM_MAX_ERROR_POINTS} puntos de error para aprobar.`}
@@ -816,17 +867,17 @@ export default function ExamenClaseB() {
 
           {/* Resumen */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
-            <div className="bg-white/70 border border-stone-200 rounded-xl p-4 text-center">
-              <div className="text-2xl font-bold text-stone-800">
+            <div className="bg-white/70 border border-slate-200 rounded-xl p-4 text-center">
+              <div className="text-2xl font-bold text-slate-800">
                 {correctCount}/{examQuestions.length}
               </div>
-              <div className="text-stone-500 text-xs">Correctas</div>
+              <div className="text-slate-500 text-xs">Correctas</div>
             </div>
-            <div className="bg-white/70 border border-stone-200 rounded-xl p-4 text-center">
-              <div className="text-2xl font-bold text-stone-800">
+            <div className="bg-white/70 border border-slate-200 rounded-xl p-4 text-center">
+              <div className="text-2xl font-bold text-slate-800">
                 {earned}/{totalPoints}
               </div>
-              <div className="text-stone-500 text-xs">Puntaje</div>
+              <div className="text-slate-500 text-xs">Puntaje</div>
             </div>
             <div
               className={`rounded-xl p-4 text-center border ${
@@ -844,31 +895,30 @@ export default function ExamenClaseB() {
               >
                 {errorPoints}
               </div>
-              <div className="text-stone-500 text-xs">Puntos de error</div>
+              <div className="text-slate-500 text-xs">Puntos de error</div>
             </div>
-            <div className="bg-white/70 border border-stone-200 rounded-xl p-4 text-center">
-              <div className="text-2xl font-bold text-stone-800">
+            <div className="bg-white/70 border border-slate-200 rounded-xl p-4 text-center">
+              <div className="text-2xl font-bold text-slate-800">
                 {fmt(usedSec)}
               </div>
-              <div className="text-stone-500 text-xs">Tiempo usado</div>
+              <div className="text-slate-500 text-xs">Tiempo usado</div>
             </div>
           </div>
 
-          <p className="text-center text-stone-500 text-sm mb-6">
+          <p className="text-center text-slate-500 text-sm mb-6">
             Llevas {stats.n} {stats.n === 1 ? "examen" : "exámenes"} rendidos ·{" "}
             {stats.passed} aprobados ·{" "}
             <button
               onClick={() => setMode("stats")}
-              className="underline hover:text-stone-800"
+              className="underline hover:text-slate-800"
             >
               ver estadísticas
             </button>
           </p>
 
-          <h2 className="text-stone-800 font-semibold mb-3">
+          <h2 className="text-slate-800 font-semibold mb-3">
             Revisión por pregunta
           </h2>
-          {/* Panel de navegación rápida por pregunta */}
           <ReviewNav rows={rows} prefix="exrev" />
 
           <div className="space-y-3 mb-6">
@@ -879,13 +929,13 @@ export default function ExamenClaseB() {
 
           <button
             onClick={startExam}
-            className="w-full bg-amber-400 hover:bg-amber-300 text-stone-800 font-bold py-4 px-8 rounded-xl text-xl transition-all"
+            className="w-full bg-indigo-500 hover:bg-indigo-400 text-white font-bold py-4 px-8 rounded-xl text-xl transition-all"
           >
             Rendir otro examen
           </button>
           <button
             onClick={() => setMode("menu")}
-            className="w-full mt-3 bg-white/70 hover:bg-white border border-stone-200 text-stone-700 font-semibold py-3 px-8 rounded-xl transition-all"
+            className="w-full mt-3 bg-white/70 hover:bg-white border border-slate-200 text-slate-700 font-semibold py-3 px-8 rounded-xl transition-all"
           >
             Menú Principal
           </button>
@@ -910,30 +960,30 @@ export default function ExamenClaseB() {
         <div className="max-w-2xl mx-auto py-8">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">{emoji}</div>
-            <h1 className="text-3xl font-bold text-stone-800 mb-2">
+            <h1 className="text-3xl font-bold text-slate-800 mb-2">
               Resultado Final
             </h1>
-            <p className="text-stone-600">{msg}</p>
+            <p className="text-slate-600">{msg}</p>
           </div>
 
-          <div className="bg-white/70 border border-stone-200 rounded-2xl p-6 mb-6 text-center shadow-sm">
-            <div className="text-6xl font-bold text-stone-800 mb-2">{pct}%</div>
-            <div className="text-stone-500">
+          <div className="bg-white/70 border border-slate-200 rounded-2xl p-6 mb-6 text-center shadow-sm">
+            <div className="text-6xl font-bold text-slate-800 mb-2">{pct}%</div>
+            <div className="text-slate-500">
               {score} de {sessionQuestions.length} correctas
             </div>
-            <div className="mt-4 bg-stone-200 rounded-full h-3">
+            <div className="mt-4 bg-slate-200 rounded-full h-3">
               <div
                 className="h-3 rounded-full transition-all"
                 style={{
                   width: `${pct}%`,
                   background:
-                    pct >= 80 ? "#34d399" : pct >= 60 ? "#fbbf24" : "#fb7185",
+                    pct >= 80 ? "#34d399" : pct >= 60 ? "#818cf8" : "#fb7185",
                 }}
               />
             </div>
           </div>
 
-          <h2 className="text-stone-800 font-semibold mb-3">
+          <h2 className="text-slate-800 font-semibold mb-3">
             Repaso de la práctica
           </h2>
           <ReviewNav rows={results} prefix="strev" />
@@ -945,13 +995,13 @@ export default function ExamenClaseB() {
 
           <button
             onClick={() => startSession(sessionSize)}
-            className="w-full bg-amber-400 hover:bg-amber-300 text-stone-800 font-bold py-4 px-8 rounded-xl text-xl transition-all"
+            className="w-full bg-indigo-500 hover:bg-indigo-400 text-white font-bold py-4 px-8 rounded-xl text-xl transition-all"
           >
             Nueva Práctica
           </button>
           <button
             onClick={() => setMode("menu")}
-            className="w-full mt-3 bg-white/70 hover:bg-white border border-stone-200 text-stone-700 font-semibold py-3 px-8 rounded-xl transition-all"
+            className="w-full mt-3 bg-white/70 hover:bg-white border border-slate-200 text-slate-700 font-semibold py-3 px-8 rounded-xl transition-all"
           >
             Menú Principal
           </button>
@@ -965,35 +1015,35 @@ export default function ExamenClaseB() {
     <div className={`${PAGE_BG} p-4`}>
       <div className="max-w-2xl mx-auto py-6">
         <div className="flex items-center justify-between mb-4">
-          <span className="text-stone-500 text-sm font-medium">
+          <span className="text-slate-500 text-sm font-medium">
             Pregunta {currentIndex + 1} de {sessionQuestions.length}
           </span>
           <div className="flex items-center gap-3">
-            <span className="text-stone-500 text-sm">✅ {score} correctas</span>
+            <span className="text-slate-500 text-sm">✅ {score} correctas</span>
             <button
               onClick={() => setMode("menu")}
-              className="text-stone-400 hover:text-stone-700 text-xs underline"
+              className="text-slate-400 hover:text-slate-700 text-xs underline"
             >
               Salir
             </button>
           </div>
         </div>
 
-        <div className="bg-stone-200 rounded-full h-2 mb-6">
+        <div className="bg-slate-200 rounded-full h-2 mb-6">
           <div
-            className="h-2 rounded-full bg-amber-400 transition-all duration-500"
+            className="h-2 rounded-full bg-indigo-500 transition-all duration-500"
             style={{ width: `${progress}%` }}
           />
         </div>
 
-        <div className="bg-white/70 backdrop-blur border border-stone-200 rounded-2xl p-6 mb-4 shadow-sm">
+        <div className="bg-white/70 backdrop-blur border border-slate-200 rounded-2xl p-6 mb-4 shadow-sm">
           {isMulti && (
-            <div className="inline-block bg-amber-100 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
+            <div className="inline-block bg-indigo-100 text-indigo-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">
               Selecciona {currentQ.correct.length} respuestas
             </div>
           )}
-          <p className="text-stone-800 text-lg font-medium leading-relaxed">
-            <span className="text-amber-700">#{currentQ.id}.</span>{" "}
+          <p className="text-slate-800 text-lg font-medium leading-relaxed">
+            <span className="text-indigo-600">#{currentQ.id}.</span>{" "}
             {currentQ.question}
           </p>
           <QuestionImages images={currentQ.images} />
@@ -1032,8 +1082,8 @@ export default function ExamenClaseB() {
             disabled={selectedAnswers.length === 0}
             className={`w-full py-4 rounded-xl font-bold text-lg transition-all ${
               selectedAnswers.length > 0
-                ? "bg-amber-400 hover:bg-amber-300 text-stone-800 shadow-sm"
-                : "bg-stone-100 text-stone-400 cursor-not-allowed"
+                ? "bg-indigo-500 hover:bg-indigo-400 text-white shadow-sm"
+                : "bg-slate-100 text-slate-400 cursor-not-allowed"
             }`}
           >
             Verificar Respuesta
@@ -1075,9 +1125,13 @@ export default function ExamenClaseB() {
                 </div>
               )}
 
+            <div className="bg-white/70 border border-slate-200 rounded-xl p-3">
+              <PdfRef page={currentQ.page} />
+            </div>
+
             <button
               onClick={nextQuestion}
-              className="w-full bg-amber-400 hover:bg-amber-300 text-stone-800 font-bold py-4 rounded-xl text-lg transition-all"
+              className="w-full bg-indigo-500 hover:bg-indigo-400 text-white font-bold py-4 rounded-xl text-lg transition-all"
             >
               {currentIndex + 1 >= sessionQuestions.length
                 ? "Ver Resultados 📊"
