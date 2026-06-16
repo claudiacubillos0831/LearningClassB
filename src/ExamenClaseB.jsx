@@ -8,6 +8,7 @@ const EXAM_QUESTIONS = 35; // n° de preguntas del examen
 const EXAM_DURATION_MIN = 60; // minutos disponibles
 const EXAM_DOUBLE_COUNT = 5; // preguntas (al azar) que valen doble puntaje
 const EXAM_MAX_ERROR_POINTS = 2; // puntos de error máximos para aprobar
+const STORAGE_KEY = "cubitos_exam_history"; // historial de exámenes (localStorage)
 
 const SESSION_OPTIONS = [
   { value: 15, label: "Rápida", desc: "15 preguntas" },
@@ -24,6 +25,38 @@ function isAnswerCorrect(q, selected) {
   return (
     [...q.correct].sort().join(",") === [...(selected || [])].sort().join(",")
   );
+}
+
+function loadHistory() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+  } catch {
+    return [];
+  }
+}
+
+function persistHistory(h) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(h));
+  } catch {
+    /* localStorage no disponible */
+  }
+}
+
+function computeStats(h) {
+  const n = h.length;
+  if (!n) return { n: 0 };
+  const passed = h.filter((r) => r.passed).length;
+  const pct = (r) => Math.round((r.correct / r.total) * 100);
+  return {
+    n,
+    passed,
+    passRate: Math.round((passed / n) * 100),
+    bestPct: Math.max(...h.map(pct)),
+    bestCorrect: Math.max(...h.map((r) => r.correct)),
+    avgPct: Math.round(h.reduce((a, r) => a + pct(r), 0) / n),
+    avgTimeSec: Math.round(h.reduce((a, r) => a + (r.usedSec || 0), 0) / n),
+  };
 }
 
 function QuestionImages({ images, small = false }) {
@@ -127,6 +160,10 @@ export default function ExamenClaseB() {
   const [timeLeft, setTimeLeft] = useState(EXAM_DURATION_MIN * 60);
   const [examReport, setExamReport] = useState(null);
   const endTimeRef = useRef(null);
+
+  // ---------- Historial / estadísticas ----------
+  const [history, setHistory] = useState(() => loadHistory());
+  const stats = computeStats(history);
 
   // ====================== ESTUDIO ======================
   const startSession = (size = sessionSize) => {
@@ -285,8 +322,29 @@ export default function ExamenClaseB() {
       passed,
       usedSec,
     });
+    // guardar en el historial (localStorage)
+    const record = {
+      ts: Date.now(),
+      passed,
+      correct: correctCount,
+      total: examQuestions.length,
+      earned,
+      totalPoints,
+      errorPoints,
+      usedSec,
+    };
+    const newHist = [record, ...history].slice(0, 100);
+    setHistory(newHist);
+    persistHistory(newHist);
     setMode("examResults");
     window.scrollTo({ top: 0 });
+  };
+
+  const clearHistory = () => {
+    if (window.confirm("¿Borrar todo tu historial de exámenes? Esto no se puede deshacer.")) {
+      setHistory([]);
+      persistHistory([]);
+    }
   };
 
   const fmt = (s) =>
@@ -323,7 +381,6 @@ export default function ExamenClaseB() {
               <li>
                 ✅ Apruebas con máximo {EXAM_MAX_ERROR_POINTS} puntos de error
               </li>
-              <li>🤫 Sin explicaciones hasta terminar (como la prueba real)</li>
             </ul>
             <button
               onClick={startExam}
@@ -359,9 +416,123 @@ export default function ExamenClaseB() {
             </div>
           </div>
 
+          {/* Mis estadísticas */}
+          <button
+            onClick={() => setMode("stats")}
+            className="w-full mt-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-2xl p-4 flex items-center justify-between transition-all"
+          >
+            <span className="flex items-center gap-2 font-semibold">
+              <span className="text-xl">📊</span> Mis estadísticas
+            </span>
+            <span className="text-blue-300 text-sm">
+              {stats.n > 0
+                ? `${stats.n} ${stats.n === 1 ? "examen" : "exámenes"} · ${stats.passed} aprob.`
+                : "Aún sin datos →"}
+            </span>
+          </button>
+
           <p className="text-blue-400 text-sm mt-6">
             {questions.length} preguntas disponibles con explicaciones completas
           </p>
+        </div>
+      </div>
+    );
+  }
+
+  // ====================== RENDER: ESTADÍSTICAS ======================
+  if (mode === "stats") {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 p-4">
+        <div className="max-w-2xl mx-auto py-8">
+          <div className="text-center mb-6">
+            <div className="text-5xl mb-3">📊</div>
+            <h1 className="text-3xl font-bold text-white mb-1">Mis estadísticas</h1>
+            <p className="text-blue-300">Tu progreso en el Examen Real</p>
+          </div>
+
+          {stats.n === 0 ? (
+            <div className="bg-white/10 rounded-2xl p-8 text-center mb-6">
+              <p className="text-blue-200">
+                Todavía no has rendido ningún Examen Real. ¡Rinde el primero y
+                aquí verás tu progreso!
+              </p>
+            </div>
+          ) : (
+            <>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+                <div className="bg-white/10 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-white">{stats.n}</div>
+                  <div className="text-blue-300 text-xs">Exámenes</div>
+                </div>
+                <div className="bg-green-500/15 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-green-400">
+                    {stats.passRate}%
+                  </div>
+                  <div className="text-blue-300 text-xs">
+                    Aprobados ({stats.passed})
+                  </div>
+                </div>
+                <div className="bg-white/10 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-white">
+                    {stats.bestCorrect}/{EXAM_QUESTIONS}
+                  </div>
+                  <div className="text-blue-300 text-xs">Mejor resultado</div>
+                </div>
+                <div className="bg-white/10 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-white">
+                    {fmt(stats.avgTimeSec)}
+                  </div>
+                  <div className="text-blue-300 text-xs">Tiempo prom.</div>
+                </div>
+              </div>
+
+              <h2 className="text-white font-semibold mb-3">Historial</h2>
+              <div className="space-y-2 mb-6">
+                {history.map((r, i) => (
+                  <div
+                    key={r.ts + "-" + i}
+                    className={`rounded-xl p-3 border flex items-center justify-between ${
+                      r.passed
+                        ? "bg-green-500/10 border-green-500/30"
+                        : "bg-red-500/10 border-red-500/30"
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className="text-lg">{r.passed ? "✅" : "❌"}</span>
+                      <div>
+                        <div className="text-white text-sm font-medium">
+                          {r.passed ? "Aprobado" : "Reprobado"} · {r.correct}/
+                          {r.total} correctas
+                        </div>
+                        <div className="text-blue-300 text-xs">
+                          {new Date(r.ts).toLocaleDateString("es-CL")}{" "}
+                          {new Date(r.ts).toLocaleTimeString("es-CL", {
+                            hour: "2-digit",
+                            minute: "2-digit",
+                          })}{" "}
+                          · {r.errorPoints} pts error · {fmt(r.usedSec)}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <button
+                onClick={clearHistory}
+                className="w-full mb-3 bg-red-500/10 hover:bg-red-500/20 text-red-300 font-semibold py-3 rounded-xl transition-all border border-red-500/20"
+              >
+                Borrar historial
+              </button>
+            </>
+          )}
+
+          <button
+            onClick={() => setMode("menu")}
+            className="w-full bg-white/10 hover:bg-white/20 text-white font-semibold py-3 px-8 rounded-xl transition-all"
+          >
+            ← Volver al menú
+          </button>
         </div>
       </div>
     );
@@ -594,6 +765,17 @@ export default function ExamenClaseB() {
               <div className="text-blue-300 text-xs">Tiempo usado</div>
             </div>
           </div>
+
+          <p className="text-center text-blue-300 text-sm mb-6">
+            Llevas {stats.n} {stats.n === 1 ? "examen" : "exámenes"} rendidos ·{" "}
+            {stats.passed} aprobados ·{" "}
+            <button
+              onClick={() => setMode("stats")}
+              className="underline hover:text-white"
+            >
+              ver estadísticas
+            </button>
+          </p>
 
           <h2 className="text-white font-semibold mb-3">
             Revisión completa (aprende de cada una)
