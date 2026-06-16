@@ -81,21 +81,6 @@ function QuestionImages({ images, small = false }) {
   );
 }
 
-// Referencia a la página del PDF (cuestionario oficial Clase B)
-function PdfRef({ page }) {
-  if (!page) return null;
-  return (
-    <p className="text-slate-400 text-xs mt-2 flex items-center gap-1">
-      <span>📄</span>
-      <span>
-        Material de apoyo: revisa esta pregunta en la{" "}
-        <span className="font-semibold text-slate-500">página {page}</span> del
-        cuestionario PDF (Clase B).
-      </span>
-    </p>
-  );
-}
-
 // Tarjeta de repaso usada en los resultados (estudio y examen)
 function ReviewItem({ r, idAttr }) {
   return (
@@ -151,7 +136,6 @@ function ReviewItem({ r, idAttr }) {
                 )}
               </div>
             )}
-          <PdfRef page={r.q.page} />
         </div>
       </div>
     </div>
@@ -165,11 +149,11 @@ function ReviewNav({ rows, prefix }) {
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
   return (
-    <div className="bg-white/70 backdrop-blur border border-slate-200 rounded-2xl p-4 mb-4">
+    <div className="bg-white/70 backdrop-blur border border-slate-200 rounded-2xl p-4">
       <p className="text-slate-500 text-xs mb-2 font-medium">
         Salta a una pregunta:
       </p>
-      <div className="grid grid-cols-8 sm:grid-cols-10 gap-1.5">
+      <div className="grid grid-cols-8 lg:grid-cols-5 gap-1.5">
         {rows.map((r, i) => (
           <button
             key={i}
@@ -848,7 +832,7 @@ export default function ExamenClaseB() {
     } = examReport;
     return (
       <div className={`${PAGE_BG} p-4`}>
-        <div className="max-w-2xl mx-auto py-8">
+        <div className="max-w-4xl mx-auto py-8">
           <div className="text-center mb-6">
             <div className="text-6xl mb-3">{passed ? "🎉" : "😔"}</div>
             <h1
@@ -919,12 +903,15 @@ export default function ExamenClaseB() {
           <h2 className="text-slate-800 font-semibold mb-3">
             Revisión por pregunta
           </h2>
-          <ReviewNav rows={rows} prefix="exrev" />
-
-          <div className="space-y-3 mb-6">
-            {rows.map((r, i) => (
-              <ReviewItem key={i} r={r} idAttr={`exrev-${i}`} />
-            ))}
+          <div className="lg:flex lg:gap-6 lg:items-start mb-6">
+            <div className="lg:order-2 lg:w-52 lg:flex-shrink-0 lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-auto mb-4 lg:mb-0">
+              <ReviewNav rows={rows} prefix="exrev" />
+            </div>
+            <div className="lg:order-1 lg:flex-1 space-y-3 min-w-0">
+              {rows.map((r, i) => (
+                <ReviewItem key={i} r={r} idAttr={`exrev-${i}`} />
+              ))}
+            </div>
           </div>
 
           <button
@@ -957,7 +944,7 @@ export default function ExamenClaseB() {
 
     return (
       <div className={`${PAGE_BG} p-4`}>
-        <div className="max-w-2xl mx-auto py-8">
+        <div className="max-w-4xl mx-auto py-8">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">{emoji}</div>
             <h1 className="text-3xl font-bold text-slate-800 mb-2">
@@ -986,11 +973,15 @@ export default function ExamenClaseB() {
           <h2 className="text-slate-800 font-semibold mb-3">
             Repaso de la práctica
           </h2>
-          <ReviewNav rows={results} prefix="strev" />
-          <div className="space-y-3 mb-6">
-            {results.map((r, i) => (
-              <ReviewItem key={i} r={r} idAttr={`strev-${i}`} />
-            ))}
+          <div className="lg:flex lg:gap-6 lg:items-start mb-6">
+            <div className="lg:order-2 lg:w-52 lg:flex-shrink-0 lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-auto mb-4 lg:mb-0">
+              <ReviewNav rows={results} prefix="strev" />
+            </div>
+            <div className="lg:order-1 lg:flex-1 space-y-3 min-w-0">
+              {results.map((r, i) => (
+                <ReviewItem key={i} r={r} idAttr={`strev-${i}`} />
+              ))}
+            </div>
           </div>
 
           <button
@@ -1124,10 +1115,6 @@ export default function ExamenClaseB() {
                   </div>
                 </div>
               )}
-
-            <div className="bg-white/70 border border-slate-200 rounded-xl p-3">
-              <PdfRef page={currentQ.page} />
-            </div>
 
             <button
               onClick={nextQuestion}
