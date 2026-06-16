@@ -423,7 +423,11 @@ export default function ExamenClaseB() {
       <div className={`${PAGE_BG} flex items-center justify-center p-4`}>
         <div className="max-w-lg w-full text-center">
           <div className="mb-8">
-            <div className="text-6xl mb-4">🧊</div>
+            <img
+              src={IMG_BASE.replace("images/", "") + "logo-cube.png"}
+              alt="Cubitos"
+              className="mx-auto h-24 w-24 mb-4 drop-shadow-sm"
+            />
             <h1 className="text-4xl font-bold text-slate-800 mb-2">
               Examen Clase B
             </h1>
