@@ -20,6 +20,13 @@ const CAT_LABEL = {
   "Emergencias y primeros auxilios": "Emergencias y 1ros auxilios",
 };
 
+// Estilos por nivel de preparación
+const RD = {
+  apto: { bg: "bg-emerald-50 border-emerald-200", text: "text-emerald-700", bar: "#34d399" },
+  casi: { bg: "bg-indigo-50 border-indigo-200", text: "text-indigo-700", bar: "#818cf8" },
+  preparacion: { bg: "bg-rose-50 border-rose-200", text: "text-rose-600", bar: "#fb7185" },
+};
+
 const SESSION_OPTIONS = [
   { value: 15, label: "Rápida", desc: "15 preguntas" },
   { value: 30, label: "Media", desc: "30 preguntas" },
@@ -105,6 +112,36 @@ function computeStats(h) {
     avgTimeSec: Math.round(h.reduce((a, r) => a + (r.usedSec || 0), 0) / n),
     cats,
   };
+}
+
+// Evalúa si está listo/a para rendir en la Dirección de Tránsito (según exámenes recientes)
+function computeReadiness(h) {
+  if (!h.length) return null;
+  const recent = h.slice(0, 5); // historial: más reciente primero
+  const n = recent.length;
+  const passes = recent.filter((r) => r.passed).length;
+  const avgCorrect = Math.round(
+    recent.reduce((a, r) => a + (r.correct / r.total) * 100, 0) / n
+  );
+  const passPct = passes / n;
+  let level, label, emoji, msg;
+  if (n >= 3 && passPct >= 0.8) {
+    level = "apto";
+    label = "¡Apto/a!";
+    emoji = "✅";
+    msg = "Vienes aprobando de forma consistente. Estás en condiciones de rendir en la Dirección de Tránsito.";
+  } else if (avgCorrect >= 85 || passPct >= 0.5) {
+    level = "casi";
+    label = "Casi listo/a";
+    emoji = "🟦";
+    msg = "Vas muy bien. Rinde algunos exámenes más hasta aprobar de forma consistente.";
+  } else {
+    level = "preparacion";
+    label = "En preparación";
+    emoji = "📚";
+    msg = "Sigue practicando, sobre todo tus temas más débiles (revisa el desempeño por tema).";
+  }
+  return { n, passes, avgCorrect, level, label, emoji, msg };
 }
 
 function QuestionImages({ images, small = false }) {
@@ -274,6 +311,7 @@ export default function ExamenClaseB() {
   const [wrongIds, setWrongIds] = useState(() => loadWrong());
   const [showClearModal, setShowClearModal] = useState(false);
   const stats = computeStats(history);
+  const readiness = computeReadiness(history);
   const wrongQuestions = questions.filter((q) => wrongIds.includes(q.id));
 
   const addWrong = (ids) => {
@@ -529,6 +567,65 @@ export default function ExamenClaseB() {
               Cuestionario General de Conducción · Chile
             </p>
           </div>
+
+          {/* Preparación para la Dirección de Tránsito */}
+          {readiness ? (
+            <div
+              className={`rounded-2xl p-5 mb-6 border text-left ${RD[readiness.level].bg}`}
+            >
+              <div className="flex items-center justify-between gap-4">
+                <div className="min-w-0">
+                  <p className="text-slate-500 text-xs font-medium mb-0.5">
+                    ¿Listo/a para la Dirección de Tránsito?
+                  </p>
+                  <p
+                    className={`text-2xl font-extrabold ${RD[readiness.level].text}`}
+                  >
+                    {readiness.emoji} {readiness.label}
+                  </p>
+                </div>
+                <div className="text-center flex-shrink-0">
+                  <div className={`text-3xl font-bold ${RD[readiness.level].text}`}>
+                    {readiness.avgCorrect}%
+                  </div>
+                  <div className="text-slate-400 text-[10px]">
+                    aciertos · últimos {readiness.n}
+                  </div>
+                </div>
+              </div>
+              {/* barra con la meta (~94%) marcada */}
+              <div className="relative mt-3 h-2.5 bg-slate-200 rounded-full">
+                <div
+                  className="h-2.5 rounded-full transition-all"
+                  style={{
+                    width: `${readiness.avgCorrect}%`,
+                    background: RD[readiness.level].bar,
+                  }}
+                />
+                <div
+                  className="absolute -top-1 -bottom-1 w-0.5 bg-slate-500"
+                  style={{ left: "94%" }}
+                  title="Meta para aprobar (~94%)"
+                />
+              </div>
+              <div className="flex justify-end">
+                <span className="text-slate-400 text-[10px] mt-1">
+                  meta para aprobar ≈ 94%
+                </span>
+              </div>
+              <p className="text-slate-600 text-xs mt-2">{readiness.msg}</p>
+            </div>
+          ) : (
+            <div className="rounded-2xl p-5 mb-6 border border-slate-200 bg-white/60 text-left">
+              <p className="text-slate-500 text-xs font-medium mb-1">
+                ¿Listo/a para la Dirección de Tránsito?
+              </p>
+              <p className="text-slate-600 text-sm">
+                Rinde tu primer <b>Examen Real</b> y aquí verás tu nivel de
+                preparación y si estás apto/a.
+              </p>
+            </div>
+          )}
 
           {/* Modo Examen Real */}
           <div className="bg-gradient-to-br from-indigo-100 to-violet-100 border border-indigo-200 rounded-2xl p-6 mb-6 text-left shadow-sm">
