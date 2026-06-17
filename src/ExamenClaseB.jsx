@@ -9,6 +9,16 @@ const EXAM_DURATION_MIN = 60; // minutos disponibles
 const EXAM_DOUBLE_COUNT = 5; // preguntas (al azar) que valen doble puntaje
 const EXAM_MAX_ERROR_POINTS = 2; // puntos de error máximos para aprobar
 const STORAGE_KEY = "cubitos_exam_history"; // historial de exámenes (localStorage)
+const WRONG_KEY = "cubitos_wrong"; // IDs de preguntas falladas para repasar
+
+const CAT_LABEL = {
+  "Senales y semaforos": "Señales y semáforos",
+  "Vehiculo y mantencion": "Vehículo y mantención",
+  "Leyes, normas y documentos": "Leyes, normas y documentos",
+  "Conduccion segura": "Conducción segura",
+  "Factores humanos (alcohol, fatiga, salud)": "Factores humanos",
+  "Emergencias y primeros auxilios": "Emergencias y 1ros auxilios",
+};
 
 const SESSION_OPTIONS = [
   { value: 15, label: "Rápida", desc: "15 preguntas" },
@@ -46,11 +56,45 @@ function persistHistory(h) {
   }
 }
 
+function loadWrong() {
+  try {
+    return JSON.parse(localStorage.getItem(WRONG_KEY)) || [];
+  } catch {
+    return [];
+  }
+}
+
+function persistWrong(a) {
+  try {
+    localStorage.setItem(WRONG_KEY, JSON.stringify(a));
+  } catch {
+    /* localStorage no disponible */
+  }
+}
+
 function computeStats(h) {
   const n = h.length;
-  if (!n) return { n: 0 };
+  if (!n) return { n: 0, cats: [] };
   const passed = h.filter((r) => r.passed).length;
   const pct = (r) => Math.round((r.correct / r.total) * 100);
+  // agregado por tema (categoría)
+  const acc = {};
+  for (const r of h) {
+    if (!r.cats) continue;
+    for (const [k, v] of Object.entries(r.cats)) {
+      acc[k] = acc[k] || { c: 0, t: 0 };
+      acc[k].c += v.c;
+      acc[k].t += v.t;
+    }
+  }
+  const cats = Object.entries(acc)
+    .map(([name, v]) => ({
+      name,
+      c: v.c,
+      t: v.t,
+      pct: Math.round((v.c / v.t) * 100),
+    }))
+    .sort((a, b) => a.pct - b.pct); // más débil primero
   return {
     n,
     passed,
@@ -59,6 +103,7 @@ function computeStats(h) {
     bestCorrect: Math.max(...h.map((r) => r.correct)),
     avgPct: Math.round(h.reduce((a, r) => a + pct(r), 0) / n),
     avgTimeSec: Math.round(h.reduce((a, r) => a + (r.usedSec || 0), 0) / n),
+    cats,
   };
 }
 
@@ -224,10 +269,29 @@ export default function ExamenClaseB() {
   const [showFinishModal, setShowFinishModal] = useState(false);
   const endTimeRef = useRef(null);
 
-  // ---------- Historial / estadísticas ----------
+  // ---------- Historial / estadísticas / repaso de errores ----------
   const [history, setHistory] = useState(() => loadHistory());
+  const [wrongIds, setWrongIds] = useState(() => loadWrong());
   const [showClearModal, setShowClearModal] = useState(false);
   const stats = computeStats(history);
+  const wrongQuestions = questions.filter((q) => wrongIds.includes(q.id));
+
+  const addWrong = (ids) => {
+    setWrongIds((prev) => {
+      const s = new Set(prev);
+      ids.forEach((i) => s.add(i));
+      const a = [...s];
+      persistWrong(a);
+      return a;
+    });
+  };
+  const removeWrong = (id) => {
+    setWrongIds((prev) => {
+      const a = prev.filter((x) => x !== id);
+      persistWrong(a);
+      return a;
+    });
+  };
 
   // ====================== ESTUDIO ======================
   const startSession = (size = sessionSize) => {
@@ -261,11 +325,31 @@ export default function ExamenClaseB() {
     setAnswered(true);
     setShowExplanation(true);
     const ok = isAnswerCorrect(currentQ, selectedAnswers);
-    if (ok) setScore((prev) => prev + 1);
+    if (ok) {
+      setScore((prev) => prev + 1);
+      if (wrongIds.includes(currentQ.id)) removeWrong(currentQ.id);
+    } else {
+      addWrong([currentQ.id]);
+    }
     setResults((prev) => [
       ...prev,
       { q: currentQ, selected: selectedAnswers, isCorrect: ok },
     ]);
+  };
+
+  const startPracticeWrong = () => {
+    const picked = shuffle(wrongQuestions);
+    if (!picked.length) return;
+    setSessionSize(picked.length);
+    setSessionQuestions(picked);
+    setCurrentIndex(0);
+    setSelectedAnswers([]);
+    setShowExplanation(false);
+    setAnswered(false);
+    setScore(0);
+    setResults([]);
+    setMode("study");
+    window.scrollTo({ top: 0 });
   };
 
   const nextQuestion = () => {
@@ -374,6 +458,15 @@ export default function ExamenClaseB() {
     const answeredCount = rows.filter((r) => (r.selected || []).length).length;
     const passed = errorPoints <= EXAM_MAX_ERROR_POINTS;
     const usedSec = EXAM_DURATION_MIN * 60 - timeLeft;
+    // desglose por tema y registro de errores para repaso
+    const cats = {};
+    for (const r of rows) {
+      const k = r.q.category || "Otros";
+      cats[k] = cats[k] || { c: 0, t: 0 };
+      cats[k].t += 1;
+      if (r.isCorrect) cats[k].c += 1;
+    }
+    addWrong(rows.filter((r) => !r.isCorrect).map((r) => r.q.id));
     setExamReport({
       rows,
       totalPoints,
@@ -393,6 +486,7 @@ export default function ExamenClaseB() {
       totalPoints,
       errorPoints,
       usedSec,
+      cats,
     };
     const newHist = [record, ...history].slice(0, 100);
     setHistory(newHist);
@@ -484,6 +578,28 @@ export default function ExamenClaseB() {
             </div>
           </div>
 
+          {/* Practicar mis errores */}
+          <button
+            onClick={startPracticeWrong}
+            disabled={wrongQuestions.length === 0}
+            className={`w-full mt-4 rounded-2xl p-4 flex items-center justify-between transition-all shadow-sm border ${
+              wrongQuestions.length
+                ? "bg-rose-50 hover:bg-rose-100 border-rose-200 text-rose-600"
+                : "bg-white/60 border-slate-200 text-slate-400 cursor-not-allowed"
+            }`}
+          >
+            <span className="flex items-center gap-2 font-semibold">
+              <span className="text-xl">🔁</span> Practicar mis errores
+            </span>
+            <span className="text-sm">
+              {wrongQuestions.length
+                ? `${wrongQuestions.length} ${
+                    wrongQuestions.length === 1 ? "pregunta" : "preguntas"
+                  } →`
+                : "¡Sin errores! 🎉"}
+            </span>
+          </button>
+
           {/* Mis estadísticas */}
           <button
             onClick={() => setMode("stats")}
@@ -557,6 +673,42 @@ export default function ExamenClaseB() {
                   <div className="text-slate-500 text-xs">Tiempo prom.</div>
                 </div>
               </div>
+
+              {stats.cats.length > 0 && (
+                <>
+                  <h2 className="text-slate-800 font-semibold mb-3">
+                    Desempeño por tema
+                  </h2>
+                  <div className="bg-white/70 border border-slate-200 rounded-2xl p-4 mb-6 space-y-3">
+                    {stats.cats.map((c) => {
+                      const color =
+                        c.pct < 60
+                          ? "#fb7185"
+                          : c.pct < 80
+                          ? "#818cf8"
+                          : "#34d399";
+                      return (
+                        <div key={c.name}>
+                          <div className="flex justify-between items-baseline text-xs mb-1">
+                            <span className="text-slate-700 font-medium">
+                              {CAT_LABEL[c.name] || c.name}
+                            </span>
+                            <span className="text-slate-500">
+                              {c.pct}% · {c.c}/{c.t}
+                            </span>
+                          </div>
+                          <div className="h-2.5 bg-slate-200 rounded-full overflow-hidden">
+                            <div
+                              className="h-2.5 rounded-full transition-all"
+                              style={{ width: `${c.pct}%`, background: color }}
+                            />
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </>
+              )}
 
               <h2 className="text-slate-800 font-semibold mb-3">Historial</h2>
               <div className="space-y-2 mb-6">
@@ -917,6 +1069,15 @@ export default function ExamenClaseB() {
               ))}
             </div>
           </div>
+
+          {wrongQuestions.length > 0 && (
+            <button
+              onClick={startPracticeWrong}
+              className="w-full mb-3 bg-rose-50 hover:bg-rose-100 border border-rose-200 text-rose-600 font-bold py-4 px-8 rounded-xl text-lg transition-all"
+            >
+              🔁 Practicar mis errores ({wrongQuestions.length})
+            </button>
+          )}
 
           <button
             onClick={startExam}
