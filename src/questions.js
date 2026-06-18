@@ -1,5 +1,5 @@
 // Banco de 280 preguntas del Examen Teorico Clase B (Chile).
-// Incluye: pregunta, alternativas, clave oficial, explicaciones, imagenes, pagina y categoria.
+// Incluye: pregunta, alternativas, clave oficial, explicaciones, imagenes, pagina, categoria y formula (en preguntas de calculo).
 
 export const questions = [
   {
@@ -884,7 +884,8 @@ export const questions = [
       "Es incorrecto: este valor sobreestima ambas distancias; el cálculo correcto da 52 metros."
     ],
     "page": 8,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "formula": "Al duplicar la velocidad:\n• Distancia de REACCIÓN: proporcional a la velocidad (∝ v) → se duplica: 10 m × 2 = 20 m.\n• Distancia de FRENADO: proporcional al cuadrado de la velocidad (energía cinética E = ½·m·v²) → se cuadruplica: 8 m × 4 = 32 m.\n• Total = 20 + 32 = 52 m."
   },
   {
     "id": 37,
@@ -908,7 +909,8 @@ export const questions = [
       "Es verdadera: la distancia de frenado se cuadruplica al duplicar la velocidad, por lo que no es la afirmación falsa."
     ],
     "page": 8,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "formula": "Energía cinética: E = ½·m·v². Si la velocidad se duplica (30→60 km/h), v² se multiplica por 4 → la energía se CUADRUPLICA (por eso 'se duplica la energía cinética' es FALSA).\n• Distancia de reacción ∝ v → se duplica.\n• Distancia de frenado ∝ v² → se cuadruplica."
   },
   {
     "id": 38,
@@ -1007,7 +1009,8 @@ export const questions = [
       ""
     ],
     "page": 10,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "formula": "Distancia de detención = reacción + frenado. (Recuerda: m/s = km/h ÷ 3,6)\n• Reacción (1 s a 50 km/h): 50 ÷ 3,6 ≈ 13,9 m.\n• Frenado en seco a 50 km/h ≈ 13–16 m.\n• Total ≈ 27–30 m → ~30 m."
   },
   {
     "id": 42,
@@ -1031,7 +1034,8 @@ export const questions = [
       "120 metros sobrestima la distancia; correspondería a velocidades mucho mayores o a calzada mojada."
     ],
     "page": 10,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "formula": "A 90 km/h en asfalto seco (m/s = km/h ÷ 3,6):\n• Reacción (1 s): 90 ÷ 3,6 = 25 m.\n• Frenado ≈ 45 m.\n• Total ≈ 70 m."
   },
   {
     "id": 43,
@@ -1055,7 +1059,8 @@ export const questions = [
       "25 metros subestima la detención total a 70 km/h; ese valor corresponde a unos 50 km/h."
     ],
     "page": 10,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "formula": "A 70 km/h en seco (m/s = km/h ÷ 3,6):\n• Reacción (1 s): 70 ÷ 3,6 ≈ 19,4 m.\n• Frenado ≈ 25 m.\n• Total ≈ 45 m."
   },
   {
     "id": 44,
@@ -1176,7 +1181,8 @@ export const questions = [
       "15 metros es muy poco para 90 km/h; ese valor se da a baja velocidad."
     ],
     "page": 10,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "formula": "Distancia de FRENADO (solo frenado, sin reacción) a 90 km/h ≈ 45 m.\nCrece con el cuadrado de la velocidad (∝ v²): si vas al doble, frena en 4 veces la distancia."
   },
   {
     "id": 49,
@@ -1252,7 +1258,8 @@ export const questions = [
       "30 metros sobrestima la distancia de reacción a 70 km/h; ese valor correspondería a una velocidad mayor."
     ],
     "page": 12,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "formula": "Distancia de REACCIÓN = velocidad × tiempo de reacción.\nA 70 km/h con 1 s: 70 ÷ 3,6 ≈ 19,4 m ≈ 20 m recorridos ANTES de empezar a frenar."
   },
   {
     "id": 52,
@@ -1276,7 +1283,8 @@ export const questions = [
       "2 segundos es más del doble del promedio; sobreestima el tiempo de reacción normal."
     ],
     "page": 12,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "formula": "Tiempo de reacción promedio ≈ 1 segundo.\nEn ese segundo recorres v ÷ 3,6 metros (ej. a 90 km/h ≈ 25 m) antes de pisar el freno."
   },
   {
     "id": 53,
@@ -2375,7 +2383,8 @@ export const questions = [
       "El largo de tres autos sigue siendo una distancia fija que no se ajusta a la velocidad; la regla correcta se mide en tiempo, no en largos."
     ],
     "page": 22,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "formula": "Regla de los 3 segundos: elige un punto fijo; cuando el auto de adelante lo pase, cuenta «mil uno, mil dos, mil tres». Si llegas antes de terminar, vas muy cerca.\nEquivale a la distancia que recorres en 3 s (a 100 km/h ≈ 83 m)."
   },
   {
     "id": 97,
@@ -2423,7 +2432,8 @@ export const questions = [
       "Unos 100 metros exceden lo requerido; la distancia mínima adecuada se aproxima a los 75 metros."
     ],
     "page": 22,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "formula": "Distancia mínima de seguridad ≈ distancia de detención total.\nA 90 km/h: reacción (25 m) + frenado (≈ 45–50 m) ≈ 75 m. (También sirve la regla de los 3 segundos.)"
   },
   {
     "id": 99,
@@ -5405,7 +5415,8 @@ export const questions = [
       ""
     ],
     "page": 56,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "formula": "En hielo el coeficiente de fricción (μ) cae muchísimo. Como la distancia de frenado es inversamente proporcional a μ (∝ 1/μ), puede llegar a ser hasta 10 veces la distancia normal."
   },
   {
     "id": 218,

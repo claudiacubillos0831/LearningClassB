@@ -23,9 +23,9 @@ const CAT_LABEL = {
 
 // Estilos por nivel de preparación
 const RD = {
-  apto: { bg: "bg-emerald-50 border-emerald-200", text: "text-emerald-700", bar: "#34d399" },
-  casi: { bg: "bg-indigo-50 border-indigo-200", text: "text-indigo-700", bar: "#818cf8" },
-  preparacion: { bg: "bg-rose-50 border-rose-200", text: "text-rose-600", bar: "#fb7185" },
+  apto: { bg: "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800", text: "text-emerald-700 dark:text-emerald-300", bar: "#34d399" },
+  casi: { bg: "bg-indigo-50 dark:bg-indigo-950/40 border-indigo-200 dark:border-indigo-800", text: "text-indigo-700 dark:text-indigo-300", bar: "#818cf8" },
+  preparacion: { bg: "bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800", text: "text-rose-600 dark:text-rose-300", bar: "#fb7185" },
 };
 
 const SESSION_OPTIONS = [
@@ -36,7 +36,7 @@ const SESSION_OPTIONS = [
 ];
 
 const PAGE_BG =
-  "min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-violet-50";
+  "min-h-screen bg-gradient-to-br from-slate-50 dark:from-slate-900 via-indigo-50 dark:via-slate-900 to-violet-50 dark:to-slate-950";
 
 function shuffle(arr) {
   return [...arr].sort(() => Math.random() - 0.5);
@@ -166,7 +166,7 @@ function QuestionImages({ images, small = false }) {
           key={src}
           src={IMG_BASE + src}
           alt="Imagen de la pregunta"
-          className={`rounded-lg bg-white object-contain border border-slate-200 ${
+          className={`rounded-lg bg-white dark:bg-slate-800 object-contain border border-slate-200 dark:border-slate-700 ${
             small ? "h-20" : "max-h-72 w-auto"
           }`}
           loading="lazy"
@@ -183,27 +183,27 @@ function ReviewItem({ r, idAttr }) {
       id={idAttr}
       className={`scroll-mt-4 rounded-xl p-4 border ${
         r.isCorrect
-          ? "bg-emerald-50 border-emerald-200"
-          : "bg-rose-50 border-rose-200"
+          ? "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800"
+          : "bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800"
       }`}
     >
       <div className="flex items-start gap-3">
         <span className="text-lg flex-shrink-0">{r.isCorrect ? "✅" : "❌"}</span>
         <div className="min-w-0">
-          <p className="text-slate-800 text-sm font-medium">
-            <span className="text-indigo-600">#{r.q.id}</span> {r.q.question}
+          <p className="text-slate-800 dark:text-slate-100 text-sm font-medium">
+            <span className="text-indigo-600 dark:text-indigo-300">#{r.q.id}</span> {r.q.question}
             {r.double && (
-              <span className="ml-2 inline-block bg-fuchsia-100 text-fuchsia-600 text-[10px] font-bold px-2 py-0.5 rounded-full align-middle">
+              <span className="ml-2 inline-block bg-fuchsia-100 dark:bg-fuchsia-900/40 text-fuchsia-600 dark:text-fuchsia-300 text-[10px] font-bold px-2 py-0.5 rounded-full align-middle">
                 ×2
               </span>
             )}
           </p>
           <QuestionImages images={r.q.images} small />
-          <p className="text-emerald-700 text-xs mt-2">
+          <p className="text-emerald-700 dark:text-emerald-300 text-xs mt-2">
             ✔ Correcta: {r.q.correct.map((c) => r.q.options[c]).join("  ·  ")}
           </p>
           {!r.isCorrect && (
-            <p className="text-rose-600 text-xs mt-1">
+            <p className="text-rose-600 dark:text-rose-300 text-xs mt-1">
               ✘ Tu respuesta:{" "}
               {r.selected && r.selected.length
                 ? r.selected.map((s) => r.q.options[s]).join("  ·  ")
@@ -211,8 +211,13 @@ function ReviewItem({ r, idAttr }) {
             </p>
           )}
           {r.q.explanation && (
-            <p className="text-slate-600 text-xs mt-2 leading-relaxed">
+            <p className="text-slate-600 dark:text-slate-300 text-xs mt-2 leading-relaxed">
               💡 {r.q.explanation}
+            </p>
+          )}
+          {r.q.formula && (
+            <p className="text-indigo-700 dark:text-indigo-300 text-xs mt-2 leading-relaxed whitespace-pre-line bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 rounded-lg p-2">
+              🧮 {r.q.formula}
             </p>
           )}
           {!r.isCorrect &&
@@ -221,8 +226,8 @@ function ReviewItem({ r, idAttr }) {
               <div className="mt-2 space-y-1">
                 {r.q.wrongExplanations.map((exp, idx) =>
                   exp ? (
-                    <p key={idx} className="text-rose-500 text-xs leading-relaxed">
-                      <span className="font-semibold text-rose-600">
+                    <p key={idx} className="text-rose-500 dark:text-rose-400 text-xs leading-relaxed">
+                      <span className="font-semibold text-rose-600 dark:text-rose-300">
                         {String.fromCharCode(65 + idx)})
                       </span>{" "}
                       {exp}
@@ -244,8 +249,8 @@ function ReviewNav({ rows, prefix }) {
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
   return (
-    <div className="bg-white/70 backdrop-blur border border-slate-200 rounded-2xl p-4">
-      <p className="text-slate-500 text-xs mb-2 font-medium">
+    <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur border border-slate-200 dark:border-slate-700 rounded-2xl p-4">
+      <p className="text-slate-500 dark:text-slate-400 text-xs mb-2 font-medium">
         Salta a una pregunta:
       </p>
       <div className="grid grid-cols-8 lg:grid-cols-5 gap-1.5">
@@ -258,8 +263,8 @@ function ReviewNav({ rows, prefix }) {
             }`}
             className={`relative h-8 rounded-lg text-xs font-bold transition-all ${
               r.isCorrect
-                ? "bg-emerald-200 text-emerald-800 hover:bg-emerald-300"
-                : "bg-rose-200 text-rose-700 hover:bg-rose-300"
+                ? "bg-emerald-200 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 hover:bg-emerald-300 dark:hover:bg-emerald-700"
+                : "bg-rose-200 dark:bg-rose-900/50 text-rose-700 dark:text-rose-200 hover:bg-rose-300 dark:hover:bg-rose-700"
             }`}
           >
             {i + 1}
@@ -283,21 +288,110 @@ function Modal({ icon, title, children, onClose, actions }) {
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-2xl shadow-xl border border-slate-200 max-w-sm w-full p-6 text-center"
+        className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 max-w-sm w-full p-6 text-center"
         onClick={(e) => e.stopPropagation()}
       >
         {icon && <div className="text-4xl mb-3">{icon}</div>}
-        <h3 className="text-xl font-bold text-slate-800 mb-2">{title}</h3>
-        <div className="text-slate-600 text-sm mb-5">{children}</div>
+        <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">{title}</h3>
+        <div className="text-slate-600 dark:text-slate-300 text-sm mb-5">{children}</div>
         <div className="flex gap-3">{actions}</div>
       </div>
     </div>
   );
 }
 
+// Tarjeta de consulta detallada de una pregunta (buscador)
+function LookupCard({ q }) {
+  return (
+    <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur border border-slate-200 dark:border-slate-700 rounded-2xl p-5 mb-3">
+      <div className="flex items-center gap-2 mb-2">
+        <span className="bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-300 font-bold px-2 py-0.5 rounded-full text-xs">
+          #{q.id}
+        </span>
+        <span className="text-slate-400 dark:text-slate-500 text-xs">
+          {CAT_LABEL[q.category] || q.category}
+        </span>
+      </div>
+      <p className="text-slate-800 dark:text-slate-100 font-medium mb-1">{q.question}</p>
+      <QuestionImages images={q.images} />
+      <div className="space-y-1.5 my-3">
+        {q.options.map((o, i) => {
+          const ok = q.correct.includes(i);
+          return (
+            <div
+              key={i}
+              className={`text-sm rounded-lg px-3 py-2 border ${
+                ok
+                  ? "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-300 text-emerald-800 dark:text-emerald-200 font-semibold"
+                  : "bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300"
+              }`}
+            >
+              <span className="font-bold">{String.fromCharCode(65 + i)})</span> {o}
+              {ok && " ✓"}
+            </div>
+          );
+        })}
+      </div>
+      <div className="bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 rounded-xl p-3 mb-2">
+        <p className="text-emerald-700 dark:text-emerald-300 font-bold text-sm mb-1">
+          💡 ¿Por qué es correcta?
+        </p>
+        <p className="text-emerald-800 dark:text-emerald-200 text-sm leading-relaxed">{q.explanation}</p>
+      </div>
+      {q.formula && (
+        <div className="bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 rounded-xl p-3 mb-2">
+          <p className="text-indigo-700 dark:text-indigo-300 font-bold text-sm mb-1">
+            🧮 Cálculo / fórmula
+          </p>
+          <p className="text-slate-700 dark:text-slate-200 text-sm leading-relaxed whitespace-pre-line">
+            {q.formula}
+          </p>
+        </div>
+      )}
+      {q.wrongExplanations && q.wrongExplanations.some((e) => e) && (
+        <div className="bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 rounded-xl p-3">
+          <p className="text-rose-600 dark:text-rose-300 font-bold text-sm mb-1">
+            ❌ ¿Por qué no las otras?
+          </p>
+          {q.wrongExplanations.map((e, i) =>
+            e ? (
+              <p key={i} className="text-rose-600 dark:text-rose-300 text-xs leading-relaxed mb-1">
+                <span className="font-semibold">{String.fromCharCode(65 + i)})</span>{" "}
+                {e}
+              </p>
+            ) : null
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function ExamenClaseB() {
-  // modos: menu | study | results | exam | examResults | stats
+  // modos: menu | study | results | exam | examResults | stats | lookup
   const [mode, setMode] = useState("menu");
+
+  // ---------- Tema claro/oscuro ----------
+  const [dark, setDark] = useState(() => {
+    try {
+      const s = localStorage.getItem("cubitos_theme");
+      if (s) return s === "dark";
+      return window.matchMedia?.("(prefers-color-scheme: dark)").matches ?? false;
+    } catch {
+      return false;
+    }
+  });
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", dark);
+    try {
+      localStorage.setItem("cubitos_theme", dark ? "dark" : "light");
+    } catch {
+      /* noop */
+    }
+  }, [dark]);
+
+  // ---------- Buscador de preguntas ----------
+  const [lookupQuery, setLookupQuery] = useState("");
 
   // ---------- Estado modo ESTUDIO ----------
   const [sessionSize, setSessionSize] = useState(15);
@@ -506,14 +600,14 @@ export default function ExamenClaseB() {
     const isCorrect = currentQ?.correct.includes(idx);
     if (!answered) {
       return isSelected
-        ? "border-2 border-indigo-400 bg-indigo-50 text-indigo-900"
-        : "border border-slate-200 bg-white hover:border-indigo-300 hover:bg-indigo-50 cursor-pointer text-slate-700";
+        ? "border-2 border-indigo-400 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-900 dark:text-indigo-100"
+        : "border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-indigo-300 dark:hover:border-indigo-500 hover:bg-indigo-50 dark:hover:bg-slate-700 cursor-pointer text-slate-700 dark:text-slate-200";
     }
     if (isCorrect)
-      return "border-2 border-emerald-400 bg-emerald-50 text-emerald-900";
+      return "border-2 border-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-900 dark:text-emerald-100";
     if (isSelected && !isCorrect)
-      return "border-2 border-rose-300 bg-rose-50 text-rose-900";
-    return "border border-slate-200 bg-slate-50 text-slate-400";
+      return "border-2 border-rose-300 bg-rose-50 dark:bg-rose-950/40 text-rose-900 dark:text-rose-100";
+    return "border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-400 dark:text-slate-500";
   };
 
   const progress =
@@ -653,14 +747,21 @@ export default function ExamenClaseB() {
     return (
       <div className={`${PAGE_BG} flex items-center justify-center p-4`}>
         <div className="max-w-lg w-full text-center animate-fadeIn">
-          {/* Cuenta en la nube */}
-          <div className="flex justify-end mb-2 h-5">
+          {/* Barra superior: tema + cuenta */}
+          <div className="flex justify-between items-center mb-2 h-6">
+            <button
+              onClick={() => setDark((d) => !d)}
+              title={dark ? "Cambiar a claro" : "Cambiar a oscuro"}
+              className="text-base hover:scale-110 transition-transform"
+            >
+              {dark ? "☀️" : "🌙"}
+            </button>
             {user ? (
-              <div className="flex items-center gap-2 text-xs text-slate-500">
+              <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
                 <span className="truncate max-w-[200px]">☁️ {user.email}</span>
                 <button
                   onClick={signOut}
-                  className="underline hover:text-slate-700"
+                  className="underline hover:text-slate-700 dark:hover:text-slate-200"
                 >
                   Salir
                 </button>
@@ -671,7 +772,7 @@ export default function ExamenClaseB() {
                   setAuthMsg("");
                   setAuthModal(true);
                 }}
-                className="text-xs font-semibold text-indigo-600 hover:text-indigo-500"
+                className="text-xs font-semibold text-indigo-600 dark:text-indigo-300 hover:text-indigo-500"
               >
                 ☁️ Guardar en mi cuenta
               </button>
@@ -684,13 +785,13 @@ export default function ExamenClaseB() {
               alt="Cubitos"
               className="mx-auto h-20 w-20 mb-3 drop-shadow-sm"
             />
-            <p className="text-indigo-400 text-xs font-semibold tracking-[0.35em] uppercase mb-1">
+            <p className="text-indigo-400 dark:text-indigo-300 text-xs font-semibold tracking-[0.35em] uppercase mb-1">
               Cubitos
             </p>
-            <h1 className="text-4xl font-extrabold tracking-tight text-slate-800 mb-2">
+            <h1 className="text-4xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 mb-2">
               Examen Clase B
             </h1>
-            <p className="text-slate-500 text-base">
+            <p className="text-slate-500 dark:text-slate-400 text-base">
               Cuestionario General de Conducción · Chile
             </p>
           </div>
@@ -702,7 +803,7 @@ export default function ExamenClaseB() {
             >
               <div className="flex items-center justify-between gap-4">
                 <div className="min-w-0">
-                  <p className="text-slate-500 text-xs font-medium mb-0.5">
+                  <p className="text-slate-500 dark:text-slate-400 text-xs font-medium mb-0.5">
                     ¿Listo/a para la Dirección de Tránsito?
                   </p>
                   <p
@@ -715,13 +816,13 @@ export default function ExamenClaseB() {
                   <div className={`text-3xl font-bold ${RD[readiness.level].text}`}>
                     {readiness.avgCorrect}%
                   </div>
-                  <div className="text-slate-400 text-[10px]">
+                  <div className="text-slate-400 dark:text-slate-500 text-[10px]">
                     aciertos · últimos {readiness.n}
                   </div>
                 </div>
               </div>
               {/* barra con la meta (~94%) marcada */}
-              <div className="relative mt-3 h-2.5 bg-slate-200 rounded-full">
+              <div className="relative mt-3 h-2.5 bg-slate-200 dark:bg-slate-700 rounded-full">
                 <div
                   className="h-2.5 rounded-full transition-all"
                   style={{
@@ -736,18 +837,18 @@ export default function ExamenClaseB() {
                 />
               </div>
               <div className="flex justify-end">
-                <span className="text-slate-400 text-[10px] mt-1">
+                <span className="text-slate-400 dark:text-slate-500 text-[10px] mt-1">
                   meta para aprobar ≈ 94%
                 </span>
               </div>
-              <p className="text-slate-600 text-xs mt-2">{readiness.msg}</p>
+              <p className="text-slate-600 dark:text-slate-300 text-xs mt-2">{readiness.msg}</p>
             </div>
           ) : (
-            <div className="rounded-2xl p-5 mb-6 border border-slate-200 bg-white/60 text-left">
-              <p className="text-slate-500 text-xs font-medium mb-1">
+            <div className="rounded-2xl p-5 mb-6 border border-slate-200 dark:border-slate-700 bg-white/60 dark:bg-slate-800/60 text-left">
+              <p className="text-slate-500 dark:text-slate-400 text-xs font-medium mb-1">
                 ¿Listo/a para la Dirección de Tránsito?
               </p>
-              <p className="text-slate-600 text-sm">
+              <p className="text-slate-600 dark:text-slate-300 text-sm">
                 Rinde tu primer <b>Examen Real</b> y aquí verás tu nivel de
                 preparación y si estás apto/a.
               </p>
@@ -755,15 +856,15 @@ export default function ExamenClaseB() {
           )}
 
           {/* Modo Examen Real */}
-          <div className="bg-gradient-to-br from-indigo-100 to-violet-100 border border-indigo-200 rounded-2xl p-6 mb-6 text-left shadow-sm">
+          <div className="bg-gradient-to-br from-indigo-100 dark:from-indigo-900/40 to-violet-100 dark:to-violet-900/40 border border-indigo-200 dark:border-indigo-800 rounded-2xl p-6 mb-6 text-left shadow-sm">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-2xl">📝</span>
-              <h2 className="text-slate-800 font-bold text-lg">Examen Real</h2>
+              <h2 className="text-slate-800 dark:text-slate-100 font-bold text-lg">Examen Real</h2>
             </div>
-            <p className="text-slate-600 text-sm mb-3">
+            <p className="text-slate-600 dark:text-slate-300 text-sm mb-3">
               Simulacro como en la Dirección de Tránsito:
             </p>
-            <ul className="space-y-1 text-slate-600 text-sm mb-4">
+            <ul className="space-y-1 text-slate-600 dark:text-slate-300 text-sm mb-4">
               <li>🕐 {EXAM_QUESTIONS} preguntas en {EXAM_DURATION_MIN} minutos</li>
               <li>✖️ {EXAM_DOUBLE_COUNT} preguntas valen doble puntaje (×2)</li>
               <li>
@@ -779,12 +880,12 @@ export default function ExamenClaseB() {
           </div>
 
           {/* Modo Estudio */}
-          <div className="bg-white/70 backdrop-blur border border-slate-200 rounded-2xl p-6 text-left shadow-sm">
+          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur border border-slate-200 dark:border-slate-700 rounded-2xl p-6 text-left shadow-sm">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-2xl">📖</span>
-              <h2 className="text-slate-800 font-bold text-lg">Modo Estudio</h2>
+              <h2 className="text-slate-800 dark:text-slate-100 font-bold text-lg">Modo Estudio</h2>
             </div>
-            <p className="text-slate-600 text-sm mb-4">
+            <p className="text-slate-600 dark:text-slate-300 text-sm mb-4">
               Practica con explicación inmediata de cada respuesta (por qué es
               correcta y por qué no las otras).
             </p>
@@ -793,10 +894,10 @@ export default function ExamenClaseB() {
                 <button
                   key={opt.value}
                   onClick={() => startSession(opt.value)}
-                  className="bg-indigo-50 hover:bg-indigo-100 border border-slate-200 text-slate-700 rounded-xl py-3 px-4 transition-all duration-200"
+                  className="bg-indigo-50 dark:bg-indigo-950/40 hover:bg-indigo-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 rounded-xl py-3 px-4 transition-all duration-200"
                 >
                   <div className="text-base font-bold">{opt.label}</div>
-                  <div className="text-slate-500 text-xs">{opt.desc}</div>
+                  <div className="text-slate-500 dark:text-slate-400 text-xs">{opt.desc}</div>
                 </button>
               ))}
             </div>
@@ -808,8 +909,8 @@ export default function ExamenClaseB() {
             disabled={wrongQuestions.length === 0}
             className={`w-full mt-4 rounded-2xl p-4 flex items-center justify-between transition-all shadow-sm border ${
               wrongQuestions.length
-                ? "bg-rose-50 hover:bg-rose-100 border-rose-200 text-rose-600"
-                : "bg-white/60 border-slate-200 text-slate-400 cursor-not-allowed"
+                ? "bg-rose-50 dark:bg-rose-950/40 hover:bg-rose-100 dark:hover:bg-rose-900/40 border-rose-200 dark:border-rose-800 text-rose-600 dark:text-rose-300"
+                : "bg-white/60 dark:bg-slate-800/60 border-slate-200 dark:border-slate-700 text-slate-400 dark:text-slate-500 cursor-not-allowed"
             }`}
           >
             <span className="flex items-center gap-2 font-semibold">
@@ -827,19 +928,33 @@ export default function ExamenClaseB() {
           {/* Mis estadísticas */}
           <button
             onClick={() => setMode("stats")}
-            className="w-full mt-4 bg-white/60 hover:bg-white border border-slate-200 text-slate-700 rounded-2xl p-4 flex items-center justify-between transition-all shadow-sm"
+            className="w-full mt-4 bg-white/60 dark:bg-slate-800/60 hover:bg-white dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 rounded-2xl p-4 flex items-center justify-between transition-all shadow-sm"
           >
             <span className="flex items-center gap-2 font-semibold">
               <span className="text-xl">📊</span> Mis estadísticas
             </span>
-            <span className="text-slate-500 text-sm">
+            <span className="text-slate-500 dark:text-slate-400 text-sm">
               {stats.n > 0
                 ? `${stats.n} ${stats.n === 1 ? "examen" : "exámenes"} · ${stats.passed} aprob.`
                 : "Aún sin datos →"}
             </span>
           </button>
 
-          <p className="text-slate-400 text-sm mt-6">
+          {/* Consultar una pregunta */}
+          <button
+            onClick={() => {
+              setLookupQuery("");
+              setMode("lookup");
+            }}
+            className="w-full mt-4 bg-white/60 dark:bg-slate-800/60 hover:bg-white dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 rounded-2xl p-4 flex items-center justify-between transition-all shadow-sm"
+          >
+            <span className="flex items-center gap-2 font-semibold">
+              <span className="text-xl">🔎</span> Consultar una pregunta
+            </span>
+            <span className="text-slate-500 dark:text-slate-400 text-sm">por número o tema →</span>
+          </button>
+
+          <p className="text-slate-400 dark:text-slate-500 text-sm mt-6">
             {questions.length} preguntas disponibles con explicaciones completas
           </p>
         </div>
@@ -853,7 +968,7 @@ export default function ExamenClaseB() {
               <>
                 <button
                   onClick={() => setAuthModal(false)}
-                  className="flex-1 py-3 rounded-xl font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all"
+                  className="flex-1 py-3 rounded-xl font-semibold bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 transition-all"
                 >
                   Cerrar
                 </button>
@@ -878,13 +993,81 @@ export default function ExamenClaseB() {
               value={authEmail}
               onChange={(e) => setAuthEmail(e.target.value)}
               placeholder="tucorreo@ejemplo.com"
-              className="w-full border border-slate-300 rounded-xl px-3 py-2 text-slate-800 text-left focus:outline-none focus:border-indigo-400"
+              className="w-full border border-slate-300 dark:border-slate-600 rounded-xl px-3 py-2 text-slate-800 dark:text-slate-100 text-left focus:outline-none focus:border-indigo-400"
             />
             {authMsg && (
-              <p className="mt-2 text-xs text-slate-500 text-left">{authMsg}</p>
+              <p className="mt-2 text-xs text-slate-500 dark:text-slate-400 text-left">{authMsg}</p>
             )}
           </Modal>
         )}
+      </div>
+    );
+  }
+
+  // ====================== RENDER: CONSULTAR PREGUNTA ======================
+  if (mode === "lookup") {
+    const q = lookupQuery.trim().toLowerCase();
+    let results = [];
+    if (q) {
+      if (/^\d+$/.test(q)) {
+        results = questions.filter(
+          (x) => String(x.id) === q || String(x.id).startsWith(q)
+        );
+      } else {
+        results = questions.filter((x) => x.question.toLowerCase().includes(q));
+      }
+      results = results.slice(0, 20);
+    }
+    return (
+      <div className={`${PAGE_BG} p-4`}>
+        <div className="max-w-2xl mx-auto py-8 animate-fadeIn">
+          <div className="text-center mb-5">
+            <div className="text-5xl mb-3">🔎</div>
+            <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-1">
+              Consultar una pregunta
+            </h1>
+            <p className="text-slate-500 dark:text-slate-400">
+              Escribe el número (ej. 151) o palabras clave para ver el porqué de
+              la respuesta.
+            </p>
+          </div>
+
+          <input
+            type="text"
+            autoFocus
+            value={lookupQuery}
+            onChange={(e) => setLookupQuery(e.target.value)}
+            placeholder="Ej: 151  ·  o  «distancia de frenado»"
+            className="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-xl px-4 py-3 text-slate-800 dark:text-slate-100 mb-4 focus:outline-none focus:border-indigo-400"
+          />
+
+          {q === "" ? (
+            <p className="text-slate-400 dark:text-slate-500 text-sm text-center">
+              Tip: prueba con un número de pregunta (1 a {questions.length}) o un
+              tema como «alcohol», «neblina» o «adelantar».
+            </p>
+          ) : results.length === 0 ? (
+            <p className="text-slate-400 dark:text-slate-500 text-sm text-center">
+              No se encontraron preguntas para «{lookupQuery}».
+            </p>
+          ) : (
+            <>
+              <p className="text-slate-500 dark:text-slate-400 text-xs mb-3">
+                {results.length} resultado{results.length === 1 ? "" : "s"}
+              </p>
+              {results.map((x) => (
+                <LookupCard key={x.id} q={x} />
+              ))}
+            </>
+          )}
+
+          <button
+            onClick={() => setMode("menu")}
+            className="w-full mt-4 bg-white/70 dark:bg-slate-800/70 hover:bg-white dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-semibold py-3 px-8 rounded-xl transition-all"
+          >
+            ← Volver al menú
+          </button>
+        </div>
       </div>
     );
   }
@@ -896,15 +1079,15 @@ export default function ExamenClaseB() {
         <div className="max-w-2xl mx-auto py-8 animate-fadeIn">
           <div className="text-center mb-6">
             <div className="text-5xl mb-3">📊</div>
-            <h1 className="text-3xl font-bold text-slate-800 mb-1">
+            <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-1">
               Mis estadísticas
             </h1>
-            <p className="text-indigo-500">Tu progreso en el Examen Real</p>
+            <p className="text-indigo-500 dark:text-indigo-300">Tu progreso en el Examen Real</p>
           </div>
 
           {stats.n === 0 ? (
-            <div className="bg-white/70 border border-slate-200 rounded-2xl p-8 text-center mb-6">
-              <p className="text-slate-600">
+            <div className="bg-white/70 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 text-center mb-6">
+              <p className="text-slate-600 dark:text-slate-300">
                 Todavía no has rendido ningún Examen Real. ¡Rinde el primero y
                 aquí verás tu progreso!
               </p>
@@ -912,40 +1095,40 @@ export default function ExamenClaseB() {
           ) : (
             <>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-                <div className="bg-white/70 border border-slate-200 rounded-xl p-4 text-center">
-                  <div className="text-2xl font-bold text-slate-800">
+                <div className="bg-white/70 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-slate-800 dark:text-slate-100">
                     {stats.n}
                   </div>
-                  <div className="text-slate-500 text-xs">Exámenes</div>
+                  <div className="text-slate-500 dark:text-slate-400 text-xs">Exámenes</div>
                 </div>
-                <div className="bg-emerald-100 border border-emerald-200 rounded-xl p-4 text-center">
-                  <div className="text-2xl font-bold text-emerald-600">
+                <div className="bg-emerald-100 dark:bg-emerald-900/40 border border-emerald-200 dark:border-emerald-800 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">
                     {stats.passRate}%
                   </div>
-                  <div className="text-slate-500 text-xs">
+                  <div className="text-slate-500 dark:text-slate-400 text-xs">
                     Aprobados ({stats.passed})
                   </div>
                 </div>
-                <div className="bg-white/70 border border-slate-200 rounded-xl p-4 text-center">
-                  <div className="text-2xl font-bold text-slate-800">
+                <div className="bg-white/70 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-slate-800 dark:text-slate-100">
                     {stats.bestCorrect}/{EXAM_QUESTIONS}
                   </div>
-                  <div className="text-slate-500 text-xs">Mejor resultado</div>
+                  <div className="text-slate-500 dark:text-slate-400 text-xs">Mejor resultado</div>
                 </div>
-                <div className="bg-white/70 border border-slate-200 rounded-xl p-4 text-center">
-                  <div className="text-2xl font-bold text-slate-800">
+                <div className="bg-white/70 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-slate-800 dark:text-slate-100">
                     {fmt(stats.avgTimeSec)}
                   </div>
-                  <div className="text-slate-500 text-xs">Tiempo prom.</div>
+                  <div className="text-slate-500 dark:text-slate-400 text-xs">Tiempo prom.</div>
                 </div>
               </div>
 
               {stats.cats.length > 0 && (
                 <>
-                  <h2 className="text-slate-800 font-semibold mb-3">
+                  <h2 className="text-slate-800 dark:text-slate-100 font-semibold mb-3">
                     Desempeño por tema
                   </h2>
-                  <div className="bg-white/70 border border-slate-200 rounded-2xl p-4 mb-6 space-y-3">
+                  <div className="bg-white/70 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 rounded-2xl p-4 mb-6 space-y-3">
                     {stats.cats.map((c) => {
                       const color =
                         c.pct < 60
@@ -956,14 +1139,14 @@ export default function ExamenClaseB() {
                       return (
                         <div key={c.name}>
                           <div className="flex justify-between items-baseline text-xs mb-1">
-                            <span className="text-slate-700 font-medium">
+                            <span className="text-slate-700 dark:text-slate-200 font-medium">
                               {CAT_LABEL[c.name] || c.name}
                             </span>
-                            <span className="text-slate-500">
+                            <span className="text-slate-500 dark:text-slate-400">
                               {c.pct}% · {c.c}/{c.t}
                             </span>
                           </div>
-                          <div className="h-2.5 bg-slate-200 rounded-full overflow-hidden">
+                          <div className="h-2.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
                             <div
                               className="h-2.5 rounded-full transition-all"
                               style={{ width: `${c.pct}%`, background: color }}
@@ -976,25 +1159,25 @@ export default function ExamenClaseB() {
                 </>
               )}
 
-              <h2 className="text-slate-800 font-semibold mb-3">Historial</h2>
+              <h2 className="text-slate-800 dark:text-slate-100 font-semibold mb-3">Historial</h2>
               <div className="space-y-2 mb-6">
                 {history.map((r, i) => (
                   <div
                     key={r.ts + "-" + i}
                     className={`rounded-xl p-3 border flex items-center justify-between ${
                       r.passed
-                        ? "bg-emerald-50 border-emerald-200"
-                        : "bg-rose-50 border-rose-200"
+                        ? "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800"
+                        : "bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800"
                     }`}
                   >
                     <div className="flex items-center gap-3">
                       <span className="text-lg">{r.passed ? "✅" : "❌"}</span>
                       <div>
-                        <div className="text-slate-800 text-sm font-medium">
+                        <div className="text-slate-800 dark:text-slate-100 text-sm font-medium">
                           {r.passed ? "Aprobado" : "Reprobado"} · {r.correct}/
                           {r.total} correctas
                         </div>
-                        <div className="text-slate-500 text-xs">
+                        <div className="text-slate-500 dark:text-slate-400 text-xs">
                           {new Date(r.ts).toLocaleDateString("es-CL")}{" "}
                           {new Date(r.ts).toLocaleTimeString("es-CL", {
                             hour: "2-digit",
@@ -1010,7 +1193,7 @@ export default function ExamenClaseB() {
 
               <button
                 onClick={() => setShowClearModal(true)}
-                className="w-full mb-3 bg-rose-50 hover:bg-rose-100 text-rose-500 font-semibold py-3 rounded-xl transition-all border border-rose-200"
+                className="w-full mb-3 bg-rose-50 dark:bg-rose-950/40 hover:bg-rose-100 dark:hover:bg-rose-900/40 text-rose-500 dark:text-rose-400 font-semibold py-3 rounded-xl transition-all border border-rose-200 dark:border-rose-800"
               >
                 Borrar historial
               </button>
@@ -1019,7 +1202,7 @@ export default function ExamenClaseB() {
 
           <button
             onClick={() => setMode("menu")}
-            className="w-full bg-white/70 hover:bg-white border border-slate-200 text-slate-700 font-semibold py-3 px-8 rounded-xl transition-all"
+            className="w-full bg-white/70 dark:bg-slate-800/70 hover:bg-white dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-semibold py-3 px-8 rounded-xl transition-all"
           >
             ← Volver al menú
           </button>
@@ -1034,7 +1217,7 @@ export default function ExamenClaseB() {
               <>
                 <button
                   onClick={() => setShowClearModal(false)}
-                  className="flex-1 py-3 rounded-xl font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all"
+                  className="flex-1 py-3 rounded-xl font-semibold bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 transition-all"
                 >
                   Cancelar
                 </button>
@@ -1065,14 +1248,14 @@ export default function ExamenClaseB() {
         <div className="max-w-2xl mx-auto py-6 animate-fadeIn">
           {/* Barra superior: progreso + cronómetro */}
           <div className="flex items-center justify-between mb-4">
-            <span className="text-slate-500 text-sm font-medium">
+            <span className="text-slate-500 dark:text-slate-400 text-sm font-medium">
               Pregunta {examIndex + 1} de {examQuestions.length}
             </span>
             <span
               className={`font-mono text-lg font-bold px-3 py-1 rounded-lg border ${
                 lowTime
-                  ? "bg-rose-100 text-rose-600 border-rose-200 animate-pulse"
-                  : "bg-white text-slate-700 border-slate-200"
+                  ? "bg-rose-100 dark:bg-rose-900/40 text-rose-600 dark:text-rose-300 border-rose-200 dark:border-rose-800 animate-pulse"
+                  : "bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-slate-200 dark:border-slate-700"
               }`}
             >
               🕐 {fmt(timeLeft)}
@@ -1096,8 +1279,8 @@ export default function ExamenClaseB() {
                     isCur
                       ? "bg-indigo-500 text-white border-indigo-500 ring-2 ring-indigo-200"
                       : ans
-                      ? "bg-indigo-200 text-slate-700 border-indigo-200"
-                      : "bg-white text-slate-400 border-slate-200 hover:bg-indigo-50"
+                      ? "bg-indigo-200 dark:bg-indigo-800 text-slate-700 dark:text-slate-200 border-indigo-200 dark:border-indigo-800"
+                      : "bg-white dark:bg-slate-800 text-slate-400 dark:text-slate-500 border-slate-200 dark:border-slate-700 hover:bg-indigo-50 dark:hover:bg-slate-700"
                   }`}
                   title={`Pregunta ${i + 1}${dbl ? " (×2)" : ""}`}
                 >
@@ -1115,22 +1298,22 @@ export default function ExamenClaseB() {
           {/* Tarjeta pregunta */}
           <div
             key={examIndex}
-            className="bg-white/70 backdrop-blur border border-slate-200 rounded-2xl p-6 mb-4 shadow-sm animate-fadeIn"
+            className="bg-white/70 dark:bg-slate-800/70 backdrop-blur border border-slate-200 dark:border-slate-700 rounded-2xl p-6 mb-4 shadow-sm animate-fadeIn"
           >
             <div className="flex flex-wrap items-center gap-2 mb-3">
               {examIsMulti && (
-                <span className="inline-block bg-indigo-100 text-indigo-600 text-xs font-semibold px-3 py-1 rounded-full">
+                <span className="inline-block bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-300 text-xs font-semibold px-3 py-1 rounded-full">
                   Selecciona {examQ.correct.length} respuestas
                 </span>
               )}
               {doubleSet.has(examIndex) && (
-                <span className="inline-block bg-fuchsia-100 text-fuchsia-600 text-xs font-bold px-3 py-1 rounded-full">
+                <span className="inline-block bg-fuchsia-100 dark:bg-fuchsia-900/40 text-fuchsia-600 dark:text-fuchsia-300 text-xs font-bold px-3 py-1 rounded-full">
                   Doble puntaje ×2
                 </span>
               )}
             </div>
-            <p className="text-slate-800 text-lg font-medium leading-relaxed">
-              <span className="text-indigo-600">#{examQ.id}.</span> {examQ.question}
+            <p className="text-slate-800 dark:text-slate-100 text-lg font-medium leading-relaxed">
+              <span className="text-indigo-600 dark:text-indigo-300">#{examQ.id}.</span> {examQ.question}
             </p>
             <QuestionImages images={examQ.images} />
           </div>
@@ -1145,8 +1328,8 @@ export default function ExamenClaseB() {
                   onClick={() => toggleExamAnswer(idx)}
                   className={`w-full text-left p-4 rounded-xl transition-all duration-200 ${
                     sel
-                      ? "border-2 border-indigo-400 bg-indigo-50 text-indigo-900"
-                      : "border border-slate-200 bg-white hover:border-indigo-300 hover:bg-indigo-50 cursor-pointer text-slate-700"
+                      ? "border-2 border-indigo-400 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-900 dark:text-indigo-100"
+                      : "border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-indigo-300 dark:hover:border-indigo-500 hover:bg-indigo-50 dark:hover:bg-slate-700 cursor-pointer text-slate-700 dark:text-slate-200"
                   }`}
                 >
                   <div className="flex items-start gap-3">
@@ -1168,7 +1351,7 @@ export default function ExamenClaseB() {
                 window.scrollTo({ top: 0 });
               }}
               disabled={examIndex === 0}
-              className="flex-1 py-3 rounded-xl font-semibold bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+              className="flex-1 py-3 rounded-xl font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
             >
               ← Anterior
             </button>
@@ -1194,7 +1377,7 @@ export default function ExamenClaseB() {
 
           <button
             onClick={() => setShowFinishModal(true)}
-            className="w-full py-2 text-slate-400 hover:text-slate-600 text-sm underline"
+            className="w-full py-2 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 text-sm underline"
           >
             Finalizar examen ahora
           </button>
@@ -1210,7 +1393,7 @@ export default function ExamenClaseB() {
               <>
                 <button
                   onClick={() => setShowFinishModal(false)}
-                  className="flex-1 py-3 rounded-xl font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all"
+                  className="flex-1 py-3 rounded-xl font-semibold bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 transition-all"
                 >
                   Seguir
                 </button>
@@ -1226,7 +1409,7 @@ export default function ExamenClaseB() {
             {unansweredCount > 0 ? (
               <p className="mb-1">
                 Te faltan{" "}
-                <span className="font-bold text-rose-500">
+                <span className="font-bold text-rose-500 dark:text-rose-400">
                   {unansweredCount}
                 </span>{" "}
                 {unansweredCount === 1 ? "pregunta" : "preguntas"} por responder.
@@ -1234,7 +1417,7 @@ export default function ExamenClaseB() {
             ) : (
               <p className="mb-1">Respondiste todas las preguntas. 🎉</p>
             )}
-            <p className="text-slate-400 text-xs">
+            <p className="text-slate-400 dark:text-slate-500 text-xs">
               Las no respondidas cuentan como incorrectas. No podrás cambiar tus
               respuestas después.
             </p>
@@ -1262,12 +1445,12 @@ export default function ExamenClaseB() {
             <div className="text-6xl mb-3">{passed ? "🎉" : "😔"}</div>
             <h1
               className={`text-4xl font-extrabold mb-1 ${
-                passed ? "text-emerald-600" : "text-rose-500"
+                passed ? "text-emerald-600 dark:text-emerald-400" : "text-rose-500 dark:text-rose-400"
               }`}
             >
               {passed ? "APROBADO" : "REPROBADO"}
             </h1>
-            <p className="text-slate-600">
+            <p className="text-slate-600 dark:text-slate-300">
               {passed
                 ? "¡Felicitaciones! Cumpliste el estándar del examen."
                 : `Necesitas máximo ${EXAM_MAX_ERROR_POINTS} puntos de error para aprobar.`}
@@ -1276,56 +1459,56 @@ export default function ExamenClaseB() {
 
           {/* Resumen */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
-            <div className="bg-white/70 border border-slate-200 rounded-xl p-4 text-center">
-              <div className="text-2xl font-bold text-slate-800">
+            <div className="bg-white/70 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 rounded-xl p-4 text-center">
+              <div className="text-2xl font-bold text-slate-800 dark:text-slate-100">
                 {correctCount}/{examQuestions.length}
               </div>
-              <div className="text-slate-500 text-xs">Correctas</div>
+              <div className="text-slate-500 dark:text-slate-400 text-xs">Correctas</div>
             </div>
-            <div className="bg-white/70 border border-slate-200 rounded-xl p-4 text-center">
-              <div className="text-2xl font-bold text-slate-800">
+            <div className="bg-white/70 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 rounded-xl p-4 text-center">
+              <div className="text-2xl font-bold text-slate-800 dark:text-slate-100">
                 {earned}/{totalPoints}
               </div>
-              <div className="text-slate-500 text-xs">Puntaje</div>
+              <div className="text-slate-500 dark:text-slate-400 text-xs">Puntaje</div>
             </div>
             <div
               className={`rounded-xl p-4 text-center border ${
                 errorPoints <= EXAM_MAX_ERROR_POINTS
-                  ? "bg-emerald-50 border-emerald-200"
-                  : "bg-rose-50 border-rose-200"
+                  ? "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800"
+                  : "bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800"
               }`}
             >
               <div
                 className={`text-2xl font-bold ${
                   errorPoints <= EXAM_MAX_ERROR_POINTS
-                    ? "text-emerald-600"
-                    : "text-rose-500"
+                    ? "text-emerald-600 dark:text-emerald-400"
+                    : "text-rose-500 dark:text-rose-400"
                 }`}
               >
                 {errorPoints}
               </div>
-              <div className="text-slate-500 text-xs">Puntos de error</div>
+              <div className="text-slate-500 dark:text-slate-400 text-xs">Puntos de error</div>
             </div>
-            <div className="bg-white/70 border border-slate-200 rounded-xl p-4 text-center">
-              <div className="text-2xl font-bold text-slate-800">
+            <div className="bg-white/70 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 rounded-xl p-4 text-center">
+              <div className="text-2xl font-bold text-slate-800 dark:text-slate-100">
                 {fmt(usedSec)}
               </div>
-              <div className="text-slate-500 text-xs">Tiempo usado</div>
+              <div className="text-slate-500 dark:text-slate-400 text-xs">Tiempo usado</div>
             </div>
           </div>
 
-          <p className="text-center text-slate-500 text-sm mb-6">
+          <p className="text-center text-slate-500 dark:text-slate-400 text-sm mb-6">
             Llevas {stats.n} {stats.n === 1 ? "examen" : "exámenes"} rendidos ·{" "}
             {stats.passed} aprobados ·{" "}
             <button
               onClick={() => setMode("stats")}
-              className="underline hover:text-slate-800"
+              className="underline hover:text-slate-800 dark:hover:text-white"
             >
               ver estadísticas
             </button>
           </p>
 
-          <h2 className="text-slate-800 font-semibold mb-3">
+          <h2 className="text-slate-800 dark:text-slate-100 font-semibold mb-3">
             Revisión por pregunta
           </h2>
           <div className="lg:flex lg:gap-6 lg:items-start mb-6">
@@ -1342,7 +1525,7 @@ export default function ExamenClaseB() {
           {wrongQuestions.length > 0 && (
             <button
               onClick={startPracticeWrong}
-              className="w-full mb-3 bg-rose-50 hover:bg-rose-100 border border-rose-200 text-rose-600 font-bold py-4 px-8 rounded-xl text-lg transition-all"
+              className="w-full mb-3 bg-rose-50 dark:bg-rose-950/40 hover:bg-rose-100 dark:hover:bg-rose-900/40 border border-rose-200 dark:border-rose-800 text-rose-600 dark:text-rose-300 font-bold py-4 px-8 rounded-xl text-lg transition-all"
             >
               🔁 Practicar mis errores ({wrongQuestions.length})
             </button>
@@ -1356,7 +1539,7 @@ export default function ExamenClaseB() {
           </button>
           <button
             onClick={() => setMode("menu")}
-            className="w-full mt-3 bg-white/70 hover:bg-white border border-slate-200 text-slate-700 font-semibold py-3 px-8 rounded-xl transition-all"
+            className="w-full mt-3 bg-white/70 dark:bg-slate-800/70 hover:bg-white dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-semibold py-3 px-8 rounded-xl transition-all"
           >
             Menú Principal
           </button>
@@ -1381,18 +1564,18 @@ export default function ExamenClaseB() {
         <div className="max-w-4xl mx-auto py-8 animate-fadeIn">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">{emoji}</div>
-            <h1 className="text-3xl font-bold text-slate-800 mb-2">
+            <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">
               Resultado Final
             </h1>
-            <p className="text-slate-600">{msg}</p>
+            <p className="text-slate-600 dark:text-slate-300">{msg}</p>
           </div>
 
-          <div className="bg-white/70 border border-slate-200 rounded-2xl p-6 mb-6 text-center shadow-sm">
-            <div className="text-6xl font-bold text-slate-800 mb-2">{pct}%</div>
-            <div className="text-slate-500">
+          <div className="bg-white/70 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 mb-6 text-center shadow-sm">
+            <div className="text-6xl font-bold text-slate-800 dark:text-slate-100 mb-2">{pct}%</div>
+            <div className="text-slate-500 dark:text-slate-400">
               {score} de {sessionQuestions.length} correctas
             </div>
-            <div className="mt-4 bg-slate-200 rounded-full h-3">
+            <div className="mt-4 bg-slate-200 dark:bg-slate-700 rounded-full h-3">
               <div
                 className="h-3 rounded-full transition-all"
                 style={{
@@ -1404,7 +1587,7 @@ export default function ExamenClaseB() {
             </div>
           </div>
 
-          <h2 className="text-slate-800 font-semibold mb-3">
+          <h2 className="text-slate-800 dark:text-slate-100 font-semibold mb-3">
             Repaso de la práctica
           </h2>
           <div className="lg:flex lg:gap-6 lg:items-start mb-6">
@@ -1426,7 +1609,7 @@ export default function ExamenClaseB() {
           </button>
           <button
             onClick={() => setMode("menu")}
-            className="w-full mt-3 bg-white/70 hover:bg-white border border-slate-200 text-slate-700 font-semibold py-3 px-8 rounded-xl transition-all"
+            className="w-full mt-3 bg-white/70 dark:bg-slate-800/70 hover:bg-white dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-semibold py-3 px-8 rounded-xl transition-all"
           >
             Menú Principal
           </button>
@@ -1440,21 +1623,21 @@ export default function ExamenClaseB() {
     <div className={`${PAGE_BG} p-4`}>
       <div className="max-w-2xl mx-auto py-6 animate-fadeIn">
         <div className="flex items-center justify-between mb-4">
-          <span className="text-slate-500 text-sm font-medium">
+          <span className="text-slate-500 dark:text-slate-400 text-sm font-medium">
             Pregunta {currentIndex + 1} de {sessionQuestions.length}
           </span>
           <div className="flex items-center gap-3">
-            <span className="text-slate-500 text-sm">✅ {score} correctas</span>
+            <span className="text-slate-500 dark:text-slate-400 text-sm">✅ {score} correctas</span>
             <button
               onClick={() => setMode("menu")}
-              className="text-slate-400 hover:text-slate-700 text-xs underline"
+              className="text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-200 text-xs underline"
             >
               Salir
             </button>
           </div>
         </div>
 
-        <div className="bg-slate-200 rounded-full h-2 mb-6">
+        <div className="bg-slate-200 dark:bg-slate-700 rounded-full h-2 mb-6">
           <div
             className="h-2 rounded-full bg-indigo-500 transition-all duration-500"
             style={{ width: `${progress}%` }}
@@ -1463,15 +1646,15 @@ export default function ExamenClaseB() {
 
         <div
           key={currentIndex}
-          className="bg-white/70 backdrop-blur border border-slate-200 rounded-2xl p-6 mb-4 shadow-sm animate-fadeIn"
+          className="bg-white/70 dark:bg-slate-800/70 backdrop-blur border border-slate-200 dark:border-slate-700 rounded-2xl p-6 mb-4 shadow-sm animate-fadeIn"
         >
           {isMulti && (
-            <div className="inline-block bg-indigo-100 text-indigo-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">
+            <div className="inline-block bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-300 text-xs font-semibold px-3 py-1 rounded-full mb-3">
               Selecciona {currentQ.correct.length} respuestas
             </div>
           )}
-          <p className="text-slate-800 text-lg font-medium leading-relaxed">
-            <span className="text-indigo-600">#{currentQ.id}.</span>{" "}
+          <p className="text-slate-800 dark:text-slate-100 text-lg font-medium leading-relaxed">
+            <span className="text-indigo-600 dark:text-indigo-300">#{currentQ.id}.</span>{" "}
             {currentQ.question}
           </p>
           <QuestionImages images={currentQ.images} />
@@ -1511,7 +1694,7 @@ export default function ExamenClaseB() {
             className={`w-full py-4 rounded-xl font-bold text-lg transition-all ${
               selectedAnswers.length > 0
                 ? "bg-indigo-500 hover:bg-indigo-400 text-white shadow-sm"
-                : "bg-slate-100 text-slate-400 cursor-not-allowed"
+                : "bg-slate-100 dark:bg-slate-700 text-slate-400 dark:text-slate-500 cursor-not-allowed"
             }`}
           >
             Verificar Respuesta
@@ -1520,19 +1703,30 @@ export default function ExamenClaseB() {
 
         {showExplanation && (
           <div className="mt-4 space-y-3">
-            <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
-              <h3 className="text-emerald-700 font-bold mb-2 flex items-center gap-2">
+            <div className="bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 rounded-xl p-4">
+              <h3 className="text-emerald-700 dark:text-emerald-300 font-bold mb-2 flex items-center gap-2">
                 <span>💡</span> ¿Por qué es correcta?
               </h3>
-              <p className="text-emerald-800 text-sm leading-relaxed">
+              <p className="text-emerald-800 dark:text-emerald-200 text-sm leading-relaxed">
                 {currentQ.explanation}
               </p>
             </div>
 
+            {currentQ.formula && (
+              <div className="bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 rounded-xl p-4">
+                <h3 className="text-indigo-700 dark:text-indigo-300 font-bold mb-2 flex items-center gap-2">
+                  <span>🧮</span> Cálculo / fórmula
+                </h3>
+                <p className="text-slate-700 dark:text-slate-200 text-sm leading-relaxed whitespace-pre-line">
+                  {currentQ.formula}
+                </p>
+              </div>
+            )}
+
             {currentQ.wrongExplanations &&
               currentQ.wrongExplanations.some((e) => e) && (
-                <div className="bg-rose-50 border border-rose-200 rounded-xl p-4">
-                  <h3 className="text-rose-600 font-bold mb-2 flex items-center gap-2">
+                <div className="bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 rounded-xl p-4">
+                  <h3 className="text-rose-600 dark:text-rose-300 font-bold mb-2 flex items-center gap-2">
                     <span>❌</span> ¿Por qué no las otras?
                   </h3>
                   <div className="space-y-2">
@@ -1540,9 +1734,9 @@ export default function ExamenClaseB() {
                       exp ? (
                         <div
                           key={idx}
-                          className="text-rose-700 text-sm leading-relaxed"
+                          className="text-rose-700 dark:text-rose-200 text-sm leading-relaxed"
                         >
-                          <span className="font-semibold text-rose-600">
+                          <span className="font-semibold text-rose-600 dark:text-rose-300">
                             Opción {String.fromCharCode(65 + idx)}):
                           </span>{" "}
                           {exp}
