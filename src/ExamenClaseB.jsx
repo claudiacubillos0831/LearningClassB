@@ -553,7 +553,7 @@ export default function ExamenClaseB() {
   if (mode === "menu") {
     return (
       <div className={`${PAGE_BG} flex items-center justify-center p-4`}>
-        <div className="max-w-lg w-full text-center">
+        <div className="max-w-lg w-full text-center animate-fadeIn">
           <div className="mb-8">
             <img
               src={IMG_BASE.replace("images/", "") + "logo-cube.png"}
@@ -727,7 +727,7 @@ export default function ExamenClaseB() {
   if (mode === "stats") {
     return (
       <div className={`${PAGE_BG} p-4`}>
-        <div className="max-w-2xl mx-auto py-8">
+        <div className="max-w-2xl mx-auto py-8 animate-fadeIn">
           <div className="text-center mb-6">
             <div className="text-5xl mb-3">📊</div>
             <h1 className="text-3xl font-bold text-slate-800 mb-1">
@@ -896,7 +896,7 @@ export default function ExamenClaseB() {
     const selected = examAnswers[examIndex] || [];
     return (
       <div className={`${PAGE_BG} p-4`}>
-        <div className="max-w-2xl mx-auto py-6">
+        <div className="max-w-2xl mx-auto py-6 animate-fadeIn">
           {/* Barra superior: progreso + cronómetro */}
           <div className="flex items-center justify-between mb-4">
             <span className="text-slate-500 text-sm font-medium">
@@ -947,7 +947,10 @@ export default function ExamenClaseB() {
           </div>
 
           {/* Tarjeta pregunta */}
-          <div className="bg-white/70 backdrop-blur border border-slate-200 rounded-2xl p-6 mb-4 shadow-sm">
+          <div
+            key={examIndex}
+            className="bg-white/70 backdrop-blur border border-slate-200 rounded-2xl p-6 mb-4 shadow-sm animate-fadeIn"
+          >
             <div className="flex flex-wrap items-center gap-2 mb-3">
               {examIsMulti && (
                 <span className="inline-block bg-indigo-100 text-indigo-600 text-xs font-semibold px-3 py-1 rounded-full">
@@ -1088,7 +1091,7 @@ export default function ExamenClaseB() {
     } = examReport;
     return (
       <div className={`${PAGE_BG} p-4`}>
-        <div className="max-w-4xl mx-auto py-8">
+        <div className="max-w-4xl mx-auto py-8 animate-fadeIn">
           <div className="text-center mb-6">
             <div className="text-6xl mb-3">{passed ? "🎉" : "😔"}</div>
             <h1
@@ -1209,7 +1212,7 @@ export default function ExamenClaseB() {
 
     return (
       <div className={`${PAGE_BG} p-4`}>
-        <div className="max-w-4xl mx-auto py-8">
+        <div className="max-w-4xl mx-auto py-8 animate-fadeIn">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">{emoji}</div>
             <h1 className="text-3xl font-bold text-slate-800 mb-2">
@@ -1269,7 +1272,7 @@ export default function ExamenClaseB() {
   // ====================== RENDER: ESTUDIO ======================
   return (
     <div className={`${PAGE_BG} p-4`}>
-      <div className="max-w-2xl mx-auto py-6">
+      <div className="max-w-2xl mx-auto py-6 animate-fadeIn">
         <div className="flex items-center justify-between mb-4">
           <span className="text-slate-500 text-sm font-medium">
             Pregunta {currentIndex + 1} de {sessionQuestions.length}
@@ -1292,7 +1295,10 @@ export default function ExamenClaseB() {
           />
         </div>
 
-        <div className="bg-white/70 backdrop-blur border border-slate-200 rounded-2xl p-6 mb-4 shadow-sm">
+        <div
+          key={currentIndex}
+          className="bg-white/70 backdrop-blur border border-slate-200 rounded-2xl p-6 mb-4 shadow-sm animate-fadeIn"
+        >
           {isMulti && (
             <div className="inline-block bg-indigo-100 text-indigo-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">
               Selecciona {currentQ.correct.length} respuestas
