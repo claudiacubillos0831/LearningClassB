@@ -1,5 +1,5 @@
 // Banco de 280 preguntas del Examen Teorico Clase B (Chile).
-// Incluye: pregunta, alternativas, clave oficial, explicaciones, imagenes, pagina, categoria y formula (en preguntas de calculo).
+// Campos: pregunta, alternativas, clave oficial, explicacion (corta), deepExplanation (ampliada para el buscador), wrongExplanations, imagenes, pagina, categoria y formula.
 
 export const questions = [
   {
@@ -24,7 +24,8 @@ export const questions = [
       ""
     ],
     "page": 1,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Cuando un vehículo se va hacia un costado al frenar, el sistema de frenos no está aplicando la misma fuerza en ambas ruedas del eje, y eso siempre responde a una falla mecánica concreta: cilindros desgastados, pinzas pegadas, mangueras dañadas o un desbalance de presión en el circuito hidráulico. El fundamento es que el frenado debe ser simétrico para que el auto se detenga en línea recta; si una rueda muerde más que la otra, el vehículo gira hacia el lado que frena con más fuerza. Ninguna de las maniobras de manejo que se ofrecen corrige el problema de raíz: cambiar los neumáticos de lado, bombear el pedal o tirar el freno de mano solo enmascaran o agravan la situación. El riesgo real es perder el control justo en la maniobra crítica de detención, por ejemplo al frenar de emergencia frente a un peatón, donde el auto se desviaría hacia otro carril. Por eso la única respuesta segura y responsable es acudir al mecánico cuanto antes para diagnosticar y reparar la causa. Un buen truco para recordarlo: si el problema aparece solo al frenar, es del sistema de frenos, y eso es trabajo de taller, no de la carretera."
   },
   {
     "id": 2,
@@ -48,7 +49,8 @@ export const questions = [
       "Una presión inadecuada afecta el agarre y el desgaste, pero la causa más probable de desviarse al frenar es el desajuste de los frenos."
     ],
     "page": 1,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Aquí la pregunta pide la causa técnica más probable de esa desviación lateral al frenar, y la respuesta son los frenos mal ajustados. El razonamiento es de física simple: si la rueda izquierda recibe más presión de frenado que la derecha, se genera una fuerza desigual que tira el morro del auto hacia el lado que frena más fuerte, igual que cuando rema más fuerte con un solo brazo y el bote gira. Conviene descartar las otras opciones para entender por qué no calzan: un bajo nivel de líquido de frenos haría que el pedal se sienta esponjoso o se hunda, pero afecta a todo el circuito por igual; el freno de mano puesto produce roce y olor, no una desviación al pisar el pedal; y una presión dispar de neumáticos influye más en el rodaje general que en una tirada brusca al frenar. El riesgo de los frenos descompensados es que en una frenada fuerte el vehículo se cruce o invada el carril contrario. Para recordarlo, asocie 'desviación al frenar igual a frenos disparejos', que en la práctica significa ajuste o revisión de frenos en el taller."
   },
   {
     "id": 3,
@@ -72,7 +74,8 @@ export const questions = [
       ""
     ],
     "page": 1,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Un olor fuerte y persistente a gasolina mientras maneja es una señal de alarma porque casi siempre indica una fuga en el sistema de combustible: una manguera fisurada, una conexión suelta o el estanque dañado. El fundamento es que la gasolina y sus vapores son altamente inflamables, y basta una chispa eléctrica, una superficie caliente del motor o el tubo de escape para que se inicie un incendio o incluso una explosión. Por eso la conducta correcta es detenerse en un lugar seguro, apagar el motor e investigar el origen antes de continuar; seguir rodando solo aumenta el tiempo de exposición al riesgo y la cantidad de combustible derramado. Las otras opciones son peligrosas: confundirlo con gases de escape, seguir despacio o esperar a quedarse sin bencina ignora una amenaza real de fuego. Piénselo así: el olor a gasolina dentro del auto nunca es normal, y ante la duda, lo barato es detenerse y lo caro es seguir."
   },
   {
     "id": 4,
@@ -96,7 +99,8 @@ export const questions = [
       ""
     ],
     "page": 1,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El riesgo de incendio en un automóvil está directamente ligado al combustible, porque la gasolina derramada o evaporada se enciende con muchísima facilidad ante cualquier chispa o fuente de calor del motor. Por eso la mejor prevención cotidiana es estar atento y revisar el vehículo apenas se perciba un olor a gasolina extraño, ya que ese olor suele ser el primer aviso de una fuga incipiente que aún se puede reparar sin consecuencias graves. Las otras alternativas no atacan la causa: mantener el agua sobre el máximo tiene que ver con la refrigeración, andar con el estanque menos lleno no elimina la posibilidad de fuga, y usar gasolina sin plomo es un tema de emisiones, no de incendios. El principio detrás es la detección temprana: una fuga pequeña detectada a tiempo evita el incendio, mientras que una ignorada puede terminar con el auto envuelto en llamas. Un hábito práctico es prestar atención a manchas húmedas bajo el vehículo al estacionar y al olor al subirse; el olfato suele avisar antes de que ocurra el desastre."
   },
   {
     "id": 5,
@@ -120,7 +124,8 @@ export const questions = [
       "Poder caminar después es secundario; lo esencial es controlar bien los pedales mientras conduce."
     ],
     "page": 1,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El calzado adecuado es importante porque el conductor maneja los pedales con la sensibilidad de sus pies, y necesita aplicar la presión exacta sobre acelerador, freno y embrague en el momento justo. El fundamento es que la dosificación fina del freno o del embrague depende de sentir el pedal bajo la planta del pie; un calzado inapropiado rompe esa conexión. Zapatos de taco alto pueden trabarse contra la alfombra o impedir apoyar bien el talón, las suelas muy gruesas o pesadas restan tacto, las chalas o sandalias sueltas pueden zafarse y quedar bajo un pedal, y los pies descalzos o con calcetines resbalan. El riesgo concreto es no poder frenar a tiempo o que el pie patine del freno al acelerador en una emergencia. Por eso la respuesta correcta es que el calzado apropiado permite un adecuado control de los pedales. Como dato práctico, muchos conductores llevan un par de zapatos planos y firmes en el auto para cambiárselos antes de manejar."
   },
   {
     "id": 6,
@@ -144,7 +149,8 @@ export const questions = [
       ""
     ],
     "page": 1,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El elemento que protege el cuello en una colisión es el apoya-cabeza o reposacabezas correctamente ajustado, idealmente con su parte central a la altura de la nuca o de la parte superior de las orejas. El fundamento es el llamado efecto latigazo o whiplash: en un choque, sobre todo por detrás, el cuerpo es empujado bruscamente hacia adelante mientras la cabeza, por inercia, se queda atrás y luego se sacude, estirando y dañando las vértebras y músculos cervicales. El apoya-cabeza limita ese desplazamiento hacia atrás de la cabeza y reduce el daño. Las otras opciones protegen, pero de otras cosas: el airbag amortigua el impacto del torso y la cara, los frenos ABS ayudan a no bloquear las ruedas y mantener la dirección, y la columna de dirección colapsable evita que el volante atraviese el pecho del conductor. Un truco útil al subirse a un auto desconocido es ajustar el reposacabezas para que quede a la altura de la coronilla, no del cuello, porque uno demasiado bajo puede incluso empeorar la lesión."
   },
   {
     "id": 7,
@@ -170,7 +176,8 @@ export const questions = [
       "El freno de mano puesto se señala con un símbolo de círculo con signo de exclamación o la letra del freno, distinto a éste."
     ],
     "page": 1,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Este testigo del tablero, representado por un triángulo (o dos triángulos), corresponde a las luces intermitentes de advertencia de peligro, conocidas popularmente como balizas o luces de emergencia. El fundamento de su diseño es que, al accionar el botón triangular, se encienden simultáneamente todos los señalizadores de viraje del vehículo, parpadeando a la vez por delante y por detrás para que cualquier conductor note que algo ocurre. Por eso, cuando ese símbolo parpadea en el panel, le confirma que el sistema de emergencia está activado. Conviene no confundirlo con otros testigos: las luces neblineras tienen un símbolo de haz con líneas onduladas, las luces altas se muestran en azul con rayas rectas horizontales, y el freno de mano aparece como un círculo con un signo de exclamación o una P. Saber reconocerlo importa porque dejar las balizas encendidas sin querer puede confundir a los demás, y olvidarlas apagadas tras una emergencia gasta batería; el parpadeo en el tablero es justamente el recordatorio visual de que están operando."
   },
   {
     "id": 8,
@@ -194,7 +201,8 @@ export const questions = [
       "Con los neumáticos calientes el aire se ha dilatado y la lectura es mayor que la presión real en frío."
     ],
     "page": 2,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La presión de los neumáticos debe revisarse con las gomas frías, es decir antes de salir o después de un recorrido muy corto, porque ese es el estado en que el fabricante define el valor de referencia que aparece en el manual o en la etiqueta del marco de la puerta. El fundamento es físico: al rodar, especialmente a alta velocidad o en viajes largos, el roce y la flexión calientan el aire interior, y un gas caliente se expande y aumenta su presión. Si usted mide en caliente, la lectura saldrá varios décimos por encima de la real, y si la ajusta a ese valor, al enfriarse el neumático quedará por debajo de lo recomendado. Por eso medir en caliente y corregir induce a error y termina dejando los neumáticos mal inflados. El riesgo de una presión incorrecta es desgaste irregular, mayor consumo y, sobre todo, menor adherencia. Como truco, revise la presión en la mañana antes del primer viaje del día, o espere unas horas tras manejar para que las gomas se enfríen."
   },
   {
     "id": 9,
@@ -216,7 +224,8 @@ export const questions = [
       "No da igual: la temperatura cambia la presión, por eso la medición debe hacerse siempre en frío."
     ],
     "page": 2,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La respuesta correcta es revisar la presión con los neumáticos fríos, y el motivo de fondo es siempre el mismo principio de la física de los gases: el aire encerrado en el neumático se expande al calentarse. Cuando el auto rueda, la fricción con el pavimento y la flexión continua de la goma elevan la temperatura interna, y con ello la presión sube respecto a la que tenía en reposo. Si midiéramos en caliente obtendríamos un número artificialmente alto y, al ajustarlo, dejaríamos el neumático con menos aire del debido una vez enfriado. Por eso la opción de medir indistintamente en frío o en caliente es incorrecta: la diferencia es real y puede ser de varios décimos de bar. Mantener la presión correcta cuida la adherencia, el desgaste parejo y el consumo. El hábito recomendado es chequear en frío, por ejemplo en la primera bencinera del día antes de andar mucho, o usar el dato del fabricante que siempre está dado para neumático frío."
   },
   {
     "id": 10,
@@ -240,7 +249,8 @@ export const questions = [
       "Un nivel bajo de líquido refrigerante lleva a sobrecalentamiento, pero no a una pérdida directa de control que cause un choque."
     ],
     "page": 2,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El líquido cuyo nivel bajo puede causar directamente un accidente es el líquido de freno, porque es el corazón del sistema hidráulico que detiene el auto. El fundamento es que al pisar el pedal usted comprime ese líquido, y como los líquidos son prácticamente incompresibles, transmiten esa fuerza por las cañerías hasta las pinzas o cilindros que aprietan las ruedas. Si el nivel está bajo, suele ser por una fuga o por pastillas muy gastadas, y entonces entra aire al circuito; el aire sí se comprime, así que el pedal se hunde, se siente esponjoso y la frenada pierde eficacia o falla por completo. El resultado puede ser quedarse sin frenos justo cuando más los necesita. Las otras opciones afectan al motor o a la refrigeración, problemas serios pero que no comprometen de inmediato la capacidad de detenerse. Por eso, si nota el pedal blando o la luz de freno encendida, deténgase: es la falla que más rápido se transforma en choque."
   },
   {
     "id": 11,
@@ -264,7 +274,8 @@ export const questions = [
       ""
     ],
     "page": 2,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La forma más segura de frenar en condiciones normales es hacerlo de manera progresiva: comenzar con una presión suave, aumentarla un poco a medida que el auto desacelera y luego aflojar el pedal justo antes de la detención total. El fundamento es que una frenada gradual mantiene la adherencia de los neumáticos y reparte la transferencia de peso de forma controlada, evitando que las ruedas se bloqueen o que el vehículo derrape. Aflojar al final logra esa detención suave, sin el cabezazo brusco que se siente cuando uno frena de golpe hasta parar. Las otras alternativas son riesgosas o erradas: poner la palanca en neutro o pisar el embrague mientras frena le quita el freno motor y reduce el control, y tirar el freno de mano en movimiento puede bloquear las ruedas traseras y hacer girar el auto. El freno de mano es para estacionar, no para detener la marcha. Como técnica, piense en la frenada como un apretón firme pero modulado, no como un interruptor de todo o nada; así cuida los pasajeros, el vehículo y su propio control."
   },
   {
     "id": 12,
@@ -288,7 +299,8 @@ export const questions = [
       "Si los señalizadores de viraje fallan no se reemplazan con las balizas para indicar el viraje; éstas advierten peligro, no intención de doblar."
     ],
     "page": 2,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "Las luces intermitentes de advertencia de peligro, o balizas, se usan cuando su vehículo está detenido obstruyendo el tránsito, típicamente en una pana en plena calzada. El fundamento normativo y de seguridad es que un auto inmóvil en medio del flujo vehicular es un obstáculo inesperado, y los que vienen detrás pueden no alcanzar a reaccionar; al encender las cuatro balizas parpadeando, usted hace visible ese peligro y previene un choque por alcance. Las otras situaciones planteadas no corresponden: estacionarse en doble fila o junto a una línea amarilla son infracciones de estacionamiento que no se legitiman encendiendo las balizas, y si los señalizadores de viraje no funcionan, las balizas tampoco los reemplazan para indicar un giro, porque encienden de ambos lados a la vez. El criterio clave es peligro y detención involuntaria. Recuerde que las balizas avisan 'estoy detenido y soy un riesgo', no 'permiso para estacionar mal'."
   },
   {
     "id": 13,
@@ -312,7 +324,8 @@ export const questions = [
       "Las balizas no sirven para avisar que tiene prisa; su uso indebido confunde a los demás conductores."
     ],
     "page": 2,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El uso correcto de las luces de advertencia de peligro es alertar a quienes vienen detrás sobre un peligro o situación de riesgo que hay más adelante, como una congestión que aparece de golpe, un accidente o un vehículo detenido en la vía. El fundamento es que estas luces son un lenguaje de prevención: su parpadeo simultáneo capta la atención y dice 'cuidado, reduzca la velocidad'. Por eso, por ejemplo, en autopista al toparse con un taco repentino, encender las balizas un momento avisa a los de atrás para que frenen a tiempo. Las otras opciones distorsionan su propósito: no sirven para legitimar un estacionamiento en doble fila, no se usan para indicar un viraje (para eso están los señalizadores, que encienden de un solo lado), y muchísimo menos para anunciar que uno tiene prisa, lo que solo confundiría. La idea central es que las balizas comunican peligro, nunca intención de maniobra ni urgencia personal."
   },
   {
     "id": 14,
@@ -336,7 +349,8 @@ export const questions = [
       ""
     ],
     "page": 2,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Debe usar las luces de advertencia de peligro cuando su vehículo queda en pana y obstaculizando el tránsito, porque en ese momento se convierte en un obstáculo fijo que los demás no esperan encontrar. El fundamento es prevenir el choque por alcance: las balizas parpadeantes a ambos lados hacen que el auto detenido sea visible de lejos, dando tiempo a los que se acercan para reducir y esquivar. Note la diferencia con las opciones incorrectas: si está en pana pero moviéndose lentamente, lo apropiado suele ser orillarse e indicar con los señalizadores; si va siendo remolcado, el vehículo ya está bajo control de otro y las balizas pueden confundir; y al retroceder en una calle tranquila no hay un peligro estático que señalar. La clave es la combinación de detención más obstrucción. Un buen reflejo de manejo es que apenas su auto quede inmovilizado en la calzada, lo primero sea encender las balizas y, si dispone, ubicar el triángulo reflectante más atrás."
   },
   {
     "id": 15,
@@ -360,7 +374,8 @@ export const questions = [
       ""
     ],
     "page": 2,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Si al empujar hacia abajo un extremo del vehículo y soltarlo este rebota u oscila varias veces antes de quedar quieto, la causa son los amortiguadores gastados. El fundamento es que la suspensión combina resortes, que absorben los baches, con amortiguadores, cuya función es justamente frenar y controlar el rebote de esos resortes para que la carrocería se estabilice de inmediato. Cuando el amortiguador pierde su aceite interno o sus sellos, ya no amortigua, y la rueda sigue oscilando libremente. El riesgo es serio: una rueda que rebota pierde contacto con el pavimento, lo que reduce la adherencia en frenadas y curvas, alarga la distancia de detención y desgasta los neumáticos de forma irregular. Las otras opciones no producen ese rebote sostenido: los neumáticos gastados o poco inflados afectan el agarre, y un volante descentrado es un tema de alineación. La famosa 'prueba del rebote', hundir una esquina del auto y observar si se estabiliza al primer movimiento o sigue meciéndose, es el truco clásico para detectar amortiguadores vencidos."
   },
   {
     "id": 16,
@@ -384,7 +399,8 @@ export const questions = [
       "La inclinación del vehículo depende de la carga y la suspensión; el objetivo de la presión correcta es la adherencia, no la nivelación."
     ],
     "page": 2,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Los neumáticos deben mantenerse a la presión indicada por el fabricante principalmente para conservar un buen agarre con el pavimento y así ayudar a evitar que el automóvil se roncee o derrape. El fundamento es que el neumático está diseñado para apoyar sobre la calzada una huella de contacto óptima, y esa huella solo se logra con la presión correcta. Si va poco inflado, las paredes se flexionan en exceso, se calienta y puede reventar; si va sobreinflado, apoya solo en el centro de la banda y reduce la superficie que agarra. En ambos extremos baja la adherencia, y menos adherencia significa más riesgo de perder el control, sobre todo al frenar o girar en pavimento mojado. Las otras opciones son secundarias o erradas: la altura del vehículo o una posible inclinación lateral no son el motivo principal, y el desgaste del motor no depende de la presión de las gomas. La idea para recordar es que la presión correcta es lo que mantiene al auto 'pegado' al camino, y por eso conviene chequearla al menos una vez al mes."
   },
   {
     "id": 17,
@@ -408,7 +424,8 @@ export const questions = [
       "Conducir en marchas altas a régimen adecuado en realidad reduce el consumo, no lo aumenta."
     ],
     "page": 4,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El alto consumo de combustible se debe principalmente a las frecuentes frenadas y aceleraciones, es decir, a un estilo de conducción brusco y poco anticipado. El fundamento es energético: cada vez que usted acelera fuerte, el motor debe quemar más bencina para entregar de golpe esa energía y poner en movimiento la masa del auto; y cada vez que frena, toda esa energía cinética que tanto costó generar se disipa en calor en los frenos y se pierde por completo. Repetir ese ciclo de acelerón y frenazo, típico de quien maneja pegado al de adelante en la ciudad, derrocha combustible una y otra vez. Las otras opciones influyen menos: una falla de dirección o acelerar en curva afectan más la seguridad, y conducir en marchas altas a velocidad de crucero en realidad ahorra. La conducción eficiente, o 'eco-conducción', consiste en mirar lejos, anticipar los semáforos y el tránsito, y mantener una velocidad pareja, lo que reduce el gasto y también el desgaste de frenos y neumáticos."
   },
   {
     "id": 18,
@@ -432,7 +449,8 @@ export const questions = [
       "1,0 mm está por debajo del mínimo legal de 1,6 mm, por lo que sería un neumático ya inseguro."
     ],
     "page": 4,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La profundidad mínima legal de los surcos del dibujo de los neumáticos es de 1,6 milímetros, y por debajo de ese valor el neumático se considera inseguro y debe reemplazarse. El fundamento de esa cifra es que esos surcos o canales son los que evacuan el agua que hay entre la goma y el pavimento cuando llueve; si están muy desgastados, el agua no logra salir y se forma una película que levanta el neumático, fenómeno llamado aquaplaning o hidroplaneo, en el que el auto literalmente flota y pierde dirección y frenos. Con menos de 1,6 mm también cae el agarre en seco y se alarga la distancia de frenado. Por eso 4 o 5 mm son holgados y 1,0 mm ya es ilegal y peligroso. Un truco casero para chequearlo es introducir una moneda en el surco y ver cuánto se hunde el borde, o fijarse en los testigos de desgaste, esas barritas de goma en el fondo del canal: cuando quedan al ras de la banda de rodadura, significa que llegó a 1,6 mm y toca cambiar el neumático."
   },
   {
     "id": 19,
@@ -459,7 +477,8 @@ export const questions = [
       ""
     ],
     "page": 4,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Ante el reventón de un neumático trasero las dos acciones correctas son detenerse lentamente al costado de la vía y, si la cola del auto se desvía, girar el volante hacia el mismo lado de la desviación. El fundamento es que un neumático trasero pinchado hace que la parte de atrás del vehículo coletee o cologuee de un lado a otro, y la forma de corregir ese coletazo es contravolantear, es decir, dirigir el volante hacia donde se va la cola para realinear la trayectoria, tal como se corrige un derrape. Al mismo tiempo, hay que evitar frenar de golpe, porque una frenada brusca con un neumático destruido puede provocar que el auto gire sin control; lo seguro es soltar el acelerador y dejar que pierda velocidad gradualmente mientras se orilla. Las otras opciones son peligrosas: poner marcha atrás en movimiento es imposible y absurdo, y frenar lo más fuerte que se pueda agrava el descontrol. Para recordarlo, ante un reventón la consigna es manos firmes, nada de frenazos y detenerse de a poco al lado del camino."
   },
   {
     "id": 20,
@@ -486,7 +505,8 @@ export const questions = [
       "Soltar el volante para hacer señales con una mano le quita el control de la dirección en un momento crítico."
     ],
     "page": 4,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Si se revienta un neumático delantero, las dos cosas correctas son sostener firmemente el volante con ambas manos para mantener la trayectoria y luego frenar suavemente o dejar que el vehículo se detenga solo. El fundamento es que el eje delantero es el que dirige, así que un reventón adelante hace que el auto tire con fuerza hacia el lado del neumático afectado; si usted no afirma el volante con decisión, el vehículo se va de su carril. Por eso lo primero es el control de la dirección, no el freno. Frenar de golpe o frenar rápida y firmemente transfiere todo el peso adelante justo sobre la rueda dañada y puede hacer perder el control por completo, y cambiarse de pista en ese instante agrega un riesgo innecesario; manejar con una sola mano también resta dominio cuando más se necesita firmeza. Lo seguro es desacelerar de a poco, dejando que el roce frene el auto, y orillarse cuando ya vaya lento. La regla mental es clara: primero sujetar el volante y enderezar, después frenar con suavidad."
   },
   {
     "id": 21,
@@ -510,7 +530,8 @@ export const questions = [
       "Lavar los parabrisas es una actividad común y segura que muchas estaciones de servicio incluso facilitan."
     ],
     "page": 4,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La razón de fondo es química: la bencina no se inflama tanto en estado líquido como en forma de vapor, y en una estación de servicio esos vapores se evaporan constantemente desde los surtidores, las mangueras y el propio estanque de tu auto, acumulándose cerca del suelo porque pesan más que el aire. Cuando esa mezcla de vapor y oxígeno alcanza cierta proporción, basta una fuente de ignición mínima para que se encienda de golpe. La brasa de un cigarrillo supera con creces la temperatura necesaria para iniciar esa combustión, e incluso la chispa al encender el encendedor es peligrosa. Por eso la norma prohíbe fumar y también usar el celular o generar chispas mientras se carga combustible. Un buen truco para recordarlo es asociar la bomba de bencina con un quirófano: ambiente controlado donde una sola imprudencia puede ser catastrófica. Comer, lavar parabrisas o circular con cuidado no generan ese riesgo de ignición, por eso la única conducta verdaderamente prohibida es fumar."
   },
   {
     "id": 22,
@@ -534,7 +555,8 @@ export const questions = [
       ""
     ],
     "page": 4,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Para entender esto hay que recordar cómo controlamos un auto: el conductor regula la velocidad no solo con el freno, sino también con el acelerador y con la retención que el propio motor ejerce sobre las ruedas cuando están conectadas a él. Cuando desenganchas el motor, ya sea pisando el embrague o poniendo punto muerto, esa conexión se corta y el vehículo queda navegando por pura inercia. En esa condición pierdes el frenado del motor y, además, no puedes acelerar para corregir tu trayectoria o salir de una situación, de modo que tu único recurso queda siendo el freno. Por eso la respuesta correcta es que reduce el control del conductor: tienes menos herramientas para gobernar el auto. Un ejemplo cotidiano es bajar una pendiente en punto muerto; el auto se acelera solo y tú quedas dependiendo de unos frenos que se van recalentando. La regla práctica es simple: el motor siempre engranado mientras circulas, porque un motor conectado es un motor que te ayuda a mandar."
   },
   {
     "id": 23,
@@ -558,7 +580,8 @@ export const questions = [
       "El motor no funciona más rápido por estar desenganchado; el riesgo está en la falta de retención del motor."
     ],
     "page": 4,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El concepto clave aquí es el frenado del motor, que es la resistencia natural que el motor opone al giro de las ruedas cuando van engranadas y sueltas el acelerador. Esa resistencia surge porque el motor sigue conectado a la transmisión y frena suavemente el vehículo sin que toques el pedal de freno, especialmente en bajadas. Cuando desenganchas el motor, esa retención desaparece por completo y el auto pasa a depender únicamente de los frenos mecánicos. El problema es que los frenos, al usarse de forma prolongada y sin ayuda del motor, se calientan, y un freno recalentado pierde eficacia, fenómeno conocido como fatiga o fading. Por eso la afirmación correcta es que no hay frenado del motor: esa es la verdadera pérdida. En la práctica, al enfrentar una bajada larga conviene reducir a una marcha más baja para que el motor te ayude a contener la velocidad y cuides tus frenos."
   },
   {
     "id": 24,
@@ -585,7 +608,8 @@ export const questions = [
       "El motor no se daña por esta maniobra; el problema es la pérdida de frenado del motor y el aumento de velocidad."
     ],
     "page": 4,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "En una pendiente cuesta abajo entran en juego dos fuerzas que te empujan a favor: la gravedad y la inercia, que tienden a aumentar la velocidad del vehículo de forma natural. La primera consecuencia de desenganchar el motor es que pierdes el frenado del motor, esa retención que normalmente te ayuda a contener la velocidad; sin ella disminuye tu control tanto del frenado como de la dirección, porque un auto que se acelera es más difícil de gobernar. La segunda consecuencia, ligada a la anterior, es que el vehículo agarra velocidad cada vez más rápido por efecto de la gravedad. Por eso las dos razones principales son justamente esas dos: menor control y aumento de velocidad. El riesgo real es que los frenos, obligados a hacer todo el trabajo solos, se sobrecalientan y pueden dejar de responder en el peor momento. La recomendación de oro es bajar las cuestas en una marcha baja, dejando que el motor frene por ti, especialmente en cordillera o caminos de montaña."
   },
   {
     "id": 25,
@@ -609,7 +633,8 @@ export const questions = [
       "El agarre de los neumáticos no se ve afectado por pisar el embrague; lo que se reduce es el control del vehículo."
     ],
     "page": 4,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Mantener el embrague pisado más tiempo del necesario equivale a conducir con el motor desenganchado de las ruedas, lo que técnicamente se llama ir 'en vela'. Mientras el pedal está abajo, la conexión entre motor y transmisión está abierta, así que pierdes el frenado del motor y tampoco puedes acelerar para corregir tu marcha. En esa situación tu único recurso para modificar la velocidad es el freno, y eso reduce tu capacidad de reacción ante un imprevisto. Por eso la respuesta correcta es que reduce el control sobre el vehículo, más que el desgaste o el consumo. Hay quienes creen que aprietan el embrague para 'descansar' o ahorrar bencina, pero en realidad se quedan sin la mitad de las herramientas para mandar el auto. La regla práctica es usar el embrague solo lo justo para cambiar de marcha y soltarlo enseguida, manteniendo siempre el motor engranado mientras circulas."
   },
   {
     "id": 26,
@@ -633,7 +658,8 @@ export const questions = [
       "Estos seguros no tienen función sobre la reclinación de los asientos."
     ],
     "page": 6,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El seguro de niños es un pequeño mecanismo, generalmente una palanca o perilla en el canto de las puertas traseras, que se activa manualmente y bloquea la manilla interior. Su función concreta es impedir que la puerta trasera pueda abrirse desde adentro, aunque sí siga abriéndose normalmente desde el exterior. La razón de su existencia es proteger a los menores, que por curiosidad o por accidente podrían tirar de la manilla mientras el auto va en movimiento, con el riesgo de caer a la calzada y ser atropellados o sufrir lesiones graves. Por eso la respuesta correcta es la que dice que impide abrir las puertas desde el interior, y no las que hablan de cinturones, ventanas o asientos. Un dato práctico: cada vez que lleves niños atrás, verifica que el seguro esté activado antes de partir, y recuerda que para que ellos salgan necesitarás abrirles tú desde fuera. Es una medida sencilla que evita tragedias."
   },
   {
     "id": 27,
@@ -657,7 +683,8 @@ export const questions = [
       ""
     ],
     "page": 6,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La presión de aire correcta hace que el neumático apoye sobre el pavimento solo con la parte adecuada de su banda de rodadura. Cuando la presión baja en las ruedas delanteras, el neumático se aplasta y aumenta su superficie de contacto con el suelo, lo que genera más roce y más resistencia al momento de girar. Como las ruedas delanteras son justamente las que dirigen el auto, ese roce extra se traduce en que tienes que aplicar más fuerza al volante, es decir, la dirección se siente más pesada. Por eso la respuesta correcta es esa y no que se sienta liviana. Más allá del esfuerzo, conducir con neumáticos desinflados es peligroso porque se calientan, se desgastan de forma despareja y consumen más combustible. Un truco útil es que si de repente notas el volante 'duro' o pesado sin motivo, lo primero que debes sospechar es una baja de presión o un pinchazo lento en una rueda delantera, y conviene detenerte a revisar."
   },
   {
     "id": 28,
@@ -681,7 +708,8 @@ export const questions = [
       ""
     ],
     "page": 6,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La distancia de frenado nunca es un valor fijo: depende de muchos factores, como la velocidad, el estado de los frenos, el peso del vehículo, el tipo de pavimento y, de manera muy importante, el estado de los neumáticos. En piso mojado esto se vuelve crítico porque entre el neumático y el asfalto se interpone una capa de agua, y son los surcos o canales del dibujo del neumático los que evacúan esa agua para mantener el contacto con el suelo. Un neumático en buen estado, con buena profundidad de dibujo, expulsa el agua y conserva su adherencia; uno gastado y liso pierde agarre y puede incluso llegar al aquaplaning, deslizándose sobre el agua sin frenar. Por eso la respuesta correcta es que sí influye, y que a mayor desgaste mayor es la distancia de frenado. La consecuencia real es que con neumáticos gastados necesitarás muchos más metros para detenerte bajo la lluvia. Una buena costumbre es revisar el dibujo de tus neumáticos antes del invierno, porque ahí es donde la diferencia se nota más."
   },
   {
     "id": 29,
@@ -708,7 +736,8 @@ export const questions = [
       ""
     ],
     "page": 6,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Esta pregunta repasa el funcionamiento de cuatro sistemas básicos del auto y las cuatro afirmaciones son correctas. Primero, el sistema de lubricación: cuando el aceite no está llegando bien al motor se enciende una luz roja de advertencia en el tablero, justamente para que detengas el vehículo antes de que las piezas se dañen por falta de lubricación. Segundo, la batería: si está mal cargada no entrega la energía suficiente para el motor de arranque, por lo que el auto cuesta o no logra encender. Tercero, la refrigeración: casi siempre el motor se enfría con un líquido refrigerante que circula por canales internos del bloque, absorbiendo el calor y llevándolo al radiador. Cuarto, el sobrecalentamiento: si se corta la correa que mueve la bomba de agua, el refrigerante deja de circular y la temperatura del motor sube peligrosamente. Saber reconocer estas señales te permite reaccionar a tiempo y evitar una pana costosa o el daño total del motor."
   },
   {
     "id": 30,
@@ -733,7 +762,8 @@ export const questions = [
       "Es falsa: los vapores de la gasolina no son inocuos; son tóxicos y altamente inflamables."
     ],
     "page": 6,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Las dos afirmaciones verdaderas apuntan al mismo peligro silencioso: el monóxido de carbono. Este gas se produce en la combustión del motor y sale por el sistema de escape, y su característica más traicionera es que no tiene olor ni color, por lo que una persona puede estar respirándolo sin darse cuenta. Por eso es verdad que los gases de escape contienen monóxido de carbono incoloro e inodoro. La segunda afirmación correcta explica el riesgo concreto: si el sistema de escape está oxidado o tiene fugas, ese gas puede filtrarse al interior del habitáculo en lugar de salir hacia atrás del vehículo, intoxicando a los ocupantes. Las otras dos opciones son falsas y peligrosas, porque los gases de escape sí dañan la salud y los vapores de bencina no son inocuos. El consejo práctico es nunca dejar el motor encendido en un espacio cerrado como un garaje, y mantener el escape en buen estado, ya que una intoxicación por monóxido puede causar somnolencia, pérdida de conciencia e incluso la muerte."
   },
   {
     "id": 31,
@@ -760,7 +790,8 @@ export const questions = [
       "Es falsa: un pedal de freno elástico o esponjoso indica un defecto, como aire en el sistema; lo deseable es un pedal firme."
     ],
     "page": 6,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Las dos afirmaciones correctas se entienden conociendo cómo funciona el sistema de frenos. La primera verdadera es la del sistema antibloqueo o ABS, cuya ventaja es impedir que las ruedas se traben cuando frenas a fondo; al evitar el bloqueo, las ruedas siguen girando y conservas la capacidad de dirigir el auto para esquivar un obstáculo, en lugar de patinar en línea recta. La segunda verdadera es que el líquido de frenos no se consume con el uso normal, a diferencia del combustible; circula en un circuito cerrado, así que si el nivel baja es señal de una fuga o un defecto que debes atender de inmediato. Por eso esas dos son las correctas y las otras opciones, que hablan de consumo del líquido según velocidad o frenadas, son falsas. Un detalle importante: el pedal de freno debe sentirse firme, no elástico ni esponjoso, porque un pedal blando suele indicar aire en el sistema o falta de líquido. Revisar el nivel y la firmeza del pedal es una rutina de seguridad básica."
   },
   {
     "id": 32,
@@ -784,7 +815,8 @@ export const questions = [
       "Es falsa: como regla general los mejores neumáticos deben ir atrás para evitar la pérdida de control del eje trasero, no necesariamente adelante."
     ],
     "page": 6,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La afirmación correcta es que un desgaste irregular de los neumáticos puede deberse a problemas de alineamiento o de amortiguación, y conviene entender por qué. Cuando la geometría de la dirección está desalineada o los amortiguadores están gastados, el neumático no apoya de forma pareja sobre el pavimento, sino que carga más en ciertas zonas, y esas zonas se desgastan antes que el resto. Por eso un desgaste despareja es una verdadera 'pista' que el auto te da para que revises esos sistemas. Las otras opciones son falsas: 1 mm de dibujo es insuficiente, ya que en Chile el mínimo legal es de 1,6 mm y por debajo de eso se pierde agarre, sobre todo en mojado; un desgaste en el centro de la banda indica exceso de aire, no falta; y los mejores neumáticos deben ir atrás, no adelante, para evitar que la parte trasera derrape. Un buen hábito es inspeccionar visualmente tus neumáticos cada cierto tiempo, porque la forma en que se gastan te cuenta el estado de tu vehículo."
   },
   {
     "id": 33,
@@ -808,7 +840,8 @@ export const questions = [
       "El cinturón es igual de necesario en ciudad que en carretera; muchos accidentes graves ocurren a velocidades urbanas, así que no es 'más necesario' solo en carretera."
     ],
     "page": 6,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La única afirmación verdadera es que el cinturón de seguridad disminuye las posibilidades de sufrir lesiones en un accidente, y la física lo explica con claridad. En una colisión, tu cuerpo tiende a seguir moviéndose hacia adelante a la misma velocidad que llevaba el auto; el cinturón te retiene y reparte esa fuerza sobre las zonas más fuertes del cuerpo, evitando que salgas despedido o que te golpees contra el volante, el parabrisas o el respaldo delantero. Las otras opciones son falsas y conviene desmontarlas: el airbag no reemplaza al cinturón, sino que lo complementa, y de hecho funciona bien solo si vas con el cinturón puesto; en el asiento trasero el cinturón sí es útil e igual de necesario, porque un pasajero suelto atrás también sale proyectado; y el cinturón es indispensable en cualquier camino, no solo en carretera, ya que muchos accidentes graves ocurren en ciudad a baja velocidad. Por eso en Chile su uso es obligatorio en todos los asientos, adelante y atrás."
   },
   {
     "id": 34,
@@ -834,7 +867,8 @@ export const questions = [
       ""
     ],
     "page": 7,
-    "category": "Emergencias y primeros auxilios"
+    "category": "Emergencias y primeros auxilios",
+    "deepExplanation": "Aquí hay tres afirmaciones verdaderas que vale la pena razonar una por una. Primero, no es seguro que un adulto lleve a un niño dentro de su propio cinturón: en una colisión, la fuerza lanza al adulto hacia adelante y su peso aplasta al menor que va delante, causándole lesiones gravísimas; por eso los niños deben ir en su silla o sistema de retención adecuado a su edad y tamaño. Segundo, el cinturón disminuye las posibilidades de resultar lesionado, porque retiene el cuerpo y evita los golpes contra el interior del auto. Tercero, un cinturón bien tensado brinda más seguridad que uno flojo, ya que cuanto más ajustado va al cuerpo, menos se desplaza la persona en el impacto y menor es el golpe; un cinturón holgado deja un 'juego' que reduce su efectividad. La afirmación falsa es la que dice que el cinturón no sirve en el asiento trasero, lo cual es incorrecto. El consejo práctico es ajustar siempre el cinturón pegado al cuerpo, sin torceduras y sin holguras, y nunca compartirlo entre dos personas."
   },
   {
     "id": 35,
@@ -860,7 +894,8 @@ export const questions = [
       ""
     ],
     "page": 8,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La respuesta correcta agrupa luces, espejos y vidrios, y todos comparten un mismo fundamento: la visibilidad, que es uno de los pilares de la conducción segura. Las luces sucias o empañadas alumbran menos y, además, te hacen menos visible para los demás, de modo que de noche o con mal tiempo otros conductores podrían no verte a tiempo. Los espejos limpios te permiten controlar lo que ocurre atrás y a los costados antes de adelantar, frenar o cambiar de pista, eliminando o reduciendo los puntos ciegos. Los vidrios limpios, sobre todo el parabrisas, te dan una visión clara del camino sin reflejos ni manchas que distraigan o tapen un peligro. Los neumáticos no entran en este grupo porque, aunque deben mantenerse en buen estado, su limpieza no es lo relevante para la seguridad. Un buen hábito antes de salir, especialmente en invierno, es pasar un paño a luces, espejos y parabrisas, porque conducir es en gran medida ver y ser visto."
   },
   {
     "id": 36,
@@ -885,7 +920,8 @@ export const questions = [
     ],
     "page": 8,
     "category": "Conduccion segura",
-    "formula": "Al duplicar la velocidad:\n• Distancia de REACCIÓN: proporcional a la velocidad (∝ v) → se duplica: 10 m × 2 = 20 m.\n• Distancia de FRENADO: proporcional al cuadrado de la velocidad (energía cinética E = ½·m·v²) → se cuadruplica: 8 m × 4 = 32 m.\n• Total = 20 + 32 = 52 m."
+    "formula": "Al duplicar la velocidad:\n• Distancia de REACCIÓN: proporcional a la velocidad (∝ v) → se duplica: 10 m × 2 = 20 m.\n• Distancia de FRENADO: proporcional al cuadrado de la velocidad (energía cinética E = ½·m·v²) → se cuadruplica: 8 m × 4 = 32 m.\n• Total = 20 + 32 = 52 m.",
+    "deepExplanation": "Para resolverlo hay que separar la distancia de detención en sus dos componentes, porque cada una se comporta distinto al cambiar la velocidad. La distancia de reacción es la que recorre el auto durante el tiempo que tardas en darte cuenta del peligro y mover el pie al freno; como ese tiempo de reacción del conductor es constante, esta distancia crece de forma proporcional a la velocidad, así que al duplicar la velocidad se duplica: de 10 pasa a 20 metros. La distancia de frenado, en cambio, es la que recorre el auto ya frenando, y depende de la energía cinética que hay que disipar; como esa energía es igual a un medio de la masa por la velocidad al cuadrado, al duplicar la velocidad el cuadrado la multiplica por cuatro, de modo que esa distancia se cuadruplica: de 8 pasa a 32 metros. Sumando ambas, 20 más 32 da 52 metros, que es la respuesta correcta. La lección práctica es contundente: ir al doble de rápido no duplica el peligro, lo multiplica mucho más, y por eso un pequeño exceso de velocidad alarga enormemente la distancia para detenerte."
   },
   {
     "id": 37,
@@ -910,7 +946,8 @@ export const questions = [
     ],
     "page": 8,
     "category": "Conduccion segura",
-    "formula": "Energía cinética: E = ½·m·v². Si la velocidad se duplica (30→60 km/h), v² se multiplica por 4 → la energía se CUADRUPLICA (por eso 'se duplica la energía cinética' es FALSA).\n• Distancia de reacción ∝ v → se duplica.\n• Distancia de frenado ∝ v² → se cuadruplica."
+    "formula": "Energía cinética: E = ½·m·v². Si la velocidad se duplica (30→60 km/h), v² se multiplica por 4 → la energía se CUADRUPLICA (por eso 'se duplica la energía cinética' es FALSA).\n• Distancia de reacción ∝ v → se duplica.\n• Distancia de frenado ∝ v² → se cuadruplica.",
+    "deepExplanation": "Esta pregunta evalúa si reconoces cómo cambian las distancias y la energía al variar la velocidad, y la afirmación falsa es que la energía cinética se duplica. El fundamento es la fórmula de la energía cinética, igual a un medio de la masa por la velocidad al cuadrado: como la velocidad está elevada al cuadrado, si pasas de 30 a 60 km/h, es decir el doble, la energía no se duplica sino que se cuadruplica, porque dos al cuadrado es cuatro. Por eso la afirmación que dice que se duplica es la falsa, mientras que la que dice que se cuadruplica es verdadera. En el mismo razonamiento, la distancia de reacción sí se duplica, porque depende de la velocidad de forma lineal, y la distancia de frenado se cuadruplica, porque depende del cuadrado de la velocidad igual que la energía. El mensaje de seguridad es claro: al doblar la velocidad cargas con cuatro veces más energía que disipar en un choque, lo que explica por qué los impactos a mayor velocidad son tan desproporcionadamente más destructivos."
   },
   {
     "id": 38,
@@ -937,7 +974,8 @@ export const questions = [
       ""
     ],
     "page": 8,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Esta pregunta trata sobre la percepción del conductor y cómo la velocidad distorsiona la estimación del lugar de encuentro entre dos vehículos. El principio es que, a mayor velocidad, el conductor tiende a percibir que el punto donde se cruzará o encontrará con el otro vehículo está más adelante de lo que realmente estará, porque su propia rapidez lo lleva a 'proyectar' el encuentro más lejos. En el caso planteado, las afirmaciones correctas son que tanto el conductor del auto rojo, que va a 90 km/h, como el del auto azul, que va a 70 km/h, estiman el punto 3 como lugar probable del encuentro. La consecuencia real de esta tendencia es que las estimaciones de los conductores pueden fallar, sobre todo a alta velocidad, lo que provoca errores de cálculo en cruces e intersecciones. Por eso, en la práctica, conviene no confiarse de la 'sensación' de cuándo y dónde te cruzarás con otro vehículo, reducir la velocidad al acercarte a un cruce y mantener siempre un margen de seguridad."
   },
   {
     "id": 39,
@@ -961,7 +999,8 @@ export const questions = [
       "Es una sobreestimación: más de 2000 metros excede la distancia de detención típica de un tren a 100 km/h."
     ],
     "page": 8,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es que un tren a unos 100 km/h necesita entre 800 y 1000 metros para detenerse, casi un kilómetro, y la razón está en la física. El tren tiene una masa enorme, de cientos o miles de toneladas, y la energía que hay que disipar para frenarlo es gigantesca. A esto se suma que el contacto entre las ruedas de acero y los rieles de acero tiene muy poca fricción, mucho menos que un neumático de goma sobre el asfalto, por lo que el tren no puede frenar bruscamente como un automóvil. La consecuencia es que, aunque el maquinista vea un obstáculo o un auto cruzando, le será imposible detener la máquina a tiempo. Por eso la regla de oro en los cruces ferroviarios es jamás intentar pasar cuando un tren se aproxima, aunque parezca lejano y lento, porque viene mucho más rápido de lo que aparenta y no podrá frenar por ti. Ante la duda, siempre se detiene el vehículo y se cede el paso al tren."
   },
   {
     "id": 40,
@@ -985,7 +1024,8 @@ export const questions = [
       "Los neumáticos en buen estado son importantes, pero lo determinante para no chocar al de adelante es mantener la distancia de separación."
     ],
     "page": 8,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Lo más importante para no chocar al vehículo de adelante es mantener una adecuada distancia de separación, y la razón se basa en el concepto de distancia de detención. Cuando el auto de adelante frena de golpe, tú necesitas un tiempo para reaccionar y luego un espacio para frenar; esa distancia de seguimiento es precisamente la que te entrega esos metros y esos segundos para reaccionar y detenerte sin impactarlo. Si vas muy pegado, por más buenos que sean tus frenos y tus neumáticos, simplemente no tendrás espacio físico para evitar el golpe. Por eso la distancia de separación es más decisiva que los otros factores mencionados, que ayudan pero no reemplazan ese margen. Un truco muy usado es la regla de los tres segundos: cuando el auto de adelante pase por una referencia fija, como un poste o una señal, cuenta 'mil uno, mil dos, mil tres', y si llegas a ese punto antes de terminar de contar, vas demasiado cerca y debes aumentar la distancia. Con lluvia o de noche conviene ampliar ese margen aún más."
   },
   {
     "id": 41,
@@ -1010,7 +1050,8 @@ export const questions = [
     ],
     "page": 10,
     "category": "Vehiculo y mantencion",
-    "formula": "Distancia de detención = reacción + frenado. (Recuerda: m/s = km/h ÷ 3,6)\n• Reacción (1 s a 50 km/h): 50 ÷ 3,6 ≈ 13,9 m.\n• Frenado en seco a 50 km/h ≈ 13–16 m.\n• Total ≈ 27–30 m → ~30 m."
+    "formula": "Distancia de detención = reacción + frenado. (Recuerda: m/s = km/h ÷ 3,6)\n• Reacción (1 s a 50 km/h): 50 ÷ 3,6 ≈ 13,9 m.\n• Frenado en seco a 50 km/h ≈ 13–16 m.\n• Total ≈ 27–30 m → ~30 m.",
+    "deepExplanation": "El examen evalúa que entiendas que detenerse nunca es instantáneo: tu vehículo recorre dos tramos sumados, la distancia de reacción y la de frenado. Para convertir velocidad a metros por segundo divides los km/h entre 3,6, así que 50 km/h equivalen a unos 13,9 m/s; durante el segundo que tarda tu cerebro en percibir el peligro y mover el pie al freno ya avanzaste cerca de 14 metros sin disminuir nada. A eso le sumas el tramo de frenado propiamente tal, que a 50 km/h en seco ronda los 13 a 16 metros, dando un total cercano a los 30 metros. La razón de fondo es física: la energía que debes disipar al frenar crece con el cuadrado de la velocidad, por eso la distancia se estira más de lo que la intuición sugiere. Un buen truco es imaginar esos 30 metros como tres a cuatro autos en fila más el largo de un bus, para no confiarte cuando alguien cruza de improviso. La consecuencia de subestimarlo es clásica: frenas tarde y atropellas o chocas justo a la velocidad en que creías que ibas a parar 'al tiro'."
   },
   {
     "id": 42,
@@ -1035,7 +1076,8 @@ export const questions = [
     ],
     "page": 10,
     "category": "Conduccion segura",
-    "formula": "A 90 km/h en asfalto seco (m/s = km/h ÷ 3,6):\n• Reacción (1 s): 90 ÷ 3,6 = 25 m.\n• Frenado ≈ 45 m.\n• Total ≈ 70 m."
+    "formula": "A 90 km/h en asfalto seco (m/s = km/h ÷ 3,6):\n• Reacción (1 s): 90 ÷ 3,6 = 25 m.\n• Frenado ≈ 45 m.\n• Total ≈ 70 m.",
+    "deepExplanation": "Aquí el principio clave es que duplicar la velocidad NO duplica la distancia para detenerse, porque el tramo de frenado crece de forma cuadrática mientras el de reacción crece de forma lineal. A 90 km/h primero convierte: 90 dividido entre 3,6 da exactamente 25 m/s, así que en el segundo de reacción recorres 25 metros íntegros antes de tocar el freno. Luego viene el frenado, que a esta velocidad y en asfalto seco ronda los 45 metros, porque hay mucha más energía cinética que disipar. Sumando 25 más 45 obtienes unos 70 metros, casi el largo de una cancha de fútbol completa. El fundamento de por qué importa: a mayor velocidad, el riesgo de no alcanzar a detenerte se dispara, y por eso conviene mantener siempre una distancia de seguimiento amplia con el de adelante. Para recordarlo, asocia 90 km/h con 'siete' decenas de metros, y nota que pasar de 70 a 90 km/h agrega muchos más metros de los que parece."
   },
   {
     "id": 43,
@@ -1060,7 +1102,8 @@ export const questions = [
     ],
     "page": 10,
     "category": "Vehiculo y mantencion",
-    "formula": "A 70 km/h en seco (m/s = km/h ÷ 3,6):\n• Reacción (1 s): 70 ÷ 3,6 ≈ 19,4 m.\n• Frenado ≈ 25 m.\n• Total ≈ 45 m."
+    "formula": "A 70 km/h en seco (m/s = km/h ÷ 3,6):\n• Reacción (1 s): 70 ÷ 3,6 ≈ 19,4 m.\n• Frenado ≈ 25 m.\n• Total ≈ 45 m.",
+    "deepExplanation": "Esta pregunta refuerza la misma lógica de los dos tramos, pero a una velocidad intermedia de 70 km/h, muy habitual en avenidas y caminos rurales chilenos. Convierte primero: 70 dividido entre 3,6 da aproximadamente 19,4 m/s, de modo que durante el segundo de reacción ya recorriste cerca de 19 a 20 metros sin frenar. El tramo de frenado a 70 km/h en seco y con el auto en buen estado ronda los 25 metros, así que la detención total queda en torno a los 45 metros. El fundamento es que cada salto de velocidad alarga el frenado de manera acelerada, no proporcional, porque la energía cinética depende del cuadrado de la velocidad. Por eso la recomendación práctica es anticiparte y mantener al menos dos a tres segundos de separación con el vehículo de adelante, midiendo cuándo este pasa por un punto fijo. Si subestimas estos 45 metros y vas muy pegado, una frenada brusca del de adelante termina en alcance casi seguro."
   },
   {
     "id": 44,
@@ -1085,7 +1128,8 @@ export const questions = [
       ""
     ],
     "page": 10,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El fundamento de esta maniobra es que un auto estacionado en una pendiente pronunciada puede desplazarse solo si falla un freno o alguien lo golpea, y debes tener una segunda barrera de seguridad además del freno de servicio. Por eso se exigen dos medidas complementarias: dejar puesto el freno de mano, que bloquea mecánicamente las ruedas, y girar el volante hacia la acera o cuneta. En bajada giras las ruedas hacia la solera, de modo que si el vehículo empieza a rodar, las ruedas delanteras lo encaminan contra el borde de la vereda y lo detienen como tope físico, en lugar de dejarlo lanzarse calle abajo. Estacionar tras otro auto o subir ruedas a la acera no son medidas válidas de seguridad y además son infracciones. Un truco para no confundir el sentido del giro: en bajada el volante apunta 'hacia el cordón' para que el auto se 'estacione solo' contra él. La consecuencia de no hacerlo es un vehículo descontrolado bajando la pendiente, que puede causar daños graves o atropellos."
   },
   {
     "id": 45,
@@ -1109,7 +1153,8 @@ export const questions = [
       "Pisar el embrague desconecta el motor de las ruedas, eliminando el freno motor y aumentando la velocidad."
     ],
     "page": 10,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El principio aquí es el freno motor: al seleccionar una marcha baja, el motor gira a mayores revoluciones y ofrece resistencia mecánica que frena el avance del vehículo sin que tengas que pisar el pedal de freno. Esto es vital en descensos largos porque si usaras solo los frenos de manera continua, las pastillas y discos se recalentarían y aparecería el temido 'fade' o pérdida de eficacia por sobrecalentamiento, quedándote sin frenos justo cuando más los necesitas. Seleccionar neutro o pisar el embrague hace exactamente lo contrario: desconecta el motor de las ruedas, eliminas el freno motor y el auto se acelera libremente por gravedad. Por eso esas opciones son peligrosas y están descartadas. El truco mental es: 'bajada larga, marcha corta', igual que harías con un camión cargado. Así controlas la velocidad de forma sostenida y reservas los frenos para correcciones puntuales."
   },
   {
     "id": 46,
@@ -1133,7 +1178,8 @@ export const questions = [
       "Girar hacia la derecha es hacia el lado contrario al desplazamiento de la cola y acentúa el coletazo."
     ],
     "page": 10,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Cuando la cola del auto se va hacia un lado estás ante un sobreviraje o derrape de las ruedas traseras, y la regla universal de recuperación es contravolantear, es decir, girar el volante hacia el mismo lado donde se desplaza la parte trasera. Si virabas a la derecha y la cola patina hacia la izquierda, debes guiar suavemente hacia la izquierda para realinear el frente del vehículo con la trayectoria real y frenar el giro descontrolado. El fundamento físico es que así apuntas las ruedas delanteras en la dirección hacia la que realmente se mueve el auto, recuperando adherencia y estabilidad. Es crucial hacerlo con suavidad y sin frenar bruscamente, porque en una superficie resbaladiza una frenada fuerte bloquea las ruedas, elimina el agarre y agrava el derrape. La clave para recordarlo: 'mira y dirige hacia donde se va la cola', acompañando el deslizamiento en lugar de pelear contra él. Sobrecorregir o frenar de golpe suele terminar en un trompo completo."
   },
   {
     "id": 47,
@@ -1157,7 +1203,8 @@ export const questions = [
       "Con un cambio bajo bien, pero evitar del todo los frenos no permite regular la velocidad en una bajada pronunciada."
     ],
     "page": 10,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Esta pregunta combina las dos herramientas para bajar una pendiente muy pronunciada de forma segura: el freno motor y los frenos de servicio usados con criterio. Primero seleccionas un cambio bajo antes de iniciar el descenso, porque eso obliga al motor a contener el vehículo y reduce drásticamente cuánto tienes que pisar el freno. Luego usas los frenos de manera cuidadosa y dosificada, con toques cortos en vez de presión constante, para no recalentarlos. El fundamento es evitar el sobrecalentamiento que provoca el fade, esa pérdida de eficacia que deja el pedal blando y sin respuesta justo en la parte más empinada. Un cambio alto te dejaría sin freno motor y dependiendo solo de los frenos, que se recalentarían; por eso esa alternativa se descarta. Y aunque la marcha baja ayuda mucho, evitar completamente los frenos tampoco es realista en una bajada pronunciada, donde a veces necesitas corregir. La combinación correcta es marcha baja más frenos dosificados, que es justo la respuesta."
   },
   {
     "id": 48,
@@ -1182,7 +1229,8 @@ export const questions = [
     ],
     "page": 10,
     "category": "Conduccion segura",
-    "formula": "Distancia de FRENADO (solo frenado, sin reacción) a 90 km/h ≈ 45 m.\nCrece con el cuadrado de la velocidad (∝ v²): si vas al doble, frena en 4 veces la distancia."
+    "formula": "Distancia de FRENADO (solo frenado, sin reacción) a 90 km/h ≈ 45 m.\nCrece con el cuadrado de la velocidad (∝ v²): si vas al doble, frena en 4 veces la distancia.",
+    "deepExplanation": "Es importante distinguir esta pregunta de las de detención total: aquí se pregunta SOLO por la distancia de frenado, que es la que recorres desde que ya pisaste el freno hasta detenerte por completo, sin incluir el segundo de reacción. A 90 km/h en condiciones normales ese tramo es de aproximadamente 45 metros. El concepto físico de fondo es que la distancia de frenado es proporcional al cuadrado de la velocidad, porque la energía cinética que el sistema debe disipar como calor en los frenos crece con v al cuadrado. Esto tiene una consecuencia poderosa: si duplicas la velocidad, no necesitas el doble sino cuatro veces más distancia para frenar; por eso a 45 km/h frenarías en aproximadamente la cuarta parte. Un buen truco es memorizar que a 90 km/h el frenado solo ya equivale a unos 45 metros, y recordar que sumarle el tramo de reacción lleva el total a cerca de 70. Entender esta relación cuadrática es lo que justifica respetar los límites de velocidad."
   },
   {
     "id": 49,
@@ -1206,7 +1254,8 @@ export const questions = [
       "El freno de mano bloquea las ruedas traseras y empeora el coletazo, pudiendo provocar un trompo."
     ],
     "page": 12,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Un coletazo es el deslizamiento lateral de la parte trasera del vehículo, y la técnica correcta para corregirlo es siempre la misma: girar el volante hacia el lado hacia el cual se está yendo la cola, lo que se llama contravolantear. El fundamento es que con ese giro alineas las ruedas delanteras con la dirección real del movimiento y recuperas el control de forma suave y progresiva, dejando que el frente del auto 'persiga' a la cola hasta enderezar la trayectoria. Girar hacia el lado opuesto al coletazo es justamente el error que descontrola más el vehículo y termina en trompo, por eso esa opción es incorrecta. Tampoco sirve aplicar el freno de mano, porque bloquea las ruedas traseras y agrava el derrape. La frase para recordarlo es directa: 'el volante sigue a la cola'. Conviene además levantar el pie del acelerador y actuar con suavidad, sin movimientos bruscos que sobrecorrijan el deslizamiento."
   },
   {
     "id": 50,
@@ -1234,7 +1283,8 @@ export const questions = [
       "La hora del día no altera la distancia de frenado en sí; afecta la visibilidad, no la adherencia ni la mecánica."
     ],
     "page": 12,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La idea central es separar lo que sí afecta físicamente la capacidad de detenerse de lo que solo afecta la visibilidad. La velocidad influye de manera determinante porque la distancia de frenado crece con su cuadrado, así que pequeños aumentos alargan mucho el frenado. El estado de los frenos y neumáticos también es decisivo: pastillas gastadas, discos en mal estado o neumáticos lisos reducen la fuerza de detención y el agarre con el pavimento. Y las condiciones climáticas importan porque una calzada mojada, con barro o hielo disminuye la adherencia de los neumáticos, alargando notoriamente el frenado. En cambio el alumbrado público y la hora del día solo afectan cuán bien VES el peligro, no la física de cómo se detiene el auto una vez que pisas el freno; por eso no entran en la distancia de frenado. El truco es preguntarte: '¿esto cambia la fricción o solo cuánto veo?'. Si cambia la fricción o la energía a disipar, sí influye en el frenado."
   },
   {
     "id": 51,
@@ -1259,7 +1309,8 @@ export const questions = [
     ],
     "page": 12,
     "category": "Conduccion segura",
-    "formula": "Distancia de REACCIÓN = velocidad × tiempo de reacción.\nA 70 km/h con 1 s: 70 ÷ 3,6 ≈ 19,4 m ≈ 20 m recorridos ANTES de empezar a frenar."
+    "formula": "Distancia de REACCIÓN = velocidad × tiempo de reacción.\nA 70 km/h con 1 s: 70 ÷ 3,6 ≈ 19,4 m ≈ 20 m recorridos ANTES de empezar a frenar.",
+    "deepExplanation": "Esta pregunta aísla la distancia de reacción, que es el tramo que recorres entre que percibes el peligro y el instante en que recién comienzas a frenar, sin que el auto haya perdido velocidad todavía. Se calcula multiplicando la velocidad por el tiempo de reacción promedio de aproximadamente 1 segundo. Convierte 70 km/h a metros por segundo dividiendo entre 3,6, lo que da unos 19,4 m/s, así que en ese segundo recorres cerca de 20 metros completamente 'a ciegas', antes de tocar el pedal. El fundamento es que el cerebro necesita tiempo para detectar, decidir y actuar, y durante ese lapso el vehículo no frena nada. La consecuencia práctica es enorme: por eso debes mirar lejos y anticiparte, porque esos 20 metros se pierden sí o sí y se suman después a los metros de frenado. Cualquier distracción, el celular o el cansancio alargan ese tiempo de reacción y, por tanto, esos 20 metros se hacen aún mayores."
   },
   {
     "id": 52,
@@ -1284,7 +1335,8 @@ export const questions = [
     ],
     "page": 12,
     "category": "Factores humanos (alcohol, fatiga, salud)",
-    "formula": "Tiempo de reacción promedio ≈ 1 segundo.\nEn ese segundo recorres v ÷ 3,6 metros (ej. a 90 km/h ≈ 25 m) antes de pisar el freno."
+    "formula": "Tiempo de reacción promedio ≈ 1 segundo.\nEn ese segundo recorres v ÷ 3,6 metros (ej. a 90 km/h ≈ 25 m) antes de pisar el freno.",
+    "deepExplanation": "El tiempo de reacción promedio que usa la teoría chilena es de aproximadamente 1 segundo, y es la base para calcular cuánto avanzas antes de empezar a frenar. Conviene descartar las trampas de las otras alternativas: 0,1 minuto en realidad equivale a 6 segundos, un valor enorme e irreal, y 0,1 segundo es demasiado breve, ni siquiera alcanza el reflejo humano normal. El fundamento es que reaccionar implica tres etapas encadenadas, percibir el peligro, decidir qué hacer y ejecutar el movimiento del pie, y todo eso toma alrededor de un segundo en una persona descansada y atenta. Durante ese segundo el vehículo recorre velocidad dividida entre 3,6 metros, por ejemplo unos 25 metros a 90 km/h, completamente sin frenar. El dato clave es que ese segundo no es fijo: el alcohol, la fatiga, los medicamentos o mirar el celular lo aumentan, alargando peligrosamente la distancia de reacción. Por eso conducir sobrio, descansado y atento es lo que mantiene tu reacción cerca de ese segundo ideal."
   },
   {
     "id": 53,
@@ -1311,7 +1363,8 @@ export const questions = [
       ""
     ],
     "page": 12,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "Las cuatro afirmaciones son correctas porque describen un mismo fenómeno bien documentado en seguridad vial: la relación entre exceso de confianza, juventud y siniestralidad. Quien sobrestima sus habilidades tiende a ir demasiado rápido, ya que cree poder controlar situaciones que en realidad lo superan, y por eso mismo genera con frecuencia situaciones de riesgo para sí y para los demás. En el caso de muchos conductores jóvenes, especialmente varones, se combina la sobrestimación de sus capacidades con velocidades excesivas, lo que estadísticamente los involucra en más accidentes que al resto. La cuarta afirmación cierra la idea: muchos conductores jóvenes aún muestran deficiencias en su madurez personal, lo que afecta su juicio al volante. El fundamento es que conducir no es solo destreza física, sino también autoconocimiento y prudencia. Reconocer estas verdades ayuda a que el propio conductor joven baje las revoluciones y maneje a la defensiva."
   },
   {
     "id": 54,
@@ -1337,7 +1390,8 @@ export const questions = [
       ""
     ],
     "page": 12,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "El tema de fondo es que la moral no es algo fijo con lo que se nace, sino una capacidad que se desarrolla y madura a lo largo de la vida, y eso se refleja directamente en cómo conducimos. Por eso son verdaderas tres afirmaciones: en la infancia temprana, antes de la edad escolar, las personas son naturalmente egocéntricas y piensan sobre todo en sí mismas; con el tiempo, los conocimientos y la experiencia las vuelven más comprensivas y capaces de considerar a los demás; y el comportamiento al volante muestra cuánto ha avanzado ese desarrollo moral. La afirmación falsa es la que sostiene que la moral es innata e inmodificable, precisamente lo contrario de lo que enseña la materia. El fundamento práctico es que un conductor maduro piensa en el otro, cede, tolera errores ajenos y respeta las normas no por miedo a la multa sino por convicción. Reconocer que la moral se cultiva es lo que permite mejorar como conductor con la experiencia."
   },
   {
     "id": 55,
@@ -1362,7 +1416,8 @@ export const questions = [
       ""
     ],
     "page": 12,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "La pregunta apunta a distinguir la madurez PERSONAL del simple conocimiento técnico o del cuidado del vehículo. Las dos cualidades que denotan alta madurez son no sobrestimar las propias habilidades teniendo buen autoconocimiento, y aceptar con tolerancia que los demás pueden equivocarse. El fundamento es que conducir seguro depende sobre todo de la actitud: alguien que reconoce sus límites no se arriesga de más, y alguien que anticipa que el otro puede cometer un error maneja a la defensiva y deja margen para reaccionar. En cambio, mantener el auto en buen estado o conocer bien las normas del tránsito son cosas importantes y necesarias, pero corresponden a la responsabilidad técnica y al conocimiento, no a la madurez personal que pregunta el enunciado. El truco es separar 'cómo soy como persona' de 'qué sé o qué cuido'. La madurez se mide en humildad frente a las propias capacidades y en paciencia frente a los errores ajenos."
   },
   {
     "id": 56,
@@ -1386,7 +1441,8 @@ export const questions = [
       ""
     ],
     "page": 12,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "La idea clave es que en la conducción real la experiencia pesa más que la rapidez física de los reflejos. Aunque un joven pueda tener un reflejo puro ligeramente más veloz, en situaciones complejas que exigen percibir, interpretar y decidir, el conductor experimentado de 35 a 50 años reacciona en menos tiempo total. El fundamento es que la experiencia le permite anticipar lo que va a ocurrir, reconocer patrones de peligro y elegir la respuesta correcta casi automáticamente, mientras el novato gasta tiempo valioso procesando una escena que no sabe leer. Por eso las otras alternativas son incorrectas: no es cierto que los jóvenes reaccionen siempre más rápido ni que no exista diferencia entre ambos grupos. El dato práctico es que reaccionar bien no es solo mover el pie rápido, sino haber visto venir el problema con antelación. Esa anticipación, fruto de los años al volante, es lo que acorta el tiempo de respuesta efectivo."
   },
   {
     "id": 57,
@@ -1413,7 +1469,8 @@ export const questions = [
       ""
     ],
     "page": 14,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Las cuatro características son correctas porque juntas definen el perfil completo del conductor seguro, que combina destreza con actitud. Conducir con prudencia y hacer todo lo posible por evitar accidentes es la base, porque manejar a la defensiva previene la mayoría de los siniestros. Ser considerado y amable con otros conductores y peatones, y ser respetuoso sin obstaculizar ni perturbar al resto, apuntan a la convivencia vial: el tránsito es un espacio compartido donde la cortesía reduce conflictos y roces. Y conducir con buen criterio integra todo lo anterior, es decir, tomar decisiones sensatas adaptadas a cada situación. El fundamento es que la seguridad no se logra solo sabiendo manejar técnicamente, sino teniendo una actitud responsable y empática hacia los demás. El truco para recordarlo es que un buen conductor no solo evita chocar, sino que facilita la vida al resto. Por eso ninguna de las opciones sobra: todas suman al mismo perfil."
   },
   {
     "id": 58,
@@ -1440,7 +1497,8 @@ export const questions = [
       "Ser muy seguro de sí mismo caracteriza a quien resiste la presión, lo contrario de quien cede fácilmente."
     ],
     "page": 14,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "El concepto central es que la presión del grupo afecta sobre todo a quienes tienen baja autoestima y necesitan aprobación ajena. Por eso los dos rasgos característicos son ser muy inseguro de sí mismo y sentir temor a ser motivo de bromas y risas de los demás. El fundamento psicológico es que una persona insegura busca encajar a toda costa, y el miedo al ridículo o al rechazo la lleva a actuar según lo que espera el grupo en lugar de seguir su propio criterio, aunque eso implique conductas peligrosas como correr o beber antes de manejar. Las otras opciones describen justo lo contrario: tener autonomía, ser seguro de sí mismo y poder soportar bromas o que lo tilden de 'cobarde' son rasgos de quien RESISTE la presión del grupo. El dato útil es que aprender a decir que no y tolerar la burla es una señal de madurez. En la conducción, ceder a esa presión es una causa frecuente de accidentes entre jóvenes."
   },
   {
     "id": 59,
@@ -1465,7 +1523,8 @@ export const questions = [
       ""
     ],
     "page": 14,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "Esta pregunta se enfoca en accidentes de un solo vehículo en carretera, típicamente salidas de pista, volcamientos o choques contra obstáculos sin que intervenga otro auto. Los dos factores más frecuentes en estos casos son que el conductor esté muy cansado o bajo los efectos del alcohol, y que sobrestime sus capacidades conduciendo a exceso de velocidad. El fundamento es claro: la fatiga y el alcohol reducen la atención, alargan el tiempo de reacción y pueden provocar microsueños que hacen perder el control en una curva o en una recta monótona; el exceso de velocidad combinado con exceso de confianza impide negociar una curva o corregir a tiempo. No tener licencia o estar bajo medicamentos pueden influir, pero no son los factores más característicos de este tipo específico de accidente. El dato práctico es que en viajes largos y solitarios el mayor enemigo es uno mismo: el sueño, el trago y la velocidad. Por eso se recomienda descansar cada dos horas y nunca manejar con sueño o habiendo bebido."
   },
   {
     "id": 60,
@@ -1489,7 +1548,8 @@ export const questions = [
       "Las fallas mecánicas son una causa minoritaria comparada con los errores humanos."
     ],
     "page": 14,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El punto de fondo es que la inmensa mayoría de los accidentes de tránsito tiene origen humano, no en causas externas. El factor más frecuente son los errores de los conductores, como la distracción, el exceso de velocidad, no respetar la prioridad de paso, conducir cansado o ebrio, y la imprudencia en general. Las condiciones climáticas, el mal estado de calles y caminos o las fallas mecánicas también provocan siniestros, pero en una proporción mucho menor frente al comportamiento de las personas. El fundamento de por qué esto importa es esperanzador: si la causa principal es humana, entonces la mayoría de los accidentes es prevenible mejorando nuestra conducta al volante, manejando atentos, sobrios y a la defensiva. El truco para recordarlo es que el factor que más se repite es el que está detrás del volante. Por eso toda la educación vial pone el énfasis en la responsabilidad y el criterio del conductor más que en culpar al camino o al clima."
   },
   {
     "id": 61,
@@ -1513,7 +1573,8 @@ export const questions = [
       ""
     ],
     "page": 14,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "El fundamento aquí es entender el estrés como una respuesta fisiológica del cuerpo que libera adrenalina y cortisol, lo que modifica directamente cómo el conductor percibe y reacciona ante el tránsito. Existe la llamada 'curva del estrés': un nivel bajo o moderado activa los sentidos y mejora el desempeño, pero pasado cierto punto el exceso de estrés produce visión de túnel, bloqueos mentales y reacciones de pánico, justamente lo descrito en las opciones a y c. Por eso la opción d es la falsa, ya que sostiene que el estrés 'no influye en absoluto', cuando la evidencia muestra exactamente lo contrario en ambos extremos. El riesgo real de ignorar esto es que un conductor estresado por una pelea, un atraso o un mal día tome decisiones impulsivas o se quede paralizado ante un imprevisto. Un truco para recordarlo: el estrés funciona como el volumen de la radio, un poco te mantiene atento, demasiado te ensordece y te aturde. La pregunta pide la afirmación FALSA, así que siempre busca la que niega toda influencia, suele ser la trampa."
   },
   {
     "id": 62,
@@ -1538,7 +1599,8 @@ export const questions = [
       ""
     ],
     "page": 14,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "El principio detrás de esta pregunta es el perfil psicológico del conductor y cómo la personalidad se traslada al volante. La impulsividad se define como actuar de forma inmediata, sin evaluar consecuencias ni anticipar el efecto sobre los demás, por eso son correctas tanto la b (actuar sin pensar en las consecuencias) como la d (maniobras sorpresivas que sorprenden al resto). El razonamiento es directo: si la conducta base es no reflexionar, entonces las reacciones serán bruscas, los adelantamientos repentinos y los cambios de pista sin aviso. La opción a (reaccionar adecuadamente) y la c (conducir con excesiva precaución) describen lo opuesto a un impulsivo, por eso se descartan. El riesgo real es que las maniobras imprevisibles rompen la confianza mutua del tránsito, donde todos asumimos que el otro hará lo razonable y esperable. Para recordarlo, piensa que el conductor impulsivo es como alguien que habla antes de pensar, pero al volante ese error se paga en accidentes."
   },
   {
     "id": 63,
@@ -1562,7 +1624,8 @@ export const questions = [
       ""
     ],
     "page": 14,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Esta pregunta apunta a la raíz de la mayoría de las conductas riesgosas: el apremio por el tiempo. Aunque mantener el vehículo en buen estado y respetar los límites de velocidad son buenas prácticas, el mejor consejo es contar siempre con tiempo de sobra (d), porque es la condición que previene la cadena de malas decisiones. El razonamiento paso a paso es así: si vas atrasado, te apuras; si te apuras, excedes la velocidad, te saltas precauciones y te arriesgas en adelantamientos; en cambio, con tiempo de sobra puedes anticiparte, observar mejor y reaccionar con calma. La norma de manejo defensivo en Chile insiste en planificar la salida con holgura justamente por esto. El riesgo de no hacerlo es convertir cada semáforo y cada cruce en una carrera contra el reloj. Truco para fijarlo: 'el que sale tarde, maneja apurado, y el que maneja apurado, maneja peligroso'."
   },
   {
     "id": 64,
@@ -1587,7 +1650,8 @@ export const questions = [
       ""
     ],
     "page": 14,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento de esta pregunta es que la seguridad vial depende tanto de tu actitud previa al manejo como de tu técnica durante el manejo, por eso pide DOS maneras que se complementan. Contar con tiempo de sobra (a) ataca la causa más común de imprudencias, ya que sin prisa no necesitas excederte ni arriesgarte. Conducir a la defensiva (d) significa anticiparse a los errores ajenos, asumir que el otro puede equivocarse y mantener una posición y velocidad que te den margen de reacción. Ambas se eligen porque son las únicas que dependen 100% de tu conducta y previenen activamente el accidente, mientras que mantener el vehículo óptimo (b) es necesario pero no evita errores de manejo, y evitar la noche (c) no siempre es posible ni resuelve el fondo. El riesgo de descuidar estas dos es quedar a merced del azar y de los errores de terceros. Recuerda la regla defensiva: maneja como si todos los demás pudieran cometer un error en cualquier momento."
   },
   {
     "id": 65,
@@ -1612,7 +1676,8 @@ export const questions = [
       "Es falsa: la experiencia no protege; incluso pocos tragos afectan la interpretación y la toma de decisiones de cualquier conductor."
     ],
     "page": 15,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "El principio clave de esta pregunta es que el alcohol afecta al organismo en dos frentes simultáneos y peligrosos: reduce las capacidades reales y aumenta la percepción de capacidad. La opción a es verdadera porque incluso concentraciones pequeñas de alcohol enlentecen la capacidad de reacción, esto está demostrado científicamente y no requiere estar 'borracho'. La opción c es verdadera porque el alcohol actúa como depresor del sistema nervioso, desinhibe y hace que la persona sobrestime lo que puede hacer. La combinación de a y c es la trampa mortal: estás más lento pero te crees más capaz. La opción b es un mito muy extendido, el café no acelera la eliminación del alcohol, solo te despierta un poco; y la d es falsa porque ni siquiera la experiencia protege contra el deterioro químico de 2 tragos fuertes. El riesgo real es el exceso de confianza con capacidades disminuidas. Truco: el alcohol miente, te susurra que estás bien justo cuando peor estás."
   },
   {
     "id": 66,
@@ -1636,7 +1701,8 @@ export const questions = [
       ""
     ],
     "page": 15,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "Esta pregunta se basa en la farmacocinética del alcohol, es decir, cómo el cuerpo absorbe y procesa el alcohol, que depende de muchas más variables que la sola cantidad ingerida. Son verdaderas a, b y c porque la concentración en sangre realmente varía según cuánto se coma (el estómago lleno enlentece la absorción), el tiempo que dura la ingestión (beber lento da tiempo a metabolizar) y otros factores como peso, sexo e hidratación. La afirmación falsa es la d, que comete el error de suponer una relación matemática fija entre cantidad bebida y concentración resultante. El razonamiento es que dos noches distintas, con la misma cantidad de alcohol, pueden arrojar alcoholemias diferentes según el contexto. El riesgo real de creer en la d es pensar 'siempre bebo lo mismo y manejo bien', cuando un día con el estómago vacío esa misma dosis puede dejarte sobre el límite legal. Para recordarlo: el alcohol no es una calculadora, el mismo trago no da siempre el mismo resultado. La pregunta pide la FALSA, así que apunta a la que promete un resultado idéntico y garantizado."
   },
   {
     "id": 67,
@@ -1661,7 +1727,8 @@ export const questions = [
       "Es falsa: la visión no se adapta a la velocidad; al contrario, el campo visual se estrecha y se percibe menos del entorno."
     ],
     "page": 15,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "El fundamento de esta pregunta es un fenómeno fisiológico real llamado visión de túnel o reducción del campo visual con la velocidad. A baja velocidad el ojo abarca un ángulo amplio, pero a unos 100 km/h el conductor fija instintivamente la mirada lejos y recta para procesar lo que viene, lo que estrecha el campo visual útil, por eso es verdadera la opción b. Como consecuencia directa, se vuelve más difícil percibir los movimientos laterales de la carretera, como un peatón, animal o vehículo que se aproxima desde el costado, lo que valida la opción c. La opción d es falsa y peligrosa porque la visión NO se adapta mágicamente, físicamente se pierde percepción periférica al aumentar la velocidad. El riesgo real es no advertir a tiempo un peligro que entra por el lado, donde justamente ocurren muchos atropellos y colisiones en cruces a alta velocidad. Truco para recordarlo: mientras más rápido vas, más se cierra tu campo de visión como mirando por un tubo, por eso a alta velocidad conviene mover más la vista y bajar la velocidad en zonas con tránsito lateral."
   },
   {
     "id": 68,
@@ -1685,7 +1752,8 @@ export const questions = [
       "Que se cierren los párpados es un síntoma tardío y muy grave de cansancio, no el inicial."
     ],
     "page": 15,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "Esta pregunta busca que reconozcas la fatiga en su etapa inicial, cuando todavía es reversible y puedes actuar a tiempo. Los primeros síntomas son la falta de interés y los bostezos (opción b), señales sutiles con que el cerebro avisa que necesita oxígeno y descanso antes de que el deterioro sea grave. El razonamiento es cronológico: primero aparece el desgano y el bostezo, luego la dificultad para mantener la dirección (c) y finalmente el cierre involuntario de los párpados (d), que ya es una etapa crítica y cercana al microsueño. La opción a (calor y agresividad) no corresponde a los primeros síntomas del cansancio. El riesgo real de ignorar las señales tempranas es llegar al microsueño, donde el conductor pierde el control unos segundos sin darse cuenta, suficiente para un accidente fatal en carretera. El truco clave es: el primer bostezo es una orden de tu cuerpo para empezar a buscar dónde detenerte, no lo ignores esperando 'aguantar un poco más'."
   },
   {
     "id": 69,
@@ -1709,7 +1777,8 @@ export const questions = [
       "Es verdadera: incluso conductores experimentados pueden pasar por alto información importante."
     ],
     "page": 15,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento de esta pregunta es la psicología de la percepción: no vemos la realidad tal cual es, sino filtrada por nuestras experiencias, intereses, expectativas y necesidades. Por eso es falsa la opción c, que afirma que varios conductores ven lo mismo y lo perciben igual, cuando ocurre justo lo contrario, cada persona interpreta una misma escena de tránsito según su estado y su atención. Las demás son verdaderas: el apremio por el tiempo lleva a subestimar el riesgo de la velocidad (a), tendemos a ver lo que nos interesa y esperamos ver (b), y hasta a los expertos se les escapan datos importantes (d). El razonamiento es que la percepción es selectiva y subjetiva, no una cámara objetiva. El riesgo real es confiar en que 'lo vi todo', cuando tu mente pudo descartar inconscientemente algo crucial como un ciclista o una señal. Truco: dos testigos de un mismo choque casi nunca cuentan exactamente lo mismo, y eso prueba que la percepción es personal. Recuerda que la pregunta pide la afirmación FALSA."
   },
   {
     "id": 70,
@@ -1736,7 +1805,8 @@ export const questions = [
       ""
     ],
     "page": 15,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Esta pregunta resume el corazón de la conducción segura: el factor humano es el eslabón decisivo. Las cuatro afirmaciones son verdaderas porque describen distintas caras del mismo problema. La opción a establece el principio general, que la mayoría de los accidentes se origina en conductas y decisiones humanas más que en fallas mecánicas o del camino. La opción b concreta una de esas conductas, la falta de atención, que es causa principal de siniestros. La opción c muestra cómo el estado mental, la prisa, distorsiona la evaluación del riesgo. Y la d ejemplifica las distracciones cotidianas, discutir o manipular la radio, que roban atención justo cuando más se necesita. El razonamiento es que todas convergen en lo mismo: el conductor concentrado y sin prisa previene; el distraído o apurado, falla. El riesgo real es subestimar lo decisivo que es tu propio estado mental. Truco: cuando todas las opciones suenan razonables y coherentes con la seguridad, lo más probable es que todas sean correctas."
   },
   {
     "id": 71,
@@ -1760,7 +1830,8 @@ export const questions = [
       "Es falsa: sí existen diferencias claras en la forma de observar entre conductores inexpertos y experimentados."
     ],
     "page": 15,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento de esta pregunta es la diferencia en la técnica de observación entre un conductor novato y uno experimentado. Es verdadera solo la opción a: los inexpertos concentran la mirada en puntos fijos, típicamente clavan la vista en el auto de adelante o en un punto cercano del camino, en lugar de explorar activamente el entorno. El razonamiento es que con la experiencia se aprende a barrer la escena con la vista, mirar lejos, a los lados, revisar espejos y aprovechar la visión periférica, por eso las opciones b y c (que atribuyen al novato buena visión periférica y observación sistemática) son falsas, esas son virtudes del conductor experto. La opción d también es falsa porque sí existen diferencias notorias. El riesgo real de fijar la vista es perder el contexto y reaccionar tarde ante lo que aparece por los costados o más adelante. Truco para mejorar desde novato: practica mover la vista constantemente y mirar al menos 12 segundos por delante, no te quedes pegado al parachoques del auto de adelante."
   },
   {
     "id": 72,
@@ -1786,7 +1857,8 @@ export const questions = [
       "Es falsa: son las personas mayores quienes suelen ser más sensibles al deslumbramiento, no las jóvenes."
     ],
     "page": 16,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "El principio de esta pregunta es que la visión es el sentido más importante al conducir, ya que aporta cerca del 90% de la información que necesitamos en el tránsito. Son verdaderas a, b y c. La a establece lo básico, sin buena visión no se captan las situaciones del camino. La b explica que un campo visual reducido eleva el riesgo de no reaccionar a tiempo ante peligros que vienen de los lados, como en cruces o salidas. La c advierte sobre la fatiga visual, conducir largo rato en condiciones difíciles, como lluvia, noche o deslumbramiento, degrada la apreciación de lo que se ve y lleva a decisiones equivocadas. La opción d es falsa porque ocurre al revés: en realidad las personas mayores son más sensibles al deslumbramiento que las jóvenes, debido a cambios naturales del ojo con la edad. El riesgo real es manejar con problemas visuales no corregidos o agotado, creyendo que ves bien. Truco: si necesitas lentes, úsalos siempre al volante, y descansa la vista en viajes largos."
   },
   {
     "id": 73,
@@ -1812,7 +1884,8 @@ export const questions = [
       "Con buena visibilidad y buenas demarcaciones el riesgo de interpretar mal la realidad es bajo, no alto."
     ],
     "page": 17,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta pregunta trata sobre cuándo aumenta el riesgo de interpretar mal la realidad del camino, que ocurre cuando falta información visual o cuando tu capacidad para procesarla está disminuida. Son correctas a, b y c. En un camino montañoso y sinuoso con muy mala visibilidad (a) no alcanzas a ver lo que viene tras cada curva, por lo que tu cerebro 'rellena' con suposiciones que pueden estar equivocadas. Con cansancio extremo, sobre todo de noche (b), el procesamiento mental se enlentece y aumentan los errores de interpretación e incluso las ilusiones visuales. Con niebla densa (c) la información llega distorsionada o incompleta, alterando distancias y velocidades. La opción d describe lo opuesto, buena visibilidad y buena demarcación, donde el riesgo es bajo, por eso se descarta. El riesgo real es tomar decisiones, como adelantar o mantener velocidad, basadas en una realidad que no percibiste bien. Truco: cuando la información es escasa o tú estás agotado, baja la velocidad para darte más tiempo de interpretar correctamente."
   },
   {
     "id": 74,
@@ -1836,7 +1909,8 @@ export const questions = [
       "Un amigo o pariente no tiene el conocimiento médico para saber si el remedio afecta la conducción."
     ],
     "page": 17,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "El fundamento de esta pregunta es la responsabilidad de informarse con la fuente correcta antes de exponerse a un riesgo. Lo correcto es preguntar a su doctor (c), porque el médico es el único profesional con el conocimiento técnico para saber si un medicamento específico, y su interacción con tu organismo, afecta la conducción. Muchos remedios para la tos contienen antihistamínicos o codeína que provocan somnolencia, visión borrosa o reacciones más lentas. El razonamiento descarta las otras opciones: 'esperar un rato' (a) no garantiza nada si el efecto dura horas; 'conducir si te sientes bien' (b) es engañoso porque el remedio puede afectarte sin que lo notes; y un amigo o pariente (d) carece de criterio médico. El riesgo real es manejar disminuido sin saberlo y causar un accidente. Truco práctico: ante la duda sobre cualquier medicamento, la regla de oro es consultar a un profesional de salud, nunca a la intuición ni al consejo de terceros sin formación."
   },
   {
     "id": 75,
@@ -1860,7 +1934,8 @@ export const questions = [
       ""
     ],
     "page": 17,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "Esta pregunta refuerza el principio de la consulta médica, pero en un escenario más definido: ya sabes que los remedios 'probablemente afectarán' tu conducción. La respuesta correcta es solicitar consejo médico antes de conducir (d), porque solo el médico puede determinar si es seguro manejar, en qué momento o si debes abstenerte por completo. El razonamiento descarta las opciones a, b y c porque todas asumen que igual vas a conducir y solo buscan reducir el riesgo, limitar viajes, ir acompañado o manejar distancias cortas, pero ninguna elimina el peligro de fondo: tus capacidades estarán disminuidas en cualquier distancia. La diferencia con la pregunta anterior es que aquí ya hay una sospecha fuerte de afectación, lo que hace aún más obligatoria la consulta previa. El riesgo real es que un trayecto 'corto' puede ser igual de mortal que uno largo. Truco para recordarlo: cuando algo probablemente afecta tu manejo, no se negocia la distancia ni la compañía, se consulta primero y se decide después."
   },
   {
     "id": 76,
@@ -1884,7 +1959,8 @@ export const questions = [
       "Aunque algunas medicinas afectan la visión, la razón que plantea esta pregunta es el enlentecimiento de las reacciones."
     ],
     "page": 17,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "Esta pregunta apunta al porqué fisiológico de consultar al médico ante un tratamiento. La respuesta correcta es la a: algunas medicinas pueden hacer que tus reacciones sean más lentas. El fundamento es que muchos fármacos, como relajantes, antialérgicos, ansiolíticos o algunos para el dolor, actúan sobre el sistema nervioso central y enlentecen el tiempo de reacción, ese instante entre que ves un peligro y actúas. El razonamiento descarta las demás: la b es falsa porque las drogas no hacen tus reacciones más rápidas, las deterioran; la c es incorrecta como motivo principal, el Seguro Obligatorio (SOAP) cubre a las víctimas independientemente; y aunque algunas medicinas sí pueden afectar la visión (d), la afirmación general y más segura sobre el riesgo es el enlentecimiento de las reacciones. El riesgo real es que medio segundo de reacción más lento a 100 km/h equivale a varios metros recorridos sin frenar. Truco: a 100 km/h recorres unos 28 metros por segundo, así que cualquier demora en reaccionar se mide en metros de distancia perdida."
   },
   {
     "id": 77,
@@ -1914,7 +1990,8 @@ export const questions = [
       "Es falsa: el alcohol disminuye la capacidad de concentración, no la aumenta."
     ],
     "page": 17,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "El fundamento de esta pregunta es identificar el efecto combinado del alcohol como depresor del sistema nervioso central. Son correctas la a, la b y la e. El alcohol reduce la coordinación motora (a) porque afecta el cerebelo y la conexión entre cerebro y músculos. Incrementa falsamente la autoconfianza (b) porque desinhibe y nubla la autocrítica. Y empeora el juicio (e) porque deteriora la capacidad de evaluar riesgos y tomar buenas decisiones. El razonamiento descarta las demás: el alcohol NO acelera reacciones (d, falso, las enlentece), NO mejora la concentración (f, falso, la reduce) y NO causa ceguera al color (c, que es una condición visual no relacionada). El peligro está en la mezcla de a, b y e: menos coordinación, peor criterio y más confianza es la receta del accidente. Truco para recordar: el alcohol baja todo lo bueno (coordinación, juicio, concentración) y solo sube lo malo (la confianza ciega), por eso el conductor ebrio se cree mejor mientras maneja peor."
   },
   {
     "id": 78,
@@ -1938,7 +2015,8 @@ export const questions = [
       ""
     ],
     "page": 17,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "Esta pregunta aísla uno de los efectos centrales del alcohol sobre la conducción: la reducción de la concentración (opción d). El fundamento es que el alcohol es un depresor del sistema nervioso, por lo que disminuye la capacidad de mantener la atención sostenida y de procesar varias cosas a la vez, justo lo que exige el tránsito. El razonamiento descarta de plano las otras tres porque todas son falsas y describen mejoras inexistentes: el alcohol no acelera reacciones (a), no aumenta la lucidez (b) ni mejora la coordinación (c), sino que deteriora todas esas funciones. Al reducirse la concentración, el conductor pasa por alto señales, peatones, frenadas del auto de adelante y cambios del entorno. El riesgo real es la falla de atención que precede a la mayoría de los siniestros con alcohol. Truco simple para no confundirse: el alcohol nunca mejora nada en la conducción, así que ante estas preguntas la respuesta correcta es siempre la que indica un deterioro o reducción, nunca un beneficio."
   },
   {
     "id": 79,
@@ -1962,7 +2040,8 @@ export const questions = [
       "Modificar permanentemente la velocidad es errático y peligroso; no es una forma adecuada de mantener la concentración."
     ],
     "page": 17,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "El principio rector de esta pregunta es que ante el cansancio la única solución real es detenerse y descansar, y todo lo demás son solo medidas temporales mientras encuentras dónde parar. La respuesta correcta es asegurarte de que entre aire fresco al vehículo (c), porque la ventilación y el oxígeno ayudan a mantenerte momentáneamente más alerta hasta poder detenerte. El razonamiento descarta las demás: aumentar la velocidad (a) es peligrosísimo, porque combinas fatiga con menos tiempo de reacción; golpear el manubrio (b) no aporta nada real; y modificar permanentemente la velocidad (d) no combate el sueño y desconcierta al resto del tránsito. El riesgo real del cansancio es el microsueño, esos segundos en que el cerebro se apaga sin que lo notes. Es clave entender que el aire fresco solo da unos minutos extra, no reemplaza el descanso. Truco: si bostezas y te cuesta concentrarte, abre la ventana, pero usa esos minutos para buscar de inmediato un lugar seguro donde detenerte a dormir o estirarte."
   },
   {
     "id": 80,
@@ -1986,7 +2065,8 @@ export const questions = [
       "Esperar un rato no asegura que haya eliminado el alcohol; lo seguro es no conducir y volver en taxi."
     ],
     "page": 17,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "Esta pregunta pone a prueba si conoces la única conducta verdaderamente segura tras consumir alcohol: no conducir. La respuesta correcta es aconsejar que se vuelva a casa en taxi (a), porque deja el auto y usa un transporte alternativo, eliminando por completo el riesgo de manejar con capacidades disminuidas. El fundamento clave es que solo el tiempo metaboliza el alcohol, ningún truco lo acelera. Por eso se descartan las otras: el café cargado (b) es un mito, te despierta pero no te quita la alcoholemia ni la torpeza; conducir 'lento y cuidadoso' (c) sigue siendo conducir ebrio, con juicio y reacciones deterioradas; y 'esperar un rato' (d) es insuficiente porque el alcohol puede tardar muchas horas en eliminarse. El riesgo real, además del accidente, es legal: en Chile conducir bajo influencia o en estado de ebriedad es delito sancionado por la Ley 18.290, con multas, suspensión de licencia e incluso cárcel. Truco que salva vidas: si tomaste, las llaves no son tuyas esta noche, pide taxi o un conductor designado."
   },
   {
     "id": 81,
@@ -2010,7 +2090,8 @@ export const questions = [
       "Tocar la bocina con rabia es una forma de provocación; la bocina solo debe usarse para advertir un peligro, no para descargar enojo."
     ],
     "page": 17,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento aquí es la conducción defensiva y el control emocional, principios que la CONASET promueve porque la mayoría de los siniestros graves nace de reacciones impulsivas, no de fallas mecánicas. Cuando otro conductor lo molesta, su único objetivo debe seguir siendo llegar sano a destino, no impartir lecciones ni desahogarse. Encender luces, tocar la bocina o gesticular son represalias que escalan el conflicto y pueden derivar en una persecución o en violencia vial, dejándolo a usted como protagonista de un incidente que no buscaba. El razonamiento es simple: usted no controla la conducta ajena, pero sí la suya, y la respuesta más segura es no reaccionar, ceder el espacio y seguir concentrado. Un truco para recordarlo: pregúntese 'lo que voy a hacer, ¿me acerca a casa con seguridad o me mete en problemas?'. Por eso la respuesta correcta es la c, tratar de no reaccionar."
   },
   {
     "id": 82,
@@ -2034,7 +2115,8 @@ export const questions = [
       "Las luces no reemplazan la corrección visual que usted necesita; de noche la visibilidad es aún peor."
     ],
     "page": 19,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La razón de fondo es que la licencia de conducir incluye una restricción explícita: si en el examen médico se determinó que usted necesita lentes ópticos, esa corrección queda anotada y conducir sin ella constituye manejar sin cumplir las condiciones de su licencia, lo que es una infracción. Esto existe porque una visión deficiente alarga el tiempo en que usted detecta peligros, lee señales y calcula distancias, justo las capacidades de las que depende frenar a tiempo. No sirve ir lento, ni elegir calles tranquilas, ni esperar a la noche, porque la falla está en sus ojos y empeora, no mejora, con poca luz; tampoco resuelve nada usar anteojos ajenos, ya que una graduación distinta puede distorsionar más su visión. El razonamiento correcto es reconocer que en ese momento usted no está habilitado para conducir y buscar otra forma de llegar, sea transporte público, un taxi o pedir que alguien lo lleve. Por eso la respuesta es la b: encontrar una forma de llegar a casa sin manejar."
   },
   {
     "id": 83,
@@ -2058,7 +2140,8 @@ export const questions = [
       "Prometerse descansar al llegar no cambia que durante todo el trayecto usted estará conduciendo en malas condiciones."
     ],
     "page": 19,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El principio que sostiene esta respuesta es que conducir exige estar en plenas condiciones físicas y mentales, porque manejar es una tarea continua de percibir, decidir y actuar en fracciones de segundo. Sentirse enfermo, aunque sea un malestar 'menor', reduce la concentración, lentifica los reflejos y puede provocar un mareo, un desmayo o una distracción justo cuando necesita reaccionar. Las otras opciones son trampas: tomar un medicamento puede dar somnolencia y empeorar las cosas, acortar el viaje no elimina el riesgo durante el trayecto, y prometerse descansar al llegar no le sirve de nada si el accidente ocurre antes. El razonamiento es directo: si su cuerpo no responde bien, no es el momento de poner en juego su vida y la de otros. La regla práctica es tratar la enfermedad igual que el alcohol o la fatiga, son condiciones que inhabilitan. Por eso la respuesta correcta es la c: no manejar."
   },
   {
     "id": 84,
@@ -2082,7 +2165,8 @@ export const questions = [
       "Es verdadera: la desorientación y la dificultad para recordar el trayecto recorrido son síntomas claros de fatiga."
     ],
     "page": 19,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "Esta pregunta evalúa si usted reconoce un mito peligroso sobre la fatiga. El fundamento es que el cansancio al volante es comparable al efecto del alcohol: deteriora la atención, alarga el tiempo de reacción y puede llevar a microsueños de segundos en los que usted recorre decenas de metros sin control. La afirmación de la opción c es falsa porque conversar con el acompañante no combate la fatiga, solo la disimula por un rato y distrae; cuando el cuerpo pide dormir, ninguna charla lo reemplaza, lo único efectivo es detenerse y descansar. Las otras tres son verdaderas y describen bien el fenómeno: el cansancio es una causa importante de accidentes en carretera, empeora la capacidad de reacción, y la desorientación, como no recordar si ya pasó una ciudad, es un síntoma claro de que el cerebro está fallando. El truco es desconfiar de cualquier 'remedio' que no implique detenerse y dormir. Por eso la afirmación falsa, y la respuesta correcta, es la c."
   },
   {
     "id": 85,
@@ -2106,7 +2190,8 @@ export const questions = [
       ""
     ],
     "page": 19,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "El fundamento es que la fatiga no se vence con fuerza de voluntad ni con trucos a medias, solo se revierte recuperando energía, y eso significa interrumpir la conducción. Detenerse en un lugar seguro y dormir una siesta breve de quince a veinte minutos, o tomar café y esperar a que haga efecto, son las únicas medidas que realmente restauran algo de alerta. Las otras opciones fallan: una comida abundante produce sopor y empeora la somnolencia, respirar profundo da un alivio momentáneo que no elimina el cansancio, y terminar el viaje para dormir después ignora que el peligro está precisamente en seguir manejando cansado. El razonamiento clave es que continuar fatigado es de las situaciones más riesgosas al volante, equiparable a conducir bajo los efectos del alcohol. Un dato útil: la siesta corta funciona mejor que una larga, porque un sueño profundo lo deja aún más aturdido al despertar. Por eso la respuesta correcta es la d: detenerse y dormir una pequeña siesta o detenerse y tomar un poco de café."
   },
   {
     "id": 86,
@@ -2130,7 +2215,8 @@ export const questions = [
       ""
     ],
     "page": 19,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "El principio que respalda esta respuesta es el de tolerancia cero práctica: el alcohol afecta la conducción desde dosis bajas, y la única forma segura de neutralizar ese riesgo es no consumirlo cuando se va a conducir. Las demás opciones repiten creencias falsas que la educación vial busca desterrar: el café no acelera la eliminación del alcohol en la sangre, solo despabila a una persona que sigue igual de ebria; evitar calles con tráfico no reduce el deterioro de los reflejos; y comer antes de beber apenas retrasa la absorción, pero no impide que el alcohol llegue a la sangre y afecte el juicio. El razonamiento correcto es entender que el alcohol y la conducción son incompatibles, y que ninguna 'precaución intermedia' compensa la pérdida de coordinación y de capacidad de reacción. La regla práctica más simple y segura: si va a manejar, no bebe; si bebió, no maneja y busca otra forma de volver. Por eso la respuesta correcta es la d: evitar consumir alcohol."
   },
   {
     "id": 87,
@@ -2154,7 +2240,8 @@ export const questions = [
       "Sí es consecuencia del alcohol: afecta el juicio para calcular distancias y velocidades."
     ],
     "page": 19,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "Esta pregunta se basa en cómo el alcohol actúa sobre el cerebro: es un depresor del sistema nervioso central que adormece las funciones de control y de juicio. Por eso produce una falsa sensación de confianza, hace que la persona se sienta capaz cuando en realidad está más torpe; reduce el control del vehículo por la pérdida de coordinación; y deteriora el cálculo de la velocidad, haciéndola parecer menor de la real. La opción b, mayor conciencia del peligro, describe justo lo contrario de lo que ocurre: el alcohol disminuye la percepción del riesgo, y esa combinación de menor cautela con exceso de confianza es la que vuelve tan letal conducir bebido. El razonamiento para resolverla es identificar cuál efecto sería 'positivo' o protector, porque ninguno lo es bajo alcohol. El truco mnemotécnico: el alcohol siempre resta capacidades y suma falsa seguridad, nunca agrega conciencia ni cuidado. Por eso el efecto que NO es consecuencia del alcohol es la opción b: mayor conciencia del peligro."
   },
   {
     "id": 88,
@@ -2178,7 +2265,8 @@ export const questions = [
       "El alcohol sí deteriora la coordinación de movimientos al conducir."
     ],
     "page": 19,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "El fundamento es distinguir entre las funciones que el alcohol deprime y las que no toca. El alcohol afecta funciones cerebrales superiores y motoras: el juicio sobre la velocidad, los tiempos de reacción y la coordinación se ven claramente deteriorados porque dependen del procesamiento del cerebro y del control muscular fino. En cambio, la percepción de colores es una función básica de la retina y de las vías visuales que no se altera por la ingesta de alcohol; una persona ebria sigue distinguiendo el rojo del verde de un semáforo, aunque reaccione tarde ante él. El razonamiento para resolverla es preguntarse cuál de las cuatro capacidades es puramente sensorial y no de coordinación o juicio. Cuidado de no confundir 'ver el color' con 'reaccionar a tiempo': lo primero se conserva, lo segundo no. Por eso la capacidad que NO se ve afectada, y la respuesta correcta, es la a: la percepción de colores."
   },
   {
     "id": 89,
@@ -2202,7 +2290,8 @@ export const questions = [
       "El clima afecta la visibilidad y el frenado, pero no el tiempo de reacción que depende de su organismo."
     ],
     "page": 19,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "Aquí es clave separar dos conceptos que suelen confundirse: el tiempo de reacción y la distancia de detención. El tiempo de reacción es el lapso entre que usted percibe el peligro y que su cuerpo actúa, por ejemplo levantar el pie y pisar el freno, y depende exclusivamente de usted como persona: su estado de salud, su nivel de fatiga, su edad, y factores como el alcohol o ciertos medicamentos que lo alargan. La velocidad del vehículo, el estado de la calzada y el clima sí influyen, pero en la distancia que el auto recorre hasta detenerse, no en lo que tarda su cerebro y sus músculos en responder. El razonamiento correcto es entender que el reloj del tiempo de reacción corre dentro de su cuerpo, no en el asfalto ni en el motor. Un dato útil: a 100 km/h, un solo segundo de reacción equivale a casi 28 metros recorridos sin frenar, por eso cualquier cosa que lo demore es grave. Por eso el factor que influye en su tiempo de reacción es la opción a: su estado de salud."
   },
   {
     "id": 90,
@@ -2230,7 +2319,8 @@ export const questions = [
       ""
     ],
     "page": 19,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "El principio rector es que la conducción exige tres tipos de atención que no deben interrumpirse: la visual, la manual y la cognitiva. Esta pregunta admite varias respuestas porque pide identificar todas las acciones que rompen alguna de esas atenciones. Escuchar música a alto volumen anula la atención auditiva, impidiéndole oír bocinas, sirenas o un tren que se aproxima; usar el celular ocupa las manos y, sobre todo, la mente, siendo una de las distracciones más peligrosas y sancionadas; y mirar un mapa desvía la vista del camino justo cuando podría aparecer un imprevisto. En cambio, accionar los limpiaparabrisas y mirar el espejo retrovisor son maniobras propias de la conducción segura, breves y orientadas a controlar el entorno, por lo que no constituyen distracción. El truco es preguntarse: ¿esta acción me quita los ojos, las manos o la cabeza de la tarea de manejar? Por eso las respuestas correctas son la c, la d y la e."
   },
   {
     "id": 91,
@@ -2256,7 +2346,8 @@ export const questions = [
       "Detenerse no depende de si vienen autos detrás, pero además en este caso lo adecuado es avanzar lentamente con precaución."
     ],
     "page": 21,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Esta pregunta evalúa el criterio de proporcionalidad de la respuesta frente a un peatón que aún no obstruye la calzada o va por un costado. El fundamento es que el conductor siempre debe priorizar al peatón, pero la reacción debe ajustarse a la situación real: si el peatón todavía no se interpone en su trayectoria, detenerse por completo no es necesario y podría incluso confundir a quien viene detrás. Las otras opciones son incorrectas porque señalizar al peatón para que retroceda invierte la prioridad y lo presiona, y condicionar la detención a si vienen autos detrás revela que se estaría midiendo mal el deber de cuidado, que no depende del tráfico sino del peatón. El razonamiento correcto es avanzar a baja velocidad, manteniéndose alerta y listo para frenar de inmediato si el peatón decide cruzar. La clave es 'precaución activa': seguir, pero con el pie cerca del freno. Por eso la respuesta correcta es la c: continuar conduciendo lentamente."
   },
   {
     "id": 92,
@@ -2283,7 +2374,8 @@ export const questions = [
       ""
     ],
     "page": 21,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento de no adelantar aquí es la suma de riesgos en un espacio reducido, donde varios factores pueden coincidir y dejarlo sin escapatoria. Si usted se desplaza para sobrepasar al peatón, invade o se acerca al carril contrario, y en ese momento dos peligros independientes lo amenazan: el vehículo detenido a la izquierda podría ponerse en movimiento justo cuando usted ocupa ese espacio, y un vehículo en sentido contrario podría aparecer de improviso con poca visibilidad. Las otras opciones se descartan porque ensuciar al peatón es un detalle menor, no un motivo de seguridad real, y la angostura por sí sola, sin considerar a los otros vehículos, no captura las dos razones principales que pide la pregunta. El razonamiento correcto es identificar las amenazas de colisión, no las molestias. El truco: antes de adelantar, evalúe siempre 'qué se puede mover hacia mí', tanto de frente como desde los costados. Por eso las respuestas correctas son la c y la d."
   },
   {
     "id": 93,
@@ -2308,7 +2400,8 @@ export const questions = [
       "Es falsa: está prohibido adelantar en un cruce ferroviario, aunque no se perciba ningún tren, por el alto riesgo que implica."
     ],
     "page": 21,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "Los cruces ferroviarios a nivel tienen reglas estrictas porque un tren no puede frenar ni esquivar, y cualquier error del conductor del vehículo es potencialmente fatal. La afirmación b es verdadera con un matiz importante: si usted YA ingresó al cruce y advierte un tren a lo lejos, lo peor que puede hacer es detenerse o retroceder sobre la vía, lo correcto es continuar y despejar el cruce lo antes posible. La c también es verdadera, porque apagar la radio al aproximarse le permite oír el silbato del tren y las señales acústicas, recuperando una alerta vital. En cambio, la a es falsa porque la ley prohíbe estacionar tan cerca de un cruce, y la d es falsa porque adelantar sobre un cruce ferroviario está prohibido siempre, sin importar si percibe o no un tren. El razonamiento es que en estos cruces se elimina todo margen de improvisación. La regla de oro: ante un cruce ferroviario, primero ver y oír, nunca confiarse. Por eso las afirmaciones verdaderas son la b y la c."
   },
   {
     "id": 94,
@@ -2335,7 +2428,8 @@ export const questions = [
       ""
     ],
     "page": 22,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento de esta respuesta es la física del vehículo a velocidad de carretera: a 70 km/h, cualquier maniobra brusca compromete la adherencia de los neumáticos y la estabilidad del auto. Frenar en seco puede bloquear las ruedas, hacerle perder el control o, aunque logre detenerse, provocar que el vehículo de atrás lo alcance por no alcanzar a reaccionar. Virar bruscamente hacia la izquierda lo lanzaría hacia el carril contrario o podría descontrolar el auto. Por eso lo correcto, frente a la situación planteada, es mantener la trayectoria continuando derecho y, a la vez, reducir la velocidad de forma progresiva con un frenado suave, lo que conserva el control y avisa de forma gradual a quien viene detrás. El razonamiento clave es que a mayor velocidad, los movimientos deben ser más suaves, no más violentos. El truco: 'a más velocidad, manos y pies más suaves'. Por eso las respuestas correctas son la c y la d: continuar derecho y frenar suavemente."
   },
   {
     "id": 95,
@@ -2359,7 +2453,8 @@ export const questions = [
       "El motivo central es la mejor visual, no únicamente la posición frente a un eventual deslizamiento."
     ],
     "page": 22,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El principio detrás de esta regla es maximizar la visibilidad y el margen de seguridad en una curva ciega. En una curva hacia la izquierda, el interior de la curva queda a su izquierda, hacia el carril contrario; si usted se mantiene bien a la derecha, su línea de visión se abre y alcanza a ver más adelante lo que viene por la curva, anticipando vehículos, peatones u obstáculos antes de llegar a ellos. Las otras opciones son incorrectas o riesgosas: la posición a la derecha no tiene que ver con la pendiente, y mantenerse a la izquierda para 'acortar' o 'suavizar' la curva lo metería peligrosamente en la trayectoria del tránsito que viene de frente. El razonamiento correcto es priorizar ver y separarse del peligro, no ganar tiempo. El truco para recordarlo: en curva a la izquierda, péguese a la derecha; en curva a la derecha, sin invadir, busque la posición que más visibilidad le dé. Por eso la respuesta correcta es la b: para tener una mejor visual sobre el camino."
   },
   {
     "id": 96,
@@ -2384,7 +2479,8 @@ export const questions = [
     ],
     "page": 22,
     "category": "Conduccion segura",
-    "formula": "Regla de los 3 segundos: elige un punto fijo; cuando el auto de adelante lo pase, cuenta «mil uno, mil dos, mil tres». Si llegas antes de terminar, vas muy cerca.\nEquivale a la distancia que recorres en 3 s (a 100 km/h ≈ 83 m)."
+    "formula": "Regla de los 3 segundos: elige un punto fijo; cuando el auto de adelante lo pase, cuenta «mil uno, mil dos, mil tres». Si llegas antes de terminar, vas muy cerca.\nEquivale a la distancia que recorres en 3 s (a 100 km/h ≈ 83 m).",
+    "deepExplanation": "El fundamento de la distancia de seguimiento es que usted siempre necesita un colchón de espacio para reaccionar y frenar si el auto de adelante se detiene de golpe. Expresar esa distancia en metros fijos es un error, porque a mayor velocidad usted recorre más metros por segundo; por eso la mejor regla es la de los tres segundos, que ajusta automáticamente la separación a su velocidad real. Aplicando la fórmula: elija un punto fijo del camino, como un poste o una señal; cuando el vehículo de adelante pase por ese punto, comience a contar 'mil uno, mil dos, mil tres', y si usted llega al mismo punto antes de terminar de contar, significa que va demasiado cerca y debe abrir distancia. Esa separación equivale a lo que recorre en tres segundos, que a 100 km/h son unos 83 metros. La ventaja de este método es que funciona a cualquier velocidad sin hacer cálculos complicados. Por eso la respuesta correcta es la a: un espacio equivalente al que usted recorre en 3 segundos."
   },
   {
     "id": 97,
@@ -2408,7 +2504,8 @@ export const questions = [
       "Cortar la curva por la izquierda invade el carril opuesto y es muy peligroso."
     ],
     "page": 22,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Esta pregunta refuerza el mismo principio de visibilidad y seguridad en curva, pero conviene razonarlo de nuevo para fijarlo. En una curva hacia la izquierda, mantenerse bien a la derecha le entrega una mejor visual sobre la curva, porque amplía el ángulo con que ve lo que viene más adelante y lo mantiene lejos del carril contrario, donde circula el tránsito en sentido opuesto. Las opciones que hablan de 'tardar menos' o de 'hacer la curva menos pronunciada' apuntan a una conducción deportiva o de competencia, donde se 'corta' la curva, algo prohibido y peligrosísimo en la vía pública porque invade el sentido contrario. La opción de mantenerse a la izquierda por la cuneta también es errada, ya que lo expone al tráfico que viene de frente. El razonamiento correcto siempre prioriza ver y separarse, no ganar tiempo ni comodidad. El truco mnemotécnico: 'curva a la izquierda, ojos abiertos por la derecha'. Por eso la respuesta correcta es la b: para tener una mejor visual sobre la curva."
   },
   {
     "id": 98,
@@ -2433,7 +2530,8 @@ export const questions = [
     ],
     "page": 22,
     "category": "Conduccion segura",
-    "formula": "Distancia mínima de seguridad ≈ distancia de detención total.\nA 90 km/h: reacción (25 m) + frenado (≈ 45–50 m) ≈ 75 m. (También sirve la regla de los 3 segundos.)"
+    "formula": "Distancia mínima de seguridad ≈ distancia de detención total.\nA 90 km/h: reacción (25 m) + frenado (≈ 45–50 m) ≈ 75 m. (También sirve la regla de los 3 segundos.)",
+    "deepExplanation": "El fundamento es la distancia total de detención, que es la suma de dos tramos: lo que el vehículo recorre durante su tiempo de reacción, antes de que el freno actúe, más lo que recorre ya frenando hasta detenerse. A 90 km/h esa distancia crece mucho respecto de velocidades urbanas, porque la distancia de frenado aumenta con el cuadrado de la velocidad, no de forma proporcional. Aplicando la fórmula orientativa: a 90 km/h el tramo de reacción es de unos 25 metros y el de frenado ronda los 45 a 50 metros, lo que da una distancia total cercana a los 75 metros. Por eso las opciones de 15 o 20 metros son peligrosamente cortas y la de 100 metros excede lo necesario en condiciones normales. El razonamiento clave es que a alta velocidad se requiere muchísimo más espacio del que la intuición sugiere. Como alternativa práctica sirve siempre la regla de los tres segundos, que da un resultado equivalente sin calcular. Por eso la respuesta correcta es la a: unos 75 metros."
   },
   {
     "id": 99,
@@ -2459,7 +2557,8 @@ export const questions = [
       "Que el vendedor se baje de su vehículo no es el peligro más relevante frente a un niño que puede cruzar corriendo."
     ],
     "page": 23,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El fundamento de esta respuesta es el principio de previsión de la conducta de los peatones más vulnerables, especialmente los niños. Un niño cerca de la calzada, y más aún junto a un vehículo de helados que despierta su interés, es altamente impredecible: puede cruzar corriendo de golpe, sin mirar y sin medir el peligro, porque a esa edad no ha desarrollado el juicio para evaluar la velocidad y la distancia de los autos. Por eso el peligro más urgente al que debe estar atento es justamente que el niño se lance a la calle. Las otras opciones, como que el vehículo del vendedor o el auto estacionado se muevan, o que el vendedor se baje, son posibilidades menos inmediatas y menos letales que un niño cruzando de improviso. El razonamiento correcto es jerarquizar los riesgos y poner primero al ser humano más impredecible y frágil. La regla práctica: ante niños cerca de la vía, levante el pie del acelerador y prepárese a frenar. Por eso la respuesta correcta es la a: el niño puede cruzar corriendo."
   },
   {
     "id": 100,
@@ -2483,7 +2582,8 @@ export const questions = [
       "Tocar la bocina y avanzar rápido sin tener visual es la maniobra más peligrosa de todas."
     ],
     "page": 23,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El principio que rige esta situación es que jamás se debe ingresar a un cruce o completar un viraje sin tener visibilidad plena de lo que viene, porque doblar 'a ciegas' es exponerse a un choque con un vehículo o a atropellar a un peatón que usted no alcanzó a ver. Cuando los autos estacionados le tapan la visual al doblar a la izquierda, la maniobra correcta es detenerse primero y luego avanzar muy lentamente, asomando el frente del vehículo de a poco hasta lograr una visual completa, lo que le permite frenar de inmediato si algo aparece. Las otras opciones son peligrosas: avanzar rápido, aun 'preparado para detenerse', no le da tiempo real de reacción, y tocar la bocina no reemplaza el ver, ya que la bocina advierte pero no garantiza que el otro se detenga ni que usted detecte el peligro. El razonamiento correcto privilegia la información sobre la rapidez: primero ver, después avanzar. El truco: 'asómese centímetro a centímetro, no metro a metro'. Por eso la respuesta correcta es la c: detenerse, luego avanzar lentamente hasta que tenga una visual plena."
   },
   {
     "id": 101,
@@ -2509,7 +2609,8 @@ export const questions = [
       ""
     ],
     "page": 23,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El fundamento aquí es el principio de conducción defensiva, que obliga a interpretar las señales del entorno y anticipar lo que aún no se ve. Una pelota que entra rebotando a la calzada no es solo un objeto: es un indicador casi seguro de que un niño viene detrás corriendo tras ella, totalmente concentrado en el juego y sin mirar el tránsito. El razonamiento paso a paso es: veo la pelota, deduzco que hay un menor cerca, calculo que puede aparecer entre los autos estacionados en cualquier instante, y por eso suelto el acelerador, cubro el freno y reduzco la velocidad para tener distancia de reacción. Tocar la bocina o jugar con las luces no detiene a un niño y solo desvía su atención hacia usted en vez de hacia el peligro. Detenerse e invitarlo a cruzar con la mano tampoco corresponde, porque puede haber otros vehículos que no lo vean. La consecuencia real de no anticipar es un atropello a baja distancia, donde incluso pocos km/h marcan la diferencia entre frenar a tiempo o una tragedia. Un buen truco para recordarlo: detrás de cada pelota hay siempre un par de zapatillas corriendo."
   },
   {
     "id": 102,
@@ -2533,7 +2634,8 @@ export const questions = [
       "Tener las luces encendidas mejora su visibilidad y es una práctica adecuada, no algo que deba evitar."
     ],
     "page": 23,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La regla se basa en que los animales reaccionan por instinto al ruido y al movimiento brusco, y el conductor debe adaptarse a esa naturaleza imprevisible. Acelerar el motor o tocar la bocina genera sonidos repentinos que los espantan, provocando que salten, retrocedan o invadan descontroladamente la calzada justo cuando usted los está adelantando. El razonamiento es simple: si el objetivo es pasar sin incidentes, debo eliminar todo lo que pueda alterar al animal, no agregarlo. Por eso las demás acciones del listado sí son correctas y de hecho recomendables: cambiar a una marcha más baja le da control y suavidad, usar los señalizadores avisa a otros conductores de la maniobra, y llevar las luces encendidas mejora su visibilidad. La consecuencia de espantar al animal puede ser un atropello, una caída del propio conductor si es motociclista, o un choque con quien venga detrás. El truco para memorizarlo: con animales se pasa en silencio y despacio, como caminando en puntillas, nunca a bocinazos."
   },
   {
     "id": 103,
@@ -2561,7 +2663,8 @@ export const questions = [
       ""
     ],
     "page": 23,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento es que una manada se comporta como un grupo impredecible: las ovejas se mueven en bloque, pero pueden devolverse, dispersarse o cruzar de golpe sin lógica aparente. Por eso la respuesta combina tres conductas que apuntan a un mismo objetivo, mantener el control total del vehículo en todo momento. Dejar un espacio lateral suficiente evita rozar o atropellar a un animal que se desvíe hacia usted; conducir lentamente reduce la energía de un eventual impacto y le da tiempo de leer el movimiento del rebaño; y estar preparado para detenerse le permite frenar por completo si la manada se cierra en su camino. En cambio, adelantar rápido y sin vacilaciones es exactamente lo contrario de lo prudente, y tocar la bocina las espanta y agrava el descontrol. El razonamiento clave es que con animales en grupo la prioridad nunca es el tiempo, sino llegar al otro lado sin provocar una estampida. Truco: trate la manada como un semáforo en amarillo permanente, pase lento, ancho y listo para parar."
   },
   {
     "id": 104,
@@ -2589,7 +2692,8 @@ export const questions = [
       ""
     ],
     "page": 25,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El principio detrás de esta pregunta es que una fila de autos estacionados es una zona de peligros ocultos, y la velocidad debe ajustarse al riesgo que no se ve. Las tres razones correctas comparten que son situaciones que surgen desde esa fila y que usted no puede prever a tiempo si va rápido: un vehículo puede salir de su estacionamiento e incorporarse al tránsito, una persona puede abrir de golpe la puerta justo en su trayectoria, y un niño puede aparecer corriendo entre dos autos sin mirar. Disminuir la velocidad alarga su distancia de reacción y acorta la de frenado, que es lo único que le da margen ante estos imprevistos. Las opciones descartadas no resisten análisis: usted no puede activar alarmas ajenas con su sola circulación, y reducir la velocidad no busca ser visto por el tránsito contrario sino evitar atropellos y choques laterales. La consecuencia de pasar rápido junto a autos estacionados es no alcanzar a frenar ante una puerta o un peatón. Para recordarlo piense que cada auto estacionado es una puerta y un niño en potencia."
   },
   {
     "id": 105,
@@ -2615,7 +2719,8 @@ export const questions = [
       "Avanzar lentamente igual implica ingresar al cruce antes de confirmar la maniobra del otro vehículo, lo que sigue siendo riesgoso."
     ],
     "page": 25,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento es no actuar nunca sobre una intención, sino solo sobre un hecho consumado, porque la señalización del otro conductor no garantiza la maniobra. Aunque el vehículo azul tenga encendido el indicador de viraje a la derecha, esa luz pudo quedar puesta por error de un viraje anterior, el conductor puede arrepentirse y seguir derecho, o puede dudar en el último momento. Si usted se pone en marcha confiando en esa señal y el azul continúa de frente, queda expuesto a una colisión en pleno cruce. El razonamiento correcto es esperar a ver que el vehículo efectivamente inicie el viraje, recién ahí su trayectoria queda libre y puede avanzar con seguridad. Por eso se descartan acelerar a fondo, partir antes de que llegue o avanzar lentamente confiando en la luz: todas asumen una maniobra que aún no ocurre. La regla práctica de oro es que las luces se confirman con los hechos, no con la fe; espere a ver girar las ruedas, no a ver la ampolleta encendida."
   },
   {
     "id": 106,
@@ -2639,7 +2744,8 @@ export const questions = [
       "Intentar empujar el vehículo toma demasiado tiempo y lo mantiene en la zona de impacto; debe priorizar ponerse a salvo."
     ],
     "page": 25,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Aquí el principio que manda sobre todos los demás es que la vida humana vale infinitamente más que el vehículo, y un tren no puede detenerse a tiempo. Cuando su auto queda calado sobre la vía y la campanilla suena, eso significa que el tren ya viene en camino y que las barreras están por bajar; un tren cargado necesita cientos de metros para frenar, por lo que aunque el maquinista lo vea no podrá evitar el impacto. El razonamiento es directo: no hay nada que recuperar dentro o sobre el vehículo que justifique permanecer en la zona de impacto, por eso la única acción correcta es salir y alejarse de inmediato, idealmente caminando hacia el lado desde donde viene el tren para no ser alcanzado por restos tras la colisión. Seguir intentando encender el motor, empujar el auto solo o correr por la vía le hacen perder los segundos que necesita para ponerse a salvo. Truco para fijarlo: si suena la campanilla y el auto no parte, abandone todo y salga; el fierro se reemplaza, usted no."
   },
   {
     "id": 107,
@@ -2671,7 +2777,8 @@ export const questions = [
       "Los autos que vengan detrás no constituyen el peligro principal aquí; el foco está en lo que surge desde los autos estacionados a su costado."
     ],
     "page": 25,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El fundamento es la lectura activa del entorno cuando se circula pegado a una fila de autos estacionados, donde los peligros aparecen siempre desde ese costado. Las tres respuestas correctas describen riesgos que nacen justamente de esa fila: peatones que cruzan saliendo de improviso entre dos vehículos sin que usted los vea venir, autos que abandonan su estacionamiento y se le atraviesan, y puertas que se abren repentinamente invadiendo su trayectoria. El hilo común es que todos exigen anticipación y velocidad moderada, porque la fila de autos le tapa la visibilidad y le quita reacción. Las opciones descartadas no son prioritarias en esta escena: las irregularidades de la calzada, los lugares para estacionar o los autos que vienen detrás no representan el peligro inmediato y dominante de este escenario. El razonamiento es concentrar la atención en la fuente real del riesgo, no dispersarla. Para recordarlo: junto a autos estacionados vigile siempre tres cosas que saltan al ruedo, una persona, un auto que sale y una puerta que se abre."
   },
   {
     "id": 108,
@@ -2697,7 +2804,8 @@ export const questions = [
       "Recriminar al peatón no aporta nada a la seguridad y no es función del conductor; su deber es simplemente cederle el paso."
     ],
     "page": 26,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento legal y ético es la prioridad del peatón que ya inició el cruce, consagrada en la Ley de Tránsito: una vez que la persona pisó la calzada, el conductor tiene la obligación de cederle el paso de forma segura. El razonamiento es que un peatón en movimiento es vulnerable y no debe ser presionado ni sorprendido; por eso lo único correcto es detenerse y esperar a que termine de cruzar antes de continuar. Pasar rápidamente por detrás de él lo expone a un movimiento inesperado del peatón y elimina su margen de frenado; hacerle señas con la mano puede inducirlo a cruzar hacia un peligro que usted no controla, como otro vehículo; y reprenderlo es irrelevante y peligroso porque desvía su atención. La consecuencia de no esperar es un atropello que la ley atribuye al conductor por no respetar la preferencia peatonal. La idea clave a memorizar: peatón que ya cruza, conductor que se detiene y espera, sin apuro y sin gestos."
   },
   {
     "id": 109,
@@ -2723,7 +2831,8 @@ export const questions = [
       ""
     ],
     "page": 26,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "El principio rector es que la intersección debe despejarse siempre lo antes posible, porque un vehículo detenido en pleno cruce se convierte en un obstáculo que bloquea el flujo y multiplica el riesgo de colisión desde varias direcciones. Si el semáforo cambió mientras usted ya estaba dentro del cruce, no puede quedarse inmovilizado esperando otra luz ni mucho menos retroceder, porque retroceder lo expone a los vehículos y peatones que ya tienen su paso habilitado por detrás. El razonamiento correcto es continuar con precaución para liberar la intersección rápido, mirando que el camino de salida esté libre. Esperar luz verde quedándose en el cruce o esperar luz roja son maniobras que prolongan la obstrucción y agravan el peligro. La consecuencia de quedarse atascado es trabar la intersección y provocar choques o el clásico bloqueo en cruz. La regla de oro: nunca entre a un cruce si no tiene salida asegurada, y si ya está dentro cuando cambia la luz, complételo y despeje sin vacilar."
   },
   {
     "id": 110,
@@ -2749,7 +2858,8 @@ export const questions = [
       ""
     ],
     "page": 26,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento es que el bus detenido actúa como una pantalla que tapa por completo la visibilidad, generando un peligro oculto clásico de la conducción urbana. El mayor riesgo al sobrepasarlo es que un pasajero que acaba de bajar cruce por delante del bus, sin verlo a usted y sin que usted lo vea, hasta que ambos quedan frente a frente con muy poco margen. El razonamiento es que la persona que baja tiende a cruzar de inmediato por el punto más corto, justo por delante del vehículo que la tapa, y como va apurada no evalúa el tránsito de la pista contigua. Las otras alternativas describen situaciones secundarias o menos críticas comparadas con este atropello casi inevitable si usted pasa rápido. La defensa correcta es sobrepasar el bus a baja velocidad, separado y con el pie listo en el freno, anticipando que alguien saldrá de esa zona ciega. Truco para no olvidarlo: delante de un bus detenido siempre puede haber un peatón escondido, trátelo como un muro con sorpresa."
   },
   {
     "id": 111,
@@ -2775,7 +2885,8 @@ export const questions = [
       "No se trata de un olvido: la señal es deliberada y comunica claramente la intención de virar a la derecha."
     ],
     "page": 27,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "El fundamento es el sistema de señales manuales del conductor, que existe como respaldo cuando los indicadores luminosos fallan o para reforzar la comunicación entre vehículos, especialmente en camiones y vehículos antiguos. Saber leerlas es parte de anticipar las maniobras ajenas. En este caso la señal del camión, ya sea por el brazo extendido o la luz indicadora correspondiente, significa que va a virar a la derecha, por lo que usted no debe intentar adelantarlo por ese costado ni invadir la trayectoria hacia la cual va a girar. El razonamiento es que un camión con remolque hace giros amplios y abiertos, de modo que interpretar mal su señal y quedar a su derecha lo expone a quedar atrapado en el ángulo del viraje. Por eso se descarta pensar que le cede el paso, que va a detenerse o que olvidó apagar la luz: la lectura correcta es una intención clara de giro. La clave es respetar el espacio del camión y nunca adelantar por el lado hacia donde está señalizando que girará."
   },
   {
     "id": 112,
@@ -2803,7 +2914,8 @@ export const questions = [
       "Fijarse solo en el vehículo de atrás lo deja ciego ante los peligros y frenadas que vienen desde adelante, que son los más críticos."
     ],
     "page": 27,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El principio es la conducción anticipativa y de visión amplia: ir en fila no significa mirar solo el parachoques de adelante, sino leer toda la cadena de vehículos para reaccionar antes de que el problema llegue a usted. Las tres conductas correctas se complementan: mantener un espacio suficiente con el de adelante permite que otro vehículo lo adelante e ingrese a ese hueco sin riesgo, y además es su propia distancia de frenado; mirar bien hacia adelante, incluso a través de los cristales de los autos que lo preceden, le permite ver cuando alguien dos o tres autos más allá frena y moderar la velocidad a tiempo en lugar de reaccionar tarde en cadena; y estar atento tanto a los de adelante como a los de atrás le da conciencia total de su entorno. Por eso se descartan las opciones de concentrarse solo en el de adelante o solo en el de atrás, porque la visión parcial es la que produce las colisiones múltiples por alcance. La consecuencia de mirar corto es frenar tarde y provocar el efecto acordeón. Truco: en fila, mire lejos y por entre los vidrios, no se quede pegado al auto de enfrente."
   },
   {
     "id": 113,
@@ -2829,7 +2941,8 @@ export const questions = [
       "El punto D no corresponde a la zona crítica que requiere su atención prioritaria en este instante."
     ],
     "page": 27,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento es la jerarquización del riesgo: en toda escena hay varios puntos donde mirar, pero el conductor seguro dirige su atención prioritaria hacia donde es más probable que se genere el conflicto inmediato. En esta situación ese punto es el C, que concentra el peligro más cercano y de mayor probabilidad de materializarse, por lo que mirar allí le entrega el tiempo de reacción que necesita para anticiparse. El razonamiento es que la vista guía la conducción: uno tiende a ir hacia donde mira y a reaccionar antes ante lo que observa con anticipación, de modo que enfocar el punto equivocado le hace perder segundos críticos frente al verdadero riesgo. Los demás puntos representan zonas secundarias o ya controladas que no exigen su atención principal en este instante. La idea práctica es entrenar el ojo para buscar siempre el peligro más probable, no el más vistoso. Regla útil: mire hacia donde puede aparecer el problema, no hacia donde no pasa nada."
   },
   {
     "id": 114,
@@ -2861,7 +2974,8 @@ export const questions = [
       "Las irregularidades de la calzada no son el riesgo central; lo crítico son el ciclista, las puertas y los niños."
     ],
     "page": 28,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento es la evaluación simultánea de múltiples fuentes de riesgo en un entorno urbano con autos estacionados y tránsito mixto. Los tres riesgos prioritarios provienen de direcciones distintas pero todos pueden materializarse de improviso: el ciclista que viene en sentido contrario, que es vulnerable y puede desviar su línea; las puertas de los autos estacionados que pueden abrirse de golpe en su trayectoria; y los niños que pueden salir corriendo a la calzada por entre los vehículos detenidos, sin mirar. El razonamiento es que estos tres comparten la característica de aparecer súbitamente y a corta distancia, exigiendo velocidad moderada y atención repartida. Se descartan como prioridad la intersección lejana, los vehículos de atrás y las irregularidades de la calzada, porque no son el peligro inmediato y dominante de esta escena específica. La consecuencia de no vigilarlos es no alcanzar a frenar ante una puerta, un niño o el ciclista. Para fijarlo: junto a autos estacionados piense en lo que cruza, lo que se abre y lo que viene de frente."
   },
   {
     "id": 115,
@@ -2888,7 +3002,8 @@ export const questions = [
       "Seguir sin estar preparado para nada es una actitud imprudente: el dominio del vehículo no evita los imprevistos del entorno y debe anticiparse siempre."
     ],
     "page": 28,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El principio fundamental es que el límite de velocidad es un máximo, no una obligación, y nunca exime al conductor de adaptar su marcha al riesgo presente. Aunque usted vaya a los 70 km/h permitidos, debe estar preparado para actuar por dos motivos concretos en esta escena: alguien puede salir corriendo a la calzada, y el bus detenido puede ponerse en marcha e incorporarse a su pista. El razonamiento es que circular dentro de la ley no garantiza seguridad si el entorno presenta peligros previsibles; la conducción defensiva obliga a anticipar y a reducir la velocidad si la situación lo amerita, incluso por debajo del máximo. Por eso se descarta la idea de seguir sin estar preparado para nada confiando en que domina el vehículo, porque el dominio mecánico no anticipa lo que hace un peatón o un bus. La opción de frenar y ceder el paso al bus como conducta única tampoco captura la doble alerta que exige la escena. La clave: la velocidad máxima es un techo, no un permiso para dejar de mirar y anticipar."
   },
   {
     "id": 116,
@@ -2914,7 +3029,8 @@ export const questions = [
       ""
     ],
     "page": 28,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "El fundamento es la gestión de un espacio estrecho compartido, donde no caben dos maniobras simultáneas sin poner en riesgo al más vulnerable. Cuando hay peatones junto a la calzada y un vehículo viene en sentido contrario por un punto angosto, intentar pasar a los peatones al mismo tiempo que se cruza con el vehículo contrario lo obligaría a estrecharse justo contra las personas, sin margen de seguridad. El razonamiento correcto es secuenciar: primero esperar y dejar pasar al vehículo que viene en contra, despejando así el ancho de la calzada, y solo después continuar y pasar a los peatones con el espacio lateral suficiente para resguardarlos. Hacer señas a los peatones para que se alejen o hacer luces al vehículo contrario son intentos de imponer su prioridad que generan confusión y peligro; reducir la velocidad y seguir sin más no resuelve el conflicto de espacio. La consecuencia de no ceder es estrujar a los peatones contra el borde. Truco: cuando el espacio no alcanza para dos, ceda primero y proteja siempre al peatón pasándolo con holgura."
   },
   {
     "id": 117,
@@ -2938,7 +3054,8 @@ export const questions = [
       "Ser cauteloso en las intersecciones no compensa la distracción de usar el celular conduciendo; igual debe detenerse para contestar."
     ],
     "page": 30,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento legal es que la Ley de Tránsito 18.290 prohíbe expresamente manipular el teléfono celular mientras se conduce, porque la distracción visual, manual y cognitiva que genera multiplica el riesgo de accidente. Atender el teléfono al volante desvía la mirada del camino por varios segundos, tiempo en el que el vehículo recorre una distancia considerable a ciegas. El razonamiento correcto es que la llamada nunca tiene la urgencia que justifique ese riesgo, por lo que lo que corresponde es esperar hasta encontrar un lugar seguro donde detenerse por completo y recién ahí responder. Las demás opciones son falsas soluciones: reducir la velocidad sigue dejándolo distraído, conducir con una sola mano disminuye su control sobre el vehículo, y ser cauteloso en las intersecciones no compensa la atención que pierde al hablar. La consecuencia real es chocar o atropellar por mirar la pantalla en lugar del camino, además de la sanción legal. La regla simple para grabarla: si suena el teléfono, primero estacione seguro, después conteste; el celular y el manejo no se mezclan."
   },
   {
     "id": 118,
@@ -2962,7 +3079,8 @@ export const questions = [
       "Circular por un camino secundario no autoriza el uso del teléfono; la distracción es igual de peligrosa en cualquier vía."
     ],
     "page": 30,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento es el mismo que prohíbe distraerse al volante: la única condición en que manipular el teléfono no compromete su control sobre el vehículo es cuando este está completamente detenido en un lugar seguro y fuera del flujo de tránsito. El razonamiento es que detenido y aparcado de forma segura usted ya no está conduciendo, por lo que su atención puede dedicarse al teléfono sin poner en riesgo a nadie. Las demás opciones son trampas frecuentes: tener cambio automático no libera su atención del camino, circular por un camino secundario no elimina los peligros, y aunque una emergencia sea grave, lo correcto sigue siendo detenerse en lugar seguro para realizar esa llamada en vez de hacerla en movimiento. El error común es creer que en situaciones de baja exigencia se puede usar el teléfono, cuando la norma no admite excepciones por la vía ni por el tipo de vehículo. La consecuencia de usarlo en marcha es la distracción que provoca accidentes. Para recordarlo: el teléfono solo se usa con el auto detenido y seguro, sin importar dónde ni qué auto sea."
   },
   {
     "id": 119,
@@ -2986,7 +3104,8 @@ export const questions = [
       "Seguir muy de cerca al camión reduce su visibilidad y, al desplazarse hacia el centro, se expone al tránsito contrario; es una práctica muy riesgosa."
     ],
     "page": 30,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El fundamento es que adelantar a un camión con remolque exige una visibilidad amplia y despejada, y un vehículo largo justamente tapa por completo lo que viene adelante y en sentido contrario. La conducta correcta es mantenerse bien atrás del camión, porque cuanto mayor es la distancia que usted deja, mejor es el ángulo de visión que gana sobre el camino y sobre el tránsito que se aproxima de frente, permitiéndole confirmar que existe espacio real y seguro antes de salir a adelantar. El razonamiento es contraintuitivo pero clave: pegarse al camión para ver mejor produce el efecto opuesto, lo enceguece y lo deja sin margen de frenado. Por eso se descartan seguirlo muy de cerca desplazándose al centro, lo más peligroso, y esperar a que el conductor del camión le indique, porque la decisión y la responsabilidad de adelantar son siempre suyas. Hacer luces para que los de enfrente le faciliten el paso no garantiza nada. La regla práctica: para adelantar a un camión, atrás se ve más, así que retroceda la distancia, mire y solo salga cuando vea con claridad."
   },
   {
     "id": 120,
@@ -3010,7 +3129,8 @@ export const questions = [
       ""
     ],
     "page": 30,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento estadístico y vial es que las intersecciones concentran la mayor parte de los accidentes de tránsito porque son los puntos donde convergen vehículos y peatones desde distintas direcciones, multiplicando los puntos de conflicto y las maniobras simultáneas como virajes, cruces y cambios de prioridad. El razonamiento es que en una carretera o un camino rural el tránsito fluye mayormente en la misma dirección y los conflictos son menos frecuentes, mientras que en un cruce coinciden trayectorias que se atraviesan, y basta un error de prioridad, una luz mal interpretada o una velocidad inadecuada para que se produzca la colisión. Por eso las salidas de colegios o los caminos rurales, aunque tienen sus riesgos propios, no son donde se acumula la mayor cantidad de siniestros. La consecuencia práctica es clara: al aproximarse a cualquier intersección debe reducir la velocidad, mirar a ambos lados, respetar la prioridad de paso y nunca asumir que el otro se detendrá. Para recordarlo: donde los caminos se cruzan, los peligros se suman."
   },
   {
     "id": 121,
@@ -3034,7 +3154,8 @@ export const questions = [
       "Los volcamientos pueden ser muy graves, pero ocurren con menor frecuencia y no son la principal causa de muertes en el tránsito chileno."
     ],
     "page": 30,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento de esta respuesta está en la vulnerabilidad física del cuerpo humano frente a un vehículo en movimiento. En un atropello, la energía del impacto se transfiere directamente al peatón, que no tiene carrocería, cinturón, airbag ni estructura que absorba el golpe, por lo que un choque incluso a velocidades moderadas puede ser mortal. A esto se suma que el peatón puede ser proyectado contra el suelo o contra otro objeto, sumando lesiones. Por eso las estadísticas de CONASET ubican el atropello como el accidente con mayor cantidad de fallecidos, por sobre colisiones, volcamientos o choques contra obstáculos fijos, donde los ocupantes sí cuentan con elementos de protección. La Ley 18.290 traduce este principio en obligaciones concretas para el conductor: reducir la velocidad cerca de pasos peatonales, colegios y zonas de alta circulación de personas. Truco para recordarlo: el más débil es el que más muere, y en la vía el más débil siempre es el peatón."
   },
   {
     "id": 122,
@@ -3058,7 +3179,8 @@ export const questions = [
       "Señalizar es importante para avisar su intención, pero debe hacerse después de comprobar que es seguro moverse; primero se mira el entorno."
     ],
     "page": 30,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "La clave de esta pregunta es entender que existe una secuencia de acciones antes de partir y que cada una se hace en un momento distinto: ajustar espejos, señalizar y seleccionar la marcha son pasos previos de preparación, pero la última verificación, justo antes de soltar el embrague y moverse, es la revisión visual del entorno. Los espejos retrovisores dejan zonas que no muestran, llamadas puntos ciegos, donde puede haber un ciclista, un peatón o un vehículo aproximándose; por eso se requiere girar físicamente la cabeza para mirar. El fundamento es que la situación del tránsito cambia en segundos, así que aunque hayas mirado al ajustar los espejos, la realidad puede ser distinta un instante después. Si te incorporas sin esta comprobación, el riesgo real es atropellar a alguien que pasa junto al auto o provocar una colisión lateral con quien venía por la pista. Truco: piensa que lo último que tus ojos deben ver antes de moverte es la calle real, no el espejo. Por eso la respuesta correcta es mirar alrededor y chequear los puntos ciegos."
   },
   {
     "id": 123,
@@ -3085,7 +3207,8 @@ export const questions = [
       ""
     ],
     "page": 30,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El razonamiento aquí exige identificar quién comete una infracción que da origen al peligro, y la secuencia muestra dos errores que se combinan. El primero es adelantar en un lugar prohibido (opción a): el adelantamiento solo es legal donde la visibilidad y el espacio lo permiten, y hacerlo donde está vedado significa invadir el sentido contrario o una zona ciega, eliminando el margen para reaccionar. El segundo es que el conductor que llega a la carretera por la izquierda ingresa cuando no debía (opción d), es decir, sin tener la prioridad y sin ceder el paso a quien ya circulaba por la vía principal. Las otras opciones describen condiciones del entorno, como la mala visibilidad o que el vehículo adelantado no va suficientemente a la derecha, pero esas no son las causas que originan el peligro, sino circunstancias secundarias. El fundamento legal es que la prioridad y las zonas de adelantamiento existen precisamente para que dos vehículos no terminen ocupando el mismo espacio al mismo tiempo. Truco: busca siempre las dos maniobras que rompen una regla, no las condiciones del camino, porque el examen quiere que reconozcas la responsabilidad del conductor."
   },
   {
     "id": 124,
@@ -3109,7 +3232,8 @@ export const questions = [
       "El cambio próximo de la luz es irrelevante: lo que manda es la instrucción del funcionario, no el estado del semáforo."
     ],
     "page": 32,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta pregunta evalúa el concepto de jerarquía de las señales del tránsito, un orden de prioridad que la Ley 18.290 establece para resolver contradicciones. En la cima de esa jerarquía están las indicaciones de Carabineros, luego las señales transitorias, después los semáforos, las señales fijas y finalmente las demarcaciones del pavimento. La razón de que el agente prevalezca sobre el semáforo es práctica: cuando un Carabinero regula manualmente un cruce, normalmente lo hace porque el semáforo está descompuesto, hay un accidente, una congestión o una situación especial que la máquina no puede gestionar, y él ve el panorama completo. Por eso, aunque la luz esté en rojo, si el funcionario te indica avanzar, debes obedecerle; detenerte iría contra su instrucción y generaría confusión o un choque por alcance con quien viene atrás esperando que la fila avance. Las demás opciones condicionan el avance a factores como que no vengan vehículos detrás o que la luz vaya a cambiar, pero ninguna de esas condiciones aplica porque la orden del agente es absoluta. Truco: recuerda que manda la persona antes que la máquina."
   },
   {
     "id": 125,
@@ -3133,7 +3257,8 @@ export const questions = [
       "Manifestar disgusto con la bocina está prohibido, ya que no corresponde a una finalidad de seguridad."
     ],
     "page": 32,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El principio detrás de esta norma es que la bocina es un dispositivo de seguridad, no de comunicación social. La Ley de Tránsito restringe su uso a la prevención de peligros porque un sonido fuerte e inesperado puede asustar, distraer o sobresaltar a otros conductores, peatones o ciclistas, generando reacciones bruscas y peligrosas. Por eso usarla para saludar a un conocido, para manifestar disgusto o incluso para ceder el paso queda fuera de lo permitido: en esos casos solo aporta ruido y contaminación acústica, que además afecta a quienes viven junto a las vías. El razonamiento para elegir la opción c es preguntarse cuál de las cuatro alternativas protege a alguien de un riesgo real, y solo prevenir a otros de un peligro cumple ese fin. El riesgo de abusar de la bocina es doble: legalmente constituye una infracción y prácticamente desensibiliza a la gente, que termina ignorándola justo cuando sí señala un peligro verdadero. Truco: la bocina avisa, no conversa ni reta."
   },
   {
     "id": 126,
@@ -3157,7 +3282,8 @@ export const questions = [
       ""
     ],
     "page": 32,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Esta pregunta es muy similar a la anterior y refuerza el mismo principio desde otro ángulo: la bocina solo se justifica para prevenir la ocurrencia de un accidente, es decir, ante un peligro inminente y concreto. El razonamiento para descartar las otras opciones es directo: llamar la atención de un amigo es un uso social, pedir que te cedan el paso o apurar a un conductor más lento son usos para presionar o intimidar, y ninguno de ellos protege a nadie; al contrario, suelen aumentar la tensión y el riesgo en la vía. El fundamento es que el bocinazo debe reservarse para advertir, por ejemplo, a un peatón que se cruza sin mirar o a un vehículo que se sale de su pista, de modo que el otro tenga una fracción de segundo extra para reaccionar. Si se usa por cualquier motivo, pierde su valor de alerta porque la gente se acostumbra al ruido. Truco para fijarlo: ante cualquier opción de bocina, elige siempre la que evita un accidente y descarta todo lo que sea saludar, apurar o exigir paso."
   },
   {
     "id": 127,
@@ -3181,7 +3307,8 @@ export const questions = [
       "Virar a la derecha no le impide ingresar al cruce; puede hacerlo respetando a peatones y demás vehículos."
     ],
     "page": 32,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Aquí el concepto central es no bloquear nunca una intersección, conocido también como no quedar atrapado en el cruce. El razonamiento es el siguiente: la luz verde te autoriza a pasar, pero esa autorización supone que podrás salir completamente del cruce; si la pista al otro lado está congestionada y no hay espacio para que tu vehículo termine de salir, entrar significa quedar detenido sobre la intersección. El riesgo real es grave, porque cuando el semáforo transversal cambie a verde, tu auto estará atravesado bloqueando el paso de quienes vienen perpendicularmente, provocando un embotellamiento general o una colisión. Las otras opciones se descartan porque tener peatones esperando, creer que la luz va a cambiar o ir a virar a la derecha no te impiden ingresar mientras tengas verde y la salida despejada. El fundamento es que la fluidez y la seguridad del cruce dependen de que cada vehículo libere el espacio que ocupa. Truco práctico: nunca entres a un cruce si no ves claramente dónde vas a salir, aunque el semáforo te diga que sí."
   },
   {
     "id": 128,
@@ -3203,7 +3330,8 @@ export const questions = [
       "No es correcto usar cualquiera de las dos pistas: la regla obliga a mantenerse por la derecha cuando no se adelanta."
     ],
     "page": 32,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "La regla que gobierna esta situación es el principio de circulación por la derecha, que en Chile es la norma general en toda vía de doble calzada. El fundamento es ordenar el flujo: la pista derecha es la de circulación normal y la izquierda queda reservada exclusivamente para dos maniobras, adelantar a un vehículo más lento o prepararse para virar a la izquierda. En tu caso vas a 90 km/h en un camino donde el máximo es 100, no llevas nadie adelante y no estás adelantando, por lo tanto no hay ninguna razón para ocupar la pista izquierda y debes mantenerte a la derecha. Es importante entender que ir bajo el límite de velocidad no te da derecho a quedarte en la izquierda; de hecho, ir lento por esa pista obstruye a quienes sí quieren adelantar y es una infracción frecuente. El riesgo de ocupar la izquierda sin motivo es generar maniobras peligrosas de otros que intentan rebasarte por la derecha, algo prohibido y muy riesgoso. Truco: la izquierda se pide prestada para adelantar y se devuelve de inmediato; tu casa es la pista derecha."
   },
   {
     "id": 129,
@@ -3228,7 +3356,8 @@ export const questions = [
       "Conducir a velocidad muy baja obliga aún más a mantenerse por la derecha para no entorpecer el flujo; nunca justifica usar la pista izquierda."
     ],
     "page": 32,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Esta pregunta es el complemento de la anterior y te pide identificar las dos excepciones que justifican usar la pista izquierda. El fundamento es el mismo principio de circulación por la derecha: la izquierda no es para el uso habitual, sino para maniobras puntuales y definidas. La primera es virar a la izquierda (opción a), pues para girar en esa dirección necesitas ubicarte previamente en la pista que está del lado del giro, anticipándote y señalizando. La segunda es adelantar o pasar a un vehículo que va más lento (opción b), ya que el adelantamiento se hace por la izquierda y, una vez completado, debes regresar a la derecha. Las opciones de circular normalmente o conducir a velocidad muy baja se descartan porque en ambos casos corresponde la pista derecha; de hecho, ir lento por la izquierda es justamente lo contrario de lo que indica la ley. El riesgo de usar mal la pista izquierda es entorpecer el tránsito y forzar adelantamientos peligrosos por la derecha. Truco: solo dos verbos te llevan a la izquierda, virar y adelantar; cualquier otra cosa es derecha."
   },
   {
     "id": 130,
@@ -3252,7 +3381,8 @@ export const questions = [
       ""
     ],
     "page": 32,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El fundamento de esta norma es que retroceder en un cruce es una de las maniobras más peligrosas e impredecibles que existen. Una intersección es un punto de convergencia de vehículos en varias direcciones y de peatones que cruzan, todos los cuales asumen que los autos avanzan hacia adelante; un vehículo que retrocede sorprende a quien viene detrás, que no espera ese movimiento, y puede atropellar a un peatón ubicado en el ángulo muerto trasero. Por eso la regla general es que jamás se retrocede en un cruce. La única excepción es que un Carabinero, que tiene control directo y visión completa de la situación, te dé la indicación expresa de hacerlo, normalmente para desbloquear una congestión o despejar tras un incidente. Las otras opciones se descartan: que no haya nadie detrás no garantiza nada porque puede aparecer alguien o un peatón estar en tu punto ciego, y haber quedado sobre el paso de peatones no se soluciona retrocediendo a ciegas. Truco: en un cruce solo retrocedes si quien manda en la vía, un Carabinero, te lo ordena con la voz o la mano."
   },
   {
     "id": 131,
@@ -3276,7 +3406,8 @@ export const questions = [
       "Si el otro vehículo viene por su izquierda, la prioridad es suya, no de él; la prioridad la tiene quien viene por la derecha."
     ],
     "page": 32,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "Esta pregunta evalúa la regla de prioridad de la derecha, el mecanismo que la Ley 18.290 usa para resolver quién pasa primero en cruces sin semáforo ni señalización. El principio es simple y universal: cuando dos vehículos llegan a la vez a una intersección no regulada, tiene preferencia el que se aproxima por la derecha del otro. En este caso, como el otro vehículo viene acercándose por tu lado derecho, es él quien tiene la prioridad y tú debes cederle el paso. La razón de que la norma elija la derecha y no otro criterio es que necesita ser objetiva y predecible; por eso se descartan opciones como el vehículo más grande o el que va más rápido, que dependerían de apreciaciones subjetivas y de quien decida imponerse, lo cual es justamente lo que causa accidentes. El riesgo de ignorar esta regla es una colisión en ángulo recto, una de las más graves porque impacta el costado del otro auto donde hay menos protección. Truco para recordarlo: mira tu derecha; si viene alguien por ahí, él pasa primero."
   },
   {
     "id": 132,
@@ -3300,7 +3431,8 @@ export const questions = [
       ""
     ],
     "page": 32,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Esta pregunta es la misma regla de prioridad de la derecha, pero formulada al revés: en lugar de preguntar quién tiene preferencia, pregunta quién debe ceder. El razonamiento es directo: si el vehículo que viene por la derecha tiene la prioridad, entonces el que cede es quien lo tiene a su izquierda, es decir, quien se acerca al cruce por la izquierda del otro. Conviene leer con cuidado, porque el examen suele invertir la pregunta para confirmar que entendiste el concepto y no memorizaste solo una palabra. Las opciones del vehículo más pequeño o del que va por pistas más angostas se descartan porque la ley no usa el tamaño ni el ancho de la calle como criterio en cruces no señalizados, sino exclusivamente la posición relativa. El fundamento es el mismo: dar una regla clara y objetiva que evite la colisión perpendicular cuando no hay señales que ordenen el paso. Truco: la prioridad es del que viene por tu derecha, así que el que cede siempre es el de la izquierda; basta con girar mentalmente la regla."
   },
   {
     "id": 133,
@@ -3324,7 +3456,8 @@ export const questions = [
       "La ocupación de los demás asientos no justifica usar el maletero como lugar de transporte de personas."
     ],
     "page": 34,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento de esta prohibición absoluta es que el espacio detrás de los asientos traseros, el maletero o portaequipaje de un hatchback de 3 o 5 puertas, no es un lugar diseñado para transportar personas. Esa zona carece de cinturones de seguridad, de respaldo y de estructura que proteja en caso de impacto, por lo que un niño ubicado ahí queda completamente suelto. El riesgo real es doble: ante una frenada brusca o un choque, el niño es proyectado violentamente dentro del habitáculo o incluso por la luneta trasera, y además en una colisión por alcance esa zona es la que recibe el impacto directo. Por eso la respuesta es no, en ninguna circunstancia, y se descartan las opciones que intentan condicionarlo a la visibilidad, a la edad o a que los demás asientos estén ocupados, porque ninguna de esas circunstancias elimina la ausencia de protección. La regla de oro es que todo ocupante, sin excepción, debe viajar en un asiento con su sistema de retención adecuado. Truco: el maletero es para las cosas, nunca para las personas."
   },
   {
     "id": 134,
@@ -3351,7 +3484,8 @@ export const questions = [
       ""
     ],
     "page": 34,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La clave de esta pregunta es entender por qué una guagua debe viajar mirando hacia atrás. En un bebé, la cabeza representa una proporción muy grande del cuerpo y el cuello todavía es muy débil; en un impacto frontal, que es el más frecuente y violento, una silla orientada hacia adelante haría que la cabeza saliera disparada hacia el frente, sobreexigiendo el cuello con riesgo de lesión medular. En cambio, la silla mirando hacia atrás reparte la fuerza del choque por toda la espalda y la cabeza del bebé, protegiendo la columna cervical. Por eso las dos formas correctas son en el asiento trasero con silla mirando hacia atrás (opción e), que es la posición ideal y más protegida, y en el asiento delantero con silla mirando hacia atrás solo si el vehículo no tiene airbag delantero activo (opción d). La razón de esta última condición es crítica: un airbag se despliega con una fuerza explosiva y, si golpea una silla orientada hacia atrás, puede causar lesiones graves o fatales al bebé. Se descartan llevarlo en brazos, porque en un choque ningún adulto puede retener el peso multiplicado del bebé, y la silla mirando hacia adelante, inadecuada a esa edad. Truco: guagua siempre de espaldas al camino, y jamás frente a un airbag activo."
   },
   {
     "id": 135,
@@ -3375,7 +3509,8 @@ export const questions = [
       ""
     ],
     "page": 34,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El fundamento de esta respuesta es que el cuerpo de un niño de 3 o 4 años todavía no calza con los sistemas de seguridad pensados para adultos. El cinturón de adulto está diseñado para apoyarse en la cadera y el hombro de una persona grande; en un niño pequeño queda a la altura del abdomen y el cuello, de modo que en un choque, en lugar de protegerlo, puede causarle lesiones internas o estrangulamiento. Por eso la forma más segura es una silla de seguridad apropiada para su edad y peso, que eleva al niño, posiciona correctamente el cinturón y distribuye las fuerzas del impacto en las zonas resistentes del cuerpo. Además, esa silla debe ir en el asiento trasero, que es estadísticamente el lugar más protegido del vehículo y el más alejado de los airbags delanteros. Se descartan las opciones de llevarlo en la falda de un adulto, compartiendo o no el cinturón, porque en un impacto el adulto no puede sujetar al niño y este se convierte en un proyectil o queda aplastado. Truco: hasta que el niño no calce bien el cinturón de adulto, su lugar es la sillita atrás."
   },
   {
     "id": 136,
@@ -3399,7 +3534,8 @@ export const questions = [
       ""
     ],
     "page": 34,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Esta pregunta refuerza el mismo principio biomecánico aplicado a los menores de 2 años: deben viajar en un asiento de seguridad orientado mirando hacia atrás. La razón es anatómica y de desarrollo: bajo los 2 años la cabeza es proporcionalmente muy pesada respecto al resto del cuerpo y los ligamentos del cuello son frágiles, por lo que en un impacto frontal una posición hacia adelante provocaría un latigazo que el cuello no resiste, con alto riesgo de lesión en la médula. La orientación hacia atrás hace que el respaldo de la silla reciba y reparta toda la fuerza del choque, abrazando la cabeza, el cuello y la espalda como un solo bloque. Se descartan llevarlo en brazos de un adulto, que en una colisión es incapaz de retener al niño y puede incluso aplastarlo con su propio peso, y usar solo el cinturón de seguridad, que no está hecho para un cuerpo tan pequeño. El asiento trasero es además el más seguro. Truco: menores de 2 años siempre de espaldas al parabrisas; es la regla que más vidas salva en esta edad."
   },
   {
     "id": 137,
@@ -3423,7 +3559,8 @@ export const questions = [
       "No es cierto que siempre sea seguro; esa zona nunca ofrece protección para transportar personas."
     ],
     "page": 34,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Esta pregunta vuelve sobre el espacio detrás de los asientos traseros de un hatchback de 3 o 5 puertas, pero ahora intentando que aceptes excepciones según la distancia o el tipo de camino, y la respuesta correcta sigue siendo nunca. El fundamento es que el riesgo no depende de cuánto manejes ni de por dónde lo hagas, sino de una carencia física permanente: esa zona no tiene cinturones, ni respaldo, ni estructura de protección, y eso no cambia en un viaje corto ni en una calle de poco tránsito. De hecho, la mayoría de los accidentes graves ocurren cerca del hogar y a baja velocidad, precisamente en esos trayectos que parecen seguros, así que la lógica de bajar la guardia por ser un viaje breve es justamente la que cobra víctimas. Un niño suelto ahí sería proyectado en cualquier frenazo o impacto, y en una colisión por alcance esa es la primera zona que se deforma. Por eso se descartan todas las opciones que condicionan la seguridad y solo es correcta nunca. Truco: ninguna excusa de distancia o tránsito convierte el maletero en un asiento; el niño siempre va en su sistema de retención."
   },
   {
     "id": 138,
@@ -3450,7 +3587,8 @@ export const questions = [
       "Siempre es necesario señalizar la intención de virar; omitir la señalización es una falta y un peligro para los demás."
     ],
     "page": 35,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Para resolver esta pregunta hay que recordar cómo funcionan las pistas en una calle de un solo sentido. Cuando la calle es de sentido único, no existe tránsito que venga en contra, por lo que el conductor que va a virar a la izquierda puede y debe ubicarse en la pista izquierda, quedando bien situado para el giro (opción a, correcta). Esto difiere de una calle de doble sentido, donde la izquierda está ocupada por el flujo contrario. La opción b también es correcta porque anticipa la siguiente maniobra: si después de virar vas a girar nuevamente a la izquierda en el cruce siguiente, lo más seguro y fluido es ingresar a la pista izquierda de la calle a la que entras, evitando un cambio de pista de último momento que es riesgoso. Se descarta la opción c porque el conductor sí puede informarse, mediante señales y demarcaciones, de si la calle es de uno o dos sentidos, así que no es cierto que siempre deba tomar la derecha. Y se descarta la d porque señalizar el viraje es siempre obligatorio: avisar tus intenciones permite que los demás anticipen tu movimiento. Truco: en sentido único, la izquierda es tuya para girar a la izquierda, y la señal nunca es opcional."
   },
   {
     "id": 139,
@@ -3478,7 +3616,8 @@ export const questions = [
       ""
     ],
     "page": 35,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Esta pregunta se apoya en imágenes que representan distintos escenarios de viraje a la izquierda, y lo que evalúa es en cuáles tienes prioridad o la vía despejada para completar el giro de forma continua, sin una detención obligatoria. En las situaciones a, b y d el giro puede hacerse de manera fluida porque o bien tienes el derecho de paso, o no hay tránsito en sentido contrario ni señal que te obligue a parar; en esos casos basta con señalizar con anticipación, posicionarte correctamente en la pista y completar el viraje, cediendo el paso solo si por seguridad fuera necesario en ese instante, pero sin estar obligado a una detención total. La situación restante, en cambio, es la que sí impone parar siempre, ya sea porque hay vehículos circulando en sentido contrario a los que debes ceder el paso o porque existe una señal, como un Pare, que ordena la detención previa antes de girar. El fundamento es distinguir entre ceder el paso, que a veces se logra solo aminorando, y detenerse por completo, que es una obligación absoluta. Truco: detenerse siempre solo aplica cuando algo o alguien con prioridad te obliga; si la vía está libre, basta con señalizar y virar con cuidado."
   },
   {
     "id": 140,
@@ -3505,7 +3644,8 @@ export const questions = [
       ""
     ],
     "page": 36,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta pregunta, basada en imágenes de señales e indicaciones del semáforo, busca que distingas entre las que obligan a una detención total y absoluta y las que solo exigen precaución o permiten avanzar. Las indicaciones b y d corresponden a una detención obligatoria sin excepción: típicamente la luz roja del semáforo y la señal Pare, ante las cuales el conductor debe detener por completo el vehículo, no basta con disminuir la velocidad. El fundamento es que estas son órdenes imperativas pensadas para los puntos de mayor conflicto, donde un cruce sin detención total provocaría una colisión con el tránsito transversal o con peatones que cruzan confiados. Las otras indicaciones se descartan porque corresponden a situaciones como la luz amarilla, que advierte el cambio inminente, o señales de Ceda el paso o precaución, en las que se puede continuar reduciendo la marcha y cediendo cuando corresponde, pero no se exige parar siempre. Es importante no confundir ceder el paso, que admite seguir si la vía está libre, con detenerse, que es una parada total obligatoria. Truco: rojo y Pare son detención total sin discusión; amarillo y ceda admiten avanzar con cuidado."
   },
   {
     "id": 141,
@@ -3527,7 +3667,8 @@ export const questions = [
       ""
     ],
     "page": 36,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El principio detrás de esto es que el eje central de la calzada separa físicamente los dos sentidos de circulación, y nadie puede invadir la pista contraria mientras espera para virar. Por eso, en una calle de doble sentido, para doblar a la izquierda usted debe acercarse al eje pero quedando justo a la derecha de la línea de centro, nunca a su izquierda, porque cruzarla antes de tiempo lo deja de frente al tránsito que viene en contra. Paso a paso: enciende su señalizador izquierdo con anticipación, se desplaza suavemente hacia el eje manteniéndose en su pista, espera a que pase el flujo opuesto y recién entonces completa el giro. Ubicarse a la izquierda del eje (alternativa b) significa estar ya en la pista contraria, lo que provoca choques frontales y bloquea a quienes vienen de frente. Un truco para recordarlo: la línea de centro es como una pared imaginaria, usted siempre se 'apoya' en ella por su lado derecho hasta el momento exacto de cruzarla. Así mantiene la preferencia de paso a su favor y solo entra a la zona opuesta cuando está realmente despejada."
   },
   {
     "id": 142,
@@ -3553,7 +3694,8 @@ export const questions = [
       ""
     ],
     "page": 36,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La clave está en entender cómo gira un vehículo articulado o de gran longitud: por geometría, sus ruedas traseras describen una curva mucho más cerrada que las delanteras, fenómeno llamado barrido o radio de giro trasero. Para doblar a la derecha hacia una vía angosta, el camión primero se abre hacia la izquierda con el frente, dando la falsa impresión de que cambiará de pista o seguirá derecho. Si usted interpreta mal esa apertura y avanza por la derecha para sobrepasarlo, queda exactamente en el espacio donde la cola del camión va a barrer, además de meterse en su ángulo ciego, donde el conductor no puede verlo. El resultado típico es quedar atrapado y aplastado contra el borde o la vereda. Por eso lo único seguro es mantenerse detrás hasta que la maniobra termine por completo. Truco para recordarlo: cuando un camión se abre hacia un lado, casi siempre es para doblar hacia el lado contrario, así que nunca llene el hueco que deja."
   },
   {
     "id": 143,
@@ -3577,7 +3719,8 @@ export const questions = [
       "Esa posición del brazo no representa la señal reglamentaria de viraje a la derecha."
     ],
     "page": 36,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Las señales de brazo existen como respaldo legal para cuando las luces intermitentes fallan o no existen, y están normadas para que cualquier conductor las interprete igual. Como en Chile el conductor va al lado izquierdo, todas las señales se hacen con el brazo izquierdo sacado por la ventanilla, porque es el único visible para el resto. Para indicar viraje a la derecha se levanta el antebrazo en ángulo recto hacia arriba formando una L, que corresponde a la imagen B; esa forma 'apunta' simbólicamente hacia el lado derecho. El razonamiento es simple: con un solo brazo disponible, se necesita un gesto distinto e inequívoco para cada maniobra. Truco para no confundirse: brazo arriba en L significa 'subo o me voy a la derecha', brazo totalmente horizontal significa giro a la izquierda y brazo hacia abajo significa que voy a frenar o detenerme. Usar mal la señal puede inducir a otro conductor a un movimiento equivocado y causar un choque."
   },
   {
     "id": 144,
@@ -3601,7 +3744,8 @@ export const questions = [
       ""
     ],
     "page": 38,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Aquí usted está en el rol del que observa al vehículo de adelante e interpreta su intención. La norma establece que el viraje a la izquierda se señaliza extendiendo el brazo izquierdo completamente horizontal hacia afuera, lo que corresponde a la imagen C. El fundamento es lógico: el brazo apunta en la misma dirección hacia la que el vehículo se va a desplazar, hacia la izquierda, por lo que es la señal más natural e intuitiva. Saber leer estas señales en otros es tan importante como hacerlas usted, porque le permite anticiparse: si el de adelante saca el brazo horizontal, usted ya sabe que frenará y se moverá al eje, y no debe intentar adelantarlo por la izquierda en ese momento. Truco: brazo recto y horizontal es como una flecha que apunta a la izquierda; en cambio el antebrazo doblado hacia arriba en L es derecha. Confundirlas puede llevarlo a adelantar justo cuando el otro va a cruzarse delante suyo."
   },
   {
     "id": 145,
@@ -3629,7 +3773,8 @@ export const questions = [
       ""
     ],
     "page": 38,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El adelantamiento es una de las maniobras más peligrosas porque obliga a invadir temporalmente la pista del sentido contrario, y su seguridad depende de variables que la mente humana estima muy mal. Las tres más difíciles de juzgar son la distancia real al vehículo que viene de frente (c), la longitud completa del tramo que usted necesitará para completar el adelantamiento (d) y el punto exacto donde se encontraría con ese vehículo que viene en contra (e). El motivo es que todas ellas dependen de velocidades combinadas: usted y el que viene de frente se acercan sumando ambas velocidades, de modo que a 100 más 100 se aproximan a casi 56 metros por segundo, y el cerebro no calcula bien acercamientos tan rápidos a la distancia. En cambio, la velocidad del auto que va adelante (a) y el ancho disponible a su izquierda (b) son apreciaciones más estáticas y fáciles. Truco práctico: si tiene cualquier duda sobre el punto de encuentro, no adelante, porque el error en estas tres variables se paga con un choque frontal, el más letal de todos."
   },
   {
     "id": 146,
@@ -3656,7 +3801,8 @@ export const questions = [
       ""
     ],
     "page": 38,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El fundamento es que el límite de velocidad es un máximo legal, no una autorización para 'tapar' o competir con quien quiere pasar; la ley impone al conductor adelantado el deber de cooperar para que la maniobra del otro sea lo más breve y segura posible. Por eso, aunque usted ya vaya a 90 km/h que es el máximo de esa vía, debe correrse lo más a la derecha posible (a) para ampliarle el espacio y, sobre todo, no acelerar (d) para no alargar el tiempo que el otro permanece en la pista contraria. Si usted acelerara, el que adelanta quedaría 'pegado' a su costado, sin poder completar el paso ni volver a su pista, exactamente en el punto donde podría aparecer tráfico de frente. Estacionar mentalmente la idea de que 'ya voy al máximo, que se aguante' es justamente lo que provoca accidentes. Truco: cuando alguien lo adelanta, suelte un poco el acelerador y péguese a la derecha; le toma dos segundos y puede salvar una vida. Encender luces de emergencia (c) o irse a la berma (b) son maniobras incorrectas y peligrosas en este caso."
   },
   {
     "id": 147,
@@ -3683,7 +3829,8 @@ export const questions = [
       "Acercarse a la línea de centro para impedir el adelantamiento es maniobra peligrosa y prohibida que obstaculiza al otro vehículo."
     ],
     "page": 38,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Esta situación es la misma lógica de cooperación pero en carretera a 100 km/h, donde las consecuencias de un error son aún mayores por la energía involucrada. La ley obliga al conductor adelantado a facilitar el paso, así que usted debe mantenerse lo más a la derecha posible (b) para dar espacio y mantener o incluso disminuir su velocidad (c) para que el otro complete la maniobra rápido y vuelva a su pista. El razonamiento es que el tiempo de exposición en la pista contraria es el factor de riesgo número uno en un adelantamiento; mientras menos dure, menor es la probabilidad de encontrarse con un vehículo de frente. Acelerar para impedirlo (a) o cerrarse hacia el eje (e) no solo es ilegal sino una agresión que puede forzar un choque frontal o que el otro tenga que abortar bruscamente. Encender el intermitente izquierdo (d) sería una señal contradictoria y confusa. Truco: piense que el que adelanta está jugándose en la pista contraria por usted también, ayúdelo a salir rápido de ahí soltando el acelerador."
   },
   {
     "id": 148,
@@ -3709,7 +3856,8 @@ export const questions = [
       ""
     ],
     "page": 39,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El principio jurídico central del adelantamiento es que toda la responsabilidad recae en quien lo ejecuta, no en los demás. Por eso la única afirmación verdadera es que usted está obligado a esperar a que la pista del sentido contrario esté libre de vehículos antes de adelantar (d). No existe ninguna obligación legal de que el camión que usted adelanta se corra a la berma (a) ni que reduzca su velocidad (c) para hacerle espacio, ni mucho menos de que el auto que viene en contra se aparte para 'aumentar la seguridad' (b); contar con eso es una receta para el choque, porque usted estaría delegando su seguridad en la reacción ajena. El razonamiento es que usted decide cuándo y cómo invadir la pista opuesta, así que usted asume el riesgo y debe asegurarse de tener espacio, visibilidad y tiempo suficientes. Truco para recordarlo: el que adelanta es siempre el dueño del problema; si algo sale mal, la culpa y el peligro son suyos. Por eso solo se adelanta cuando la pista contraria está completamente despejada, no cuando uno espera que el resto colabore."
   },
   {
     "id": 149,
@@ -3735,7 +3883,8 @@ export const questions = [
       "Contar con que la calzada alcanza para tres vehículos si el de enfrente se corre es una suposición temeraria y prohibida."
     ],
     "page": 39,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "Aquí aparece una regla de oro de la conducción defensiva: ante la duda, aborte. Usted ya inició el adelantamiento del auto que va a 80 km/h, pero por el espejo ve a otro que también quiere adelantar, lo que significa que tendría tráfico presionándolo por detrás y la situación se vuelve insegura. Lo correcto es frenar ligeramente y regresar a la pista derecha (a), cancelando la maniobra de forma controlada. Las otras opciones se basan en suposiciones peligrosas: pensar que el auto adelantado 'tiene la obligación de reducir' (b) o que la calzada alcanza para tres vehículos si el que viene en contra se corre (d) es confiar la propia seguridad en que otros reaccionen perfectamente, y acelerar para no estorbar al de atrás (c) lo mete en una carrera. El fundamento es que ningún adelantamiento iniciado obliga a terminarse; siempre es preferible retroceder a forzar. Truco: si durante un adelantamiento sienten 'esto se está poniendo apretado', no acelere para salir del apuro, frene suave y vuelva a su pista, porque atrás siempre hay espacio seguro y adelante quizás no."
   },
   {
     "id": 150,
@@ -3759,7 +3908,8 @@ export const questions = [
       "El motivo principal es la visibilidad de la vía, no ver las señales del conductor del camión."
     ],
     "page": 39,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "La razón principal de mantener distancia con un vehículo de gran tamaño antes de adelantarlo es puramente de visibilidad: pegado a su cola, ese vehículo actúa como una pared que le tapa por completo lo que viene de frente y el desarrollo de la vía. Por eso la respuesta es tener una mejor visual hacia adelante sobre la vía (a). El razonamiento geométrico es simple: mientras más atrás se ubica usted, más abierto es el ángulo con que puede mirar por el costado izquierdo y ver el tráfico opuesto, las curvas y las señales; pegado atrás, su campo visual se reduce casi a cero. Las otras opciones son falsas o peligrosas: nunca se adelanta en curvas (b), no se cuenta con que el vehículo se detenga y retroceda (c), y la decisión de adelantar no depende de ver señales del otro conductor (d) sino de su propia evaluación. Truco: si no puede ver claramente la pista contraria más allá del camión, está demasiado cerca; retroceda hasta que la vía 'se abra' ante sus ojos antes siquiera de pensar en adelantar."
   },
   {
     "id": 151,
@@ -3783,7 +3933,8 @@ export const questions = [
       "La lentitud en las pendientes no es la razón del mayor riesgo al adelantar; lo es su longitud."
     ],
     "page": 39,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El factor que hace más riesgoso adelantar un camión es su mayor longitud (b), y esto es pura física del tiempo de exposición. Un camión o vehículo articulado puede medir tres o cuatro veces lo que un auto, de modo que usted necesita recorrer una distancia mucho más larga en la pista del sentido contrario para sobrepasarlo por completo, lo que significa permanecer más segundos expuesto al tráfico que viene de frente. Como el riesgo de un adelantamiento es directamente proporcional al tiempo que uno pasa invadiendo la pista opuesta, a mayor largo del vehículo, mayor peligro de choque frontal. Las otras alternativas describen características reales de algunos camiones (frenos, lentitud en pendientes), pero no son la razón por la que el adelantamiento en sí es más arriesgado. Truco para dimensionarlo: adelantar un auto puede tomar unos pocos segundos, pero adelantar un camión grande puede exigir el doble o triple de distancia despejada en contra, así que solo hágalo en rectas largas con visibilidad total."
   },
   {
     "id": 152,
@@ -3807,7 +3958,8 @@ export const questions = [
       "No debe esperar que el conductor del camión le avise; la decisión y responsabilidad de adelantar son suyas."
     ],
     "page": 39,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Esta pregunta refuerza el mismo principio de visibilidad aplicado al momento previo de adelantar un vehículo pesado: lo correcto es mantenerse bien atrás de él para tener una mayor visual (b). El fundamento es que un vehículo pesado bloquea casi todo su campo de visión frontal, y solo aumentando la distancia logra usted ver por el costado lo que viene en contra y decidir con base real si la maniobra es segura. Las otras opciones son malas prácticas que dan una falsa sensación de seguridad: tocar la bocina (a) o hacer señales de luces esperando que el camionero le 'autorice' el paso (d) es delegar en otro una decisión que es exclusivamente suya, y nada garantiza que ese conductor vea correctamente toda la vía por usted. Acercarse para adelantar rápido (c) es justamente lo que le quita visibilidad. Truco: la responsabilidad de adelantar con seguridad es siempre del que adelanta, nunca confíe en una señal del de adelante; primero abra distancia, mire usted mismo, y solo entonces decida."
   },
   {
     "id": 153,
@@ -3831,7 +3983,8 @@ export const questions = [
       "120 km/h es propio de autopistas, no de una carretera rural bidireccional."
     ],
     "page": 41,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "El fundamento está en los límites generales de velocidad que fija la Ley de Tránsito, que distingue entre zona urbana y zona rural y, dentro de esta, según el tipo de vehículo y las condiciones. Para un vehículo liviano en zona rural, de día, con pavimento en buen estado y tránsito bidireccional, el máximo es 100 km/h (c), salvo que una señal indique otra cosa. El razonamiento de fijarlo en 100 y no más es que en una vía de doble sentido el riesgo de encuentro frontal es alto, por lo que se reserva una velocidad mayor para las autopistas con calzadas separadas. Recuerde la jerarquía: 50 en ciudad, 100 en carretera rural bidireccional para vehículos livianos, y hasta 120 solo donde la señalización de autopista expresamente lo permita. Truco: 'doble sentido, cien'; el hecho de que el tránsito sea bidireccional es justamente lo que impide subir el límite, porque del otro lado puede venir alguien de frente. Y siempre prima la señal del lugar por sobre el límite general."
   },
   {
     "id": 154,
@@ -3855,7 +4008,8 @@ export const questions = [
       "80 km/h excede ampliamente el límite urbano general de 50 km/h."
     ],
     "page": 41,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Aquí la trampa está en pensar que más pistas o sentido único permiten ir más rápido, pero el límite urbano es general y no depende de eso. En la ciudad, salvo que una señal indique otra cosa, la velocidad máxima es 50 km/h (b), aunque la calle tenga dos pistas en un solo sentido. El fundamento es que en zona urbana coexisten peatones, ciclistas, cruces, accesos y locomoción colectiva, y a 50 km/h la distancia de frenado y la gravedad de un atropello todavía son manejables; por sobre esa velocidad, la probabilidad de muerte de un peatón atropellado se dispara. Por eso el legislador fijó un único límite urbano base sin importar el número de pistas. Truco mnemotécnico: 'ciudad, cincuenta', es uno de los datos más preguntados y más confundidos. No deje que el detalle de 'dos pistas en sentido único' lo haga elegir 60 u 80; solo una señal explícita podría cambiar el límite, nunca la geometría de la calle por sí sola."
   },
   {
     "id": 155,
@@ -3879,7 +4033,8 @@ export const questions = [
       ""
     ],
     "page": 41,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La técnica correcta en curvas se basa en la física de la adherencia y la transferencia de peso: debe disminuir la velocidad antes de entrar y luego acelerar gradualmente mientras la recorre (d). El razonamiento paso a paso es que al frenar antes de la curva el peso se carga sobre las ruedas delanteras dándoles mayor agarre para girar, y entrar más lento le da margen de reacción si la curva es más cerrada de lo previsto o hay algo en la calzada. Al ir saliendo, una aceleración suave y progresiva reparte el peso hacia atrás, estabiliza el auto y lo saca con tracción y control. Acelerar dentro de la curva (a y b) sobrecarga las ruedas exteriores y puede hacer que el vehículo derrape o se salga de la trayectoria, sobre todo si pierde adherencia. Reducir solo con pista mojada (c) es un error: la regla aplica siempre, aunque esté seco. Truco clásico de manejo: 'lento que entra, rápido que sale'; frene en la recta antes de la curva, nunca arriba de ella, y recién acelere cuando ya vea la salida."
   },
   {
     "id": 156,
@@ -3906,7 +4061,8 @@ export const questions = [
       "En esta situación el vehículo está correctamente estacionado, respetando las normas."
     ],
     "page": 41,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El fundamento es que la ley enumera lugares donde estacionar está expresamente prohibido porque genera obstrucción o peligro, y en este caso las situaciones mal estacionadas son A y B. Esos casos corresponden típicamente a vehículos ubicados frente a accesos o entradas, sobre la vereda, encima de un cruce o de forma que entorpecen la circulación de otros, mientras que las demás imágenes muestran vehículos detenidos en lugares permitidos y bien alineados al borde derecho. El razonamiento para identificarlos es preguntarse siempre: ¿este vehículo le impide pasar a alguien, bloquea un cruce, una entrada, una rampa o reduce la visibilidad? Si la respuesta es sí, está mal estacionado. La consecuencia real no es solo la multa o el retiro por grúa, sino el riesgo de obligar a peatones a bajarse a la calzada o de tapar la salida de otro vehículo. Truco: un buen estacionamiento es invisible, no estorba a nadie ni obliga a nadie a esquivarlo; si su auto cambia el comportamiento de los demás, probablemente está mal puesto."
   },
   {
     "id": 157,
@@ -3933,7 +4089,8 @@ export const questions = [
       ""
     ],
     "page": 41,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El principio que rige detenerse a recoger o dejar a un pasajero es el mismo del estacionamiento momentáneo: hacerlo junto al borde derecho de la calzada, sin obstruir el tránsito ni invadir zonas prohibidas. Por eso las situaciones correctas son B y D, donde el vehículo se arrima bien a la derecha, no bloquea cruces, accesos ni la circulación de otros. El razonamiento para descartar las otras es que cualquier detención que deje el auto separado del borde, sobre un paso de peatones, en una intersección o frente a una entrada, transforma una maniobra simple en un obstáculo peligroso, obligando a los demás a esquivarlo y exponiendo al pasajero al bajarse hacia el lado del tránsito. La consecuencia real de detenerse mal es provocar frenadas bruscas detrás suyo o que el pasajero descienda a una zona de riesgo. Truco: para recoger a alguien, péguese siempre al borde derecho y deténgase donde no tape ningún cruce ni acceso; si tiene que invadir media pista para parar, busque otro punto unos metros más allá."
   },
   {
     "id": 158,
@@ -3958,7 +4115,8 @@ export const questions = [
       "Sí está permitido estacionar en la berma en caso de emergencia, dejando todo el vehículo sobre ella."
     ],
     "page": 43,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "Esta situación combina dos reglas de seguridad para detenerse en carretera de noche sin alumbrado. Son verdaderas que debe mantener encendidas las luces de estacionamiento mientras permanezca detenido (b) y que debe estacionar al costado derecho de modo que todo el vehículo quede sobre la berma (c). El fundamento de las luces de estacionamiento es la visibilidad: en una carretera oscura, un vehículo sin luces es prácticamente invisible y un conductor que se aproxima a 100 km/h no alcanza a reaccionar, por lo que esas luces son su única forma de advertir su presencia. El fundamento de dejar todo el vehículo sobre la berma es sacarlo por completo del flujo de circulación para que ningún auto que pase por la calzada lo impacte. Estacionar al costado izquierdo enfrentando el tránsito (a) es gravísimo porque lo deja de frente a los vehículos, y decir que no se puede usar la berma (d) es falso en una emergencia con buenas bermas. Truco: de noche en carretera, fuera de la calzada completo y con luces de posición encendidas; visible y fuera del paso son las dos consignas que salvan vidas."
   },
   {
     "id": 159,
@@ -3984,7 +4142,8 @@ export const questions = [
       "Un espacio delimitado para estacionar es precisamente el lugar habilitado para ello, por lo que no causa obstrucción."
     ],
     "page": 43,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "Esta pregunta pide identificar los lugares donde estacionar perjudica a otros usuarios, y la respuesta abarca tres situaciones distintas que la ley prohíbe: frente a una entrada de autos de una propiedad (a), en o al llegar a una parada de locomoción colectiva (b) y sobre un paso de peatones (c). El fundamento de cada una es proteger un uso específico de la vía: frente a una entrada bloquea el ingreso o salida de los vehículos de esa propiedad; en una parada impide que los buses se arrimen al borde y obliga a los pasajeros a subir y bajar en plena calzada; y sobre un cruce cebra le quita a los peatones su espacio protegido y los obliga a rodear el auto exponiéndose al tránsito. La única opción correcta de estacionamiento es el espacio delimitado para ello (d), que existe justamente para no obstruir a nadie. Truco para recordarlo: pregúntese siempre 'a quién le quito el espacio'; si su auto le quita el paso a una entrada, a un bus o a un peatón, está estacionado donde no debe y arriesga multa, retiro por grúa y, peor, un accidente."
   },
   {
     "id": 160,
@@ -4008,7 +4167,8 @@ export const questions = [
       ""
     ],
     "page": 43,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La regla general es tajante: está prohibido detenerse sobre un paso de peatones, porque ese espacio está reservado al cruce protegido de las personas y bloquearlo las obliga a rodear el vehículo metiéndose en la calzada. Sin embargo, ninguna prohibición de tránsito es absoluta cuando está en juego evitar un daño mayor, y por eso la única circunstancia en que usted se detendría justo sobre un cruce cebra es cuando sea estrictamente necesario para evitar un accidente (d), por ejemplo una frenada de emergencia ante un obstáculo súbito. El razonamiento es el principio del mal menor: es preferible quedar momentáneamente sobre la cebra que provocar un choque o atropello. Las otras opciones son falsas porque la prohibición no desaparece por no haber peatones esperando (b) ni por ser de noche (c); la cebra sigue siendo zona prohibida. Truco: la única excusa válida para quedar sobre un paso de peatones es haber frenado para no chocar; cualquier otra detención voluntaria ahí es infracción."
   },
   {
     "id": 161,
@@ -4039,7 +4199,8 @@ export const questions = [
       ""
     ],
     "page": 43,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El fundamento de estas prohibiciones es que un vehículo estacionado se transforma en un obstáculo fijo, y la Ley de Tránsito busca que ese obstáculo no comprometa la seguridad ni el flujo de otros usuarios. Por eso no se estaciona en una parada de buses, porque obligaría al transporte público a detenerse fuera de su zona y a que los pasajeros bajen a la calzada; tampoco al lado de un bandejón central, ya que ese sector está pensado para canalizar el tránsito y dejar un auto ahí invade la pista contigua. Frente a una entrada de autos de una casa particular se prohíbe porque le niega a un tercero el derecho a entrar o salir de su propiedad, un derecho protegido expresamente. Y en una curva nunca debes estacionar, porque quien viene detrás no tiene visibilidad anticipada del obstáculo y solo lo ve cuando ya está encima, lo que es la receta de un choque por alcance. Un truco para recordarlo: piensa siempre en 'a quién le tapo la vista o a quién le quito el espacio'; si la respuesta es alguien, no estaciones ahí. Las opciones correctas (a, c, d, f) son justamente todas las que generan riesgo u obstrucción."
   },
   {
     "id": 162,
@@ -4063,7 +4224,8 @@ export const questions = [
       "La distancia mínima a la esquina es de 10 metros, no de 5; un cruce semaforizado no reduce esta exigencia."
     ],
     "page": 43,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "La clave de esta pregunta es entender que detenerse y estacionar no son lo mismo, y que la ley fija reglas estrictas sobre dónde y a qué distancia hacerlo. La detención en doble fila está prohibida aunque sea breve, porque deja un vehículo bloqueando una pista de circulación y eso entorpece a todos los que vienen detrás. Detenerse junto a un bandejón central para subir pasajeros también es incorrecto, ya que ese sector no es zona de embarque y obliga a las personas a transitar por el medio de la calzada. La única afirmación correcta es la c, porque combina las dos exigencias reales: estacionar al costado derecho según el sentido del tránsito y dejar al menos 10 metros desde la esquina. La opción d falla porque rebaja esa distancia a 5 metros inventando una excepción por semáforo que la norma no contempla. Para no equivocarte recuerda que la distancia mínima a la esquina es siempre 10 metros, exista o no semáforo, porque su razón de ser es despejar la visibilidad del cruce y el paso peatonal, no la presencia de luces."
   },
   {
     "id": 163,
@@ -4087,7 +4249,8 @@ export const questions = [
       "Que quede una persona dentro no autoriza a dejar el vehículo estacionado con el motor en marcha."
     ],
     "page": 43,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El principio detrás de esta regla es que un motor encendido mantiene al vehículo en un estado potencialmente operativo, y un auto en esa condición sin conductor al volante es un peligro latente. Por eso la respuesta correcta es 'en ningún caso' (a): no importa si vas a demorar poco, si la batería está débil o si queda alguien adentro, debes apagar el motor al dejar el vehículo estacionado. El riesgo real es múltiple: el vehículo podría moverse solo por una falla o un golpe a la palanca, queda mucho más expuesto a ser robado con el motor andando, y se emiten gases contaminantes de forma innecesaria. Las otras alternativas son trampas que apelan a excusas cotidianas ('solo un ratito', 'la batería'), pero la norma no admite excepciones por comodidad. Un buen reflejo para memorizar: motor apagado, freno de mano puesto y llave fuera son los tres pasos de todo estacionamiento seguro."
   },
   {
     "id": 164,
@@ -4111,7 +4274,8 @@ export const questions = [
       "El lado izquierdo no es el permitido por la regla general, sino el derecho según el sentido del tránsito."
     ],
     "page": 43,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Mucha gente cree que en una calle de un solo sentido puede estacionar a cualquier lado porque 'no viene tránsito de frente', pero la regla general es clara y la respuesta correcta es solo al lado derecho según el sentido del tránsito (c). El fundamento es la uniformidad: si todos estacionan al mismo lado, los demás conductores, peatones y especialmente quienes salen de un estacionamiento saben dónde esperar vehículos detenidos, lo que reduce maniobras imprevistas. Estacionar a la izquierda obligaría al conductor a cruzar de vereda y a reincorporarse al tránsito desde un ángulo inusual, aumentando el riesgo. La opción que dice 'a ambos lados' es la trampa típica de las vías de sentido único, y la que afirma que 'no se puede en ninguno' confunde la ausencia de señal con una prohibición, cuando en realidad la falta de señalización significa que rige la regla general. Recuerda: salvo que una señal diga lo contrario, en Chile siempre se estaciona al costado derecho."
   },
   {
     "id": 165,
@@ -4139,7 +4303,8 @@ export const questions = [
       ""
     ],
     "page": 43,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta pregunta distingue entre situaciones donde la detención es absoluta y obligatoria y otras donde solo se cede el paso o se evalúa. Debes detenerte siempre al verse involucrado en un accidente (a), porque la ley te obliga a detenerte, prestar auxilio y no darte a la fuga; abandonar el lugar de un accidente es un delito. También ante una luz roja de semáforo (c), que ordena detención total e inmediata sin admitir avance. Y cuando un Carabinero te lo solicita (e), porque la autoridad encargada del control del tránsito prima por sobre cualquier señal o semáforo. Las trampas son el CEDA EL PASO, que obliga a ceder pero no necesariamente a detenerse por completo si el cruce está libre, y el cruce cebra sin peatones, donde no hay nadie a quien cederle el paso. El truco es preguntarte '¿esto admite que yo siga si está despejado?'; si la respuesta es no bajo ninguna circunstancia, es detención obligatoria, y eso aplica a las opciones a, c y e."
   },
   {
     "id": 166,
@@ -4165,7 +4330,8 @@ export const questions = [
       "15 metros excede el mínimo legal; lo más cerca permitido son 10 metros."
     ],
     "page": 45,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "La respuesta es 10 metros (b), y conviene fijar ese número porque es uno de los más repetidos en la prueba y en la conducción diaria. El fundamento es la visibilidad en la intersección: si un vehículo se estaciona pegado a la esquina, tapa la vista tanto a los conductores que vienen por la vía transversal como a los peatones que esperan cruzar, generando un punto ciego justo donde más cruces y conflictos ocurren. Diez metros dan el espacio suficiente para que quien se asoma al cruce vea y sea visto a tiempo, y para mantener despejado el paso peatonal de la esquina. Las otras cifras (5, 12 o 15 metros) son distractores; el único valor que exige la norma es 10. Un truco simple: imagina diez pasos largos desde la esquina antes de poner el primer vehículo, y asocia siempre 'esquina con el número 10'."
   },
   {
     "id": 167,
@@ -4194,7 +4360,8 @@ export const questions = [
       ""
     ],
     "page": 45,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "Aquí se repite la lógica de que estacionar nunca debe interferir con la seguridad ni con espacios destinados a otros usos. No se estaciona en un paso de peatones (a) porque es el espacio reservado para que las personas crucen protegidas, y un auto ahí las empuja a rodearlo por la calzada. Tampoco en un puente (b), que suele ser angosto, sin berma y con poco margen de maniobra, de modo que un vehículo detenido genera un cuello de botella peligroso. A menos de 10 metros de una esquina (c) está prohibido por la visibilidad del cruce, como ya vimos. Y en o al llegar a una parada de locomoción colectiva (e) porque obstruyes el funcionamiento del transporte público y obligas a los buses a detenerse en mala posición. La única opción válida para estacionar es al costado derecho de una vía urbana (d), que es justamente la regla general permitida. Para resolver rápido: marca todo lugar que sea cruce, estrecho o de uso reservado, y deja fuera solo el costado derecho normal."
   },
   {
     "id": 168,
@@ -4218,7 +4385,8 @@ export const questions = [
       ""
     ],
     "page": 45,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "La respuesta es 'siempre' (d), y el fundamento es que de noche y en zona rural la visibilidad es muy baja: no hay alumbrado público, las velocidades suelen ser altas y un vehículo detenido sin luces es prácticamente invisible hasta que es demasiado tarde para reaccionar. Las luces de estacionamiento (también llamadas de posición) cumplen exactamente esa función: hacer perceptible el contorno y la ubicación del vehículo detenido para que otro conductor lo advierta a distancia y maniobre con tiempo. Por eso las condiciones que plantean las otras alternativas, como que la berma sea angosta, que haya línea continua o que el camino sea de tierra, no cambian la obligación: el riesgo de ser embestido en la oscuridad existe en todos esos casos. La trampa es pensar que solo importa si el auto invade la calzada, pero incluso bien orillado debe ser visible. Memoriza la regla simple: de noche, detenido y en ruta, luces encendidas siempre."
   },
   {
     "id": 169,
@@ -4244,7 +4412,8 @@ export const questions = [
       ""
     ],
     "page": 45,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es detenerse (d), y se apoya en el principio de prioridad del peatón en los pasos habilitados para cruzar. Cuando hay personas cruzando o esperando para cruzar en un paso de peatones, la ley les reconoce preferencia, y tu obligación como conductor es detener el vehículo y cederles el paso de forma completa y segura, no solo aminorar. Las otras opciones reflejan conductas peligrosas o inútiles: continuar a la misma velocidad pone en riesgo directo a las personas, tocar la bocina las puede asustar o apurar generando un accidente, y cruzar lo más rápido posible es exactamente lo contrario a lo que exige la prudencia. El peatón es el usuario más vulnerable de la vía porque no tiene carrocería que lo proteja, y por eso la norma siempre inclina la balanza a su favor. La regla mental es clara: ante la duda en un paso peatonal, el vehículo se detiene y la persona pasa."
   },
   {
     "id": 170,
@@ -4270,7 +4439,8 @@ export const questions = [
       "Disminuir levemente la velocidad no es suficiente para evitar el choque con un obstáculo tan cercano."
     ],
     "page": 46,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Lo primero que debes hacer es frenar firmemente (b), porque ante un obstáculo súbito la prioridad absoluta es reducir la velocidad para evitar el impacto o, si es inevitable, llegar a él con la menor energía posible. A 90 km/h el vehículo recorre 25 metros por segundo, de modo que cada fracción de segundo cuenta y cualquier vacilación acorta drásticamente el espacio disponible para reaccionar. Por eso las otras alternativas son peligrosas o insuficientes: hacer señales de luces y tocar la bocina gasta tiempo valioso sin reducir velocidad; desplazarse a la pista de la izquierda puede llevarte justo hacia donde el camión está virando o hacia el tránsito que viene de frente; y disminuir levemente la velocidad no alcanza para detenerse a tiempo. El principio es que frenar es la respuesta que siempre reduce la energía del posible choque, mientras esquivar puede crear un riesgo nuevo. Recuerda la jerarquía en una emergencia: primero frenar para controlar la velocidad, y solo después, si es seguro, evaluar esquivar."
   },
   {
     "id": 171,
@@ -4294,7 +4464,8 @@ export const questions = [
       "No existe tal excepción; señalizar nunca otorga un derecho sobre los demás usuarios de la vía."
     ],
     "page": 46,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "La respuesta correcta es la c: no, porque al usar las luces indicadoras solo estás advirtiendo tu intención de hacer una maniobra que ejecutarás cuando sea seguro. El fundamento es que la señalización es un acto de comunicación, no una autorización ni una transferencia de responsabilidad; encender el intermitente no obliga a los demás a cederte el paso ni te da preferencia sobre quienes ya circulan. El error que castiga esta pregunta es muy común en la práctica: el conductor que enciende la luz y se cambia de pista o vira de inmediato 'porque ya avisó', invadiendo el espacio de otro. La maniobra sigue siendo tu responsabilidad y solo es legítima cuando verificas que no genera riesgo. Las alternativas que afirman que las luces te dan preferencia o, peor aún, que te eximen de responsabilidad, son falsas precisamente porque invierten esa lógica. El truco para recordarlo: señalizar es 'pedir permiso y avisar', nunca 'ordenar y tener derecho'."
   },
   {
     "id": 172,
@@ -4318,7 +4489,8 @@ export const questions = [
       "Tocar la bocina intimida al peatón y no corresponde; debe disminuir la velocidad y detenerse."
     ],
     "page": 46,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La conducta correcta es disminuir la velocidad y prepararse para detenerse (a), porque la prioridad del peatón en un cruce cebra se ejerce no solo cuando ya está cruzando, sino también cuando está esperando en la vereda para hacerlo. El fundamento es la conducción defensiva y anticipativa: al ver personas esperando, debes asumir que van a cruzar y reducir velocidad con antelación, de modo que puedas detenerte sin maniobras bruscas. Las otras opciones son incorrectas por distintas razones: ceder el paso solo a ancianos o niños discrimina un derecho que es de todos los peatones; usar las luces para indicarles que pasen o tocar la bocina traslada al peatón una decisión que es responsabilidad tuya y puede inducirlo a cruzar sin que tú realmente te hayas detenido, lo que es muy peligroso. Tu deber es frenar y dejar que crucen, no 'autorizarlos' con señas. La regla mental: peatón esperando en cruce cebra equivale a vehículo que reduce y se prepara para parar."
   },
   {
     "id": 173,
@@ -4342,7 +4514,8 @@ export const questions = [
       "Indicar con el intermitente que otros pueden adelantar genera confusión y no es la maniobra correcta."
     ],
     "page": 46,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es correrse hacia la derecha cuando puedas hacerlo en forma segura para permitir que otros te adelanten (b). El fundamento es que un vehículo lento en un camino angosto y sinuoso genera detrás suyo una columna de conductores impacientes, y esa impaciencia provoca adelantamientos arriesgados en curvas o sin visibilidad, que son una de las causas más graves de accidentes frontales. Por eso la conducta cooperativa de orillarte y facilitar el paso reduce la presión y permite que cada uno adelante en un punto seguro. Las otras opciones son peligrosas: circular cerca del centro para impedir que te adelanten obstruye deliberadamente y aumenta la frustración y el riesgo; hacer señas con la mano o señalizar con el intermitente derecho para 'autorizar' un adelantamiento traslada al otro una decisión que él debe tomar viendo el camino, y tú no tienes la visibilidad completa de lo que viene de frente. La clave: tu rol como vehículo lento es no obstruir y dejar pasar, no dirigir las maniobras de los demás."
   },
   {
     "id": 174,
@@ -4366,7 +4539,8 @@ export const questions = [
       "Un segundo no entrega margen suficiente para reaccionar y frenar de manera segura."
     ],
     "page": 46,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La forma segura es la regla de los tres segundos (c): la distancia con el vehículo de adelante debe ser al menos la que recorres en tres segundos. Su gran ventaja, y la razón de su fundamento, es que se ajusta sola a la velocidad: a mayor rapidez recorres más metros en esos tres segundos, así que la distancia crece automáticamente sin que tengas que calcular largos de vehículo. En la práctica eliges un punto fijo del camino, como un poste o una marca, y cuando el auto de adelante lo pasa cuentas 'mil uno, mil dos, mil tres'; si tú llegas a ese punto antes de terminar de contar, vas demasiado cerca. Las otras opciones fallan porque dos largos de vehículo es una distancia fija que se queda corta a alta velocidad, igualar tu propia distancia de frenado es difícil de estimar al instante, y un solo segundo no deja margen para reaccionar y frenar. Los tres segundos cubren tanto el tiempo de reacción como parte del frenado, por eso es el criterio recomendado."
   },
   {
     "id": 175,
@@ -4390,7 +4564,8 @@ export const questions = [
       "Acercarse al centro de la calzada es peligroso y no soluciona la situación."
     ],
     "page": 46,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es no hacer nada brusco y mantenerse dentro del límite de velocidad (c), conservando tu propia distancia con el vehículo de adelante. El fundamento es que el conductor que te sigue muy de cerca ya está cometiendo una imprudencia, y cualquier reacción tuya destinada a 'corregirlo' suele empeorar las cosas. Por eso las otras alternativas son peligrosas: disminuir la velocidad para que te adelante puede provocar justamente la colisión por alcance que quieres evitar; señalizar e indicarle con la mano que adelante traslada una decisión riesgosa al otro y te involucra si algo sale mal; y acercarte al centro de la calzada invade la pista contraria. Lo más seguro es ser predecible, mantener velocidad y trayectoria estables, y dejar más espacio adelante para tener margen extra de frenado, ya que si tú frenaras suave, ese colchón delantero evita una reacción brusca que el de atrás no alcanzaría a seguir. La idea central: no te dejes provocar; conducir de forma constante y prudente es la mejor defensa."
   },
   {
     "id": 176,
@@ -4416,7 +4591,8 @@ export const questions = [
       ""
     ],
     "page": 47,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es disminuir la velocidad y cederle el paso al bus siempre que ello sea seguro (d). El fundamento está en una norma de cortesía y prioridad hacia el transporte público: cuando un bus detenido en una parada enciende su intermitente izquierdo, está señalizando que va a reincorporarse al flujo, y la ley pide a los demás conductores facilitarle esa salida. Esto tiene una lógica práctica, ya que un bus es grande, acelera lento y mueve a muchas personas, de modo que entorpecer su reincorporación afecta a todo el sistema de transporte. La condición 'siempre que sea seguro' es importante: cederle el paso no significa frenar de golpe ni provocar un riesgo para los que vienen detrás de ti, sino ajustar tu velocidad para abrirle el espacio. Las otras opciones son incorrectas: hacer parpadear tus luces o tocar la bocina son señales ambiguas o de apuro que no corresponden, y continuar sin más le niega la preferencia que la norma le reconoce al bus en esa maniobra."
   },
   {
     "id": 177,
@@ -4440,7 +4616,8 @@ export const questions = [
       ""
     ],
     "page": 47,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "La respuesta correcta es mantener o disminuir la velocidad y permitir el adelantamiento (d). El fundamento es que un adelantamiento es una de las maniobras más riesgosas en carretera porque el vehículo que adelanta queda expuesto en la pista contraria, y mientras menos tiempo permanezca ahí, menor es el peligro para todos. Por eso, si tú aceleras o te pegas al de adelante para cerrarle el espacio, prolongas esa exposición y obligas al otro a tomar más riesgos o a abortar la maniobra en mal momento. La trampa de esta pregunta es la opción que propone acelerar para 'alejarte', que en realidad convierte el adelantamiento en una persecución peligrosa, y la que sugiere hacerle señas, que traslada al otro una decisión que él debe tomar con su propia visibilidad. Lo correcto y cooperativo es ser predecible y, si puedes, aflojar un poco para que complete el adelantamiento rápido y seguro. La regla: nunca compitas con quien te adelanta, facilítale el paso."
   },
   {
     "id": 178,
@@ -4464,7 +4641,8 @@ export const questions = [
       "Acelerar para pasarlo de inmediato es una maniobra imprudente que puede provocar un accidente."
     ],
     "page": 47,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es disminuir la velocidad y estar atento para detenerse (b). El fundamento es que cuando un vehículo se mete sorpresivamente delante de ti y reduce tu distancia de seguridad, lo prioritario es recuperar ese espacio aflojando el acelerador, de modo que vuelvas a tener margen para reaccionar y frenar si el otro lo hace. Las demás opciones son reacciones de riesgo o de rabia: esquivarlo y tocar la bocina puede llevarte a invadir otra pista o distraerte en un cruce donde justamente debes estar más concentrado; encender y apagar las luces siguiéndolo muy de cerca es una conducta agresiva que reduce aún más tu distancia y aumenta la probabilidad de choque por alcance; y acelerar para pasarlo de inmediato es exactamente lo contrario a lo prudente. El principio que se evalúa es la conducción defensiva: ante una maniobra ajena imprudente, tú no la respondes con otra imprudencia, sino recuperando el control y la distancia. El reflejo correcto es siempre soltar el acelerador y prepararte para frenar."
   },
   {
     "id": 179,
@@ -4488,7 +4666,8 @@ export const questions = [
       "Aumentar la velocidad para impedir el adelantamiento es agresivo y aumenta el riesgo de accidente."
     ],
     "page": 47,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "La respuesta correcta es permitirle el adelantamiento cuando sea seguro (c). Aunque el otro conductor venga apurado y señalizando de forma molesta con luces, el fundamento es que tu objetivo no es 'darle una lección' ni competir, sino reducir el conflicto y el riesgo total en la vía. Por eso las otras opciones son contraproducentes: acelerar para mantener un espacio detrás tuyo prolonga la situación y te puede llevar a superar el límite de velocidad; frenar para mostrarle tus luces de freno es una maniobra provocadora que puede causar un choque por alcance; y aumentar la velocidad para impedirle el paso transforma el camino en una disputa peligrosa. Permitir que adelante, en cuanto haya un tramo seguro, hace que ese vehículo agresivo se aleje y deje de ser un peligro detrás tuyo. El principio es que mantener la calma y no engancharse con conductores impacientes es parte esencial de la conducción defensiva; el adelantamiento que él haga será su responsabilidad, no la tuya."
   },
   {
     "id": 180,
@@ -4512,7 +4691,8 @@ export const questions = [
       "Con neblina la visibilidad se reduce, por lo que tres segundos resultan insuficientes y debe aumentar la distancia."
     ],
     "page": 47,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es 'las condiciones climáticas son buenas' (a), y entender el porqué es clave para conducir con seguridad real, no solo para aprobar la prueba. La regla de los tres segundos se calibró pensando en un escenario favorable: pavimento seco, buena visibilidad y neumáticos con adherencia normal. En cuanto cambian esas condiciones, el supuesto deja de cumplirse: con lluvia fuerte, neblina o pavimento recién mojado, la distancia de frenado se alarga porque los neumáticos resbalan más y la visibilidad para detectar el peligro disminuye, de modo que tres segundos ya no alcanzan. Por eso en esos casos debes aumentar el margen a cuatro, cinco o más segundos según lo malas que sean las condiciones. Las otras alternativas son precisamente las situaciones donde los tres segundos resultan insuficientes y la pregunta busca que las descartes. El truco mental: tres segundos es el mínimo para un día perfecto; si el clima empeora, suma segundos."
   },
   {
     "id": 181,
@@ -4536,7 +4716,8 @@ export const questions = [
       ""
     ],
     "page": 47,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "La respuesta correcta es la d porque la ley de tránsito impone al conductor que va adelante un deber de cooperación con quien adelanta: la maniobra de adelantamiento es de por sí riesgosa y la norma busca que se realice en el menor tiempo y con el menor peligro posible. Aunque usted circule justo en el límite legal, no le corresponde a usted hacer cumplir la ley acelerando ni cerrándole el paso al otro; eso se llama tomar la justicia por la propia mano al volante y multiplica el riesgo. Si usted acelera mientras el otro está a su costado en sentido contrario o en la pista de adelantamiento, lo deja expuesto durante más tiempo a un choque frontal o lateral. El razonamiento es simple: el peligro de la maniobra no depende de quién tiene la razón, sino de cuánto dura la situación de exposición, así que su obligación es mantener velocidad estable o incluso levantar el pie para acortar el sobrepaso. Un buen truco para recordarlo es pensar que adelantar es como un puente angosto: mientras alguien está cruzando, lo último que se hace es moverlo o empujarlo. La consecuencia real de estorbar es provocar una colisión que usted, además, podría tener que responder legalmente."
   },
   {
     "id": 182,
@@ -4560,7 +4741,8 @@ export const questions = [
       "Detenerse en los cruces es una conducta correcta y obligatoria; no es la causa de las colisiones por alcance."
     ],
     "page": 48,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "La alternativa a es la correcta porque la mayoría de las colisiones por alcance nacen de un solo error de fondo: ir demasiado pegado al vehículo de adelante, lo que elimina el espacio y el tiempo que su cerebro y sus frenos necesitan para responder. Hay que entender que frenar no es instantáneo: primero ocurre el tiempo de percepción y reacción (alrededor de un segundo o más), durante el cual el auto sigue avanzando, y recién después actúa la distancia de frenado propiamente tal. Si usted va muy cerca, ese primer tramo ya se le acaba el espacio antes siquiera de pisar el freno, y por eso choca por detrás. Las otras opciones describen situaciones que existen, pero no son la causa frecuente: el semáforo o los peatones son gatillos puntuales, mientras que la distancia corta es el factor estructural presente una y otra vez. La herramienta práctica es la regla de los dos segundos: cuando el vehículo de adelante pase por un punto fijo (un poste, una sombra), usted debería contar dos segundos completos antes de llegar al mismo punto, y con lluvia o noche, duplicarlo a cuatro. Mantener esa distancia es, estadísticamente, la forma más efectiva de no ser el conductor que choca por atrás."
   },
   {
     "id": 183,
@@ -4584,7 +4766,8 @@ export const questions = [
       "La preferencia de paso la define la situación de la vía, no el tipo de vehículo; el motivo del cuidado es que son difíciles de ver."
     ],
     "page": 49,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "La opción c es correcta porque la motocicleta presenta un perfil frontal pequeño y estrecho que la hace literalmente difícil de detectar, sobre todo cuando usted espera incorporarse desde una calle lateral y su vista barre rápidamente la vía principal buscando autos. El problema no es solo verla, sino calcular bien su velocidad y la distancia a la que viene: un objeto pequeño tiende a percibirse como más lejano y más lento de lo que realmente está, error de percepción que provoca muchos accidentes en los que el conductor dice no la vi venir o pensé que alcanzaba. Las otras alternativas son trampas: las motos no tienen derecho preferente por ser motos, no todas son de Carabineros, y aunque puedan ir rápido, el motivo real del cuidado es la dificultad de verlas y evaluarlas. Una moto puede además quedar oculta tras un poste, un árbol o la columna de otro auto justo en el instante en que usted mira. El truco es mirar dos veces antes de avanzar: una primera mirada general y una segunda mirada específica buscando algo pequeño y de un solo faro. La consecuencia de no hacerlo es una colisión donde el motociclista, sin carrocería que lo proteja, lleva siempre la peor parte."
   },
   {
     "id": 184,
@@ -4608,7 +4791,8 @@ export const questions = [
       "Aunque los mayores de 55 pueden tener algunas limitaciones, estadísticamente no son el grupo con más accidentes; lo son los menores de 25."
     ],
     "page": 49,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta es a porque las estadísticas de siniestralidad, tanto en Chile como a nivel internacional, muestran de forma consistente que los conductores menores de 25 años concentran la mayor probabilidad de verse involucrados en accidentes. Esto tiene una explicación que va más allá de la edad como número: combina poca experiencia al volante, un cerebro que a esa edad todavía tiende a subestimar el riesgo y a sobreestimar las propias capacidades, y conductas más frecuentes como el exceso de velocidad, las distracciones y la conducción nocturna o en grupo. La experiencia importa porque conducir bien es, en gran parte, reconocer peligros antes de que ocurran, y eso solo se aprende con kilómetros recorridos. Por eso muchas legislaciones aplican licencias graduales o restricciones a conductores nuevos. No confunda esto con que los mayores de 55 conduzcan perfecto; lo que dice la pregunta es dónde está la mayor probabilidad estadística, y esa cae claramente en los más jóvenes. El dato para recordarlo es que el grupo de mayor riesgo es justamente el que recién obtiene su licencia: menos experiencia más sensación de invulnerabilidad es la mezcla que más siniestros produce."
   },
   {
     "id": 185,
@@ -4632,7 +4816,8 @@ export const questions = [
       ""
     ],
     "page": 49,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La alternativa correcta es la d porque en un camino angosto una curva hacia la derecha cierra su trayectoria hacia ese mismo lado y la visibilidad de lo que viene adelante por la orilla derecha queda tapada por el propio borde del camino, la vegetación, un muro o un cerro. Como las personas a caballo deben ir por la orilla derecha de la calzada, quedan precisamente en el punto ciego que esa curva le genera, apareciendo de golpe cuando usted ya está encima. Conviene visualizarlo: en una curva a la izquierda usted abre la vista hacia adelante y alcanza a ver más lejos por la derecha, pero en una curva a la derecha la línea de visión se acorta y lo que está pegado a esa orilla se le esconde hasta el último momento. Por eso las otras opciones son menos críticas: subir o bajar un cerro afecta más la pendiente que la visibilidad lateral inmediata. La regla práctica es entrar a toda curva ciega a la derecha como si detrás de ella hubiera algo lento o detenido: un jinete, un peatón, un ciclista o un vehículo. Reduzca la velocidad de modo de poder detenerse dentro del tramo de camino que efectivamente alcanza a ver."
   },
   {
     "id": 186,
@@ -4658,7 +4843,8 @@ export const questions = [
       "Pasarlo por la derecha es muy peligroso, pues es justo hacia donde el camión podría completar su giro y atraparlo."
     ],
     "page": 49,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "La respuesta correcta es la b porque un camión articulado, por su largo y su punto de pivote entre el tractor y el remolque, necesita ocupar un espacio mucho mayor para girar y muchas veces abre primero hacia el lado contrario antes de doblar; por eso puede señalizar a la derecha y desplazarse hacia la izquierda. Lo que parece un error o una señal equivocada es en realidad la maniobra normal de un vehículo largo que va a virar a la derecha cerrado: se corre a la izquierda para que el remolque no monte la vereda ni atropelle al cerrar la curva. Lo peor que usted podría hacer es interpretar ese hueco a la derecha como una invitación a pasarlo, porque quedaría justo dentro del ángulo de giro y el remolque lo aplastaría contra la vereda al cerrar; ese es el clásico punto ciego mortal de los camiones. Tampoco corresponde tocarle la bocina ni denunciarlo, porque no está cometiendo infracción. La actitud segura es esperar pacientemente detrás, dándole espacio, hasta confirmar hacia dónde efectivamente se va. El truco es recordar que con un camión largo nunca se entra al espacio que él acaba de dejar libre, porque casi siempre lo va a volver a ocupar."
   },
   {
     "id": 187,
@@ -4682,7 +4868,8 @@ export const questions = [
       ""
     ],
     "page": 49,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La alternativa correcta es la d porque si por el espejo usted ya ve que el auto de atrás se cambió de pista e inició su sobrepaso, ese conductor tiene la prioridad de hecho de la maniobra y usted debe esperar a que lo supere antes de hacer cualquier cosa. Señalizar en ese instante es peligroso porque le anuncia una intención que va a ejecutar al mismo tiempo que el otro está pasando, generando una situación ambigua en la que ambos podrían terminar invadiendo la misma pista a la vez. La conducción segura se basa en que las maniobras se hagan una a la vez y con previsibilidad: primero termina la del que ya está en curso y recién después comienza la suya. Las otras opciones agravan el riesgo: cambiarse de pista provocaría una colisión lateral, y señalizar o frenar para comunicarse solo confunde al de atrás. Lo correcto es mantener su velocidad y trayectoria estables, dejar que el auto lo pase por completo, y entonces revisar de nuevo el espejo, señalizar y adelantar usted. El principio para recordarlo es no señalizar hasta que el camino que necesita esté realmente libre; anunciar una maniobra que aún no puede hacer es tan peligroso como hacerla."
   },
   {
     "id": 188,
@@ -4706,7 +4893,8 @@ export const questions = [
       "Adelantarlo apurado para dejarlo atrás es una reacción impulsiva y riesgosa, no una conducción segura."
     ],
     "page": 49,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es la b porque, frente al error de otro conductor que lo obligó a frenar fuerte, lo más seguro es ignorar la falta y permanecer calmado, ya que su objetivo número uno tras evitar el choque es no escalar la situación. Reaccionar con bocinazos, luces o adelantándolo con rabia es lo que se conoce como agresividad vial, y solo agrega tensión, distracción y la posibilidad de que ese intercambio termine en una maniobra brusca o un incidente mayor entre ambos. Recuerde que usted ya logró lo importante (frenó y evitó el accidente), de modo que la energía que gaste en demostrar enojo es energía que le quita atención a seguir conduciendo de forma defensiva. La conducción defensiva parte de aceptar que los demás cometen errores y que no es su tarea castigarlos en la vía, sino protegerse de ellos. Un dato útil es que el enojo eleva el pulso y estrecha la atención, justo lo contrario de lo que se necesita para manejar bien en los segundos siguientes. El truco mental es respirar, soltar y seguir: la calma no es debilidad, es la herramienta que mantiene la situación bajo control."
   },
   {
     "id": 189,
@@ -4730,7 +4918,8 @@ export const questions = [
       "Hacerles señas para apurarlos genera confusión y puede inducirlos a cruzar sin que la situación sea segura."
     ],
     "page": 50,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es la b porque en un cruce cebra los peatones tienen la preferencia de paso, y si están esperando en la vereda pero aún no se deciden a cruzar, su deber es tener paciencia y esperar, no presionarlos. Muchas veces el peatón duda porque no está seguro de que usted realmente se vaya a detener, o porque hay un niño, un adulto mayor o alguien con movilidad reducida que necesita unos segundos más; tocar la bocina o hacerles señas para apurarlos los puede confundir o hacerlos cruzar antes de mirar bien, generando el riesgo de que avancen justo cuando otro vehículo no se detiene. Avanzar usted mientras ellos siguen junto al cruce es directamente un peligro de atropello y una infracción. El principio de fondo es que en la cebra el más débil manda, y a usted, protegido por la carrocería, le toca ceder y dar seguridad. Un detalle práctico es que un gesto de mano invitando a cruzar puede ser malinterpretado y crear responsabilidad si el peatón cruza confiado y aparece otro auto; por eso lo más limpio es simplemente quedarse detenido, sin gestos, y dejar que el peatón decida cuándo y cómo cruzar."
   },
   {
     "id": 190,
@@ -4754,7 +4943,8 @@ export const questions = [
       ""
     ],
     "page": 50,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es la d porque el viento fuerte afecta de manera crítica a los vehículos de dos ruedas, y al pasar cerca de un ciclista una ráfaga puede empujarlo lateralmente y desviarlo justo hacia su trayectoria. El ciclista tiene muy poca masa y una superficie expuesta grande, por lo que el viento lo desestabiliza con facilidad, y el problema se agrava porque su propio vehículo, al adelantarlo, genera primero una zona de turbulencia y luego una succión que lo zamarrea aún más. Por eso el cuidado no es solo no chocarlo, sino anticipar que puede moverse de forma involuntaria en el peor momento. Las otras opciones tienen menos relación directa con el viento lateral: frenar, subir una pendiente o virar a un camino angosto se ven poco alterados por una ráfaga en comparación con la vulnerabilidad de un ciclista. La conducta correcta es reducir la velocidad y dejarle bastante más espacio lateral del habitual al sobrepasarlo, para que aunque el viento lo corra, usted tenga margen de sobra. El truco para recordarlo es que con viento fuerte todo lo que tiene dos ruedas se vuelve impredecible, así que se les pasa lento y bien apartado."
   },
   {
     "id": 191,
@@ -4780,7 +4970,8 @@ export const questions = [
       "Encender las luces de advertencia no resuelve la situación; lo que corresponde es detenerse y esperar que crucen."
     ],
     "page": 50,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es la c porque cuando los peatones ya están atravesando la calle hacia la cual usted está virando, ellos gozan de la preferencia de paso y su única obligación es esperar a que terminen de cruzar antes de completar el giro. Esto tiene una base lógica de prioridades: el peatón que ya inició el cruce está en la posición más vulnerable y comprometida, y cualquier avance suyo lo pone en riesgo directo de atropello, porque al virar usted invade exactamente el espacio que él está ocupando. Las otras alternativas son peligrosas o inútiles: hacerles señas para que continúen traslada a usted una responsabilidad indebida si aparece otro vehículo, tocar la bocina solo los asusta o apura, y encender las balizas no resuelve nada ni les da seguridad. El razonamiento del examen es siempre el mismo en estas situaciones: ante un peatón cruzando, el vehículo cede y espera, sin gestos ni presión. Un buen recordatorio es que virar es un movimiento que usted controla por completo, así que siempre puede esperar; el peatón, en cambio, no puede esquivar una tonelada de auto. Paciencia primero, giro después."
   },
   {
     "id": 192,
@@ -4806,7 +4997,8 @@ export const questions = [
       "Tocar la bocina los asusta y presiona innecesariamente, en lugar de cederles el paso con calma."
     ],
     "page": 50,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "La respuesta correcta es la a porque, igual que en la situación equivalente anterior, si hay peatones cruzando la calle hacia la que usted dobla, lo único correcto es esperar y permitirles que terminen de cruzar, ya que la preferencia de paso es suya, del peatón. Conviene fijar este patrón porque el examen lo repite con distinta redacción justamente para verificar que usted internalizó el principio y no responde de memoria a una frase puntual: en cualquier giro donde haya un peatón ya cruzando, la respuesta siempre es ceder. La opción que dice que usted tiene el derecho preferente es la trampa clásica, porque al virar usted no tiene preferencia sobre el peatón que cruza la vía de destino; al revés, debe cederla. Hacerles señas para que retrocedan o tocarles la bocina son maniobras que generan confusión y peligro, ya que un peatón a mitad de calzada que retrocede o se detiene confundido queda más expuesto aún. La consecuencia de no respetar esto es un atropello y una infracción grave a la ley de tránsito. La regla mental para no fallar nunca es: si vira y hay alguien cruzando, frene y espere, sin importar cómo esté formulada la pregunta."
   },
   {
     "id": 193,
@@ -4830,7 +5022,8 @@ export const questions = [
       "Al ingresar a un estacionamiento la velocidad es baja; el verdadero punto crítico son los cruces de calles."
     ],
     "page": 50,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "La respuesta correcta es la b porque los cruces de calles concentran la mayor proporción de colisiones entre vehículos y motociclistas, y por eso es ahí donde debe extremar el cuidado con ellos. En una intersección convergen trayectorias desde varias direcciones, hay giros, hay que evaluar distancias y velocidades en poco tiempo, y justamente la moto, por su perfil pequeño y estrecho, es la que más fácilmente pasa desapercibida en ese contexto saturado de información. El conductor que dobla o que cruza muchas veces mira buscando autos y su cerebro descarta el objeto pequeño, o la moto queda oculta tras la columna del parabrisas o detrás de otro vehículo justo en el instante decisivo. Las otras opciones, como una estación de servicio o un estacionamiento, implican velocidades bajas y entornos más controlados, por lo que el riesgo de un impacto grave es mucho menor que en un cruce. El truco que enseñan los instructores es mirar dos veces en cada intersección, una mirada general y otra específica buscando algo angosto y con un solo faro, antes de cruzar o virar. Recuerde que en la moto el conductor no tiene carrocería: en un cruce, no verlo a tiempo suele significar una lesión grave o fatal."
   },
   {
     "id": 194,
@@ -4854,7 +5047,8 @@ export const questions = [
       "Que el bus permanezca detenido no constituye un peligro; el riesgo es lo que el bus oculta a su vista."
     ],
     "page": 51,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es la c porque un bus detenido en una parada es, sobre todo, una pantalla que oculta peatones: personas que acaban de bajar suelen cruzar la calzada por delante o por detrás del bus de forma imprevista, y usted no las ve hasta que aparecen ya en su camino. Este es uno de los riesgos más subestimados de la conducción urbana, porque el peatón que cruza tapado por el bus no lo ve a usted ni usted a él, y ambos se encuentran de golpe. Aunque también es cierto que un bus puede ponerse en movimiento o quedarse detenido, esas situaciones son más previsibles y menos letales que el atropello de alguien que sale corriendo entre los vehículos. Por eso la respuesta apunta al peligro humano oculto. La conducta correcta al cruzarse o pasar junto a un bus en parada es reducir la velocidad y cubrir el freno, anticipando que en cualquier momento puede surgir una persona, especialmente niños, que son más bajos y más impulsivos. El truco para recordarlo es que todo bus detenido tiene peatones invisibles a su alrededor, así que se le pasa lento y listo para frenar."
   },
   {
     "id": 195,
@@ -4878,7 +5072,8 @@ export const questions = [
       "Situarse a su lado y desistir de virar no corresponde a la maniobra correcta y genera confusión; lo seguro es mantenerse detrás."
     ],
     "page": 52,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es la c porque cuando usted va a virar a la derecha y adelante suyo va un ciclista, lo seguro es mantenerse detrás de él hasta que haya pasado la intersección, en lugar de adelantarlo y doblar. El peligro concreto se llama el corte al ciclista: si usted lo sobrepasa y enseguida cierra hacia la derecha para doblar, le cruza la trayectoria justo cuando él podría seguir recto, y como van casi a la par, el ciclista no alcanza a frenar ni a esquivar y termina chocando contra el costado de su auto. Esta maniobra es una de las causas más frecuentes de atropello a ciclistas en zonas urbanas precisamente porque el conductor cree que alcanza a pasar. Las otras opciones lo confirman: adelantarlo antes del cruce o rodearlo dentro de la intersección crea exactamente ese conflicto de trayectorias, y ponerse a su lado y desistir de virar es innecesario. El principio es simple: nunca adelante a un ciclista si va a doblar inmediatamente hacia el lado donde él circula. La regla práctica es ganar unos segundos de paciencia quedándose detrás; perder ese sobrepaso no le cuesta nada, pero hacerlo mal puede costarle la vida al ciclista."
   },
   {
     "id": 196,
@@ -4902,7 +5097,8 @@ export const questions = [
       ""
     ],
     "page": 52,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es la d porque al encontrarse con personas a caballo delante suyo en un camino de doble tránsito, lo primero y más importante es prepararse para reducir la velocidad, ya que el caballo es un animal vivo e impredecible que puede asustarse con un ruido, un movimiento brusco o un vehículo que se acerca rápido. Reducir la velocidad es lo primero porque es lo que le da margen de tiempo y de reacción ante cualquier reacción inesperada del animal; recién con esa base puede luego evaluar si es seguro adelantar. Las otras opciones son riesgosas o prematuras: acelerar alrededor de ellos es justamente lo que puede espantar al caballo, desplazarse al centro de la calzada lo expone al tránsito que viene en sentido contrario, y señalizar a la izquierda sin antes bajar la velocidad pone el carro delante de los bueyes. La secuencia correcta de toda aproximación delicada es primero frenar y observar, después decidir la maniobra. El dato para recordarlo es que ante caballos, peatones o cualquier elemento impredecible en la vía, lo primero siempre es soltar el acelerador y estar listo para detenerse; la prudencia se gana levantando el pie antes que cualquier otra acción."
   },
   {
     "id": 197,
@@ -4926,7 +5122,8 @@ export const questions = [
       "Tocar la bocina puede asustar al caballo y provocar una reacción peligrosa del animal."
     ],
     "page": 52,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es la a porque adelantar a personas que van a caballo exige las dos cosas a la vez: ir lentamente y dejar bastante espacio lateral, no una sola de ellas. La velocidad baja es clave porque el ruido y el desplazamiento de aire de un vehículo que pasa rápido pueden asustar al caballo, y un animal asustado puede encabritarse o moverse de golpe hacia la calzada, justo donde está usted. El amplio espacio lateral cumple la función de seguridad por si eso ocurre: si el caballo da un salto o se desvía, ese margen extra es lo que evita el contacto. Por eso la opción que dice que la velocidad no importa mientras haya espacio es incorrecta, porque ignora que la propia velocidad es lo que gatilla el susto del animal; ambos factores se necesitan juntos. Tampoco corresponde tocar la bocina, ni siquiera una vez, porque el bocinazo es precisamente uno de los sonidos que más espantan a un caballo. El truco para recordarlo es tratar al caballo como algo que puede explotar en cualquier momento: se le pasa despacio para no provocarlo y bien apartado para tener escape si reacciona."
   },
   {
     "id": 198,
@@ -4950,7 +5147,8 @@ export const questions = [
       "A esa velocidad la probabilidad de sobrevivir es baja, no alta; lo más probable es la muerte."
     ],
     "page": 52,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es la b porque a unos 65 km/h el impacto sobre el cuerpo de un peatón es de tal violencia que, si bien no es absolutamente seguro, sí es muy probable que la persona muera. La razón física es que la energía del choque crece con el cuadrado de la velocidad: si la rapidez se duplica, la energía liberada en el impacto se cuadruplica, de modo que las cifras de mortalidad suben de forma muy pronunciada a medida que aumenta la velocidad. Las estadísticas de seguridad vial muestran que atropellar a un peatón a 30 km/h deja una buena chance de sobrevivir, pero pasados los 50 km/h la probabilidad de muerte se dispara, y a 65 km/h las lesiones internas y los traumatismos suelen ser fatales. La pregunta usa muy probable y no seguro porque siempre puede haber casos excepcionales de supervivencia, pero el patrón general es claramente letal. Esto explica por qué los límites de velocidad urbanos existen y por qué respetarlos salva vidas reales. El dato para grabarlo es que en la ciudad cada kilómetro por hora de más no es solo una multa potencial, sino la diferencia entre que un peatón viva o muera si algo sale mal."
   },
   {
     "id": 199,
@@ -4974,7 +5172,8 @@ export const questions = [
       "Tocar la bocina puede sobresaltar al motociclista; lo importante es darle espacio, no advertirle con ruido."
     ],
     "page": 52,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es la c porque al adelantar a un motociclista usted debe darle exactamente tanto espacio lateral como le daría a un automóvil completo, tratándolo como si ocupara todo el ancho de un auto aunque físicamente sea angosto. El motivo es que la moto es mucho más inestable que un auto: una ráfaga de viento, un bache, una mancha de aceite o el propio desplazamiento de aire que genera su vehículo al pasar pueden hacer que el motociclista se mueva o corrija bruscamente justo en el peor momento. Si usted lo pasa pegado, ese margen estrecho desaparece ante cualquiera de esas variaciones y el roce o la caída se vuelven probables. Las otras opciones son directamente peligrosas: adelantar en una curva reduce la visibilidad y el espacio, pasar rápido y cerca aumenta la turbulencia que lo desestabiliza, y la bocina puede sobresaltarlo y hacerle perder el control. El principio que el examen quiere fijar es que el motociclista es un usuario vulnerable que merece el mismo respeto de espacio que un vehículo mayor. El truco es imaginar la moto dentro de una caja del tamaño de un auto y no invadir nunca esa caja al sobrepasar."
   },
   {
     "id": 200,
@@ -4998,7 +5197,8 @@ export const questions = [
       "Mantenerse muy cerca tras él reduce su margen de reacción y aumenta el riesgo de colisión; debe guardar distancia."
     ],
     "page": 52,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La respuesta correcta es la b porque al seguir a un automóvil conducido por una persona de edad lo prudente es estar consciente de que sus reacciones pueden no ser tan rápidas como las suyas, y ajustar su conducta a esa posibilidad con paciencia y distancia. Esto no es un prejuicio sino una previsión realista: con la edad pueden disminuir los reflejos, la visión, la audición y la rapidez para procesar situaciones, de modo que ese conductor quizás frene antes, acelere más lento o demore más en reaccionar ante un imprevisto. La opción a es incorrecta porque dar por seguro que manejará muy mal es un prejuicio absoluto e injusto; muchas personas mayores conducen con gran experiencia y cuidado, y el examen distingue entre estar consciente de una posibilidad y condenar de antemano. Las otras alternativas son agresivas o peligrosas: encender y apagar las luces y adelantar presiona innecesariamente, y mantenerse muy pegado tras él elimina el espacio de reacción que justamente más necesita en este caso. La conducta correcta combina comprensión y previsión: mantenga una distancia prudente, no lo apure y anticipe que sus maniobras podrían ser más lentas. El truco es recordar que conducir bien junto a otros se trata de adaptarse a ellos, no de exigirles que se adapten a usted."
   },
   {
     "id": 201,
@@ -5022,7 +5222,8 @@ export const questions = [
       "Estacionar al costado derecho de la calzada es justamente lo correcto en una vía de doble sentido."
     ],
     "page": 52,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La Ley de Tránsito parte de un principio rector: el espacio público vial es de uso común y nadie puede apropiarse de él de forma que perjudique al resto. Por eso, aunque no exista un disco o demarcación que prohíba o permita estacionar, sigue rigiendo el deber general de no entorpecer la libre circulación de personas y vehículos. El razonamiento es simple: la ausencia de señal no es una autorización para hacer cualquier cosa, sino que activa su criterio y responsabilidad como conductor. Detener el motor, dejar el freno de mano puesto y estacionar al costado derecho de la calzada son todas conductas correctas, así que la única que usted NO debe hacer es obstaculizar el tránsito de los demás, dejando bloqueado un acceso, una vía angosta o el paso de peatones y ciclistas. La consecuencia real de hacerlo es generar congestión, maniobras peligrosas de terceros que deben rodearlo y, además, su vehículo puede ser retirado por la grúa municipal. Un buen truco para recordarlo es preguntarse antes de bajar: 'si dejo el auto aquí, ¿puede pasar todo el mundo sin problema?'; si la respuesta es no, no estacione."
   },
   {
     "id": 202,
@@ -5046,7 +5247,8 @@ export const questions = [
       "El tipo de superficie (tierra) no es lo que define el peligro; el riesgo crítico está en cruzar la trayectoria del ciclista al doblar."
     ],
     "page": 52,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento de esta regla está en la geometría de las trayectorias: cuando usted adelanta a un ciclista y luego dobla a la derecha, su auto cruza por delante de la línea que el ciclista venía siguiendo, cerrándole literalmente el paso. El razonamiento paso a paso es claro: primero usted lo sobrepasa, lo deja a su costado derecho y casi de inmediato gira hacia ese mismo lado, momento en que el ciclista queda metido en su punto ciego y sin escapatoria. Esta maniobra, conocida como 'giro que atrapa', es una de las causas más frecuentes de atropello a ciclistas en zonas urbanas, porque el conductor cree que ya pasó y se olvida de que el ciclista sigue avanzando a su lado. La consecuencia puede ser fatal, ya que el ciclista no tiene carrocería que lo proteja y suele caer bajo las ruedas traseras del vehículo. Por eso la regla de oro es: si va a doblar a la derecha y hay un ciclista cerca, no lo adelante; mejor quédese detrás de él, déjelo pasar la esquina y recién entonces continúe. Para recordarlo piense 'primero el giro, después el adelantamiento, nunca al revés'."
   },
   {
     "id": 203,
@@ -5070,7 +5272,8 @@ export const questions = [
       ""
     ],
     "page": 52,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento de dejar el máximo espacio lateral está en que la bicicleta es un vehículo inestable que depende del equilibrio constante de su conductor, a diferencia de un auto que se mantiene firme sobre cuatro ruedas. El razonamiento es que el ciclista puede desviarse bruscamente de su línea por causas que usted no controla ni anticipa: un hoyo en el pavimento, una rejilla de alcantarillado, vidrios o basura en la calzada, o incluso una ráfaga de viento que lo empuje. Ante cualquiera de esos obstáculos el ciclista hará un movimiento repentino para esquivarlo o para no perder el equilibrio, y si usted va pasando demasiado cerca, ese pequeño bandazo se transforma en un choque. El margen amplio actúa como un colchón de seguridad: le da tiempo de reacción a usted y espacio de maniobra al ciclista, de modo que un desvío inesperado no termine en contacto. La recomendación práctica de CONASET es dejar al menos 1,5 metros de distancia lateral al adelantar, y un buen truco es imaginar que lleva una puerta abierta de ese ancho entre su auto y la bicicleta."
   },
   {
     "id": 204,
@@ -5094,7 +5297,8 @@ export const questions = [
       "El viento fuerte tiende a frenar y desestabilizar a la moto, no a hacerla ir más rápido."
     ],
     "page": 54,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento físico aquí es que la motocicleta tiene muy poca masa y una gran superficie expuesta al viento, sumada a que solo apoya dos ruedas, lo que la hace extremadamente sensible a las fuerzas laterales. El razonamiento paso a paso es el siguiente: una ráfaga fuerte empuja la moto de costado, el motociclista corrige instintivamente inclinándose o moviendo el manillar, y en esa corrección su trayectoria se desplaza lateralmente de forma involuntaria, pudiendo tambalear o invadir parte de su pista. A diferencia de un auto, que apenas se mueve con el viento, la moto puede desviarse medio metro o más en una sola racha. Por eso, al adelantarla con viento fuerte, usted debe dejar un espacio lateral extra que absorba ese posible desvío sin que se produzca contacto. La consecuencia de pasar demasiado cerca es que un bandazo del motociclista lo lleve contra su vehículo, con caída casi segura y alto riesgo de lesiones graves. Un truco para recordarlo es pensar que con viento la moto 'flota' lateralmente, así que necesita más cancha de la habitual."
   },
   {
     "id": 205,
@@ -5120,7 +5324,8 @@ export const questions = [
       "La proximidad de un parque o plaza no es lo que advierte esta señal."
     ],
     "page": 54,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta señal pertenece al grupo de señales de advertencia de peligro, que en Chile se reconocen por su forma de rombo amarillo con símbolo y orla negros, y cuya función es anticipar un riesgo para que usted modifique su conducta antes de llegar a él. En este caso advierte la posible presencia de escolares, por lo que normalmente se instala en las cercanías de colegios, liceos y establecimientos educacionales. El razonamiento de por qué existe es que los niños y adolescentes son peatones impredecibles: pueden cruzar corriendo, distraídos o entre vehículos estacionados, sin medir bien las distancias ni las velocidades. Al verla, usted debe reducir la velocidad, levantar el pie del acelerador y aumentar su atención, anticipando que en cualquier momento puede aparecer un escolar cruzando. Conviene no confundirla con la señal de cruce de peatones ni con la de niños jugando; la clave está en que esta apunta específicamente al entorno escolar. La consecuencia de ignorarla puede ser un atropello a un menor, una de las situaciones más graves y de mayor reproche en el tránsito, además de las sanciones agravadas por ocurrir en zona escolar."
   },
   {
     "id": 206,
@@ -5147,7 +5352,8 @@ export const questions = [
       "Cambiar repetidamente de altas a bajas distrae y encandila; no es la forma correcta de iniciar el adelantamiento."
     ],
     "page": 54,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento de extremar el cuidado al adelantar de noche está en las limitaciones propias de la visión humana en oscuridad: disminuye la agudeza visual, se reduce el campo de visión, cuesta más percibir distancias y velocidades, y aparecen el deslumbramiento y los puntos ciegos por la falta de luz. El razonamiento es que un adelantamiento exige calcular con precisión la distancia y la velocidad del vehículo que viene en sentido contrario, y justamente eso es lo que más se deteriora de noche, por lo que el margen de error se reduce peligrosamente. A esto se suma que las curvas son críticas: sus luces solo iluminan en línea recta y no alcanzan a 'doblar' el camino, de modo que un vehículo que se aproxima por una curva puede aparecer de golpe cuando usted ya está invadiendo la pista contraria. Por eso las respuestas correctas son tener mucho cuidado por la capacidad visual reducida y estar muy atento a las curvas que pueda tener el camino. Mantener luces altas durante el adelantamiento es un error, porque encandilaría al que viene de frente; lo correcto es coordinar las luces sin abusar de las altas. Un buen criterio práctico es: si de noche tiene dudas de si alcanza a adelantar, no adelante."
   },
   {
     "id": 207,
@@ -5171,7 +5377,8 @@ export const questions = [
       "Tres segundos como máximo es inadecuado; con la calzada mojada la distancia debe ser mayor, no menor."
     ],
     "page": 54,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento de la regla de los segundos es que la distancia de seguimiento debe medirse en tiempo y no en metros, porque así se ajusta automáticamente a la velocidad: a mayor velocidad, mayor separación real. En condiciones secas y normales se recomienda mantener al menos 2 segundos respecto del vehículo de adelante, pero cuando la calzada está mojada esa cifra debe duplicarse a 4 segundos como mínimo. El razonamiento físico es que el agua reduce la adherencia entre el neumático y el pavimento, por lo que su distancia de frenado se alarga de manera importante; si conserva la misma separación que en seco, no alcanzará a detenerse si el de adelante frena de golpe. Para aplicarla en la práctica, elija un punto fijo del camino (un poste, una señal), y cuente 'mil uno, mil dos, mil tres, mil cuatro' desde que el vehículo de adelante lo pasa hasta que usted llega al mismo punto; si llega antes de terminar de contar, está demasiado cerca. La consecuencia de no respetarlo es una colisión por alcance, que en mojado ocurre con mucha más facilidad. El truco es simple: en seco dos segundos, en mojado el doble."
   },
   {
     "id": 208,
@@ -5195,7 +5402,8 @@ export const questions = [
       "La visera protege del sol, no de las luces de otro vehículo de noche; no soluciona el problema."
     ],
     "page": 54,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento de reducir la velocidad o detenerse al ser encandilado está en cómo funciona el ojo humano: la retina necesita unos segundos para adaptarse a los cambios bruscos de luz, y un haz intenso de frente provoca un encandilamiento que deja a su vista prácticamente inutilizada durante ese lapso. El razonamiento es que, mientras dura ese deslumbramiento, usted está conduciendo a ciegas, sin ver realmente el camino ni los obstáculos, peatones o vehículos que pueda haber adelante. Bajar la velocidad acorta la distancia que recorre 'sin ver' y le da el tiempo necesario para que sus ojos se recuperen; si el encandilamiento es muy fuerte, incluso detenerse es lo más prudente. Cerrar los ojos sería todavía más peligroso, hacer parpadear las luces no resuelve su falta de visión, y la visera sirve para el sol, no para luces nocturnas, por eso esas opciones son incorrectas. Un truco útil para no mirar directo al foco que lo encandila es desviar levemente la vista hacia el borde derecho de su pista, usando la línea blanca de la berma como guía para mantener la trayectoria mientras pasa el otro vehículo."
   },
   {
     "id": 209,
@@ -5221,7 +5429,8 @@ export const questions = [
       ""
     ],
     "page": 54,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento de esta pregunta es entender de manera realista las limitaciones de la visión nocturna, que es uno de los factores que más accidentes provoca de noche. Son correctas tres afirmaciones: que nuestra limitada capacidad de ver de noche aumenta el riesgo de accidentes, que se reduce nuestra capacidad de apreciar distancias, y que el color de la ropa del peatón influye en cuán visible resulta para los conductores. El razonamiento de la primera y la segunda es que en oscuridad el ojo pierde agudeza y profundidad de campo, por lo que cuesta más calcular a qué distancia está un objeto y a qué velocidad se acerca, lo que retrasa sus reacciones. La tercera se explica porque la ropa clara o con elementos reflectantes devuelve la luz de los focos y se distingue a mucha mayor distancia, mientras que la ropa oscura se confunde con el entorno y puede verse demasiado tarde. La afirmación falsa es la que dice que con luces bajas se ven las marcas del pavimento a 200 metros o más: las luces bajas alcanzan apenas unos 30 a 40 metros, justamente para no encandilar, así que esa distancia es irreal. El mensaje práctico es conducir de noche más despacio, aumentar las distancias y nunca confiarse de que verá a un peatón a tiempo."
   },
   {
     "id": 210,
@@ -5246,7 +5455,8 @@ export const questions = [
       "El ancho del camino no exime de bajar las luces; siempre que se cruza con otro vehículo deben usarse luces bajas."
     ],
     "page": 54,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento del uso correcto de las luces de noche en camino rural es no encandilar a los demás usuarios, porque un conductor deslumbrado pierde la visión y puede provocar un accidente grave. Son correctas dos afirmaciones: al cruzarse con otro vehículo siempre debe poner luces bajas para no encandilar a su conductor que viene de frente, y al acercarse por atrás a otro vehículo también debe usar luces bajas, ya que las altas se reflejan en sus espejos retrovisores y lo deslumbran de la misma forma. El razonamiento es que las luces altas, pensadas para iluminar lejos en caminos oscuros y sin tránsito, se vuelven un peligro apenas hay otro vehículo en el campo visual, sea de frente o adelante de usted. Las opciones incorrectas tienen errores claros: con un ciclista sí debe bajar las luces, porque encandilarlo puede hacerlo perder el equilibrio y caer, y el ancho del camino no lo exime, porque por más ancha que sea la vía el otro conductor igual recibe el haz de luz de frente. La regla práctica es sencilla: apenas aparezca cualquier vehículo o usuario al que pueda deslumbrar, de frente o por atrás, baje las luces, y vuelva a las altas solo cuando esté nuevamente solo en el camino."
   },
   {
     "id": 211,
@@ -5270,7 +5480,8 @@ export const questions = [
       "Es falso: los frenos en buen estado no impiden el patinaje; este depende de la adherencia entre neumático y calzada."
     ],
     "page": 56,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El fundamento de esta pregunta es entender que el patinaje sobre calzada mojada depende principalmente de la velocidad, y no solo del estado del vehículo. La afirmación correcta es que, independientemente del estado de los neumáticos, el riesgo de patinar es mayor mientras mayor es la velocidad. El razonamiento físico es el del hidroplaneo o aquaplaning: el neumático tiene dibujos cuya función es evacuar el agua que encuentra para que la goma toque el pavimento, pero ese drenaje toma tiempo, y a más velocidad el neumático llega a la siguiente porción de agua antes de haber expulsado la anterior, formándose una película líquida que lo levanta y separa del suelo. Cuando eso ocurre el vehículo prácticamente 'flota' y pierde adherencia, dirección y frenado. Las otras afirmaciones son falsas: ni neumáticos nuevos ni frenos en buen estado eliminan el riesgo de patinar, porque ningún componente vence las leyes de la física si usted va demasiado rápido, y además el riesgo no es menor al comenzar a llover, sino mayor, porque la primera agua se mezcla con el aceite y el polvo del pavimento formando una capa especialmente resbaladiza. La conclusión práctica es que en mojado la herramienta más poderosa que usted tiene es bajar la velocidad."
   },
   {
     "id": 212,
@@ -5295,7 +5506,8 @@ export const questions = [
       "Las fallas de dirección son poco frecuentes y no constituyen la causa habitual de resbalones por agua en la calzada."
     ],
     "page": 56,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El fundamento de esta pregunta está en identificar las dos causas que más combinadas producen los resbalones cuando hay agua en la calzada: los neumáticos desgastados y el exceso de velocidad para las condiciones existentes. El razonamiento del primer factor es que el dibujo o labrado del neumático existe precisamente para canalizar y expulsar el agua; cuando está gastado y liso, pierde esa capacidad de drenaje y la goma no logra contactar el pavimento. El segundo factor es la velocidad, porque a mayor rapidez el neumático tiene menos tiempo para evacuar el agua y se forma la película líquida que lo levanta, produciendo el hidroplaneo. Cuando ambos se juntan, neumático liso más alta velocidad, el riesgo de perder por completo la adherencia se dispara y el vehículo deja de responder a la dirección y al freno. Los frenos en mal estado y las fallas de dirección son problemas serios, pero no son la causa típica del resbalón por agua, que es un problema de contacto rueda-pavimento. El consejo práctico es revisar el labrado de sus neumáticos (la profundidad mínima legal es de 1,6 mm) y, sobre mojado, soltar el acelerador y conducir más lento de lo habitual."
   },
   {
     "id": 213,
@@ -5319,7 +5531,8 @@ export const questions = [
       ""
     ],
     "page": 56,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento aquí es el mismo que rige todo encandilamiento nocturno: cuando un haz de luz intenso entra de frente, la pupila se contrae y la retina queda saturada, dejándolo sin visión útil del camino durante unos segundos hasta que el ojo se readapta. El razonamiento paso a paso es que, mientras dura ese deslumbramiento, usted no ve lo que tiene adelante, de modo que cualquier cosa que recorra a velocidad normal la recorre a ciegas; por eso lo correcto es bajar la velocidad y, si es necesario, detenerse, reduciendo así la distancia que avanza sin ver y dando tiempo a que su vista se recupere. Las otras opciones agravan el problema: bajar el visor solar no sirve contra luces nocturnas porque está diseñado para el sol, poner luces altas encandilaría al otro conductor y empeoraría la situación para ambos, y taparse los ojos con la mano lo dejaría sin visión y sin control. Un truco práctico mientras pasa el vehículo es no mirar directamente sus focos, sino desviar la vista hacia el borde derecho de su pista y guiarse por la línea blanca de la berma para mantener el rumbo sin recibir el haz de lleno en los ojos."
   },
   {
     "id": 214,
@@ -5343,7 +5556,8 @@ export const questions = [
       ""
     ],
     "page": 56,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Esta situación es prácticamente idéntica a la anterior y refuerza el mismo principio: ante el encandilamiento de un vehículo que viene en sentido contrario, lo correcto es bajar la velocidad o detenerse. El fundamento es que durante el deslumbramiento usted pierde momentáneamente la referencia visual del camino y conduce sin ver realmente lo que hay adelante. El razonamiento de por qué se descartan las otras opciones vale la pena tenerlo claro: frenar fuerte es peligroso porque puede provocar que el vehículo de atrás lo choque por alcance o que usted derrape, sobre todo si la calzada está mojada; acelerar para 'salir rápido' del encandilamiento solo aumenta la distancia que recorre a ciegas y reduce su tiempo de reacción; y hacer parpadear las luces no le devuelve la visión y además puede confundir al otro conductor. La clave está en la diferencia entre frenar de golpe y bajar la velocidad de forma controlada: lo segundo es una desaceleración suave y progresiva que mantiene la estabilidad. El truco para recordarlo es asociar siempre encandilamiento con la palabra 'despacio', nunca con un movimiento brusco."
   },
   {
     "id": 215,
@@ -5367,7 +5581,8 @@ export const questions = [
       "Pisar el embrague no es lo primero; antes debe liberar el freno para recuperar adherencia y control."
     ],
     "page": 56,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El fundamento de soltar el freno cuando el vehículo patina al frenar en mojado está en la diferencia entre una rueda que gira y una rueda bloqueada. Una rueda bloqueada, es decir, frenada al punto de dejar de rodar, pierde casi toda su capacidad de agarre y, lo más importante, pierde la capacidad de dirigir: con las ruedas trabadas el auto se desliza recto hacia donde lo lleva la inercia, sin responder al volante. El razonamiento paso a paso es que, al soltar el freno completamente, las ruedas vuelven a girar, recuperan el contacto efectivo y la adherencia con el pavimento, y con ello usted recupera el control de la dirección para poder corregir la trayectoria. Apretar con más fuerza el pedal solo profundizaría el bloqueo y el deslizamiento; tirar del freno de mano bloquearía las ruedas traseras y podría hacer girar el auto sin control; y pisar el embrague no detiene el patinaje. Por eso lo primero es liberar el freno, recuperar agarre y dirección, y recién entonces volver a frenar de forma más suave y dosificada. Conviene saber que los vehículos modernos con sistema ABS hacen automáticamente este 'soltar y aplicar' muchas veces por segundo, pero la pregunta evalúa el principio físico de fondo, que es el mismo."
   },
   {
     "id": 216,
@@ -5391,7 +5606,8 @@ export const questions = [
       "Conducir en neutro le hace perder el frenado de motor y el control del vehículo, lo que es peligroso sobre hielo."
     ],
     "page": 56,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El fundamento de conducir lentamente y en la marcha más alta posible sobre hielo está en controlar la fuerza que se transmite a las ruedas, porque sobre una superficie con casi nula adherencia cualquier exceso de torque las hace patinar. El razonamiento es que una marcha alta entrega menos fuerza de giro a las ruedas para una misma posición del acelerador, de modo que la potencia llega de manera más suave y gradual, sin el tirón brusco que en marchas bajas hace que las ruedas pierdan el poco agarre que tienen. En cambio, mantenerse siempre en primera entregaría demasiada fuerza y haría patinar las ruedas; conducir en neutro lo dejaría sin control del motor y sin freno motor, lo que es peligroso; y poner el freno de mano si las ruedas patinan bloquearía las traseras y podría provocar un trompo. La idea clave es la suavidad: sobre hielo cada acción, acelerar, frenar y girar, debe hacerse de manera lenta y delicada, evitando todo movimiento brusco. El truco es imaginar que tiene un huevo entre el pie y el acelerador, presionando con tanta suavidad que no lo rompa."
   },
   {
     "id": 217,
@@ -5416,7 +5632,8 @@ export const questions = [
     ],
     "page": 56,
     "category": "Conduccion segura",
-    "formula": "En hielo el coeficiente de fricción (μ) cae muchísimo. Como la distancia de frenado es inversamente proporcional a μ (∝ 1/μ), puede llegar a ser hasta 10 veces la distancia normal."
+    "formula": "En hielo el coeficiente de fricción (μ) cae muchísimo. Como la distancia de frenado es inversamente proporcional a μ (∝ 1/μ), puede llegar a ser hasta 10 veces la distancia normal.",
+    "deepExplanation": "El fundamento de que la distancia de frenado en hielo pueda llegar a ser hasta 10 veces la distancia normal está en el coeficiente de fricción entre el neumático y la superficie. Sobre pavimento seco ese coeficiente, que llamamos μ (mu), es relativamente alto y permite frenar en poco espacio; sobre hielo el μ cae a valores mínimos, porque prácticamente no hay agarre entre la goma y el hielo. La fórmula lo explica con claridad: la distancia de frenado es inversamente proporcional al coeficiente de fricción, es decir, distancia ∝ 1/μ, de modo que si el μ se reduce a una décima parte de su valor en seco, la distancia necesaria para detenerse se multiplica aproximadamente por diez. En términos concretos, lo que en seco frenaría en 10 metros podría requerir cerca de 100 metros sobre hielo. La consecuencia práctica es dramática: usted no puede confiar en el freno para sacarlo de un apuro sobre hielo, porque cuando vea el obstáculo ya será demasiado tarde. Por eso, en estas condiciones, la única defensa real es reducir muchísimo la velocidad y aumentar de forma exagerada la distancia con el vehículo de adelante, anticipándose en lugar de reaccionar."
   },
   {
     "id": 218,
@@ -5440,7 +5657,8 @@ export const questions = [
       "Las luces de advertencia de peligro (intermitentes) son para detenciones de emergencia, no para circular con neblina."
     ],
     "page": 56,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El fundamento de encender las luces delanteras bajas con neblina, incluso de día, es doble: ser visto por los demás y mejorar su propia referencia del camino, ya que la bruma reduce drásticamente la visibilidad para todos los usuarios. El razonamiento de por qué bajas y no altas es óptico: las luces altas proyectan el haz hacia arriba y al frente, y al chocar contra las miles de gotas de agua suspendidas en la neblina, esa luz se refleja de vuelta hacia usted creando una especie de 'pared blanca' brillante que en lugar de ayudar lo encandila y le quita visión. Las luces bajas, en cambio, dirigen el haz hacia el suelo, iluminan la calzada inmediata sin reflejarse tanto en la bruma y permiten que los demás lo distingan a tiempo. Las luces de estacionamiento son demasiado tenues para esta situación, y las de advertencia de peligro (las balizas intermitentes) están reservadas para cuando el vehículo está detenido o constituye un obstáculo, no para circular. El truco para recordarlo es asociar neblina con luz baja y dirigida al suelo, nunca con luces altas que 'rebotan' en la niebla."
   },
   {
     "id": 219,
@@ -5464,7 +5682,8 @@ export const questions = [
       "El que los neumáticos estén duros no explica la dirección liviana sobre hielo; la causa es la baja adherencia."
     ],
     "page": 56,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El fundamento de que la dirección se sienta más liviana sobre hielo está en la relación entre adherencia y resistencia al giro de las ruedas delanteras. Normalmente, cuando usted gira el volante, los neumáticos delanteros deben vencer la fricción contra el pavimento para cambiar de dirección, y esa resistencia es la que usted percibe en sus manos como el 'peso' o firmeza de la dirección. El razonamiento es que sobre hielo los neumáticos tienen mucha menos adherencia a la calzada, por lo que oponen mucha menos resistencia al ser girados, y esa falta de fricción se traduce en esa sensación de dirección ligera y suelta. Lo importante es interpretar correctamente esa señal: una dirección demasiado liviana no es comodidad, sino una advertencia de que las ruedas casi no están agarrando el suelo y que el control del vehículo es precario y puede perderse en cualquier maniobra brusca. Las otras opciones son incorrectas porque más adherencia daría una dirección más firme, no más liviana, y los neumáticos blandos o duros afectan el comportamiento por presión, no por el hielo. El consejo práctico es que apenas sienta la dirección anormalmente ligera, asuma que va sobre hielo y reduzca la velocidad con la mayor suavidad posible."
   },
   {
     "id": 220,
@@ -5488,7 +5707,8 @@ export const questions = [
       "El viento fuerte afecta la estabilidad del vehículo, pero no aumenta significativamente la distancia de detención."
     ],
     "page": 58,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento de esta pregunta es entender qué compone la distancia de detención total y qué factor la alarga más. Esa distancia es la suma de dos tramos: la distancia de reacción, que es lo que el vehículo recorre desde que usted percibe el peligro hasta que efectivamente pisa el freno, y la distancia de frenado, que es lo que recorre ya frenando hasta detenerse por completo. El razonamiento es que la lluvia ataca justamente el segundo tramo, el de frenado, porque la calzada mojada reduce la adherencia de los neumáticos y el vehículo necesita mucho más espacio para detenerse una vez que usted ya está frenando. Por eso, de las alternativas dadas, es la lluvia la que hace mucho más larga la distancia de detención total, ya que afecta directamente la física del frenado. La neblina, la noche y el viento son condiciones peligrosas, pero principalmente afectan la visibilidad o la estabilidad, es decir, alargan sobre todo el tiempo de reacción o dificultan el control, no multiplican el espacio de frenado como sí lo hace el agua bajo las ruedas. La conclusión práctica es clara: cuando llueve, baje la velocidad y aumente la distancia con el vehículo de adelante, porque por buena que sea su reacción, el frenado le pedirá bastante más cancha."
   },
   {
     "id": 221,
@@ -5512,7 +5732,8 @@ export const questions = [
       "El limpiaparabrisas mejora la visión del vidrio, pero no resuelve el problema real que es la pérdida momentánea de frenado."
     ],
     "page": 58,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El fundamento es físico: el sistema de frenos funciona por fricción entre las pastillas y los discos (o entre las balatas y el tambor), y cuando esa superficie queda mojada al cruzar agua, la película líquida actúa como lubricante y disminuye drásticamente el roce, de modo que al pisar el pedal el vehículo casi no responde. Por eso lo primero, antes de revisar neumáticos o limpiaparabrisas, es chequear los frenos, ya que de ellos depende tu capacidad de detenerte ante cualquier imprevisto. El procedimiento correcto es avanzar a baja velocidad presionando el pedal de freno de forma suave y repetida: el propio roce genera calor que evapora el agua y seca las superficies, restaurando la potencia de frenado en pocos metros. El riesgo de no hacerlo es llegar a un cruce o una emergencia creyendo que tienes frenos y descubrir que no responden, con un accidente como consecuencia. Un truco para recordarlo: agua y frenos no se llevan, así que después de cualquier poza, primero pruebas y secas el freno antes de confiar en él."
   },
   {
     "id": 222,
@@ -5536,7 +5757,8 @@ export const questions = [
       "Una marcha baja entrega más fuerza a las ruedas y facilita que patinen sobre hielo; por eso conviene la marcha más alta posible."
     ],
     "page": 58,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La clave está en cuánta fuerza de giro (torque) llega a las ruedas: sobre hielo la adherencia es mínima, y si las ruedas reciben demasiada fuerza tienden a girar más rápido que el avance real del auto, patinando en el lugar. Conducir a baja velocidad pero en el cambio más alto posible reduce justamente ese torque, porque una marcha alta multiplica menos la fuerza del motor y entrega un empuje más suave a las ruedas, ayudándolas a mantener el poco agarre disponible. Por eso las otras opciones son peligrosas: el freno de mano bloquea las ruedas traseras y provoca un derrape inmediato, frenar repetido y bruscamente rompe la adherencia, y una marcha baja todo el tiempo entrega demasiada fuerza y hace patinar. El razonamiento es: menos fuerza a las ruedas equivale a menos riesgo de patinaje. El riesgo real de equivocarse es perder el control y derrapar sin poder corregir. Truco para memorizar: sobre hielo se maneja como con un huevo bajo el acelerador, suave y en marcha alta, sin movimientos bruscos."
   },
   {
     "id": 223,
@@ -5560,7 +5782,8 @@ export const questions = [
       ""
     ],
     "page": 58,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Cuando bajo lluvia intensa la dirección se vuelve repentinamente liviana, lo que ocurre es aquaplaning o hidroplaneo: los neumáticos no alcanzan a expulsar el agua acumulada y flotan sobre una delgada capa líquida, perdiendo todo contacto con el pavimento. Al no tocar el suelo, las ruedas delanteras dejan de transmitir resistencia al volante, y por eso lo sientes suelto o liviano; en ese instante ni la dirección ni los frenos responden. La única maniobra correcta es soltar el acelerador y dejar que el vehículo pierda velocidad por sí mismo, manteniendo el volante firme y derecho, porque al reducir la marcha los neumáticos vuelven a perforar la capa de agua y recuperan el agarre. Frenar o girar bruscamente en pleno aquaplaning solo provoca un derrape descontrolado al recuperar la adherencia de golpe. El riesgo es salir despedido de la pista o cruzarte al sentido contrario. Truco: si la dirección flota, no toques nada brusco, solo levanta el pie y espera a que el auto vuelva a pisar tierra."
   },
   {
     "id": 224,
@@ -5584,7 +5807,8 @@ export const questions = [
       "El objetivo no es reservar una marcha baja, sino prevenir directamente el patinaje conduciendo en marcha alta."
     ],
     "page": 58,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El principio es el mismo del control de torque sobre superficies resbaladizas, pero aquí la pregunta apunta a una razón específica entre varias parecidas: mantener la marcha más alta posible ayuda a evitar que las ruedas patinen, y esa es la finalidad central. Una marcha alta entrega menos fuerza de giro al pavimento, de modo que las ruedas no reciben más empuje del que la nieve puede tolerar, conservando la escasa adherencia. Hay que distinguirla de las opciones que suenan razonables pero no son la causa: la marcha alta no sirve para frenar más rápido ni se elige para tener una marcha baja de reserva, sino directamente para impedir el patinaje desde el inicio. El razonamiento paso a paso es: nieve igual a poco agarre, marcha alta igual a poca fuerza a las ruedas, poca fuerza igual a menos patinaje. El riesgo de usar marcha baja es que el exceso de torque haga girar las ruedas en vano y pierdas tracción y control. Para recordarlo: en nieve, mientras más alta la marcha y más suave el pie, menos patinas."
   },
   {
     "id": 225,
@@ -5608,7 +5832,8 @@ export const questions = [
       "El agua en el parabrisas afecta la visibilidad, pero no es la razón física por la que el vehículo tarda más en detenerse."
     ],
     "page": 58,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La distancia total de detención es la suma de la distancia de reacción (lo que avanzas mientras decides frenar) más la distancia de frenado (lo que avanzas ya pisando el freno), y lo que cambia drásticamente con la lluvia es la segunda. El motivo principal es que los neumáticos tienen menos adherencia sobre el pavimento mojado: el agua reduce el coeficiente de fricción entre la goma y el asfalto, así que aunque pises el freno con la misma fuerza, las ruedas tardan más en disipar la energía y el vehículo recorre más metros antes de quedar quieto. Las otras opciones son distractores reales pero secundarios: no ver las pozas o tener el parabrisas nublado afectan la visión, no la física del frenado, y los frenos mojados se secan pronto, mientras que la falta de agarre persiste todo el rato que el suelo está húmedo. Por eso la regla práctica chilena es duplicar la distancia de seguimiento con lluvia. El riesgo de no hacerlo es chocar por alcance al no poder detenerte a tiempo. Truco: con pavimento mojado, cuenta el doble de segundos de separación que en seco."
   },
   {
     "id": 226,
@@ -5632,7 +5857,8 @@ export const questions = [
       "Las luces de advertencia de peligro se usan en emergencias o detenciones, no mientras circulas normalmente; podrían confundir a otros conductores."
     ],
     "page": 58,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Con neblina densa el problema central es que ves muy poco hacia adelante, por lo que cualquier frenada o detención del vehículo que va delante te sorprende con muy poco tiempo de reacción. La medida adicional correcta, además de las luces bajas, es circular a baja velocidad y aumentar la distancia con el de adelante, porque ese mayor espacio es lo único que te garantiza poder detenerte dentro del campo visual disponible. Las luces altas son un error frecuente: en neblina la luz alta rebota en las gotas suspendidas y forma una pantalla blanca que encandila al propio conductor, empeorando la visión, por eso van las bajas o las neblineras. Mantenerse cerca del de adelante para guiarse por sus luces es muy peligroso, porque si frena de golpe no alcanzas a reaccionar. El razonamiento es: menos visibilidad exige más distancia y menos velocidad para compensar el menor tiempo de reacción. El riesgo de no hacerlo es un choque en cadena, típico de los accidentes masivos en autopista con neblina. Truco: con neblina, baja el pie y abre el espacio."
   },
   {
     "id": 227,
@@ -5656,7 +5882,8 @@ export const questions = [
       "Mantener la velocidad esperando que se aleje te deja sin la distancia de seguridad necesaria, lo que es peligroso en calzada mojada."
     ],
     "page": 58,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La distancia de seguimiento no es un capricho sino tu margen de frenado: en pavimento mojado la distancia de detención aumenta porque hay menos adherencia, así que ese espacio debe ser aún mayor de lo normal. Cuando otro conductor te adelanta y se instala justo en el hueco que dejabas, tu margen de seguridad desaparece de golpe y quedas demasiado cerca del nuevo vehículo de adelante. La acción correcta es disminuir suavemente tu velocidad hasta recuperar nuevamente una distancia segura, cediendo terreno sin molestarte ni reaccionar de forma agresiva. Las otras opciones son contraproducentes: hacer luces o intentar adelantar de inmediato son maniobras de fastidio que aumentan el riesgo, y mantener la velocidad esperando que se aleje te deja sin margen si ese auto frena. El razonamiento es simple: si perdiste tu distancia de seguridad, la reconstruyes reduciendo velocidad. El riesgo de no hacerlo es no poder frenar a tiempo en suelo mojado y chocar por alcance. Truco: el espacio es tuyo y lo reconstruyes tú, soltando el acelerador hasta volver a respirar tranquilo."
   },
   {
     "id": 228,
@@ -5680,7 +5907,8 @@ export const questions = [
       ""
     ],
     "page": 58,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Esta pregunta integra los dos factores que dan control sobre nieve: la velocidad y la marcha. La respuesta correcta combina ambos, conducir lentamente y en el cambio más alto posible, porque la baja velocidad te da tiempo de reacción y maniobras suaves, mientras que la marcha alta reduce la fuerza transmitida a las ruedas para que no patinen sobre la superficie de poca adherencia. Hay que descartar los distractores con cuidado: un cambio bajo entrega demasiado torque y hace girar las ruedas en falso, conducir en primera es lo mismo llevado al extremo, y mantener el motor acelerado pisando el embrague deja al vehículo sin control del motor y rodando libre, lo que es muy peligroso en bajada o en curva. El razonamiento es: suavidad más marcha alta igual a adherencia conservada. El riesgo de equivocarse es perder tracción, patinar y no poder dirigir el auto. Truco para memorizar: sobre nieve manejas despacio y arriba de marcha, como deslizándote en puntillas para no romper el hielo."
   },
   {
     "id": 229,
@@ -5704,7 +5932,8 @@ export const questions = [
       "Aunque la carretera esté iluminada, igual debes llevar tus focos encendidos de noche para ser visto por los demás conductores."
     ],
     "page": 60,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La regla general de la Ley de Tránsito es que de noche o con poca visibilidad todo vehículo en movimiento debe llevar encendidos sus focos delanteros para ver y, sobre todo, para ser visto por los demás. La excepción que plantea la pregunta es cuando el vehículo está en pana detenido en la berma: ahí ya no está circulando, sino estacionado de emergencia fuera de la pista, por lo que la señalización correcta pasa a ser las luces de advertencia de peligro (intermitentes) y el triángulo reflectante, no los focos delanteros encendidos que podrían incluso encandilar a quien se acerca de frente. Las demás alternativas son falsas: nunca apagas los focos porque vayan vehículos delante (eso solo cambia de altas a bajas), ni porque circules a menos de 50 ni porque la vía esté iluminada, ya que la iluminación de la calle no reemplaza tu obligación de ser visible. El razonamiento es distinguir entre vehículo en marcha (focos sí) y vehículo detenido de emergencia (señalización de peligro). El riesgo de apagar luces circulando es volverte invisible y provocar un choque. Truco: en movimiento siempre con luces; detenido en la berma, con balizas y triángulo."
   },
   {
     "id": 230,
@@ -5728,7 +5957,8 @@ export const questions = [
       "Frenar mientras tomas la curva sobre hielo es muy peligroso, porque bloquea las ruedas y provoca pérdida de control."
     ],
     "page": 60,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "En una curva el vehículo enfrenta fuerza centrífuga que tiende a sacarlo hacia afuera, y para vencerla necesita adherencia lateral de los neumáticos; sobre hielo esa adherencia es casi nula, así que el margen para cualquier error es mínimo. Por eso debes conducir lenta y suavemente, llegando a la curva ya con la velocidad reducida desde antes y atravesándola sin acelerar, frenar ni girar de golpe, porque cualquier maniobra brusca consume la poca adherencia disponible y desencadena un derrape. Las otras opciones son errores clásicos: frenar mientras tomas la curva transfiere peso y hace perder el control del eje trasero, usar embrague y freno juntos deja las ruedas sin tracción del motor, y la primera entrega demasiado torque. El razonamiento es frenar antes de entrar y pasar la curva a velocidad constante y muy suave. El riesgo real es que el auto se vaya de lado o se salga de la pista sin que puedas corregirlo. Truco para recordar: en hielo se entra lento a la curva y se sale sin tocar el freno, todo con manos de seda."
   },
   {
     "id": 231,
@@ -5752,7 +5982,8 @@ export const questions = [
       ""
     ],
     "page": 60,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Aquí la presión viene de atrás: con neblina densa otro conductor te sigue demasiado cerca, y tu instinto puede empujarte a acelerar para alejarte o a frenar para advertirle, pero ambas reacciones son peligrosas. Lo correcto es continuar con mucho cuidado, manteniendo tu propia velocidad segura y tu distancia con el vehículo de adelante, sin dejar que el de atrás te imponga su ritmo. Si aceleras igualas el error de él y reduces tu tiempo de reacción justo cuando la visibilidad es pésima; si frenas bruscamente o encerándolo con las luces de emergencia podrías provocar que te choque por alcance. La responsabilidad de mantener distancia es de quien va detrás, así que no debes asumir su riesgo cambiando tu conducción prudente. El razonamiento es: conserva tu seguridad, no te contagies del apuro ajeno. El riesgo de reaccionar mal es un choque en cadena, frecuente en neblina. Truco: el problema del de atrás es del de atrás; tú sigue firme, lento y atento a lo que tienes adelante."
   },
   {
     "id": 232,
@@ -5776,7 +6007,8 @@ export const questions = [
       "Las luces de estacionamiento son insuficientes para circular de noche y no iluminan adecuadamente la vía."
     ],
     "page": 60,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El fundamento normativo es la prohibición de encandilar a otros conductores: de noche, cuando circulas cerca de vehículos que van delante tuyo, debes usar las luces bajas, porque las altas se reflejan en sus espejos retrovisor e lateral y le enceguecen, además de deslumbrar a quienes vienen de frente. Las luces altas se reservan para carretera oscura y solitaria, sin nadie cerca, y debes bajarlas apenas aparezca otro vehículo. Las neblineras solo corresponden con niebla, lluvia o polvo, no como iluminación normal, y las luces de estacionamiento son insuficientes para circular porque casi no alumbran el camino. El razonamiento es elegir la luz que te permite ver lo suficiente sin perjudicar la visión de los demás, y esa es la baja. El riesgo de usar altas detrás de otro auto es que el conductor encandilado pierda referencia y provoque un accidente, además de la infracción correspondiente. Truco: si hay alguien adelante o de frente, bajas las luces; las altas son solo para la oscuridad sin compañía."
   },
   {
     "id": 233,
@@ -5800,7 +6032,8 @@ export const questions = [
       "La temperatura del motor no tiene relación con la necesidad de bajar la velocidad en neblina."
     ],
     "page": 60,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "La razón de reducir la velocidad con neblina es directa y se relaciona con la visibilidad: cuesta mucho ver lo que hay más adelante, y conducir es básicamente reaccionar a lo que ves, así que si ves menos, debes darte más tiempo y espacio para responder. La velocidad segura siempre es aquella que te permite detenerte dentro del tramo que alcanzas a ver, y con neblina ese tramo se acorta a pocos metros, por lo que la velocidad también debe bajar para no quedar manejando a ciegas hacia un obstáculo invisible. Las otras alternativas son falsas: los frenos funcionan normalmente con neblina, las neblineras ajenas rara vez encandilan como las altas, y el motor frío no tiene relación con la decisión de bajar la velocidad. El razonamiento es: visión reducida obliga a velocidad reducida para mantener el equilibrio entre lo que ves y lo que necesitas para frenar. El riesgo de no hacerlo es atropellar o chocar algo que apareció dentro de tu corta visibilidad. Truco: nunca manejes más rápido de lo que alcanzas a ver, y con neblina ves muy poco."
   },
   {
     "id": 234,
@@ -5824,7 +6057,8 @@ export const questions = [
       "El triángulo reflectante es una medida importante, pero se instala después de encender las luces de emergencia, que es lo primero e inmediato."
     ],
     "page": 60,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Cuando quedas en pana en plena autopista, el peligro inmediato es que otros vehículos circulan a alta velocidad y pueden no advertir a tiempo que estás detenido, por eso la prioridad es hacerte visible cuanto antes. Lo primero, por su rapidez, es encender las luces de advertencia de peligro (intermitentes), porque se activan en un segundo desde el interior y alertan de inmediato a quienes vienen detrás de que hay un vehículo inmóvil. Recién después, y con extrema precaución, corresponde instalar el triángulo reflectante a la distancia reglamentaria por detrás, que es la segunda capa de protección, pero requiere bajarse y caminar, lo que toma tiempo. Detener autos para pedir ayuda o ponerte a reparar el vehículo en medio del tránsito te exponen a ser atropellado y no resuelven la urgencia. El razonamiento es: la señal más rápida primero, luego la señalización fija. El riesgo de no encender las balizas de inmediato es un choque por alcance a alta velocidad. Truco: primero las balizas con un botón, después el triángulo caminando con cuidado, y siempre ponerte fuera de la calzada."
   },
   {
     "id": 235,
@@ -5850,7 +6084,8 @@ export const questions = [
       ""
     ],
     "page": 60,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Una señal que anuncia el cierre de tu pista a 800 metros existe precisamente para que tengas tiempo de planificar el cambio con calma y no llegar improvisando al punto del obstáculo. Por eso lo correcto es desplazarte hacia la pista de tu izquierda tan pronto puedas hacerlo en forma segura, es decir, en cuanto se abra un espacio adecuado en el flujo, sin esperar al último momento. Las otras opciones generan peligro: detenerte a esperar que te den la pasada interrumpe una carretera muy transitada y provoca alcances, encender las balizas y cambiarte de inmediato sin verificar espacio es brusco y confunde a los demás, y continuar hasta la obstrucción para recién intentar el cambio te obliga a una maniobra forzada cuando ya no hay margen. El razonamiento es aprovechar la anticipación que la señal te regala para integrarte con suavidad al tránsito de la pista contigua. El riesgo de dejarlo para el final es quedar bloqueado junto al cono, frenado, mientras intentas colarte. Truco: si te avisan con tiempo, cámbiate con tiempo, apenas haya hueco seguro."
   },
   {
     "id": 236,
@@ -5876,7 +6111,8 @@ export const questions = [
       "Acelerar para pasar primero es peligroso e infringe la norma, ya que debes cederle el paso a quien viene en sentido contrario."
     ],
     "page": 62,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El principio de preferencia de paso resuelve este caso: en una calle de una sola pista por sentido, cuando tu pista está obstruida por un vehículo estacionado, un contenedor o una obra, eres tú quien debe salirse de su carril e invadir el espacio del sentido contrario para sortear el obstáculo. Como eres tú quien sale de su lado, la preferencia la conserva quien viene de frente circulando por su pista libre, y por lo tanto debes cederle el paso y esperar a que la vía esté despejada antes de avanzar. Las demás opciones son erradas y peligrosas: no tienes derecho de vía porque tu lado está bloqueado, hacer señas para que te den la pasada no transfiere la preferencia que la ley asigna, y acelerar para pasar primero es una imprudencia que puede terminar en choque frontal. El razonamiento es: el que tiene la pista libre tiene la prioridad; el que invade, espera y cede. El riesgo de no ceder es una colisión de frente o un atochamiento. Truco: si el obstáculo está en tu lado, el problema es tuyo, así que tú esperas y cedes."
   },
   {
     "id": 237,
@@ -5900,7 +6136,8 @@ export const questions = [
       ""
     ],
     "page": 62,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El zigzagueo o coleo de un remolque ocurre cuando este empieza a oscilar de lado a lado por exceso de velocidad, mala distribución de la carga o una ráfaga de viento, y la oscilación tiende a amplificarse sola si reaccionas mal. La maniobra correcta es retirar suavemente el pie del acelerador para que el conjunto pierda velocidad de forma gradual, ya que al bajar la velocidad las fuerzas que alimentan el balanceo disminuyen y el remolque se realinea por sí solo detrás del auto. Frenar a fondo es justo lo contrario de lo recomendado, porque al frenar bruscamente el remolque empuja al vehículo y puede provocar una tijera o un vuelco; acelerar agrava la oscilación, y soltar el volante deja el conjunto sin guía. El razonamiento es: el balanceo se mata quitando energía despacio, no de golpe. El riesgo de equivocarse es perder el control de auto y remolque a la vez, con un accidente serio. Truco: si el remolque colea, levanta el pie del acelerador y mantén el volante firme y derecho, dejando que la velocidad caiga sola."
   },
   {
     "id": 238,
@@ -5924,7 +6161,8 @@ export const questions = [
       ""
     ],
     "page": 62,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La obligación legal al transportar carga sobre la parrilla del techo es que vaya muy bien sujeta, de manera que no pueda moverse, desplazarse ni caer a la vía durante la marcha; esta exigencia busca proteger tanto la estabilidad de tu propio vehículo como la seguridad del resto de los usuarios. Las otras alternativas describen recomendaciones de sentido común o buenas prácticas, pero no son la obligación que la norma impone: llevar carga solo cuando es necesario, que sea liviana o que vaya cubierta con plástico ayudan, pero nada de eso reemplaza el deber de amarrarla firmemente. El razonamiento es que una carga firme no se transforma en proyectil ni altera el comportamiento del auto, mientras que una carga suelta sí lo hace por bien escogida que esté. El riesgo real de una carga mal sujeta es que se caiga al pavimento y provoque un accidente a quienes vienen detrás, o que desestabilice tu vehículo al frenar o en una curva. Truco: en la parrilla, lo importante no es qué llevas sino cómo lo amarras, y debe quedar tan firme que no se mueva ni un centímetro."
   },
   {
     "id": 239,
@@ -5948,7 +6186,8 @@ export const questions = [
       "Detenerse lo más rápido posible implica frenar bruscamente, lo que puede provocar que la casa rodante se cruce o derrape."
     ],
     "page": 62,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "El balanceo o zigzagueo de una casa rodante remolcada responde a la misma física que cualquier remolque que entra en oscilación: una vez iniciado el coleo, este se amplifica si introduces movimientos o frenadas bruscas, y se apaga si le quitas energía con suavidad. Por eso la respuesta correcta es disminuir la velocidad de forma gradual, soltando el acelerador poco a poco y manteniendo el volante firme y recto, sin corregir el coleo girando el volante de un lado a otro. Mover el volante hacia cada lado solo realimenta la oscilación, acelerar la empeora porque aumenta la energía del sistema, y detenerse lo más rápido posible con un frenazo puede hacer que la casa rodante empuje al auto y lo cruce o lo haga tijera. El razonamiento es: la estabilidad vuelve al reducir velocidad lentamente, no al maniobrar. El riesgo de equivocarse, dado el peso y tamaño de una casa rodante, es un vuelco o la pérdida total del control. Truco: ante el coleo, pie fuera del acelerador, volante quieto y derecho, y dejar que el conjunto se calme solo al ir más lento."
   },
   {
     "id": 240,
@@ -5972,7 +6211,8 @@ export const questions = [
       "Concentrar el peso a un costado desbalancea lateralmente el remolque y lo vuelve inestable y propenso a derrapar."
     ],
     "page": 62,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "La estabilidad de un remolque depende en gran medida de cómo se reparte el peso de la carga en su interior, porque un reparto desequilibrado altera el centro de gravedad y favorece el zigzagueo o el cabeceo. La precaución correcta es distribuir el peso en forma pareja, de modo que el remolque quede equilibrado de adelante hacia atrás y de lado a lado, sin concentraciones que lo desestabilicen. Cargar todo atrás aligera el enganche y hace que el remolque tienda a colear; cargar todo adelante recarga el enganche y el eje trasero del auto, afectando la dirección; y concentrar el peso a un costado lo inclina y lo vuelve inestable en curvas. Como referencia práctica suele buscarse un leve predominio del peso justo delante del eje del remolque, pero la regla general que pide la pregunta es el reparto equilibrado. El razonamiento es: peso parejo igual a remolque estable y predecible. El riesgo de un mal reparto es el zigzagueo en marcha, con posible pérdida de control. Truco: carga el remolque como una balanza, repartiendo el peso de forma pareja y firme para que no cabecee ni colee."
   },
   {
     "id": 241,
@@ -5996,7 +6236,8 @@ export const questions = [
       ""
     ],
     "page": 62,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "El fundamento aquí es la teoría de las distancias de seguridad y de quién controla el espacio en la carretera. Cuando un vehículo lo sigue muy de cerca (lo va 'pegando'), ese conductor ya redujo su propia distancia de reacción, así que usted no puede confiar en que él frene a tiempo; lo único que usted controla es el espacio hacia adelante. Si aumenta la distancia con el vehículo de adelante, se crea un colchón que le permite frenar suave y progresivamente en vez de golpe, evitando obligar al de atrás a clavar los frenos. Frenar bruscamente o detenerse en la berma solo aumentaría el riesgo de una colisión por alcance, y encender las balizas no soluciona que falte espacio. El riesgo real que se previene es el choque trasero en cadena, típico en carreteras de alto tránsito. Truco para recordarlo: si no puedes controlar al que viene atrás, controla el espacio de adelante, porque ese sí depende de ti."
   },
   {
     "id": 242,
@@ -6022,7 +6263,8 @@ export const questions = [
       "Esta asociación de números no coincide con las señales mostradas en la imagen."
     ],
     "page": 63,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta pregunta evalúa que el alumno distinga la familia a la que pertenece cada señal según su forma y color, lo que está normado en el Manual de Señalización de Tránsito. 'Mantenga su derecha' y 'No adelantar' son señales reglamentarias (imponen una obligación o prohibición), mientras que 'Curva' y 'Pavimento resbaladizo' son señales de advertencia de peligro, que en Chile son rombos amarillos con símbolo negro. El razonamiento paso a paso consiste en clasificar primero por categoría y luego asociar cada texto a la imagen que muestra el símbolo coherente: una flecha curva para la curva, las huellas serpenteantes para el pavimento resbaladizo, etc. La combinación correcta es la opción A (Mantenga su derecha=3, Pavimento resbaladizo=5, Curva=1, No adelantar=4). El riesgo de confundirlas es interpretar una advertencia como una orden o viceversa, lo que altera la reacción esperada. Truco: el rombo amarillo siempre te dice 'ojo, viene algo'; el disco con orla roja te da una orden que debes obedecer."
   },
   {
     "id": 243,
@@ -6044,7 +6286,8 @@ export const questions = [
       "Por la pista de la derecha tendría a su derecha el borde de la calzada (tachas amarillas o la berma), no tachas rojas a la izquierda."
     ],
     "page": 63,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "El fundamento son las tachas reflectantes, esos dispositivos que de noche le entregan información cromática sobre dónde está usted dentro de la calzada. La norma define que las tachas rojas advierten un límite que no debe cruzar porque al otro lado viene tránsito en sentido contrario o es el borde del eje central, mientras que las blancas separan pistas que van en su mismo sentido. Razonando paso a paso: si a su izquierda ve rojo, significa que justo a su izquierda está el eje central y más allá vienen vehículos de frente, por lo tanto no hay más pistas de su sentido a su izquierda; y si a su derecha ve blanco, hay otra pista de su mismo sentido hacia ese lado. La conclusión es que usted va por la pista de más a la izquierda de su calzada (opción B). El riesgo de no leer bien las tachas es invadir el sentido contrario de noche o con niebla. Truco: rojo es 'pare, peligro, no cruces'; si el rojo está a tu izquierda, estás pegado al eje y no debes pasarte para allá."
   },
   {
     "id": 244,
@@ -6070,7 +6313,8 @@ export const questions = [
       "La señal fija un máximo permitido, no obliga a ir por debajo de él; usted puede circular hasta esa velocidad sin superarla."
     ],
     "page": 63,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta es una señal reglamentaria de velocidad máxima, y su fundamento está en la Ley de Tránsito que faculta a la autoridad a fijar límites obligatorios según las condiciones del tramo. Por ser reglamentaria, no es una recomendación ni admite un margen del 10%, ni se suspende los días de poco tránsito o festivos: rige siempre mientras esté instalada. El razonamiento correcto es entender que el número indica un techo, un máximo que no se puede superar, por eso la respuesta es la opción C (no debe exceder esa velocidad). Hay que descartar la D, que dice mantener una velocidad inferior, porque usted puede circular justo a la velocidad indicada, solo no por sobre ella. El riesgo de tratarla como sugerencia es exceder el límite y provocar un accidente o recibir una infracción grave. Truco: la velocidad máxima es un tope, no un piso; puedes ir hasta ese número, pero ni un kilómetro más."
   },
   {
     "id": 245,
@@ -6096,7 +6340,8 @@ export const questions = [
       "No es una recomendación para tránsito intenso; rige siempre como límite máximo obligatorio."
     ],
     "page": 63,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "El fundamento de esta señal es su forma y color, que en el sistema chileno definen su carácter: un disco blanco con orla roja y un número en negro corresponde siempre a una señal reglamentaria de velocidad máxima. Al ser reglamentaria, impone una prohibición obligatoria de superar ese valor, no entrega un consejo ni indica la velocidad 'más segura' o 'aconsejada', por eso se descartan las opciones que hablan de recomendación. El razonamiento es directo: orla roja igual prohibición, número igual el límite que no se debe exceder, por lo tanto la respuesta correcta es la opción A. El riesgo de interpretarla como recomendación es que el conductor crea que puede ir más rápido cuando el tránsito está despejado, lo que es falso y peligroso. Truco para recordarlo: todo lo que tiene orla roja te está prohibiendo algo, y aquí lo prohibido es pasarte del número."
   },
   {
     "id": 246,
@@ -6122,7 +6367,8 @@ export const questions = [
       "El número de vehículos delante no es el criterio; lo que importa es contar con espacio de salida para no detenerse en el cruce."
     ],
     "page": 65,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Las franjas amarillas diagonales pintadas en un cruce, llamadas zona achurada o de no detención, existen para mantener despejado un punto crítico por donde circula tránsito transversal. El fundamento es evitar que un vehículo quede atrapado sobre el cruce cuando la fila de adelante no avanza, lo que bloquearía a quienes vienen por la otra vía y generaría un nudo de tránsito. Por eso la regla es que usted solo ingresa cuando tiene la certeza de que a la salida del cruce hay espacio suficiente para no quedar detenido encima de él, que es la opción B. No basta con que el semáforo esté en verde, porque el verde autoriza a avanzar pero no garantiza que haya espacio para salir. El riesgo real es quedar bloqueando el cruce, exponerse a colisiones laterales y entorpecer toda la intersección. Truco: antes de entrar al achurado, primero asegúrate de que tienes por dónde salir."
   },
   {
     "id": 247,
@@ -6148,7 +6394,8 @@ export const questions = [
       "La señal de curvas tiene un trazado de flechas o líneas curvas; esta representa un vehículo deslizándose sobre la calzada."
     ],
     "page": 65,
-    "category": "Vehiculo y mantencion"
+    "category": "Vehiculo y mantencion",
+    "deepExplanation": "Esta es una señal de advertencia de peligro, reconocible por su forma de rombo amarillo con símbolo negro, cuyo significado es Pavimento resbaladizo (opción C). Su fundamento es prevenir al conductor de que más adelante la adherencia entre el neumático y la calzada será menor, por causas como lluvia, hielo, derrames o un tipo de pavimento más liso. El símbolo característico son las huellas de un vehículo derrapando o serpenteando, que representan esa pérdida de control. El razonamiento de seguridad es que al perder adherencia las frenadas y los giros bruscos pueden hacer derrapar el auto, por lo que se debe reducir la velocidad con anticipación y maniobrar de forma suave. El riesgo real es el deslizamiento y la pérdida de control, especialmente al frenar fuerte. Truco: cuando veas las huellas torcidas, suelta el acelerador antes de llegar y evita cualquier movimiento brusco del volante o del freno."
   },
   {
     "id": 248,
@@ -6174,7 +6421,8 @@ export const questions = [
       "'No cambiar de pista' no es lo que indica esta señal; aquí se prohíbe específicamente adelantar."
     ],
     "page": 65,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta es una señal reglamentaria, lo que se nota porque impone una prohibición, y su significado es No adelantar (opción A). El fundamento es que en ese tramo adelantar resulta inseguro, normalmente por falta de visibilidad, curvas, pendientes o proximidad de cruces donde no se alcanza a ver el tránsito de frente. Al ser reglamentaria, su cumplimiento es obligatorio durante toda la zona señalada, no es una sugerencia. El razonamiento para no confundirla es separar 'no adelantar' (prohibición de pasar a otro vehículo) de 'mantenga su derecha' o 'no cambiar de pista', que regulan otra conducta. El riesgo de adelantar en una zona prohibida es el choque frontal con un vehículo que venga en sentido contrario y que usted no alcanza a ver. Truco: si la señal te prohíbe adelantar, es porque alguien que tú no ves podría venir de frente; quédate detrás y espera la zona habilitada."
   },
   {
     "id": 249,
@@ -6200,7 +6448,8 @@ export const questions = [
       "Esta señal no corresponde al tipo prohibitivo que indica no hacer algo."
     ],
     "page": 66,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta pregunta evalúa que el alumno reconozca las tres grandes familias de señales por su función: las reglamentarias dan órdenes o prohibiciones, las de advertencia previenen peligros y las informativas entregan datos. Las que le indican que NO haga algo son las reglamentarias de prohibición, que en Chile suelen ser circulares con orla roja y muchas veces una barra diagonal, como no adelantar, no entrar o prohibido virar; en este caso corresponden a la opción C. El razonamiento es asociar la idea de 'prohibido' con la forma circular y el color rojo, que universalmente significan restricción. El riesgo de no distinguir esta familia es ignorar una prohibición y cometer una infracción o provocar un accidente. Truco fácil: rojo y redondo casi siempre significa 'no'; si ves orla roja, hay algo que no puedes hacer."
   },
   {
     "id": 250,
@@ -6226,7 +6475,8 @@ export const questions = [
       ""
     ],
     "page": 66,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta es la señal PARE, única en su forma de octágono rojo precisamente para que se reconozca incluso de espaldas o con poca visibilidad. El fundamento normativo es que obliga a una detención total y completa, siempre, antes de la línea de detención o del borde del cruce, sin importar si vienen o no vehículos o peatones, por eso la respuesta es 'detenerse siempre' (opción D). Las demás opciones son trampas porque condicionan la detención a que haya tránsito o leyenda pintada, lo cual es incorrecto: la obligación de detenerse es incondicional. El razonamiento de seguridad es que solo deteniéndose por completo el conductor puede mirar bien, evaluar el cruce y ceder el paso antes de avanzar cuando sea seguro. El riesgo de hacer solo una 'frenada de paso' sin detenerse es no ver un vehículo y provocar una colisión en la intersección. Truco: PARE significa ruedas totalmente quietas, no basta con disminuir."
   },
   {
     "id": 251,
@@ -6252,7 +6502,8 @@ export const questions = [
       "No se refiere a semáforos sincronizados; anuncia la cercanía de un semáforo."
     ],
     "page": 66,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta es una señal de advertencia de peligro, identificable por su rombo amarillo con símbolo negro, y su significado es Proximidad de semáforo (opción B). Su fundamento es anticipar al conductor que más adelante hay un semáforo, sobre todo en lugares donde por una curva, una pendiente o un obstáculo no se alcanza a ver con suficiente anticipación. El razonamiento es distinguirla de las opciones de 'semáforo fuera de servicio' o 'activado por peatones', que describen estados o funciones distintas; aquí solo se avisa que viene un semáforo. El riesgo que previene es llegar al cruce sin tiempo para detenerse si la luz está en rojo, lo que obligaría a una frenada brusca o a pasarse el rojo. Truco: el rombo amarillo con el dibujo del semáforo te dice 'prepárate, viene un cruce con luces', así llegas a la velocidad adecuada para detenerte si corresponde."
   },
   {
     "id": 252,
@@ -6276,7 +6527,8 @@ export const questions = [
       "Detenerse sobre el paso de peatones es incorrecto: debe detenerse antes de la línea de detención, sin invadir el cruce peatonal."
     ],
     "page": 66,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "El fundamento del semáforo en rojo es ordenar la prioridad de paso en una intersección, otorgando el verde a un sentido mientras detiene al otro para evitar que ambos crucen a la vez. La regla es clara: el rojo obliga a una detención completa antes de la línea de detención de vehículos, y por eso la respuesta correcta es la opción C. Si no existe línea de detención pintada, la detención se hace antes del paso peatonal o del cruce, pero nunca sobre el paso de peatones, que es justamente lo que descarta una de las opciones erróneas. El razonamiento es que detenerse antes de la línea deja libre el cruce peatonal y el área de la intersección para los demás. El riesgo de avanzar 'si no vienen vehículos' es atropellar a un peatón o chocar con quien tiene el verde. Truco: con luz roja, las ruedas quedan detrás de la línea blanca, nunca encima del cruce."
   },
   {
     "id": 253,
@@ -6302,7 +6554,8 @@ export const questions = [
       ""
     ],
     "page": 68,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta pregunta apunta al fundamento del sistema de señalización chileno, donde cada combinación de forma y color define la función de la señal. Las señales con forma de rombo y color amarillo pertenecen a la familia de advertencia de peligro, cuya misión es prevenir al conductor sobre una condición o peligro que encontrará más adelante, como curvas, cruces, pavimento resbaladizo, escolares o animales, por eso la respuesta es la opción D. El razonamiento es separar su propósito del de las reglamentarias (que dan órdenes) y del de las informativas (que entregan datos o direcciones). El amarillo se eligió por su alta visibilidad y porque universalmente se asocia con precaución, igual que en un semáforo. El riesgo de no entender su rol es no anticiparse al peligro y reaccionar tarde. Truco para memorizar: rombo amarillo igual 'atención, viene un peligro', siempre te avisa antes para que reduzcas la velocidad."
   },
   {
     "id": 254,
@@ -6326,7 +6579,8 @@ export const questions = [
       "La presencia o no de peatones no cambia el significado del amarillo, que obliga a detenerse cuando es seguro."
     ],
     "page": 68,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "El fundamento de la luz amarilla del semáforo es servir de transición entre el verde y el rojo, dando aviso de que el paso está por cerrarse. La regla, recogida en la Ley de Tránsito, indica que ante el amarillo usted debe detenerse antes de entrar al cruce, salvo que ya esté tan cerca que frenar resulte inseguro, por ejemplo provocando una frenada brusca o un choque por alcance; por eso la respuesta correcta es la opción B. El error frecuente es interpretar el amarillo como una invitación a acelerar para 'alcanzar a pasar', lo cual contradice su propósito y es de las principales causas de choques en intersecciones. El razonamiento de seguridad es evaluar la distancia: si puede detenerse con comodidad, hágalo; si está sobre el cruce o demasiado cerca, complete el paso. El riesgo real es quedar atrapado en la intersección o chocar con quien arranca al obtener su verde. Truco: amarillo significa preparar la detención, no pisar el acelerador."
   },
   {
     "id": 255,
@@ -6352,7 +6606,8 @@ export const questions = [
       ""
     ],
     "page": 68,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta es una señal de advertencia de peligro, de rombo amarillo con símbolo negro, y significa que más adelante la vía pasa a tener dos sentidos de tránsito (opción D). Su fundamento es prevenir al conductor que venía por una calzada de un solo sentido o separada por un bandejón, ya que a partir de ese punto se encontrará con vehículos circulando de frente. El símbolo característico son dos flechas verticales apuntando en sentidos opuestos. El razonamiento para no confundirla es que 'angostamiento' habla de una vía más estrecha y 'proximidad de doble calzada' es lo contrario a esta situación; aquí lo clave es la aparición del tránsito en contra. El riesgo real que previene es un choque frontal por no esperar vehículos de frente o por intentar adelantar invadiendo el otro sentido. Truco: las dos flechas en direcciones opuestas te dicen 'ahora compartes el camino con quien viene de frente', así que no adelantes a ciegas."
   },
   {
     "id": 256,
@@ -6378,7 +6633,8 @@ export const questions = [
       "La señal no indica por qué lado debe transitar el peatón, sino que advierte un cruce de peatones."
     ],
     "page": 68,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta es una señal de advertencia de peligro, rombo amarillo con símbolo negro, que indica un Cruce de peatones más adelante (opción B). Su fundamento es alertar al conductor de la proximidad de un punto donde las personas cruzan la calzada, de modo que reduzca la velocidad y esté preparado para cederles el paso. El símbolo muestra la figura de una persona caminando sobre las líneas de un paso peatonal. El razonamiento para distinguirla es no confundirla con 'zona de escuela' o 'niños jugando', que advierten otra cosa: aquí el peligro específico es el cruce de peatones. El riesgo real que previene es el atropello, una de las consecuencias más graves del tránsito, sobre todo si el peatón aparece de improviso. Truco para recordarlo: si ves la figura caminando sobre las franjas, levanta el pie del acelerador y prepárate a frenar, porque alguien puede estar por cruzar."
   },
   {
     "id": 257,
@@ -6404,7 +6660,8 @@ export const questions = [
       "Esta señal no representa una sucesión de curvas."
     ],
     "page": 69,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "El fundamento de esta pregunta es reconocer la señal de advertencia específica de curvas sucesivas, que se diferencia de la señal de una sola curva. Mientras una curva simple muestra un único giro, la de curvas sucesivas o serie de curvas dibuja un trazado en zigzag con dos o más curvas encadenadas, y corresponde a la opción B. El razonamiento es asociar la idea de 'serie' o 'varias' con el símbolo que muestra el camino serpenteando repetidamente. Su propósito es advertir que el tramo siguiente exige reducir la velocidad de forma sostenida, porque tras una curva viene otra de inmediato y no hay rectas largas para recuperar velocidad ni adelantar. El riesgo real es entrar demasiado rápido y perder el control en la primera curva o sorprenderse con la segunda. Truco: si el dibujo parece una S o un zigzag, son varias curvas seguidas, así que baja la velocidad antes de la primera y mantente prudente en todo el tramo."
   },
   {
     "id": 258,
@@ -6430,7 +6687,8 @@ export const questions = [
       ""
     ],
     "page": 69,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta es una señal de advertencia de peligro, rombo amarillo con la figura de una bicicleta, que indica que usted se acerca a una zona donde es muy probable la presencia de ciclistas en la vía (opción D). Su fundamento es proteger a un usuario vulnerable de la vía, alertando al conductor para que extreme la precaución en un sector con mucho tránsito de bicicletas. Es importante entender que la señal no prohíbe las bicicletas ni obliga a los ciclistas a ir en un sentido determinado; esas interpretaciones de las otras opciones son incorrectas, porque las señales de advertencia previenen, no ordenan. El razonamiento de seguridad es reducir la velocidad, aumentar la atención y respetar la distancia mínima al adelantar a un ciclista, que en Chile es de 1,5 metros. El riesgo real es atropellar o rozar a un ciclista, con consecuencias graves dada su exposición. Truco: rombo amarillo con bicicleta igual 'ojo, comparte el camino con ciclistas y dales su espacio'."
   },
   {
     "id": 259,
@@ -6456,7 +6714,8 @@ export const questions = [
       "No corresponde a la señal que advierte un cruce de peatones según la alternativa oficial."
     ],
     "page": 69,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Según la respuesta oficial autoritativa, la señal que advierte la proximidad de un cruce de peatones corresponde a la opción A. El fundamento de las señales de advertencia es prevenir al conductor con anticipación sobre una condición del camino, en este caso la cercanía de un punto donde las personas cruzan la calzada, para que reduzca la velocidad y esté atento a ceder el paso. El razonamiento es identificar entre las imágenes la que representa el cruce peatonal y descartar las que aluden a otras situaciones. El propósito es darle tiempo al conductor para llegar a una velocidad que le permita detenerse si aparece un peatón. El riesgo real que previene es el atropello, especialmente grave por la indefensión del peatón frente al vehículo. Truco: cuando una señal anticipa un cruce de peatones, tu reacción debe ser siempre la misma, soltar el acelerador y mirar a ambos lados de la calzada buscando personas por cruzar."
   },
   {
     "id": 260,
@@ -6487,7 +6746,8 @@ export const questions = [
       ""
     ],
     "page": 69,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Esta pregunta evalúa que el alumno clasifique correctamente las señales según su forma y color, pues solo las de advertencia de peligro tienen forma de rombo amarillo con símbolo negro. De las opciones, son de este tipo Puente angosto, Angostamiento de la vía, Bifurcación o cruce en T y Cruce ferroviario (alternativas A, B, E y F), porque todas previenen sobre una condición o peligro del camino más adelante. En cambio, 'Dirección obligada' y 'Mantenga su derecha' son señales reglamentarias, que imponen una obligación y no son rombos amarillos, por eso quedan fuera. El razonamiento es preguntarse en cada caso si la señal advierte un peligro (rombo amarillo) o da una orden (reglamentaria, con orla roja). El riesgo de confundirlas es reaccionar mal, tratando una orden como simple aviso o viceversa. Truco: si el texto describe algo que 'viene más adelante' en el camino, casi siempre es advertencia y por tanto rombo amarillo; si te manda hacer algo, es reglamentaria."
   },
   {
     "id": 261,
@@ -6511,7 +6771,8 @@ export const questions = [
       "Después del amarillo no viene el verde; el orden correcto es rojo y luego verde."
     ],
     "page": 71,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "El semáforo funciona con un ciclo fijo y unidireccional que nunca se devuelve: verde, amarillo y rojo, para luego reiniciar en verde. El amarillo no es un estado independiente que pueda repetirse, sino la fase de transición que avisa que el rojo está por venir, dando tiempo a frenar o despejar el cruce. Por eso, después del amarillo que usted enfrenta siempre se enciende el rojo, que obliga a la detención total, y solo entonces aparece el verde que autoriza el avance. Esta secuencia existe para que los flujos de vehículos que se cruzan nunca tengan luz para avanzar al mismo tiempo, evitando colisiones en la intersección. Un truco para recordarlo es pensar que el amarillo siempre 'baja la cortina' (rojo) antes de volver a 'abrir la puerta' (verde), nunca al revés. La respuesta correcta es la b: primero la roja y luego la verde."
   },
   {
     "id": 262,
@@ -6537,7 +6798,8 @@ export const questions = [
       "Es al revés: el de la pista B tiene la línea continua y por eso NO puede adelantar; quien sí puede es el de la pista A."
     ],
     "page": 71,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Cuando la demarcación del centro de la calzada combina una línea continua con una segmentada paralela, cada conductor debe mirar cuál de las dos líneas le queda más cerca por su lado de circulación. La regla es que la línea continua prohíbe traspasarla y adelantar a quien la tiene de su lado, mientras que la segmentada permite el cruce a quien la tiene del suyo, normalmente porque ese conductor cuenta con mejor visibilidad del tramo. En esta figura la línea continua está del lado de la pista B, de modo que el conductor que circula por B no puede cruzarla ni efectuar adelantamientos. El fundamento es de seguridad: la línea continua se pinta donde adelantar resulta peligroso por curvas, pendientes o falta de visibilidad para ese sentido. Para recordarlo, piense 'la continua manda en su lado': si la línea sólida está a su izquierda, usted no puede pasarla. La respuesta correcta es la b."
   },
   {
     "id": 263,
@@ -6563,7 +6825,8 @@ export const questions = [
       "El motivo no es el volumen de tránsito, sino que las zonas achuradas prohiben por norma detenerse y circular sobre ellas."
     ],
     "page": 71,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "Las zonas achuradas son áreas de la calzada pintadas con un rayado diagonal o en aspa que indican un espacio prohibido tanto para circular como para detenerse o estacionar. Su función es canalizar el tránsito, separar flujos opuestos o proteger zonas conflictivas, creando un colchón de seguridad que los vehículos deben respetar como si fuera una isla. Por eso es incorrecto que el vehículo de la flecha permanezca detenido sobre el achurado esperando virar en U, ya que ocupa un espacio que debe quedar siempre libre. El riesgo real es que un conductor que confía en que esa zona estará despejada se encuentre sorpresivamente con un vehículo detenido y provoque una colisión. La regla aplica siempre, tengan o no tachas reflectantes y sea o no una vía de mucho tránsito, por eso esas alternativas son falsas. La respuesta correcta es la c: no, porque los vehículos no pueden detenerse ni circular por zonas achuradas."
   },
   {
     "id": 264,
@@ -6585,7 +6848,8 @@ export const questions = [
       ""
     ],
     "page": 71,
-    "category": "Conduccion segura"
+    "category": "Conduccion segura",
+    "deepExplanation": "Este tipo de preguntas exige leer la fotografía completa antes de decidir, observando señales verticales, demarcaciones del pavimento, semáforos y la posición de otros vehículos o peatones. En el caso presentado, las condiciones del cruce no permiten que el automóvil de la flecha siga derecho, ya sea por una señalización que lo prohíbe, por la configuración de las pistas o por la presencia de un riesgo que obliga a otra maniobra. El fundamento es que el conductor siempre debe ajustar su conducta a la señalización y a las circunstancias del entorno, y no a su simple intención de avanzar. Seguir derecho cuando la vía no lo autoriza constituye una infracción y puede provocar un accidente con quienes sí tienen el derecho de paso. Por eso la respuesta correcta es la b: No."
   },
   {
     "id": 265,
@@ -6611,7 +6875,8 @@ export const questions = [
       "No es una simple recomendación: CEDA EL PASO es una señal reglamentaria de cumplimiento obligatorio."
     ],
     "page": 73,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "La señal de la fotografía es CEDA EL PASO, reconocible por su forma de triángulo equilátero invertido con borde rojo, única señal del tránsito con esa figura. Su mandato es que el conductor otorgue la preferencia a los vehículos que circulan por la vía a la que se aproxima, deteniéndose solo si es necesario para no interferir con ellos. La diferencia clave con la señal PARE es que el CEDA EL PASO no obliga a una detención total e incondicional: si la vía preferente está despejada, usted puede continuar reduciendo la velocidad sin frenar por completo. El fundamento es ordenar la prioridad en cruces donde un flujo tiene preferencia sobre otro, evitando colisiones laterales. El riesgo de ignorarla es entrar al cruce cuando viene un vehículo con derecho preferente y causar un choque del que usted sería responsable. La respuesta correcta es la c: ceder el paso a los vehículos que se aproximen por la otra vía."
   },
   {
     "id": 266,
@@ -6635,7 +6900,8 @@ export const questions = [
       "Seguir sin más es incorrecto, porque podría quedar detenido obstruyendo el cruce si su pista no está expedita."
     ],
     "page": 73,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "La luz verde autoriza el avance, pero no es una orden absoluta de seguir en cualquier circunstancia. La ley exige que el conductor solo ingrese al cruce cuando tenga la certeza de que podrá despejarlo por completo, es decir, que su pista al otro lado de la intersección esté expedita. El fundamento es evitar el llamado 'bloqueo de cruce', que ocurre cuando un vehículo entra con verde pero queda atrapado en medio de la intersección al cambiar la luz, obstaculizando el paso del tránsito transversal. Esto genera congestión, maniobras peligrosas y choques. Por eso, aunque tenga verde, debe esperar si más adelante hay un taco que le impedirá salir del cruce. Un buen hábito es preguntarse 'si entro, ¿puedo salir?' antes de avanzar con luz verde. La respuesta correcta es la b: siga, pero solo si su pista está expedita justo después del cruce."
   },
   {
     "id": 267,
@@ -6660,7 +6926,8 @@ export const questions = [
       ""
     ],
     "page": 73,
-    "category": "Senales y semaforos"
+    "category": "Senales y semaforos",
+    "deepExplanation": "La luz amarilla es una advertencia de que el rojo está por encenderse y, como regla general, obliga al conductor a detenerse antes de la línea de detención o del cruce. Sin embargo, esta obligación admite dos excepciones de sentido común y seguridad. La primera es cuando el vehículo ya ingresó al cruce: detenerse ahí dejaría al conductor atrapado en medio de la intersección, por lo que debe completar el paso. La segunda es cuando está tan cerca del cruce que frenar bruscamente podría provocar un accidente, por ejemplo un alcance del vehículo que viene detrás. El fundamento es que la norma busca prevenir riesgos, no crearlos; frenar de golpe cuando ya no se alcanza a detener con seguridad es más peligroso que cruzar con cuidado. Note que ir demasiado rápido o que la luz cambie sorpresivamente no son excusas válidas, pues responden a una conducción imprudente. Las respuestas correctas son la c y la d."
   },
   {
     "id": 268,
@@ -6687,7 +6954,8 @@ export const questions = [
       "Mantenerla de pie empeora la pérdida de sangre y el riesgo de shock; debe permanecer tendida con la pierna elevada."
     ],
     "page": 73,
-    "category": "Emergencias y primeros auxilios"
+    "category": "Emergencias y primeros auxilios",
+    "deepExplanation": "Ante una hemorragia fuerte en la parte inferior de la pierna, el objetivo de los primeros auxilios es doble: cortar la pérdida de sangre y mantener la irrigación de los órganos vitales para prevenir el shock. La acción más eficaz para detener el sangrado es aplicar presión manual firme y directa sobre la herida con un paño limpio, y luego vendar para mantener esa presión; la presión comprime los vasos sanguíneos y favorece la coagulación. Además, se debe mantener a la persona tendida con la pierna herida elevada, porque al estar la extremidad por sobre el nivel del corazón disminuye el flujo de sangre hacia la herida y se favorece el retorno venoso hacia el tronco. Por el contrario, sentarla, darle algo caliente de beber o ayudarla a mantenerse de pie son acciones erróneas que pueden agravar el sangrado o precipitar un desmayo. Recuerde la combinación clave: presión directa más pierna en alto. Las respuestas correctas son la b y la c."
   },
   {
     "id": 269,
@@ -6714,7 +6982,8 @@ export const questions = [
       ""
     ],
     "page": 73,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "La ley permite excepcionalmente que un joven de 17 años obtenga licencia clase B, pero le impone una condición de seguridad mientras no cumpla 18 años: no puede conducir solo, sino siempre acompañado por una persona idónea que pueda supervisarlo y corregirlo. Para que esa supervisión sea efectiva, el acompañante debe cumplir dos requisitos. Primero, debe ir sentado en el asiento delantero, junto al conductor, de modo que esté al alcance para advertir riesgos, dar instrucciones e incluso intervenir si es necesario. Segundo, debe poseer una licencia que lo habilite para conducir vehículos de la clase B con una antigüedad de a lo menos 5 años, garantizando que cuente con experiencia real al volante. El fundamento es que el menor todavía está en una etapa de aprendizaje y necesita la guía permanente de un conductor experimentado para reducir el riesgo propio de la inexperiencia. Las respuestas correctas son la a y la e."
   },
   {
     "id": 270,
@@ -6738,7 +7007,8 @@ export const questions = [
       ""
     ],
     "page": 73,
-    "category": "Emergencias y primeros auxilios"
+    "category": "Emergencias y primeros auxilios",
+    "deepExplanation": "Cuando un accidente de tránsito deja personas lesionadas, sin importar que las lesiones sean leves, el conductor involucrado tiene la obligación legal de dar cuenta del hecho a la autoridad policial más cercana a la brevedad. El fundamento es que la presencia de heridos transforma el accidente en un hecho que la policía debe constatar de inmediato, tanto para asegurar la atención de las víctimas como para dejar registro de las circunstancias y eventuales responsabilidades. Por eso no corresponde aplicar el plazo de días que existe para ciertos trámites cuando solo hay daños materiales; con heridos, la comunicación debe ser inmediata. Tampoco queda la decisión de informar a criterio del lesionado, ya que es un deber del conductor. Abstenerse de avisar pudiendo hacerlo puede configurar el delito de fuga o abandono de la víctima. La respuesta correcta es la d: dar cuenta del hecho a la autoridad policial más inmediata a la brevedad."
   },
   {
     "id": 271,
@@ -6766,7 +7036,8 @@ export const questions = [
       ""
     ],
     "page": 74,
-    "category": "Emergencias y primeros auxilios"
+    "category": "Emergencias y primeros auxilios",
+    "deepExplanation": "Quien se detiene a auxiliar en un accidente debe actuar sin agravar las lesiones y enfocándose en prevenir el shock, que es una de las principales causas de muerte en víctimas que inicialmente sobreviven. Por eso se debe mantener a los heridos abrigados y cómodos, ya que la pérdida de calor corporal empeora el shock; mantenerlos tranquilos hablándoles de forma alentadora, porque la angustia acelera el deterioro; y asegurarse de que nunca queden solos, para vigilar cambios en su estado y dar apoyo. En cambio, hacerlos caminar o moverse puede agravar fracturas o lesiones internas, y darles algo caliente de beber es peligroso porque podrían requerir cirugía o tener compromiso de conciencia y atragantarse. La regla de oro es no mover al herido innecesariamente y esperar al personal especializado, limitándose a contener y acompañar. Las respuestas correctas son la c, la d y la e."
   },
   {
     "id": 272,
@@ -6792,7 +7063,8 @@ export const questions = [
       ""
     ],
     "page": 74,
-    "category": "Emergencias y primeros auxilios"
+    "category": "Emergencias y primeros auxilios",
+    "deepExplanation": "Al ser el primero en llegar a un accidente, su prioridad inicial no es atender heridos sino asegurar el lugar para que no se produzcan nuevas víctimas, lo que se conoce como proteger la escena. Para ello debe encender sus luces de advertencia de peligro o intermitentes, de modo que los demás conductores adviertan el obstáculo y reduzcan la velocidad, evitando un segundo accidente en cadena. También debe asegurarse de que los motores de los vehículos involucrados estén apagados, porque el motor encendido junto a posibles fugas de combustible es una causa frecuente de incendio o explosión. Además, conviene ayudar a salir a las personas ilesas, alejándolas de la zona de riesgo. En cambio, abandonar el lugar apenas llega otro conductor es incorrecto, pues usted tiene deberes de auxilio y de informar. El orden lógico es proteger, alarmar y socorrer. Las respuestas correctas son la a, la b y la d."
   },
   {
     "id": 273,
@@ -6817,7 +7089,8 @@ export const questions = [
       "Sacar a los heridos graves de los autos sin personal capacitado puede agravar lesiones de columna o internas; solo se hace si hay riesgo inminente como incendio."
     ],
     "page": 74,
-    "category": "Emergencias y primeros auxilios"
+    "category": "Emergencias y primeros auxilios",
+    "deepExplanation": "Cuando hay heridos graves, el riesgo de empeorar sus lesiones por una mala maniobra es muy alto, por lo que las acciones de un auxiliador sin formación deben limitarse a lo seguro y prioritario: proteger la escena y conseguir ayuda profesional cuanto antes. Por eso debe encender sus luces de advertencia de peligro para alertar a otros conductores y evitar un nuevo accidente, y asegurarse de que alguien llame al 133 de Carabineros para que se active la cadena de emergencia con ambulancias y rescate especializado. En cambio, sacar a los heridos de los autos puede agravar lesiones de columna o internas y solo se justifica ante un peligro inminente como un incendio; y dar de beber a un herido grave es peligroso porque puede atragantarse o complicar una eventual cirugía. La consigna es alertar y pedir ayuda, sin manipular al herido grave. Las respuestas correctas son la a y la b."
   },
   {
     "id": 274,
@@ -6841,7 +7114,8 @@ export const questions = [
       "Intentar contener el derrame lo expone directamente a sustancias tóxicas; eso corresponde a personal especializado."
     ],
     "page": 74,
-    "category": "Emergencias y primeros auxilios"
+    "category": "Emergencias y primeros auxilios",
+    "deepExplanation": "En un accidente que involucra un camión con productos químicos peligrosos, el primer riesgo es invisible: vapores tóxicos, sustancias corrosivas, inflamables o reactivas que pueden dañar a quien se acerque sin saber con qué está tratando. Por eso, antes de llamar al 133, conviene identificar de qué sustancia se trata observando a distancia los rótulos, paneles naranjos y letreros de seguridad que todo camión de carga peligrosa debe llevar, los cuales contienen códigos numéricos que identifican el producto y su riesgo. Con esa información, Carabineros y los servicios de emergencia pueden enviar el equipo especializado adecuado y tomar las precauciones correctas desde el inicio. En cambio, intentar mover el camión, diluir con agua o frenar el derrame por cuenta propia es extremadamente peligroso, porque algunas sustancias reaccionan violentamente con el agua o liberan gases tóxicos. La regla es identificar y reportar, nunca intervenir el material. La respuesta correcta es la c."
   },
   {
     "id": 275,
@@ -6865,7 +7139,8 @@ export const questions = [
       "No se debe dar de beber a un accidentado, sobre todo si está en shock o podría requerir cirugía."
     ],
     "page": 74,
-    "category": "Emergencias y primeros auxilios"
+    "category": "Emergencias y primeros auxilios",
+    "deepExplanation": "Cuando un motociclista accidentado está consciente pero en estado de shock, la regla fundamental es no retirarle el casco. El casco abraza firmemente la cabeza y el cuello, y quitarlo implica mover la columna cervical, que tras un impacto puede estar lesionada; ese movimiento brusco podría dañar la médula espinal y causar una parálisis o agravar un trauma craneal. Por eso usted debe asegurarse de que el motociclista no se saque el casco y de que nadie más se lo retire, salvo que personal especializado lo haga con la técnica correcta o que exista una obstrucción que impida respirar. Tampoco se le debe ayudar a ponerse de pie ni darle algo de beber, pues ambas acciones pueden empeorar lesiones o provocar atragantamiento. Lo prudente es mantenerlo quieto, acompañado y esperar a los servicios de emergencia. La respuesta correcta es la b: que el motociclista no se saque el casco."
   },
   {
     "id": 276,
@@ -6889,7 +7164,8 @@ export const questions = [
       ""
     ],
     "page": 74,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "Si una caja cae de un camión a la autopista, se convierte en un obstáculo peligroso, pero la forma de reaccionar debe priorizar siempre su seguridad y la del resto del tránsito. En una autopista los vehículos circulan a alta velocidad, de modo que detenerse junto a la carga, bajarse a recogerla o intentar alcanzar al camión son maniobras que lo exponen a ser atropellado o a provocar una colisión en cadena. Lo correcto es continuar la marcha con normalidad hasta llegar a un lugar seguro donde haya un teléfono o pueda comunicarse, y avisar a la policía o a los servicios de emergencia para que ellos, con los medios adecuados, retiren el obstáculo y adviertan a los demás conductores. El fundamento es que ningún objeto en la calzada vale más que la vida de las personas, y la gestión del riesgo en vías rápidas corresponde a la autoridad. La respuesta correcta es la d."
   },
   {
     "id": 277,
@@ -6913,7 +7189,8 @@ export const questions = [
       ""
     ],
     "page": 74,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "El Seguro Obligatorio de Accidentes Personales, conocido como SOAP, es un seguro que la ley exige contratar a todo vehículo motorizado para poder obtener su permiso de circulación, y su propósito es garantizar que ninguna víctima de un accidente de tránsito quede sin cobertura básica por muerte o lesiones. Por eso su cobertura es deliberadamente amplia y no se limita al dueño ni a quien conduce. El SOAP cubre al conductor del vehículo asegurado, a todos sus pasajeros y también a cualquier tercero afectado, sea un peatón, un ciclista o un ocupante de otro vehículo, siempre que el vehículo asegurado haya participado en el accidente. El fundamento es de protección social: la indemnización se paga por las lesiones o la muerte sin necesidad de demostrar previamente quién tuvo la culpa, lo que agiliza la atención de las víctimas. La respuesta correcta es la d: el conductor, los pasajeros y cualquier tercero afectado."
   },
   {
     "id": 278,
@@ -6939,7 +7216,8 @@ export const questions = [
       ""
     ],
     "page": 74,
-    "category": "Leyes, normas y documentos"
+    "category": "Leyes, normas y documentos",
+    "deepExplanation": "La ley obliga a portar permanentemente en el vehículo un conjunto de documentos que permiten acreditar en cualquier control que el vehículo y el conductor están en regla. Esos documentos de porte obligatorio son el Permiso de Circulación, que acredita el pago anual y la habilitación para circular; el certificado del Seguro Obligatorio de Accidentes Personales (SOAP), que asegura la cobertura a las víctimas; la licencia de conductor, que habilita a la persona para manejar; y el certificado de revisión técnica o de homologación, que acredita las condiciones mecánicas y de seguridad. En cambio, el certificado de inscripción en el Registro Nacional de Vehículos Motorizados, conocido como padrón, prueba la propiedad pero no es de porte obligatorio permanente, ya que esa información puede verificarse en el registro. Un truco para recordarlo es que lo que se exige en la calle es lo que se renueva cada año y lo que habilita a circular y conducir. La respuesta correcta es la e."
   },
   {
     "id": 279,
@@ -6967,7 +7245,8 @@ export const questions = [
       "Es falso: el Juez sí puede cancelar la licencia de conducir en los casos que la ley establece."
     ],
     "page": 75,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "La Ley de Tránsito clasifica las infracciones en leves, graves y gravísimas según el peligro que representan, y las dos primeras afirmaciones reflejan correctamente esa clasificación: conducir bajo los efectos del alcohol es una infracción gravísima por el altísimo riesgo que implica, y no respetar una señal PARE también es gravísima porque omitir la detención obligatoria en un cruce es una de las causas más frecuentes de colisiones graves. Además, es verdadera la afirmación de que una infracción gravísima no solo se castiga con multa, sino también con la suspensión de la licencia de conducir del infractor, lo que refuerza el carácter disuasivo de la sanción. Son falsas, en cambio, la idea de que solo el no respetar la luz roja y el exceso de velocidad serían gravísimas, pues existen muchas más, y la afirmación de que un juez nunca podría cancelar una licencia, ya que la cancelación sí procede en casos calificados. Las respuestas correctas son la a, la b y la c."
   },
   {
     "id": 280,
@@ -6995,7 +7274,8 @@ export const questions = [
       ""
     ],
     "page": 75,
-    "category": "Factores humanos (alcohol, fatiga, salud)"
+    "category": "Factores humanos (alcohol, fatiga, salud)",
+    "deepExplanation": "Esta pregunta combina varios principios del régimen de infracciones. Es verdadera la afirmación de que las infracciones gravísimas se sancionan con multa y además con la suspensión de la licencia del infractor, lo que distingue a esta categoría de las menos graves. También es verdadera que la acumulación de dos infracciones graves dentro de un período de 12 meses da origen a la suspensión de la licencia, mecanismo pensado para corregir al conductor reincidente antes de que cause un daño mayor. Y es verdadera que no respetar una señal Ceda el Paso, que en sí misma es una infracción grave, se eleva a gravísima cuando a consecuencia de ella se produce un accidente, porque la ley agrava la sanción según el resultado dañoso. Son falsas la afirmación de que las únicas gravísimas serían el alcohol y el exceso de velocidad, y la que califica de leve el no respetar el derecho preferente del peatón, que en realidad es más grave por el riesgo a la persona. Las respuestas correctas son la b, la c y la e."
   }
 ];
 

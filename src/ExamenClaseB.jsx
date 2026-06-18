@@ -334,9 +334,11 @@ function LookupCard({ q }) {
       </div>
       <div className="bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 rounded-xl p-3 mb-2">
         <p className="text-emerald-700 dark:text-emerald-300 font-bold text-sm mb-1">
-          💡 ¿Por qué es correcta?
+          💡 ¿Por qué es correcta? (explicación ampliada)
         </p>
-        <p className="text-emerald-800 dark:text-emerald-200 text-sm leading-relaxed">{q.explanation}</p>
+        <p className="text-emerald-800 dark:text-emerald-200 text-sm leading-relaxed whitespace-pre-line">
+          {q.deepExplanation || q.explanation}
+        </p>
       </div>
       {q.formula && (
         <div className="bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 rounded-xl p-3 mb-2">
