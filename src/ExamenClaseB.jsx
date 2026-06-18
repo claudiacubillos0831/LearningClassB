@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { questions } from "./questions.js";
+import { supabase } from "./supabase.js";
 
 const IMG_BASE = import.meta.env.BASE_URL + "images/";
 
@@ -61,6 +62,18 @@ function persistHistory(h) {
   } catch {
     /* localStorage no disponible */
   }
+}
+
+function mergeHistory(a, b) {
+  const map = new Map();
+  [...(a || []), ...(b || [])].forEach((r) => {
+    if (r && r.ts != null) map.set(r.ts, r);
+  });
+  return [...map.values()].sort((x, y) => y.ts - x.ts).slice(0, 100);
+}
+
+function mergeWrong(a, b) {
+  return [...new Set([...(a || []), ...(b || [])])];
 }
 
 function loadWrong() {
@@ -314,6 +327,92 @@ export default function ExamenClaseB() {
   const readiness = computeReadiness(history);
   const wrongQuestions = questions.filter((q) => wrongIds.includes(q.id));
 
+  // ---------- Cuenta en la nube (Supabase) ----------
+  const [user, setUser] = useState(null);
+  const [authModal, setAuthModal] = useState(false);
+  const [authEmail, setAuthEmail] = useState("");
+  const [authMsg, setAuthMsg] = useState("");
+  const cloudReady = useRef(false);
+
+  // sesión actual + escucha de cambios (login/logout, magic link)
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data }) => setUser(data.session?.user ?? null));
+    const { data: sub } = supabase.auth.onAuthStateChange((_e, session) =>
+      setUser(session?.user ?? null)
+    );
+    return () => sub.subscription.unsubscribe();
+  }, []);
+
+  // al iniciar sesión: traer la nube, fusionar con lo local y guardar en ambos
+  useEffect(() => {
+    if (!user) {
+      cloudReady.current = false;
+      return;
+    }
+    let cancelled = false;
+    (async () => {
+      const { data } = await supabase
+        .from("progress")
+        .select("history,wrong")
+        .eq("user_id", user.id)
+        .maybeSingle();
+      if (cancelled) return;
+      const mh = mergeHistory(loadHistory(), data?.history || []);
+      const mw = mergeWrong(loadWrong(), data?.wrong || []);
+      setHistory(mh);
+      persistHistory(mh);
+      setWrongIds(mw);
+      persistWrong(mw);
+      await supabase.from("progress").upsert({
+        user_id: user.id,
+        history: mh,
+        wrong: mw,
+        updated_at: new Date().toISOString(),
+      });
+      cloudReady.current = true;
+    })();
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user]);
+
+  // empujar cambios a la nube (con un pequeño retardo)
+  useEffect(() => {
+    if (!user || !cloudReady.current) return;
+    const t = setTimeout(() => {
+      supabase.from("progress").upsert({
+        user_id: user.id,
+        history,
+        wrong: wrongIds,
+        updated_at: new Date().toISOString(),
+      });
+    }, 800);
+    return () => clearTimeout(t);
+  }, [history, wrongIds, user]);
+
+  const sendMagicLink = async () => {
+    if (!authEmail || !authEmail.includes("@")) {
+      setAuthMsg("Escribe un correo válido.");
+      return;
+    }
+    setAuthMsg("Enviando enlace…");
+    const { error } = await supabase.auth.signInWithOtp({
+      email: authEmail.trim(),
+      options: { emailRedirectTo: window.location.href },
+    });
+    setAuthMsg(
+      error
+        ? "Error: " + error.message
+        : "¡Listo! Revisa tu correo y abre el enlace para entrar (puede llegar a spam)."
+    );
+  };
+
+  const signOut = async () => {
+    await supabase.auth.signOut();
+    cloudReady.current = false;
+  };
+
   const addWrong = (ids) => {
     setWrongIds((prev) => {
       const s = new Set(prev);
@@ -554,6 +653,31 @@ export default function ExamenClaseB() {
     return (
       <div className={`${PAGE_BG} flex items-center justify-center p-4`}>
         <div className="max-w-lg w-full text-center animate-fadeIn">
+          {/* Cuenta en la nube */}
+          <div className="flex justify-end mb-2 h-5">
+            {user ? (
+              <div className="flex items-center gap-2 text-xs text-slate-500">
+                <span className="truncate max-w-[200px]">☁️ {user.email}</span>
+                <button
+                  onClick={signOut}
+                  className="underline hover:text-slate-700"
+                >
+                  Salir
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={() => {
+                  setAuthMsg("");
+                  setAuthModal(true);
+                }}
+                className="text-xs font-semibold text-indigo-600 hover:text-indigo-500"
+              >
+                ☁️ Guardar en mi cuenta
+              </button>
+            )}
+          </div>
+
           <div className="mb-8">
             <img
               src={IMG_BASE.replace("images/", "") + "logo-cube.png"}
@@ -719,6 +843,48 @@ export default function ExamenClaseB() {
             {questions.length} preguntas disponibles con explicaciones completas
           </p>
         </div>
+
+        {authModal && (
+          <Modal
+            icon="☁️"
+            title="Tu cuenta"
+            onClose={() => setAuthModal(false)}
+            actions={
+              <>
+                <button
+                  onClick={() => setAuthModal(false)}
+                  className="flex-1 py-3 rounded-xl font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all"
+                >
+                  Cerrar
+                </button>
+                <button
+                  onClick={sendMagicLink}
+                  className="flex-1 py-3 rounded-xl font-bold bg-indigo-500 text-white hover:bg-indigo-400 transition-all"
+                >
+                  Enviar enlace
+                </button>
+              </>
+            }
+          >
+            <p className="mb-3 text-left">
+              Ingresa tu correo y te enviaremos un <b>enlace mágico</b> para
+              entrar (sin contraseña). Tu progreso se guardará y sincronizará en
+              cualquier dispositivo, incluso en incógnito.
+            </p>
+            <input
+              type="email"
+              inputMode="email"
+              autoComplete="email"
+              value={authEmail}
+              onChange={(e) => setAuthEmail(e.target.value)}
+              placeholder="tucorreo@ejemplo.com"
+              className="w-full border border-slate-300 rounded-xl px-3 py-2 text-slate-800 text-left focus:outline-none focus:border-indigo-400"
+            />
+            {authMsg && (
+              <p className="mt-2 text-xs text-slate-500 text-left">{authMsg}</p>
+            )}
+          </Modal>
+        )}
       </div>
     );
   }
