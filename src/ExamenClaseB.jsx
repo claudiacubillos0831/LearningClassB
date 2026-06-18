@@ -558,12 +558,15 @@ export default function ExamenClaseB() {
             <img
               src={IMG_BASE.replace("images/", "") + "logo-cube.png"}
               alt="Cubitos"
-              className="mx-auto h-24 w-24 mb-4 drop-shadow-sm"
+              className="mx-auto h-20 w-20 mb-3 drop-shadow-sm"
             />
-            <h1 className="text-4xl font-bold text-slate-800 mb-2">
+            <p className="text-indigo-400 text-xs font-semibold tracking-[0.35em] uppercase mb-1">
+              Cubitos
+            </p>
+            <h1 className="text-4xl font-extrabold tracking-tight text-slate-800 mb-2">
               Examen Clase B
             </h1>
-            <p className="text-indigo-500 text-lg">
+            <p className="text-slate-500 text-base">
               Cuestionario General de Conducción · Chile
             </p>
           </div>
